@@ -1,4 +1,4 @@
-# Algebra2-Pre-Calc
+# Algebra2/Pre-Calc
 Algebra II/Pre-Calculus Honors Assignments (in LaTeX)
 
 Authentication:   
