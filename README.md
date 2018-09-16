@@ -7,6 +7,6 @@ Authentication:
 Cloning This Repository
 </br>&nbsp;&nbsp;with **command line interface**:
     <pre>    
-    **$** git clone https://github.com/MDBrodskiy/Algebra2-Pre-Calc.git     
+    **$** git clone https://github.com/MDBrodskiy/LaTeX_Assignments.git     
     **$** **>**  **_**
     </pre>
