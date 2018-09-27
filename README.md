@@ -9,7 +9,6 @@ Authentication:
 Cloning This Repository
 </br>&nbsp;&nbsp;with **command line interface**:
     <pre>    
-    **$** git clone git@github.com:MDBrodskiy/LaTeX_Assignments.git 
-        //     HTTPS use - https://github.com/MDBrodskiy/LaTeX_Assignments.git    
+    **$** git clone https://github.com/MDBrodskiy/LaTeX_Assignments.git    
     **$** **>**  **_**
     </pre>
