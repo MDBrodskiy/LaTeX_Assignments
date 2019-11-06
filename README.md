@@ -1,5 +1,5 @@
-# Algebra2/Pre-Calc
-Algebra II/Pre-Calculus Honors & Science Assignments (in LaTeX)
+# LaTeX Type-Setting
+Various Assignment From Various Course Formatted In The LaTeX Type-Setting Paradigm
 <br/> <br/> 
 Open sourced **LaTeX** Templates [here](https://www.latextemplates.com/).
 <br/> <br/> <br/>
