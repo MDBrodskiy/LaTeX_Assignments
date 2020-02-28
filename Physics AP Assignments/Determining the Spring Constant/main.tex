@@ -1,0 +1,239 @@
+\documentclass{article}
+\usepackage[paperletter]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage[utf8]{inputenc}
+\usepackage{cancel}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{multicol}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usepackage[symbol]{footmisc}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\renewcommand*\familydefault{\ttdefault}
+\EverySelectfont{%
+\fontdimen2\font=0.4em% interword space
+\fontdimen3\font=0.2em% interword stretch
+\fontdimen4\font=0.1em% interword shrink
+\fontdimen7\font=0.1em% extra space
+\hyphenchar\font=`\-% to allow hyphenation
+}
+\pagenumbering{gobble}
+\title{Determining the Spring Constant Lab \\ AP \textsc{Physics} $-$ 1}
+\author{Michael \textsc{Brodskiy}}
+\date{March 2, 2020}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\begin{tabular}{l r}
+\underline{Date Performed}: & February 25, 2020 \\\\ % Date the experiment was performed
+\underline{Partners}: & Alden Woronicz \\ & Al McLeroy \\\\
+\underline{Instructor}: & Mrs. Halle \\\\\\\\\\ % Instructor/supervisor
+\end{tabular}
+\end{center}
+\newpage
+    
+\section{Finding the Spring Constant}
+
+\subsection{Method 1}
+
+\begin{figure}[H]
+    \include{hooke1}
+    \caption{Hooke's Law Lab Setup}
+\end{figure}
+
+\subsubsection{Data Table}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+    Mass [$\si{\kilo\gram}$] & Displacement [$\si{\meter}$] \\
+\hline
+    .1 & .01 \\
+\hline
+    .25 & .045 \\
+\hline
+    .5 & .1 \\
+\hline
+    .75 & .16 \\
+\hline
+    1 & .215 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Experimentation Process}
+
+\begin{enumerate}
+    
+    \item Measure the length from the top of the stand of the spring at equilibrium without mass
+    
+    \item Measure the displacement with a mass
+    
+    \item Plug into the formula below
+    
+\end{enumerate}
+
+\subsubsection{Hooke's Law}
+\vspace{10pt}
+One way to find the spring constant is to use Hooke's Law, or:
+
+
+$$F_s = -k\Delta x$$
+
+The spring constant, $k$, can be found if the force on the spring and the displacement of the spring is known. According to the free body diagram below, the only force acting directly on the spring is $F_g$, or gravity:
+
+\begin{figure}[H]
+    \include{hookefbd}
+    \caption{Forces on the Spring}
+\end{figure}
+
+Because the gravitational force is acting against the restoring force, it can be found that:
+
+$$F_g = -F_s$$
+
+It can then be substituted:
+
+$$F_s = -k\Delta x \longrightarrow -F_g = -k\Delta x \longrightarrow mg = k\Delta x$$
+\vspace{16pt}
+Here is a sample calculation:\\
+\vspace{8pt}
+When a 1[$\si{\kilo\gram}$] weight is hung from the spring, the displacement is 21.5[$\si{\centi\meter}$], or .215[$\si{\meter}$]. When plugged into the formula, it is obtained that:
+
+$$g = k*.215[\si{\meter}]\longrightarrow\frac{g}{.215} = k$$
+$$\therefore k = 45.612\left[\si{\frac{\newton}{\meter}}\right]$$
+
+To plot this a function, with slope $k$, it can be re-arranged as shown:
+
+$$mg = kx \longrightarrow m = \frac{kx}{g} \longrightarrow m = \frac{kx}{9.80665\left[\si{\frac{\meter}{\square\second}}}\right]$$
+
+The graph would then need to have the mass as the vertical axis, and $\frac{x}{g}$ as the horizontal axis, to yield $k$ as the slope. (Figure 3)
+\subsubsection{Graphing}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.75\columnwidth]{Slide2}
+    \caption{Mass versus Displacemet over Gravitational Acceleration}
+\end{figure}
+
+\newpage
+\subsection{Method 2}
+\begin{figure}[H]
+    \include{Spring1}
+    \caption{The Spring Oscillates with Mass, $m$}
+\end{figure}
+
+\subsubsection{Data Table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+    Mass [$\si{\kilo\gram}$] & Period [$\si{\second}$]\\
+\hline
+    1 & .97\\
+\hline
+    .75 & .84\\
+\hline
+    .5 & .75 \\
+\hline
+    .4 & .61 \\
+\hline
+    .2 & .5 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Experimentation Process}
+
+\begin{enumerate}
+    
+    \item Set up the spring as shown in figure 4
+    
+    \item Compress the mass and spring slightly, then let go
+    
+    \item Record the spring in a slow motion video 
+    
+    \item Use the video to find the period (one full up and down motion)
+    
+    \item Implement the formula below
+    
+\end{enumerate}
+
+
+\subsubsection{Formulation}
+According to the model above (Figure 4), a timer will be used to approximate the period, $T$, of the spring and mass.
+The formula to determine the spring constant, $k$, with the period, $T$, and mass, $m$ is:
+
+$$T = 2\pi\sqrt{\frac{m}{k}}$$
+
+This can be re-arranged to yield the slope formula:
+
+$$\frac{4\pi^2}{T^2}=\frac{k}{m}$$
+
+This means that the vertical axis is $\frac{4\pi^2}{T^2}$, the horizontal axis is $\frac{1}{m}$, and the slope is $k$. (Figure 5)
+
+\subsubsection{Graphing}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=.75\columnwidth]{Slide1}
+    \caption{Four $\pi^2$ Times Inverse Square Period versus Inverse Mass }
+\end{figure}
+
+\newpage
+\subsection{Conclusion}
+
+\subsubsection{Margin of Error}
+
+The graph for the Hooke's law method (figure 3) yields 42.96 $\left[\si{\frac{\newton}{\meter}}\right]$ as the spring constant.\\
+The graph for the second method (figure 5) yields 39.70 $\left[\si{\frac{\newton}{\meter}}\right]$ as the spring constant.\\
+
+\flushleft The percent difference can be found using $\frac{|42.96-39.70|}{(42.96 + 39.70)/2} * 100\%$\\
+This is approximately equal to: 7.888\%
+
+
+\subsubsection{Which Method is More Accurate?}
+
+Most likely, Hooke's law would be the most accurate. This is because the second method depends on the analysis of a slow motion video, and, as such, is subject to significant human error. Such a fatal error would render the results inconclusive, whereas the stationary spring method has little to no possible human error. Therefore, the displacement method was more accurate
+
+
+\subsubsection{Error Analysis}
+\begin{enumerate}
+
+    \item \textsc{Spring Use} $-$ With use, the springs will have a greater stretch property. This use can result in an ever-changing spring constant. Because the spring is stretching, the spring constant would be constantly decreasing with use, and the correct spring constant will change with each use. (Affects both methods)
+    
+    \item \textsc{Frictional Forces} $-$ During the simple harmonic motion of the spring, there exist frictional forces due to the motion through the medium (in this case, air). These forces would cause a deceleration in the motion of the spring, and therefore an increasing period. These errors can, however, be nullified by recording a certain period for each repetition of the experiment. For example, one would agree to use the first period after the spring is set in motion. (Affects method 2)
+    
+\end{enumerate}
+
+\subsubsection{Finding the Mass of an Unknown Object}
+
+To find the mass of an unknown object requires the spring constant. This can be found by using a known mass, coupled with one of the above methods. Once the spring constant is determined, once again use one of the above methods, now with the unknown object. For example, if one used Hooke's law, the setup for mass would be:
+
+$$m = \frac{k\Delta x}{g}$$
+
+
+
+
+
+
+
+
+
+\end{document}
