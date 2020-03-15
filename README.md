@@ -1,9 +1,11 @@
 # LaTeX Type-Setting
-Various Assignment From Various Course Formatted In The LaTeX Type-Setting Paradigm
+Various Assignments From Various Courses Formatted In The LaTeX Type-Setting Paradigm
 <br/> <br/> 
 Open sourced **LaTeX** Templates [here](https://www.latextemplates.com/).
 <br/>
 **TikZ** diagram editor [here](https://www.mathcha.io/editor).
+<br/>
+**TikZ** examples [here](https://www.texample.net/tikz/example).
 <br/>
 **LaTeX** draw [here](https://www.latexdraw.com/).
 <br/> <br/> <br/>
