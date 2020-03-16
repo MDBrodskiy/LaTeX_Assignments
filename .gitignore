@@ -12,6 +12,10 @@
 *.cb2
 .*.lb
 
+## Peripheral Shell files
+*.bat
+*.sh
+
 ## VS Code log extension
 *.vscodeLog
 
