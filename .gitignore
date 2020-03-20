@@ -12,9 +12,9 @@
 *.cb2
 .*.lb
 
-## Peripheral Shell files
-*.bat
+## Peripheral Shell files (used for pdflatex compilation)
 *.sh
+*.bat
 
 ## VS Code log extension
 *.vscodeLog
