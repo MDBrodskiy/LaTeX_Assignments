@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Unit Conversions, Density, and Solubility}
+\date{August 20, 2020}
+\author{Michael Brodskiy\\ \small Professor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Unit Cancellation
+
+    \begin{enumerate}
+
+      \item Only cancel out when one unit is on top and one is on bottom
+
+        $$3.24[mi]\rightarrow [\si{\meter}]$$
+    $$1[mi]=1.6093[\si{\kilo\meter}]$$
+        $$3.24[\cancel{mi}] \cdot \frac{1.6093[\cancel{\si{\kilo\meter}}]}{1[\cancel{mi}]}\cdot \frac{1000[\si{\meter}]}{1[\cancel{\si{\kilo\meter}}]}$$
+        $$5,214[\si{\meter}]$$
+
+    \end{enumerate}
+
+  \item Density = [Mass / Volume] $\rightarrow P=\frac{m}{V}$
+
+    %\begin{center} 21\% of the mass of air is oxygen. In a box with dimensions 15$[\meter]$, 20$[\meter]$, and 35$[\meter]$. The density of the air is 1.31$[\gram\per\liter]$. Find the mass of oxygen in the room. \end{center}
+    %$$V= 15\cdot20\cdot35=10500[\meter^3]$$
+
+  \item Solubility $-$ What is the maximum amount of an ionic compound that will dissolve in a liquid?
+ 
+    \begin{enumerate}
+
+      \item Unsaturated $-$ Below maximum of solubility
+
+      \item Saturated $-$ At the maximum of solubility
+
+      \item Supersaturated $-$ Over the maximum of solubility
+
+        \begin{center} Solubility of KNO$_3$ is $\frac{246[\si{\gram}]}{100[\si{\gram}\text{ of water}]}$ at $80[\degree C]$. What is the amount of water necessary to dissolve 100$[\si{\gram}]$ of KNO$_3$? \end{center}
+
+        $$\frac{246[\si{\gram}\text{ }KNO_3]}{100[\si{\gram}\text{ }H_2O]}=\frac{100[\si{\gram}\text{ }KNO_3]}{x}$$
+        $$x=\frac{10000[\si{\gram}\text{ }H_2O]}{246}=4.065\cdot10^1$$
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+

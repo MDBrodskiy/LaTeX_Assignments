@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter One $-$ Problems: 37, 50, 54}
+\date{August 24, 2020}
+\author{Michael Brodskiy\\ \small Professor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \setcounter{enumi}{36}
+
+\item 2 Acres $\rightarrow$ Hectares
+
+  $$2[\cancel{ac}] \cdot \frac{4.356\cdot10^4[\cancel{ft^2}]}{1[\cancel{ac}]}\cdot\frac{.0929[\cancel{\si{\meter\squared}}]}{1[\cancel{ft^2}]}\cdot\frac{1[\si{\hectare}]}{10000[\cancel{\si{\meter\squared}}]}=.8093[\si{\hectare}]$$
+
+  \setcounter{enumi}{49}
+
+\item How long is a 10[$lb$] spool of 12-gauge (diameter of .0808[$in$]), with density 2.70 [$\si{\gram\per\centi\meter\cubed}$]
+
+  $$10[lb]\rightarrow [\si{\kilo\gram}]=4.536[\si{\kilo\gram}]$$
+  $$2.7[\si{\gram\per\centi\meter\cubed}]=2700[\si{\kilo\gram\per\meter\cubed}]$$
+  $$.0404[in]=.001026[\si{\meter}]$$
+  $$\pi r^2 l= \frac{4.536[\si{\kilo\gram}]}{1000[\si{\kilo\gram\per\meter\cubed}]}$$
+  $$l=\frac{4.536[\si{\kilo\gram}]}{2700[\si{\kilo\gram\per\meter\cubed}]\cdot\pi\cdot(.001026[\si{\meter}])^2}$$
+    $$l=508[\si{\meter}]$$
+
+
+	\setcounter{enumi}{53}
+
+  \item Potassium sulfate has a solubility of 15[$\si{\gram}$]/100[$\si{\gram}$] of water at 40[$\si{\celsius}$]. A solution is prepared by adding 39[$\si{\gram}$] to 225[$\si{\gram}$] of water. Is the solution unsaturated, saturated, or supersaturated? If precipitation occurs, how many grams would you expect to crystallize out?
+
+    $$\frac{39}{225} > \frac{15}{100}$$
+    \begin{center} This means that the solution is supersaturated. Using proportionality, 33.75[$\si{\gram}$] of potassium sulfate would be needed to achieve a saturated solution in 225[$\si{\gram}$] of water. This means that $39-33.75=5.25[\si{\gram}]$ of potassium sulfate would crystallize.\end{center}
+
+
+\end{enumerate}
+
+\end{document}
+
