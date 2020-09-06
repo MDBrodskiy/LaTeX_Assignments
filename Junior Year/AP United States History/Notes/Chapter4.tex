@@ -1,0 +1,145 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 4 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+
+\begin{document} 
+\maketitle
+
+\topic{Was the news that was printed in British North America concerned with local matters, or did it discuss events in Britain as well?}{\begin{itemize} \item First newspaper to be published in British North America was \textit{The Boston Newsletter} in 1704. Publication was subsidized by the British government. \item Publishers later became more independent, such as James Franklin's \textit{New England Courant}, in 1722. \item Libel was considered illegal, no matter whether the news was true or false. This is shown in Zenger's case, where he published articles concerning corruption of Royal Governor William Cosby. After a long trial that lasted into 1735, Zenger was acquitted, marking the beginning of freedom of speech and press.   \end{itemize}}%
+
+\topic{The book states that King James II removed local authority from many of the colonies. Were the religious rights that many of the settlers enjoyed removed as a result of this?}{\begin{itemize} \item In 1689, the British Protestant majority removed James II in what is known as the \underline{\textbf{Glorious Revolution}}. It was known as such because blood did not have to be shed in order to achieve its goals. \item Such an overthrow of power caused revolutions in many English colonies. \item A reason for the overthrow of James II was the decline of the \underline{\textbf{Divine Right of Kings}}. This ``right'' stated that rulers inherited unquestionable power from god himself. Parliament had limited much of the power held by monarchs, and, as such, divine right declined as a result. \item This step marked the rise of Parliament's political power. \end{itemize}}%
+
+\topic{Did the lower English classes actually know of John Locke and his philosophies? Was this more of a middle to upper class movement?}{\begin{itemize} \item John Locke was the most famous philosopher of the Glorious Revolution. His theories somewhat contributed to this shift in power, as he argued that people had the right to overthrow an abusive government. \item Locke's main points rested on the idea of \underline{\textbf{Natural Rights}}, which were rights, given by god, to all people. Locke believed that it was the government's job to uphold and protect these rights for their citizens. \item Locke greatly opposed James II's rule. He argued that people are born free in nature and only agree to laws when it suits them (this was the beginning of the freedom vs security question). Therefore, Locke argued, when a monarch did not suit the needs of the people, such as James II, the people had a right to revolt. \item In his \textit{Second Treatise on Government}, Locke believed that society was a contract under which people lived together, but still kept their natural freedom. Locke believed that the power of government lies in the hands of the people. \end{itemize}}%
+
+\topic{How long did the news of the Glorious Revolution take to travel to the American colonies? Did the rights granted by William and Mary satisfy the people, or did were they still insufficient?}{\begin{itemize} \item Following the Glorious Revolution, the people in the British American colonies decided to revolt themselves. In New England, Governor Andros was arrested and sent back to England (even though he would later become the Governor of Virginia). \item William and Mary permitted the colonies to continue ruling themselves, as they had prior to James II. For Massachusetts and Connecticut, however, a clause in charter granted ``liberty of conscience'' to all Protestants, but not Catholics. \item As a result of the changes in Massachusetts and Connecticut, Maryland and New York saw uprisings. New York saw the rise of the low level workers, led by Jacob Leisler, seize power. Leisler would later be executed for treason. In Maryland, despite its foundings as a safe haven for Catholics, saw the overthrow of the Catholic proprietor, and a shift to Anglicanism.  \end{itemize}}%
+
+\topic{Was there any motive for using slaves, other than to get rid of any chance of rebellion? If so, what was it?}{\begin{itemize} \item Following Bacon's Rebellion, the planter elite was worried about another revolt. They decided that, instead of using indentured servants, they would shift to the use of slaves for labor. They worked to codify slavery as an inherited, legal status. \item As the book states, ``a society with slaves gave way to a slave society.'' Although such a thing began in Virginia and Maryland, it would end up spreading to all of the other colonies. \item As the use of slaves progressed, slavery became more and more associated with race. Children of mixed races were mistreated, as children born to African women were considered slaves, even though the father would often be their European slave owner. Interracial relations were prevented, as white women were banned from having intercourse with men of other races. \end{itemize}}%
+
+\topic{Which colony had the greatest amount of slaves? What about greatest percentage of slaves? Which had the least?}{\begin{itemize} \item North American slavery was a small fraction of the entire slave trade. \item Sugar plantations in such locations as the Caribbean, Brazil, and South America needed lots of slaves, and they died much quicker there. This meant that there needed to be a constant flow of slaves. \item Slaves were greatly mistreated, as they were kept naked in cramped quarters. They survived on a diet of only bread and water. The ones that were deemed ``fit'' would be branded like cattle.  \end{itemize}}%
+
+\topic{Where does the name ``middle'' come from? Was this in reference to the crossing of the Atlantic Ocean?}{\begin{itemize} \item The transit of slaves from Africa to the Americas was named ``\underline{\textbf{The Middle Passage}}.'' \item One captain stated that the African slaves were packed like books on shelf. Up to 400 were kept on one ship. All men were chained shoulder to shoulder, while women, even though they weren't chained, were packed just as tightly. \item Ships were filthy, and, as a result, disease rates were high. All of the slaves were force fed. About 25\% of all slaves on the ships would die. \item It was said that slaves would often rebel. It was said that they looked for any opportunity to attack and murder the ship's crew.  \end{itemize}}%
+
+\topic{Which colony treated slaves the best (with respect to the other colonies)?}{\begin{itemize} \item The first slaves to be brought to America had some rights, however, they would be rapidly taken away for generations to come. Slaves would be treated like animals, and given the same names as other slaves. \item The law did not recognize slave marriages. As such, African families would be broken apart, with husbands, wives, and children being sold away. \item Olaudah Equiano is an example of a captured African. He was 11 when he was taken to be a slave. He describes his time on the ships by discussing the foul stench, a stench that made him lose any appetite. When he refused to eat, he was whipped. Luckily, Olaudah was later able to purchase his freedom.  \end{itemize}}%
+
+\topic{How would slaves rebel if many of them were from different tribes and did not speak the same languages?}{\begin{itemize} \item Most slaves did not give up their freedom without a fight. They would often revolt. \item The Spanish, who were constantly at war with the British, would lure slaves to Florida by promising them freedom, as long as they converted to Catholicism. The Spanish did not even realize the full advantages of stealing the British slaves. They not only drained the economy of Georgia and Carolina, but they also formed a line of defense at the border. \item An example of a revolt is the \underline{\textbf{Stono Rebellion}}, the largest slave uprising prior to the American Revolution. It began with only 60 slaves marching in South Carolina, burning buildings and killing any whites who got in their way. Following Cato, their leader, the group amassed a larger following, while marching to Florida. The South Carolina militia me them at Stono, and, after a long fought battle, some slaves did make it to Florida. As a result, South Carolina temporarily halted the import of slaves, and forbid slaves from assembling.   \end{itemize}}%
+
+\topic{Were the slave owners in he North kinder than those in the south? If so, in what ways?}{\begin{itemize} \item New York City and Providence, Rhode Island had the greatest concentration of slaves in the North. About a fifth of the New York community were African slaves. Slaves feared that they would be sold to the South at any time. \item Unlike in the South, which was rural, these urban slaves could meet each other in taverns or at work. Such assembly caused the slave owners to fear for rebellion. \item In 1741, fires raged throughout New York city. These fires burned many businesses and houses, including the governor's residence. Governor George Clarke blamed the slaves, and, as a result, many innocent slaves were executed.  \end{itemize}}%
+
+\topic{Did the Scottish have any say in colonial relations, as a result of the act that was passed?}{\begin{itemize} \item English and Scottish parliaments passed the \underline{\textbf{Act of Union}}, which consolidated English and Scottish power into the British Empire. This act helped solidify the results of the Glorious revolution, as well as strengthen relations with Scotland. \item By 1707, the third and fourth generation English Americans had never even seen England. \item Although the general quality of life increased during the late \nth{17} and early \nth{18} century, as a result of slave labor, there was still lots of uncertainty. This included the hysteria leading to the Salem Witch trials, any possibility of Indian raids, and fear of slave revolts.  \end{itemize}}%
+
+\topic{Were there fears of witches prior to the Salem Witch Trials?}{\begin{itemize} \item During a harsh winter in Salem village, in a Reverend's house, two girls seemed to experience strange seizures. It was said that they were ``bitten by invisible agents.'' This led to a period of hysteria known as the \underline{\textbf{Salem Witch Trials}}. \item The aforementioned girls blamed their native servant in bewitching them. Many more were tried for being witches. Many confessed. In the span of 15 months, legal action was taken against 144 people, of which 38 were men and 106 were women. Many more were executed. \item After a while, authorities realized that something was not right. Although they still believed in witchcraft, they realized that this was a large fit of hysteria. One of the judges publicly apologized, while the victim families were given compensation.  \end{itemize}}%
+
+\topic{Were women kept in the private realm by laws, or did they have opportunities outside of the household?}{\begin{itemize} \item Women mostly worked from home, and, thus, were disconnected from public matters. \item In many urban cities, women started their own businesses. Anne Shields and Jane Vobe both ran their own taverns in Virginia. Mary Channing ran a large store in Boston. \item On farms, womens' lives were quite lonely. They only interacted with those that lived with them. On farms, however, work for males and females were quite the same: backbreaking work from sunrise to sundown.  \end{itemize}}%
+
+\topic{In general, was quality of life better in England or the British North America?}{\begin{itemize} \item \begin{tabular}{|c|c|c|c|c|} \hline City & 1700 & 1720 & 1750 & 1775 \\ \hline Boston & 8000 & 12000 & 16000 & 17500 \\ \hline Philadelphia & 2000 & 10000 & 15000 & 31000 \\ \hline New York & 6000 & 7000 & 14000 & 21500 \\ \hline Charleston & 2000 & 3500 & 6500 & 11000 \\ \hline  \end{tabular} \item During this period, Virginia shifted its capitol from Jamestown to Williamsburg. They built a brand new capitol building, along with two wings for the House of Burgesses and for the royal council. \item The early \nth{18} century saw the rise of vaccinations. A clergyman in Boston by the name of Cotton Mather came up with the first inoculations. He learned about different medical practices, such as giving small doses of a virus, from a Turkish Doctor.  \end{itemize}}%
+
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
