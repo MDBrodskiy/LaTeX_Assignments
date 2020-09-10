@@ -40,7 +40,7 @@ citecolor=blue,
 \urlstyle{same}
 
 
-\title{Solution Curves Without a Solution}
+\title{Separable Equations}
 \date{\today}
 \author{Michael Brodskiy\\ \small Professor: Meetal Shah}
 
@@ -56,37 +56,28 @@ citecolor=blue,
 
 \begin{itemize}
 
-  \item The function $f$ in the normal form is called the slope function or rate function 
+  \item Separable Differential $-$ A differential equation that may be broken apart into a function of $x$ and a function of $y$:
 
-    $$\frac{dy}{dx}=f(x,y)$$
+    $$\frac{dy}{dx}=g(x)h(y)$$
 
-  \item Lineal Element $-$ An individual slope at a certain point
+  \item If this form is divided by $h(y)$ (where $h(y)=\frac{1}{p(y)}$:
 
-  \item Direction Field (Slope Field) $-$ The collection of all lineal elements
+      $$p(y)\frac{dy}{dx}=g(x)$$
 
-  \item Autonomous First-Order Differential Equation:
+  \item If $y=\phi(x)$, then:
 
-    $$\frac{dy}{dx}=f(y)$$
+    $$p(\phi(x))\phi'(x)=g(x)$$
+    $$\int p(\phi(x))\phi'(x)\,dx=\int g(x)\,dx$$
+    $$\frac{dy}{dx}=\phi'(x)\Rightarrow dy=\phi'(x)\,dx$$
+    $$\int p(\phi(x))\,dy=\int g(x)\,dx\Rightarrow H(y)=G(x)+c$$
 
-  \item Critical Points $-$ Also called equilibrium or stationary points, they are points, $c$, which, when plugged into a function, yield:
+  \item Often, it will be necessary to create an integral-defined function, where $(x_o,y_o)$ is the initial condition:
 
-    $$f(c)=0$$
+    $$y=y_o+\int_{x_o}^xf(t)\,dt$$
 
-  \item Equilibrium Solution $-$ If $c$ is a critical point, then $y(x)=c$ is a constant solution of the autonomous differential equation. Equilibria are the only constant solutions
+  \item One example of such a case would be where $\frac{dy}{dx}=e^{-x^2}$. It is not possible to differentiate this, and, therefore, one ends up with:
 
-  \item One-Dimensional Phase Portrait $-$ Simply called a phase portrait, it shows the intervals where a function is increasing and decreasing (essentially a sign chart). The line that the intervals are graphed on is named the phase line
-
-  \item Attractors and Repellers $-$ For a nonconstant solution, $y(x)$, there are basically three behaviors as it approaches some critical point, $c$. 
-    
-    \begin{enumerate}
-
-      \item Attractor $-$ When $\lim_{x\to\pm\infty}y(x)=c$. This means the critical point is asymptotically stable.
-
-      \item Repeller $-$ When both parts of a solution move away from a $c$ point. These are unstable.
-
-      \item Semi-stable $-$ When both parts either move up or down.
-
-    \end{enumerate}
+    $$y=y_o+\int_{x_o}^xe^{-t^2}\,dt$$
 
 \end{itemize}
 
