@@ -1,0 +1,193 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 5 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Did Washington get any official military training, or was he naturally a great leader?}{\begin{itemize} \item May 28, 1754 $-$ Washington marched with his militia on one of a series of French forts in the Ohio river valley, Fort Duquesne. Due to a deluge of rain, the French had not stationed sentries. This led to ten French deaths and 22 prisoners. \item The attack on the French Fort was named Jumonville Glen, after one of the French commanders stationed at the fort. These shots would spark a war, both in Europe and the Americas, known as the \underline{\textbf{French and Indian War}} in the Americas, and \underline{\textbf{The Seven Years' War}} in Europe (and the War of Conquest in Canada). \item Two years following Washington's attack on the fort, a formal declaration of war with the French was issued.  \end{itemize}}%
+
+\topic{Where did the war have a greater magnitude of effect?}{\begin{itemize} \item In America, it was the French against the British. The French were allied with the Ottawa, Delaware and Shawnee natives, while the British allied with the Iroquois. \item In Europe, England allied with the Prussian empire. Austria reacted to this by allying with France. \item As history shows, when nations take sides, it leads to large scale warfare. One month after the declaration of war, the French navy sunk a British fleet in the Mediterranean sea. \item Prussia, counting on the support of the English, attacked Austria and Russia, which caused the Swedish to ally with the French. \item The war also took place in India, which was split between the French and British. Suraj ud Dowlah, the ruler of Bengal, took this chance to attack and capture British Calcutta. Britain, however, retook control of India, which would lead to centuries of rule over the subcontinent. \item The British also attacked and captured the island of Goree, a French slave trading outpost. In addition to this, they captured islands in the Caribbean, including Grenada, the Grenadines, St. Vincent, Dominica, Tobago, Martinique, and Guadalupe. When Spain joined on the side of the French, the British captured Havana and Manila.  \end{itemize}}%
+
+\topic{How did the British defeat so many allied nations? Were the French, Spanish, and other countries that joined in just much weaker? What kind of tactics did the British use?}{\begin{itemize} \item In 1758, a British force, once again with Washington, marched, again, on Fort Duquesne. This force captured the fort, which was renamed Fort Pitt (modern-day Pittsburg), in honor of William Pitt, a British prime minister. \item Also in 1758, the leader of the Delaware tribe, Teedyuscung, sought to leave the French and ally with the English. The Delaware wanted this because they yearned for land in Pennsylvania, which they did not get. Instead of it, they received a promise that the British would not settle past the Allegheny mountains, which would hold true, until the American Revolution. \item The most important battle in North America saw the capture of Quebec, the French Canadian capital. This meant that the British now controlled all of Canada, which explains the contemporary language differences in Canada (French Canadian vs English). Quebec was taken by British General James Wolfe, who defeated French Marquis de Montcalm.  \end{itemize}}%
+
+\topic{Who initiated the peace talks, France or England?}{\begin{itemize} \item The new British king, George III, wanted peace, as all of the participating countries' resources had been drained. In 1763, following nearly a decade of war, the two superpowers, France and England, had agreed to terms, ending in the \underline{\textbf{Treaty of Paris}}\footnote[1]{Note: \emph{There are many different Treaty of Parises. Make sure to remember the year for the right one.}} \item Although all countries, including Britain, were in debt, Britain made significant gains throughout this war. Europe saw little territorial change, however, in India, Africa, and the Caribbean, Britain gained large amount of land. Also, Spain had given up Florida to England. \item The most devastating result for France was the elimination of its influence in the Americas. France did, however, regain some of its colonies in the Caribbean, such as Guadalupe and Martinique. Also, as a debt to the Spanish for being an ally, France gave up New Orleans. It was now official that Britain controlled the majority of North American land.  \end{itemize}}%
+
+\topic{Did the British expect such fierce resistance by the natives? Would they have treated the natives as harshly as they did in the future, if not for the resistance efforts?}{\begin{itemize} \item The results of the war were devastating to the native population. No, it wasn't disease, warfare, or famine that was the problem. It was the virtual disappearance of any bargaining power they had, as a result of the dissipation of French and Spanish power in North America. Before, a tribe may ally with whichever country had the best trading deals. Now, the only influence was England, which meant one thing: ally or be an enemy. \item Another devastating effect occurred for the allies of Britain. The British had been allies with them only to combat the French. Now, because the British controlled North America, they did not need the natives, who they now regarded as an obstacle for expansion. The Indians, therefore, would have to resist any efforts to remove them from their land. \item A member of the Delaware tribe by the name of Neolin preached that the natives must resist the British, who he called ``The Dogs in Red.'' An Ottawa chief by the name of Pontiac responded to Neolin's calls. This led to \underline{\textbf{Pontiac's Rebellion}}. Mere months after the Treaty of Paris (1763) had been signed, a meeting between the Ottawa, Chippewa, Pottawatomi, and Wyandot tribes took place. Here, the natives agreed to``cleanse themselves'' of this white influence, and, as such, the natives fought back. \item \begin{tabular}{l} Native Gains During Pontiac's Rebellion \\ \hline Fort Miamis (Fort Wayne, Indiana) \\ Fort Ouiatenon (Lafayette, Indiana) \\ Fort Michilimackinac (Great Lakes) \\ Most old French posts in Ohio and Indiana \end{tabular}  \end{itemize}}%
+
+\topic{Why did Pontiac attack without French backing? Did he think that they would have come to his aid?}{\begin{itemize} \item In response to the native attacks, English commander Jeffrey Amherst issued and order that stated, ``every Indian in your Power to Death.'' The natives were, at first, somewhat successful, as they caught the British off guard. One tactic Amherst used was the distribution of smallpox-infected blankets, which spread the disease easily among the natives. \item After attacking, Pontiac had received a letter from the French, which said that the French were unable to aid the natives in their efforts. As a result, Pontiac's foreign policy did an about-face, as he initiated peace talks with the British. In July 1766, Pontiac and the British signed a treaty at Oswego, New York. Three years later, Pontiac was murdered, most likely by angry Indians. \end{itemize}}%
+
+\topic{If the British had the upper hand, why did they decide to honor their promises to the natives? Why didn't they push for more land.}{\begin{itemize} \item Afraid for another attack like Pontiac's Rebellion, George III and his minister George Grenville attempted to establish peace in North America. One such effort was the preservation of the promises made to the tribes. A proclamation, which stated that there were to be no settlements past the crest of the Appalachians, and that those that already existed be abandoned, was issued by the British crown. \item The aforementioned proclamation aided in the reduction of tension between the natives and the colonies. Another step the British took was to remove Amherst. He was replaced with General Thomas Gage. Gage instantly resumed trade and gift-giving with the natives. Furthermore, Grenville had given more power to the superintendents of Indian affairs. \item Although all of these steps were meant to make peace with the natives, the colonists were too far away for the British crown to truly control anything. The only real result of the proclamation was the angering of many settlers, such as the farmers who needed land and the wealthy class, which was only interested in money. Therefore, this proclamation did little to protect the Indians from the colonists.  \end{itemize}}%
+
+\topic{Was the formation of the Paxton Boys a result of Indian aggression or the Proclamation Line of 1763 (or both)?}{\begin{itemize}\item In Paxton, Pennsylvania, a group of angry farmers decided on a way to end warfare with the natives: kill all of the Indians. These farmers banded together to form \underline{\textbf{The Paxton Boys}}, or the Hickory Boys. \item This new group (which was somewhat of an early terrorist group) attacked a Delaware village in December of 1763. They killed six people and burned down the whole town. Also, the group killed 14 government-protected Indian survivors. Shortly thereafter, the mob marched on Philadelphia to find other tribes. \item Before the group was able to reach Philadelphia, Benjamin Franklin, along with some colonial delegates negotiated peace with the Paxton Boys. Following the French and Indian war, many of the colonists began to view the native tribes as a homogenous group, unlike their parents and grandparents, who understood the different groups.  \end{itemize}}%
+
+\topic{What began the thoughts of a revolution? Was it something to do with the warfare in the last few decades, or did it just occur as a result of being separated from the mother colony for so long?}{\begin{itemize} \item The period from 1760 $-$ 1775 saw a rise in revolutionary ideals. Many colonists began to think of themselves as American, rather than British, as they saw the British as too controlling. The end of The French and Indian war, which led to higher taxes, greatly effected colonial sentiment. This sentiment led to a social divide, resulting in the development of two factions. One of these were the \underline{\textbf{Loyalists}}, who believed the colonies should be loyal to the crown. The loyalists made up about one-fifth of the colonial population. \item The potential for a revolution was seen as an opportunity by many African slaves. They believed that, by being freed from Britain, they might finally gain their freedom. Other slaves, though, were worried. They saw Britain as a protector, and, possibly, a liberator. They thought that, by letting the settlers gain more localized power, there would be less restrictions on the slave trade. \item Another group frightened of separation from Britain were the Native Americans. They knew that, even with a proclamation from the throne of England, the settlers were not following orders. Therefore, they feared that, if power were to be centralized within the states, there would be no stopping expansion.  \end{itemize}}%
+
+\topic{The book states that, ``colonists believed.'' Does this mean most colonists were literate, or would they hear these ideas from others?}{\begin{itemize} \item Near the time of the American Revolution, many of the colonists grew up reading political philosophers. One of the most read pieces was the defense of the Glorious Revolution, by none other than John Locke. Within his work, Locke stated that citizens retained ``a supreme power to remove or alter the legislative.'' In other words, people had the power to modify the rulers. This, and many other philosophers, would be the foundation for the American Revolution, as well as the American Constitution and Bill of Rights. \item The political influences on the American colonists were not only from European philosophers, such as Voltaire, Montesquieu, and Locke, but also from ancient Roman and Greek philosophers. This meant that the American colonists began to reject the British throne, whom they saw as an evil, controlling, and exploitative empire. The people began to turn to \underline{\textbf{Republicanism}} (and, as such, America would be established as a \underline{Republic}). This gave power to the people, as their new rulers were required to consent to the governed. \item Both, republicans and loyalists read the same philosophies. As a result, the loyalists tried to spark up valid and sound argumentation to support ties between the British. They argued that, because George III ruled by consent of the parliament, and not divine right, the colonies should remain loyal. Both sides, however, believed in ``The Rights of The Englishmen.'' \end{itemize}}%
+
+\topic{It is known that most people of the time believed in similar political philosophies, as they read the same authors. Why were outcomes so different in various countries? For example, if people in Britain believed in these liberal principles, why did they keep the king at the throne? Was this just a difference in revolutionary execution?}{\begin{itemize} \item When Jefferson stated that, ``all men are created equal; that they are endowed with certain unalienable rights,'' he was sharing a sentiment that was common for the time. This is part of the reason why the success of the American Revolution would influence revolutions, which erupted across the world: in France, Haiti, and South America, for example. \item  The Haitian Revolution is one of the most successful slave revolts of all time, led by Toussaint L'Overture, resulted in the establishment of a republic in 1804. Haiti (then Domingue) was one of the most oppressive sugar plantations in the Caribbean. Taking the chance during the French Revolution, over 500,000 African slaves rebelled and succeeded in overthrowing their oppressors (although Haiti would later be taken back). \item Furthermore, in South America, Sim\'on Bol\'ivar helped establish republics in Venezuela, Columbia, Ecuador, Peru, and Bolivia. His piece, \textit{Manifesto of Cartegena} expressed revolutionary sentiment. \end{itemize}}%
+
+\topic{Was this the first time that religious ministers were judged?}{\begin{itemize} \item Gilbert Tennent, a Presbyterian leader of the Great Awakening, wanted to further the ``purification'' of the churches. He plead for religious ministers to be tested in their faith. This was a parallel to the American Revolution, as judging the religious leaders was synonymous with judging political leaders. Reverend Henry viewed these false ministers as enemies of the church. \end{itemize}}%
+
+\topic{Why would the British support such a policy? Did they not see the possibility of revolution on the horizon?}{\begin{itemize} \item Many acts of rebellion occurred in American ports, even before the \underline{Boston Tea Party}. This was mostly due to the British policy of \underline{\textbf{Impressment}}. This policy mandated that, if a British naval ship was low on soldiers (which occurred often, as a result of diseases and poor conditions), the naval ship could essentially kidnap any sailor on a merchant ship, and sign them up for service. As one may infer, this policy was widely despised. \item One such example occurred when British Commodore Charles Knowles stopped in Boston. He sent his men to search for people to recruit. In all, 46 men were impressed into service. An angry crowd would assemble and harass and thwart the Commodore and his men. Samuel Adams defended these acts, saying that it was the colonists' natural right. Such actions, as well as new legislation regarding taxation and various acts fueled support for a revolution. \item The British government was quite anxious, as they needed to pay back the French following the French and Indian war. With each new act passed, the colonial resistance to the crown grew exponentially. Some of these acts included: The Sugar and Currency Acts (1764), The Stamp Act (1765), The Townshend Act (1767), and The Tea Act (1773). Following each failure of an act, Colonists grew stronger, as they saw resistance to be effective.  \end{itemize}}%
+
+\topic{Breakdown of British Acts and Taxes}{\begin{itemize} \item \begin{tabular}{p{.17\textwidth} | p{.65\textwidth}} Act & Definition and Response \\ \hline Sugar & A tax on sugar and products made with sugar (rum, molasses, etc.). Saw little reaction. \\ Currency & Colonies were not allowed to issue legal tender. In reaction, Merchants and Artisans formed a nonimportation movement. \\ Stamp & Required paper goods to be printed on taxed and stamped, official paper. Colonists printed the Virginia Resolves, which opposed the tax. Also, the \underline{\textbf{Sons of Liberty}} formed$-$an underground society, which opposed the act. Delegates came together to write \textit{Declaration of Rights and Grievances}. Stamp Act riots.  \\ Declatory & Parliament reserved the right to tax the colonies ``in all cases, whatsoever.'' Angered the citizens, fueled rage. \\ Revenue & Forbid the colonies from trading with sugar (1766), and imposed new taxes on lead paint, paper, and tea (1767). \\ Tea & Placed a heavy tax on tea, and required tea to be imported from Britain. Caused the Boston Tea Party. \end{tabular} \end{itemize}}%
+
+\topic{If the British soldiers understood that throwing the snowballs was a provocative move, \underline{and} their commander said not to shoot, why did they shoot anyway?}{\begin{itemize} \item One day, people began to gather and throw snowballs at British troops. This was a result of British troops taking their jobs, as the troops would take part-time jobs for significantly less pay than the colonists. The crowd began to increase, growing by more than 400 people. Captain Thomas Preston came to ask the crowd to disperse, telling them that the soldiers wouldn't fire. One stray snowball later, a soldier was on the ground and shots were fired. That day, three men were killed. This event came to be known as \underline{\textbf{The Boston Massacre}}. \item The events which perspired in Britain that day fueled the anger at the British, and, as a result, the British pulled troops out of Boston, leaving it in control of the colonists. The people would gather and chant ``No taxation without representation.'' \item In November of 1773, following the Tea Act, the British sent the \textit{Dartmouth} to Boston, where colonists forced it to dock in Griffin's Wharf, which was controlled by the colonies. People dressed as natives stormed the ship that night, throwing many crates of tea into the harbor. Contrary to popular belief, in this protest, only the tea was damaged. The protesters were given strict orders to be careful with British property, and, during the raid, only one lock on a chest was broken, which the colonists paid to replace. The British closed the port of Boston. \item Women also supported the cause. In response to the Stamp Act in 1765, groups of women met and decided to boycott English goods. They called themselves the \underline{\textbf{Daughters of Liberty}}. Women would gather together and work to spin more clothes to avoid buying from England. More and more women throughout the colonies would support the cause, whether it was simply not buying English products or going on food strikes.  \end{itemize}}%
+
+\topic{Was the regulator movement somewhat of an early deputization or bounty hunter?}{\begin{itemize} \item In the western Carolinas, the people felt cheated by the coastal authorities. As such, they brought law into their own hands through the Regulator Movement. This movement saw the rise of regulators, people who would uphold justice. They would attack when isolated farmers were in trouble. Eventually, the governor established courts in the west Carolinas. \item A great problem for those more inland were the natives. The influx of migrants meant that more space inland needed to be allocated. As a result, coming in contact with natives was inevitable. In inland Pennsylvania, the pacifist Quakers kept relative peace; however, even more inland were belligerent Irish and German settlers. Overall, the white settlers wanted more land than was allocated for them. One German, by the name of Frederick Stump, killed 10 natives, and was put to jail as a result. He was freed by a protester mob. As a result, Britain passed the Quebec Act, which was considered intolerable by the colonists. This further angered the English colonists.  \end{itemize}}%
+
+\topic{Were topics of discussion pre-planned at the congress, or did they just begin talking about whatever they deemed important?}{\begin{itemize} \item The \underline{\textbf{First Continental Congress}}, consisting of delegates from all colonies except Georgia, met in September 1774. They discussed the relationship with Britain, and what was to be done. \item At this congress, concrete dates for the banning of imports, exports, and tea were decided. British imports were banned on December 1774, exports on September 1775, and tea was banned immediately. They agreed to reconvene if conditions had not improved.  \end{itemize}}%
+
+\topic{So were slaves completely free in Britain? Does that mean they had the same rights as white men?}{\begin{itemize} \item The \underline{\textbf{Somerset Decision}} was the most important event among African slaves. This occurred after a slave was taken to England, where he ran away, but was caught. After court proceedings, though, he was deemed free because Britain did not have slavery laws. This led to a deluge of attempted flights from America to Britain. Many people began to turn away from slavery. Quakers treated slaves the best, as it was decided that their religion either let slaves free, or purchase their freedom.  \end{itemize}}%
+
+\topic{If Gage did not agree with his orders, why did he not join the American side and fight for them?}{\begin{itemize} \item General Thomas Gage saw the growing rebellion around him. Although the crown ordered him to march and restore order with soldiers, he thought it would be better to conciliate the colonists. Parliament, however, disagreed. Therefore, he followed orders. \item Although Gage knew it, Concord and Worcester were collecting arms. Gage ordered troops to march on Concord. The colonists expected such a move. They had planned ahead, and, as such, Paul Revere had hung two lanterns in the steeple of the North Church (meaning the British had taken the water route). Revere and William Dawes then went on their famous ride, crying, ``The British are coming!'' John Adams and Hancock were able to wake up and organize the Concord militia. In the early morning on April 19, 1775, shots were fired. Eight militiamen were killed, while ten were wounded, with only one British soldier wounded. On the march back to Boston, the British troops were ambushed. It was now confirmed that there would be no peace with Britain. \end{itemize}}%
+
+\topic{Did the British initially intend to keep slaves chained, or did they know that giving them freedom would be beneficial?}{\begin{itemize} \item The British had promised any slaves who helped the cause freedom. One example of this was Jeremiah, who organized uprisings in 1775 and 1776, but was hung and burned at the stake. This British proclamation worried those in slave-majority states, such as the Carolinas, where 60\% of the population were slaves. \item This move was quite beneficial to the British, as, not only did it add to their numbers, but it also disrupted the economies of the colonies. Many slaves did receive their promised freedom. \item Some of the slaves, however, did support the American effort. One example is Lemuel Haynes, who served in Lexington and Concord, and would eventually become a leading minister. Washington, however, was afraid to give the slaves arms, for fear of an uprising or reactions by the white revolutionaries. Eventually, in Rhode Island, a black regiment formed, as the slaves were promised freedom.  \end{itemize}}%
+
+\topic{Did the delegates from the First Continental Congress think that a second meeting would actually be necessary, or did they think that the problem would dissipate?}{\begin{itemize} \item The Battles of Lexington and Concord had changed everything. On May 10, 1775, the continental congress reconvened. They decided that a Continental Army was necessary. Their choice for a leader was the prominent Washington. As a result, the resistance would be more stiff from the Americans. Washington had between 9,000 and 14,000 men under his command, whereas Gage had 5,000. Contrary to popular belief, the Second Continental Congress was unsure of what they wanted from the war. \item During the revolutionary effort, Thomas Paine printed over 100,000 of his famous, \textit{Common Sense}. He argued that it was time to separate, by saying that monarchy was always bad for the people, and the timing was right. This pamphlet shaped American colonial sentiment. The same day it was published was the day George III declared the colonies as rebellious.  \end{itemize}}%
+
+\topic{How many of the people who came to the congress actually expected to separate from England? How many actually wanted to?}{\begin{itemize} \item Although most people attended the congress wanting to reconcile with Britain, they decided to make a back up plan, just in case. They created the Committee of Five $-$ Thomas Jefferson, Benjamin Franklin, John Adams, Robert Sherman, and Robert Livingston $-$ who were meant to draft a declaration of independence, just in case. \item Jefferson, who was very good with words, was chosen to write a first draft, and the rest of congress would adjust it, if necessary. One modification was the removal of a clause which banned and denounced the slave trade. \item The wait for a vote was worth it, as, on July 2, 1776, the congress voted unanimously for independence. On July 4, 1776, the Declaration of Independence was adopted. Statues of George III were taken down, signifying that their bonds with Britain were broken.  \end{itemize}}%
+
+\topic{Did the Second Continental Congress make a plan for independence? Did they have any idea of how they would run the country following the revolution?}{\begin{itemize} \item In 1777, \underline{\textbf{The Articles of Confederation}}, though weak, were adopted. The country was officially named the United States of America. This document stated that the colonies were independent, but worked towards a common goal. Taxes were only allowed if every colony agreed. Most people feared a centralized government, even if their current state was weak.  \end{itemize}}%
+
+\topic{To what extent were women present in the military? What would this be as a percent compared to men?}{\begin{itemize} \item There were many examples of women in the army, with varying roles. One women, by the name of Mary Ludwig Hays (nicknamed Molly Pitcher because she carried water) aided the troops at camp, and, supposedly even loaded cannons when her husband was injured at Monmouth. Deborah Sampson fought in the army for years, until she was wounded and a doctor discovered her.  \end{itemize}}%
+
+\topic{By ``bombarding'' does the book mean fired upon Boston? This confused me a bit.}{\begin{itemize} \item In March of 1776, Washington commissioned a young Bostonian bookseller, Henry Knox, to transport guns from Fort Ticonderoga to Boston. These guns were assembled on the night of March \nth{1}, and fired upon the British until March \nth{17}, when the British retreated. \item Although a victory like Boston was rare for Washington, such fights were not his goal. He tried to fight somewhat of a guerilla war, with indirect fights against the British. This would strain and wear out the troops, while preserving his own. Near the time that independence was declared, Thomas Gage was swapped out for William Howe, who came with 32,000 soldiers, a quarter of which were Hessians (German Mercenaries for hire). Hessians were not very good fighters, as they were forced to fight by the German princes who ``rented'' them out. As such, they were not enthusiastic to support the British cause.  \end{itemize}}%
+
+\topic{Overall, which side had more casualties? Which side had a greater percent of casualties?}{\begin{itemize} \item Washington did not want to take a fight head on, as the British kept trying in Brooklyn, Manhattan, and New Jersey. Washington retreated to give up this land. On Christmas day in 1776, Washington ambushed Trenton, New Jersey, capturing many Hessians and successfully taking the land. The Hessians did not care about who they supported, and, therefore, they joined the rebels. By Winter 1776-1777, Washington controlled southern New Jersey, while the British controlled northern New Jersey and New York. \item A British general by the name of John Burgoyne assembled a large army in Canada, intended to crush the rebellion. Burgoyne had roughly 8,300 troops, who he traveled south with. He was able to overrun the Americans at Ticonderoga, however, the heavy equipment bore and tired the troops. In September 1777, Burgoyne's troops met Horatio Gates and Benedict Arnold's (before he defected) armies. The British were taken aback at the fact that their bayonet charges did not break the enemy lines. 5,800 British troops were captured and kept as prisoners of war. \item Saratoga was an exemplary battle, as a large portion of the British force was removed, and it showed to the world what the Americans could do. This allowed Benjamin Franklin to negotiate support from the French and Spanish. \item Philadelphia was taken in September 1777 by the British troops. Washington was able to suffocate the British troops by cutting off their supply lines. To take Philadelphia, though, was a great effort, as Washington's army was progressively getting colder and hungrier. Washington appointed officers to find food and clothes, which they did. The Prussians (von Steuben) and French (Marquis de Lafayette) helped the Americans by training them and harassing the British. In 1778, Howe was replaced by Henry Clinton. A new strategy of coastal harassment by the navy took place.  \end{itemize}}%
+
+\topic{Which country had a worse relationship with the British, Spain or France?}{\begin{itemize} \item A big reason for the victory of the rebels was the aid received by the French and Spanish. In 1776, Benjamin Franklin sought help from the French in Paris. In 1778, a full alliance with France was formed. A few months after allying with the Americans, France declared war on the British. The Americans now counted on the aid of the French army and navy. Spain's smuggling efforts brought much-needed supplies to the Americans. The French and Spanish also fought the British in the Caribbean during this time. \item Initially, the Iroquois wanted to remain neutral. With time, though, they saw the British as a route to freedom. As a result, they began to support their effort. In the summer of 1777, Thayendanegea attacked white communities in New York and Pennsylvania. The loss of farms could lead to famine and shortages. Washington responded with a third of his force. The aggression on both sides would lead to violence for decades to come. \item Many colonists still remained loyal to Britain. These colonists would either form their own militias or join with the British army. One example is of the van Cortlands. When Washington gained control of their house, he ordered for it to be used as a hospital. He sent the wife away with her kids, as her husband was away. Many wives of loyalists were banished.  \end{itemize}}%
+
+\topic{What made the women think that they should contribute some of their wealth? Why did Washington ask for clothes instead (if he could have just purchased them)?}{\begin{itemize} \item In 1780, Esther de Berdt Reed and Sarah Franklin Bache asked women to donate for the army. Together, the women raised roughly \$300,000, more than \$5.5 million today. Washington, however, rejected the money, and asked for clothes instead. This instance led to the Ladies Association of America, which was a revolutionary, intercolonial women's organization. Also, many young girls would move from house to house, asking if the male of the house was out fighting. If yes, they would help harvest, which allowed all of the colonies crops to be harvested in 6 weeks. \item On May 12, 1780, the British took Charleston, South Carolina. This loss was worrysome, as the people feared to lose the Carolinas and Georgia. Washington handed the reigns for a southern campaign to Nathaniel Greene, who split the troops with Daniel Morgan. They would be up against Cornwallis and Banastre Tarleton. South Carolina saw a disproportionately higher death toll, as a result of loyalist militias and large scale violence. Morgan fought Tarleton's men, and, after a long-fought battle, Morgan won. 800 British were taken captive, and the South Carolina countryside was now safe. \item Cornwallis decided there was no chance in taking South Carolina, and, as a result, he moved to Virginia. He counted on the resupply from the water. The French, however, had other ideas, as they blockaded the port. With great speed, Washington met Cornwallis at Yorktown. On October 17, 1781, Cornwallis surrendered. \item In June of 1780, peace talks began, and, following Cornwallis' surrender, they accelerated. A new treaty, the Treaty of Paris (1783) was drafted. The American states were now officially independent.  \end{itemize}}%
+
+\summary{The American Revolution was effected by a plethora of reasons, ranging from the French and Indian War, to simple British overreach. Philosophical ideals (such as those written by Locke), and the questioning of religious authority as a result of the Great Awakening would fuel the creation of new, more liberal ideologies, which included republicanism. The French and Indian War left the nations of Europe in shambles, economies in ruin. This need for quick funds would lead to British arrogance and exertion of power, which angered the colonists. For the first time, colonists developed nationalistic views, seeing themselves as a nation, not as belonging to the colonies (such as Virginians, Bostonians, etc.). Each British act would make the distrust and hatred of the British throne grow exponentially, by slowly picking at the colonists' freedoms. More and more troops were being funneled into America, which further fueled the rage of the colonists. Serious hatred of the British finally erupted following the Boston Massacre. The Tea Act would lead to the rejection of forceful trade. Bitterness from both sides would explode at Concord, plunging the colonists into nearly a decade of war. After declaring independence, the American people knew there was no road back. The war was won thanks to two reasons: support from the foreign nations of France and Spain, and the bravery and ingenious leadership of George Washington.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
