@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage[paperletter]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage[utf8]{inputenc}
+\usepackage{cancel}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage[symbol]{footmisc}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%\usepackage{everysel}
+%\usepackage{ragged2e}
+%\renewcommand*\familydefault{\ttdefault}
+%\EverySelectfont{%
+%\fontdimen2\font=0.4em% interword space
+%\fontdimen3\font=0.2em% interword stretch
+%\fontdimen4\font=0.1em% interword shrink
+%\fontdimen7\font=0.1em% extra space
+%\hyphenchar\font=`\-% to allow hyphenation
+%}
+
+\title{Lab One \\ AP Chemistry}
+\author{Michael \textsc{Brodskiy}}
+\date{September 21, 2020}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\begin{tabular}{l r}
+\underline{Date Performed}: & September 14, 2020 \\\\ % Date the experiment was performed
+\underline{Partners}: & N/A \\
+\underline{Instructor}: & Mr. Morgan \\\\\\\\\\ % Instructor/supervisor
+\end{tabular}
+\end{center}
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Pre-Lab}
+
+\begin{itemize}
+
+  \item This Lab Requires:
+
+    \begin{enumerate}
+
+      \item Question
+
+      \item Data (including calculations)
+        
+      \item Conclusion
+
+    \end{enumerate}
+
+  \item \ce{NaHCO3 + HCl -> H2O + NaCl + CO2}
+
+    \begin{enumerate}
+
+      \item Calculate how much \ce{NaCl} formed
+
+      \item Calculate Limiting Factor
+
+      \item Determine how much \ce{NaCl} should form
+
+      \item Calculate \% yield
+
+    \end{enumerate}
+
+\end{itemize}
+
+\section{Data}
+
+    \begin{enumerate}
+
+      \item Mass of dish: $36.72[\si{\gram}]$
+
+      \item Mass of \ce{NaHCO3} (Baking Soda): $2.00[\si{\gram}]$
+
+      \item Molarity of \ce{HCl}: $6[\si{\mole\per\liter}]$
+
+      \item Moles of \ce{HCl}: $3[\cancel{\si{\milli\liter}}]\cdot6[\si{\mole\per\liter}]\cdot\frac{1[\cancel{\si{\liter}}]}{1000[\cancel{\si{\milli\liter}}]}=.018[\si{\mole}_{\ce{HCl}}]$
+
+      \item Mass Dish + \ce{NaCl} after procedure: $38.00[\si{\gram}]$
+
+    \end{enumerate}
+
+\section{Question and Statement of Purpose}
+
+    \begin{justify}
+
+      What is the theoretical mass of \ce{NaCl} formed vs the experimental mass? What is the percent yield?
+
+    \end{justify}
+    
+\newpage
+
+\section{Calculations}
+
+    \begin{justify}
+
+      The amount of \ce{NaCl} formed may be easily determined by finding the change in the mass of the dish ($\Delta m_{dish}$ \eqref{eq1}):
+    \end{justify}
+
+\begin{equation} \label{eq1}
+\begin{split}
+  \Delta m_{dish} & = 38.00[\si{\gram}]-36.72[\si{\gram}] \\
+ & =1.28[\si{\gram}_{\ce{NaCl}}]
+\end{split}
+\end{equation}
+
+    \begin{justify}
+
+      To find the limiting factor, one must first find the mass per mole \eqref{eq2}. Then, it is necessary to find the moles of each molecule by dividing the experimental mass of the molecule by the mass per mole \eqref{eq3}. Since, in this case, the amount of moles of each substance is one, the amount with the least moles is the limiting factor \eqref{eq4}.
+
+    \end{justify}
+
+\begin{equation} \label{eq2}
+\begin{split}
+  \frac{m_{\ce{NaHCO3}}}{\si{\mole}_{\ce{NaHCO3}}} & = 23 + 1 + 12 + 3(16)  \\
+  & = 84\left[ \frac{\si{\gram}}{\si{\mole}}  \right] \\
+\end{split}
+\end{equation}
+
+\begin{equation} \label{eq3}
+\frac{2[\si{\gram}_{\ce{NaHCO3}}]}{84[\si{\gram}_{\ce{NaHCO3}}]} = .024[\si{\mole}_{\ce{NaHCO3}}]
+\end{equation}
+
+\begin{equation} \label{eq4}
+  \begin{split}
+  .018[\si{\mole}_{\ce{HCl}}] < .024[\si{\mole}_{\ce{NaHCO3}}] \\
+    \therefore \text{\ce{HCl} is the limiting factor}
+  \end{split}
+\end{equation}
+
+\begin{justify}
+
+  Because the limiting factor is the $.018[\si{\mole}_{\ce{HCl}}]$, and the chemical equation involves only one mole of each molecule, then $.018[\si{\mole}]$ of each molecule will be formed. To switch this value to grams, multiply the grams per mole by the amount of moles \eqref{eq5}.
+
+\end{justify}
+
+\begin{equation} \label{eq5}
+  \begin{split}
+    .018[\si{\mole}_{\ce{NaCl}}]\cdot 58\left[ \frac{\si{\gram}}{\si{\mole}} \right] = m_{\ce{NaCl}}\\
+    = 1.044[\si{\gram}_{\ce{NaCl}}]
+  \end{split}
+\end{equation}
+
+\begin{justify}
+
+  Finally, to calculate the percent yield, one must divide the experimental mass by the theoretical mass, while multiplying by 100\% \eqref{eq6}.
+
+\begin{equation} \label{eq6}
+  \frac{1.28[\si{\gram}_{\ce{NaCl}}]}{1.044[\si{\gram}_{\ce{NaCl}}]} \cdot 100\% = 123\%
+\end{equation}
+
+\end{justify}
+
+\section{Conclusion}
+
+\begin{justify}
+
+  The results of this laboratory experiment demonstrate our percent yield as 123\%. Therefore, it is evident that this experiment yielded a greater amount of Sodium Chloride (\ce{NaCl}) than expected, given the limiting factor of Hydrochloric Acid (\ce{HCl}). 
+
+\end{justify}
+
+\end{document}
