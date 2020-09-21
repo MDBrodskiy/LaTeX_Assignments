@@ -1,0 +1,167 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 6 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{The book claims the United States was planned to be a \textbf{Democracy}, which they define as ``A form of government in which power is vested in the people and exercised by them directly or indirectly through a system of representation.'' This notion is erroneous for two reasons: first, the classical (and, therefore, the exact) definition of democracy by the Greeks was a direct rule by all of the citizens: no representation, no partisan voting. Thus, this already directly contradicts James Fraser's notion of ``Direct or Indirect.'' Second, the American revolutionaries were, throughout most of the revolution, unsure of the system they wished to set up, until they decided on a \textbf{Republic}, a nation in which the citizens vote for legislative representation. Thus, these two facts, coupled with the fact that no democracy has ever existed, directly disprove Fraser's definition and claim of ``The American democracy.'' Such baseless, preposterous claims misconstrue the true definition of historical philosophy, and, therefore, it begs me to bring up the question of: how could such a claim be presented to young minds (especially in an AP textbook), when it is clearly misinformation?}{\begin{itemize} \item The new nation come close to a \textit{coup d'\'etat}, a forceful and violent military overthrow of the system. The militias were riled by the Continental Congress, who asked the soldiers to wait patiently. The soldiers were unhappy to wait. On top of this, in December 1782, the soldiers had not received their pensions for months. A petition drafted by militia generals in Newburgh was sent to Philadelphia's congress. \item Congress was attempting to levy taxes on the colonies, so that it could raise money to pay its military. This was a problem, however, because, by \textit{The Articles of Confederation}, which were adopted during the combat, all thirteen colonies had to agree to taxation. The Articles were set in place to ensure somewhat of a \sout{democratic}\footnote{Again, America was established as a republic. On top of this, Fraser later uses the terms interchangeably, even though they are cleary different} republican government. Some of the states rejected taxation, and, thus, congress did not have the funds to pay their military. \item Congress split into two groups $-$ \textbf{Federalists}, who wanted more government and taxes, and \textbf{Anti-Federalists}, who wanted a weak alliance between powerful states. \item Congress was worried for any military action. Many young soldiers were angry. They believed Washington was far too moderate, and that Horatio Gates was the real hero. In March 1783, Major John Armstrong published the first of the ``Newburgh Addresses,'' a series of statements, which belittled the previous petitions to congress and called for meetings of high-ranking military officials. \item Washington was horrified, as a military dictatorship would undermine the whole point of the American revolution. Washington, however, was a shrewd politician. He met with Gates and told him that he allowed them to meet, as long as they provided Washington with a report of what occurred. The officers were overjoyed, as they though they had won and Washington submitted; however, during the meeting, Washington walked in and asked for permission to speak, which Gates could not refuse. Washington criticized the Newburgh Addresses as ``subversive.''  The audience applauded and cheered. Any threat of military overtake was gone, and, following the British exodus, the militias nearly disbanded, leaving only 600 troops.   \end{itemize}}%
+
+\topic{If the impending depression was clear and expected due to an influx of imports, why were new imports not eased slowly? This system could have prevented the magnitude of depression, and Shay's Rebellion. Was there just a lack of economists?}{\begin{itemize} \item Much like the officers, the poor of the country became greatly unhappy as a result of a recession brought on by a deluge of British imports. The most famous response to this recession was \textbf{Shays's Rebellion}. Those who were led by the Daniel Shays, instigator of the rebellion, named themselves regulators\footnote{Not to be confused with those in the Carolinas who were like early deputies.}.In 1786, Massachusetts farmers petitioned their state's legislature to provide depression relief to the poorer classes. \item Prior to the recession, farmers were self-sufficient; however, the economic hardship brought on by the depression, along with the greater taxes to pay off war debts threatened the farmers with foreclosure. Massachusetts legislature simply blamed the farmers for their position, which prompted farmers to take arms. On August 29, 1500 farmers shot at a court in Northhampton, as well as four other towns, where court proceedings were halted. The government passed a Riot Act, which prohibited meetings of 12 or greater armed people. Sheriffs were permitted to arrest any lawbreakers without habeas corpus. \item The farmers saw the Massachusetts government as the royal government, and, therefore, they were ready to fight for their freedom once again. The regulators took over the Massachusetts government, and marched on the federal arsenal in Springfield. Shays came close to succeeding. Much less people showed up to the attack on the arsenal, and, thus, the other regulators retreated. No other rebellion came as close as this one, and, by 1787's end, the idea of revolting pretty much dissipated.  \end{itemize}}%
+
+\topic{Why did the Treaty of Paris decide the borders of the new nation, and not the nation's leaders themselves. How long would they adhere to these limitations?}{\begin{itemize} \item The Treaty of Paris, which followed the revolutionary war, defined the boundaries of America as the Atlantic coast from Maine to Georgia, and the eastern shore of the Mississippi river as the western boundary. Spanish Florida cut America off from the Gulf of Mexico. Control of the Mississippi river itself would be contested, as it ended at New Orleans, which the Spanish greatly valued. As time progressed, more and more whites would be moving out west. \item One early territorial issue that was decided concerned New York and New Hampshire. They both wanted the land east of Lake Champlain. The whites who were already settled there, though, wanted independence from both. Thus, Vermont, the first state to be born (in 1791), was created. \item From 1784 $-$ 1787, the Congress, acting under The Articles of Confederation, would send representatives and surveyors to Northwest territories, who set up governments in future Ohio, Indiana, Illinois, Michigan, and Wisconsin. In 1785, Congress established a grid system for surveying, which would become widely used.  \end{itemize}}%
+
+\topic{It seems to me like, contrary to popular belief, the United States did, as a matter of fact, attempt to give slaves and natives freedom. Why then, is this unheard of? Did the Northwest Ordinance fail because it was too difficult to maintain?}{\begin{itemize} \item Congress did make an important move for freedom. They passed \textbf{The Northwest Ordinance of 1787}, which, in the new territories, banned slavery, and mandated religious freedom and construction of public schools. In addition, this ordinance stated, ``the utmost good faith shall always be observed towards the Indians.'' \item More and more whites began to explore the western regions of North America. Daniel Boone was one of, if not the first, to cross the Appalachian mountains, and settling in modern-day Kentucky, in a town he named Boonesborough. Many more would follow, and, in 1792 and 1796, respectively, Kentucky and Tennessee were admitted into the union.  \end{itemize}}%
+
+\topic{What is with all of the petitions? It seems like historically, they almost always don't work. Why would people keep attempting to petition for change, then?}{\begin{itemize} \item In terms of western expansion, the native Americans would become Congress's biggest enemy. Americans would keep continuing west, into the territory that was promised to the natives, and natives refused the British proclamation, believing that the land west of the Appalachians was still theirs. \item Joseph Brant, the leader of the Mohawks, petitioned the British for land in Canada. Although they were given a large piece of land, the natives did not regard international boundaries, and, as a result, they would live and hunt anywhere they pleased. \item New York and Pennsylvania would ask congress for help with the natives, and the New York legislature considered the banishment of the Six Nations due to their support of the British in the war.   \end{itemize}}%
+
+\topic{Did congress ever try to make peace with the natives? If not, why? If so, what they did do and did it work?}{\begin{itemize} \item The Treaty of Paris saw the British withdrawal from any forts south of the Great Lakes. In 1783, Congress attempted to send an army to Fort Niagara. The force was ill-trained and ill-prepared, though, and the natives would become even more resistant to expansion. \textbf{The Treaty of Fort Stanwix} in late 1784 would temporarily stop any problems between the Iroquois and New York, however, the treaty wouldn't hold. \item Per recommendation of the British, many native tribes would unify into a confederation. This confederation successfully resisted the American forces. The Indians and Congress negotiated and agreed upon the Ohio river as the border. The border still remained violent, though, and roughly 1500 Americans and Indians would be killed in Ohio and Kentucky in the late 1780s.  \end{itemize}}%
+
+\topic{Was the increase in free slaves in the northern states a result of slave petitioning and congress approval, or just a decrease in need of slaves?}{\hspace{-10pt} \begin{tabular}{l|c|c|c|c|c|c} State & Free & Total & \%  & Free & Total & \% \\ & 1790 & 1790 & & 1810 & 1810 & \\ \hline NH & 630 & 788 & 80\% & 970 & 970 & 100\% \\ \rowcolor{red!15} VT & 255 & 271 & 94\% & 750 & 750 & 100\% \\ MA & 6001 & 6001 & 100\% & 7706 & 7706 & 100\% \\ \rowcolor{red!15} CT & 2808 & 5572 & 50\% & 6453 & 6763 & 95\% \\ RI & 3407 & 4355 & 78\% & 3609 & 3717 & 97\% \\ \rowcolor{red!15} NY & 4654 & 25978 & 18\% & 25333 & 40350 & 63\% \\ NJ & 2762 & 14185 & 19\% & 7843 & 18694 & 42\% \\ \rowcolor{red!15} PA & 6537 & 10324 & 63\% & 22492 & 23287 & 97\% \\ DE & 3899 & 12786 & 30\% & 13136 & 17313 & 76\% \\ \rowcolor{red!15} MD & 8043 & 111079 & 7\% & 33927 & 145429 & 23\% \\ VA & 12866 & 305493 & 4\% & 30570 & 423088 & 7\% \\ \rowcolor{red!15} NC & 4975 & 105547 & 5\% & 10266 & 179090 & 6\% \\ KY & 114 & 12544 & 1\% & 1713 & 82274 & 2\% \\ \rowcolor{red!15} TN & 361 & 3778 & 10\% & 1317 & 45845 & 3\% \\ DC & $-$ & $-$ & $-$ & 2549 & 7944 & 32\% \\ \rowcolor{red!15} SC & 1801 & 108895 & 2\% & 4544 & 200919 & 2\% \\ GA & 398 & 29662 & 1\% & 1801 & 107019 & 2\% \\ \hline  \end{tabular}}
+
+\topic{To what extent were the economies of the Northern states affected by the shift from owning slaves to setting them free?}{\begin{itemize} \item Over time, the northern states transitioned to a slave-free society. The African slaves would be emancipated, beginning around 1810 for most states. By 1810, three states would have their whole slave population freed, while three more were above the 90\% line. These states would only be northern states, as the lack of agriculture meant less need for slaves. \item More and more leaders would make pushes to free slaves, as well. For example, George Washington wrote in his will that, when he and Marsha died, their slaves were to be freed. \item Many more opportunities began to become available to the slave population. They began to take jobs in whaling, on the docks and harbors, and they would even sometimes work for their previous owners, now for an actual wage. This spread of liberal ideas regarding slaves would cause to the southern slave owners to treat their slaves even harsher. They would keep their slaves away from others so that social contact was limited, thereby limiting the spread of liberal ideas. \item The mistreatment and social isolation of the slave population caused the formation of a new social structure: the ``slave quarter'' community. Within their quarters, slaves would mingle, some owned their own, small gardens, which gave some economic freedom, and religious gatherings brought them together as a community.  \end{itemize}}%
+
+\topic{It is inarguable that the upper class women received more independence, rights, and opportunities following the revolutionary war. Did the upper class women, now better educated, argue for rights of poorer women too, or did they see them as inferior?}{\begin{itemize} \item Following the American revolution, many women gained independence. Educational establishments either became coeducational or new ones for females only were built. Many of these new opportunities were kick-started by, or themselves spurred writers on equality, such as Abigail Adams, Mary Wollstonecraft, and Judith Sargent Murray. \item The discussions of female rights led to the development of the idea of \textbf{Republican Motherhood}. This idea widened female influence in the domestic sphere, education, and even politics. Republican Motherhood was a middle-way approach between full-on feminism, as was advocated by Mary Wollstonecraft and Judith Sargent Murray, and the previous suppression of female rights. \item Some female writers, such as Priscilla Mason, who graduated from Benjamin Rush's Young Ladies' Academy, argued that men suppressed them. These newfound rights weren't widespread, though, as they applied only to the higher-class women.    \end{itemize}}%
+
+\topic{Were the pitfalls of \textit{The Articles of Confederation} not evident to the founding fathers? If so, why did they proceed with it? Was it because of the pressure of the war?}{\begin{itemize} \item Post-war America was more of a struggle than a union of colonies. War debts plagued them, rebellions occurred often in different parts of the union. The states held nearly all of the power $-$ all states had to agree on a tax, and nine had to agree to pass a law. \item In September 1786, delegates from five states met in Maryland to discuss what to do with the ongoing political turmoil. This delegation was known as the Annapolis Convention. The convention saw less business and more discussion of the country's problems. The delegates agreed to meet in 1787, with delegates from all states.  \end{itemize}}%
+
+\topic{How many days did it take until the Constitutional Convention was concluded? How many hours per day were put into working on the constitution?}{\begin{itemize} \item In spring of 1787, 55 men met in the Independence Hall in Philadelphia to ``revise'' the Articles of Confederation. In reality, many delegates knew in advance that they wanted radical changes, and this would actually become a complete restructuring of the American political system. \item On the first day of the convention, Governor Edmund Randolph of Virginia proposed the \textbf{Virginia Plan}, a plan which supported \textbf{Proportional Representation}, or an amount of representatives from each state based on that state's population. The following day, Pennsylvania's Governor Morris added on to this plan, stating that it should involve Montesquieu's notion of \textbf{Separation of Powers}, what we know today as three branches of government. \item New Jersey's William Paterson argued for the \textbf{New Jersey Plan}, which sought representation of an equal number of delegates from each state. This plan was supported by many states with lesser populations, as well as some from New York and Massachusetts. Connecticut's Roger Sherman came up with a \textbf{Great Compromise} (sometimes called the \textbf{Connecticut Plan}). This would become a key in the modern constitution, although it wasn't easily adopted. This plan combined the two previous plans, by creating a House of Representatives, with proportional representation, and a Senate, with equal representation per state. \item Other topics, like the idea of the executive branch (president) were even more argued over. After a long period of debate, James Madison proposed an \textbf{Electoral College}. Each state was to select presidential electors proportional to their senators and representatives. If a majority of electors did not agree on one candidate, the responsibility fell to the House of Representatives. Each state delegation would have one vote in Congress. In addition to this, the convention decided on a four-year term for each president, with no limit on a number of terms. There were many arguments over how much power to give the president, as the people remembered back to George III. In the end, a strong executive was formed. \item The delegates did not do much about the judicial branch, though. They created a Supreme Court and lower courts, but the rest was for future generations to decide. After John Marshall became chief justice in 1800, the Supreme Court became the arbiter of constitutionality laws.  \end{itemize}}%
+
+\topic{At what point did the northern states realize they made a mistake by allowing slavery to continue in the southern states? What did they do to combat this portion of the United States Constitution?}{\begin{itemize} \item One issue that, initially was regarded as unimportant was slavery. With time, the northern states would realize the mistake they made. \item One well-known clause about slavery was that of the three-fifths compromise, which permitted slaves to be counted in the population of a state, as three-fifths of a person. This appeased both sides, those who did not want slave representation, and those who did, although it did appeal more to those who did want slave representation. \item Another clause which effectively worsened the conditions for slaves stated that, if a slave had escaped to a non-slave state, that state had to return him to his owner. This diminished the attempts of slaves to escape to a different state. \item Still, though, there were some provisions that were beneficial to slaves. For example, Congress banned the importation of any new slaves, although it wouldn't be until much later until congress prohibited internal trade.  \end{itemize}}%
+
+\topic{Prior to any attempts at convincing the citizen and any lobbying, what was the general sentiment towards this new proposal? Was it neutral because most people just didn't know about it?}{\begin{itemize} \item By fall of 1787, it was still quite unclear as to whether the new system would be adopted or not. To convince people, three delegates who usually did not get along decided to write articles which promoted the new system. These three were: Alexander Hamilton, John Jay, and James Madison. Together, they wrote 85 newspaper articles to support the constitution, titled, \textit{The Federalist Papers}. \item Those who supported the constitution were known as \textbf{Federalists}. They were at an advantage, since they had a definitive document, stating their intents and purposes. This new constitution detailed many fears, such as another Shay's rebellion, or building a national army. The \textbf{Anti-Federalists} were those who opposed the new constitution. They worried that the new government would have too much power, and would trample on the rights of the citizens. On top of this, they wanted a Bill of Rights.  \end{itemize}}%
+
+\topic{How would news of the ratification in a state be spread? Furthermore, how were more copies of the Constitution printed (assuming it was handwritten)?}{\begin{center} \begin{tabular}{l|c} State & Ratified? \\ \hline Delaware & Yes \\ \rowcolor{red!15} Pennsylvania & Yes \\ New Jersey & Yes \\ \rowcolor{red!15} Georgia & Yes \\ Connecticut & Yes \\ \rowcolor{red!15} Massachusetts & Yes\footnote{A condition of their approval was for the government to add amendments which guaranteed the right of the people and states} \\ New Hampshire & No\footnote{Technically, they gave no answer, as their ratifying convention adjourned without making a decision} \\ \rowcolor{red!15} Rhode Island & No\footnote{Rhode Island refused to even call a convention, instead, they had town meetings to vote} \\ Maryland & Yes\footnote{Maryland, like Massachusetts, wanted extra amendments to limit federal power} \\ \rowcolor{red!15} South Carolina & Yes\footnote{As long as they were not forced to relinquish slaves} \\ Virginia & Yes\footnote{Also wanted a Bill of Rights} \\ \rowcolor{red!15} New Hampshire & Yes\footnote{New Hampshire later reconvened, and voted yes} \\ New York & Yes \\ \rowcolor{red!15} North Carolina & $-$\footnote{Voted after the government was already functioning} \\ \end{tabular} \end{center}}%
+
+\summary{Overall, the years following the revolutionary war would be filled with turmoil and political argumentation. The revolution not only brought independence to the nation and states as a whole, but it also added to the independence of its citizens. Each group gained some rights in at least one region. Women gained opportunities to education and some in politics. Many slaves, at least in the north, gained their freedom and got real, paying jobs. However, there was always a looming threat from the west, as natives resisted the spread of the white settlers past the Appalachian mountains. As such, it meant that it was time to revise the Articles of Confederation, or, as it would really turn out, completely replace them. The Constitutional Convention met in order to decide on amendments to the Articles of Confederation. Months passed, many plans were presented, ideas circulated the Independence Hall in Philadelphia; however, this was kept a secret from the outside world. The 55 delegates, who would end up writing the contemporary United States constitution were sworn into secrecy. It was finally time for the states to vote on this new, radical form of government, based on centuries of political philosophy. Five states ratified fairly quickly, while others debated. Many would require a formal Bill of Rights (which would become the modern-day first ten amendments). Although there was general fear that the new federal government could exert its powers over all of the states, the states took a chance, and, in the end, all would vote to ratify this constitution $-$ the same constitution we know today.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
