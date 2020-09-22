@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Differential Equations (MATH-294)
+% Professor: M. Shah
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Modeling with Systems of First-Order DEs}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Meetal Shah}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Say we are given two populations which interact, $x(t)$ and $y(t)$. The two differential equations \eqref{1} can be used to model population growth. A \textbf{linear system} would be of form \eqref{2}, where $c_i$ could depend on $t$. Any model of another form is said to be nonlinear.
+
+    \begin{equation}
+      \begin{split}
+        \frac{dx}{dt} & \frac{dy}{dt}
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        g_1(t,x,y) & = c_1x+c_2y+f_1(t) \\
+        g_2(t,x,y) & = c_3x+c_4y+f_2(t)
+      \end{split}
+      \label{2}
+    \end{equation}
+
+
+  \item Given different elements with radioactive decay, where $y$ is gaining atoms from decay of $x$ and itself decaying, it depends on $x$ and $y$ the differential equations \eqref{3}
+
+    \begin{equation}
+      \begin{split}
+        \frac{dx}{dt} & = -\lambda_1x \\
+        \frac{dy}{dt} & = \lambda_1x-\lambda_2y \\
+        \frac{dz}{dt} & = \lambda_2y 
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item Say $x(t)$ and $y(t)$ are fox and rabbit populations, respectively. The model for the fox population, without rabbits, may be found using equation 4 \eqref{4}. If there are rabbits in the system, there could be a better model, equation 5 \eqref{5}.
+
+    \begin{equation}
+      \begin{split}
+        \frac{dx}{dt} & = -ax \\
+      \end{split}
+      \label{4}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \frac{dx}{dt} & = -ax+bxy \\
+      \end{split}
+      \label{5}
+    \end{equation}
+
+
+
+\end{itemize}
+
+\end{document}
+
