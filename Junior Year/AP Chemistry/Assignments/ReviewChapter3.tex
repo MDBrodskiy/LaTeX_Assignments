@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 3 Review Sheet}
+\date{September 21, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Answer the following for $25[\si{\gram}]$ of sulfuric acid (\ce{H2SO4}):
+
+    \begin{enumerate}
+
+      \item The number of grams of oxygen \eqref{1}
+
+        \begin{equation}
+          \begin{split}
+        \frac{64}{98} & = .653\\
+        .653\cdot 25[\si{\gram}] & = 16.325[\si{\gram}_{\ce{O}}]
+      \end{split}
+        \label{1}
+      \end{equation}
+
+    \item The number of molecules of sulfuric acid \eqref{2}
+
+      \begin{equation}
+        \begin{split}
+        \frac{25}{98} & = .255[\si{\mole}_{\ce{H2SO4}}] \\
+        \ce{H2SO4}_{molecules} & = .255\cdot6.022\cdot10^{23} \\
+        & = 1.54\cdot10^{23}[\ce{H2SO4}]
+      \end{split}
+        \label{2}
+      \end{equation}
+
+    \item  The number of atoms of hydrogen \eqref{3} 
+
+      \begin{equation}
+        \begin{split}
+          \text{2 \ce{H} atoms in \ce{H2SO4}} \\
+          \ce{H}_{atoms} & = 2\cdot1.54\cdot10^{23} \\
+          & = 3.08\cdot10^{23}[\ce{H}_{atoms}]
+      \end{split}
+        \label{3}
+      \end{equation}
+
+    \end{enumerate}
+
+  \item Calculate the mass percent of hydrogen in \ce{(NH4)2SO4} \eqref{4}
+
+    \begin{equation}
+      \begin{split}
+      \frac{8}{132} \cdot 100\% & = 6\%
+    \end{split}
+      \label{4}
+    \end{equation}
+
+  \item A sample of a compound that contains \ce{Cl} and \ce{O} reacts with excess hydrogen to give $0.233[\si{\gram}]$ of \ce{HCl} and $0.403[\si{\gram}]$ of water. Determine the empirical formula \eqref{5}
+
+    \begin{equation}
+      \begin{split}
+        \si{\mole}_{\ce{Cl}} & = \frac{.233}{36} \\
+        & = .0064[\si{\mole}_{\ce{Cl}}] \\
+        \si{\mole}_{\ce{O}} & = \frac{.403}{18} \\
+      & = .022[\si{\mole}_{\ce{O}}] \\
+      \ce{Cl}_{\frac{.022}{.0064}}\ce{O}_{\frac{.0064}{.0064}} & = \ce{Cl2O7}
+      \end{split}
+      \label{5}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
