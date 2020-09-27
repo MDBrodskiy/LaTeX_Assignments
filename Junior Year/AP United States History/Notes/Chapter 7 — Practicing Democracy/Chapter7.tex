@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 7 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Did the Bill of Rights appease the colonies which requested it? If not, which were satisfied, and which were not? Why?}{\begin{itemize} \item Once elected unanimously, Washington, with his vice president John Adams, set out to create a precedent for the government offices which they held. On April 30, 1789, Washington and Adams were inaugurated. Regarding what Washington was to be called, he did not want to seem almighty, as the British throne (\textit{your highness}) had, and, as such, he believed Mr. President was formal, while still equal with others. \item Washington helped design the white house, although he was the only president who would not live there. Per request of James Madison, he mentioned a \textbf{Bill of Rights} in his inaugural speech. On May 4, 1789, James Madison began to work on amendments. He saw these amendments as direct, in-text changes and added clauses in the Constitution. These would not be passed, however, as many federalists believed it was too early to modify the Constitution. AS such, Madison, keen on keeping his promise, decided to pass a \textbf{Bill of Rights}. Initially, the house passed 17 amendments, however, the Senate would change them into 12 amendments, 10 of which would be ratified by the states. These ten amendments would come to be known as the \textbf{American Bill of Rights}.  \end{itemize}\centering  \begin{tabular}{p{.25\textwidth}|p{.60\textwidth}} \rowcolor{BurntOrange} \textcolor{White}{Amendment} & \textcolor{White}{Right} \\ \hline \nth{1} & Freedom of speech, press, assembly, religion, and petition \\ \rowcolor{red!15} \nth{2} & Bear arms \\ \nth{3} & Soldiers can not be quartered in civilian houses \\ \rowcolor{red!15} \nth{4} & Private property and unreasonable seizures \\ \nth{5} & The right to avoid self-incrimination \\ \rowcolor{red!15} \nth{6} & Speedy and public trial \\ \nth{7} & Civil cases \\ \rowcolor{red!15} \nth{8} & No excessive bail \\ \nth{9} & Can not remove rights from people \\ \rowcolor{red!15} \nth{10} & Rights not given to federal government belong to the states \\  \end{tabular}  }%
+
+\topic{Why did Congress, state governments, and private banks print the new dollar on paper, if it was clear that it could easily be counterfeited.}{\begin{itemize} \item Many problems, mostly economic, plagued the country. The newfound country had adopted the dollar as its new currency, however, an official form had not been created. Various entities, such as state governments and banks printed various versions of the dollar, meaning that it was easily counterfeited. This, coupled with the mass inflation caused by the new currency led to economic failure. \item Although he did not fully trust him, Washington appointed Alexander Hamilton as the Secretary of the Treasury. Hamilton got to work right away. On his first day, he procured a \$50,000 loan from the Bank of New York. In addition to this, he created a customs service in order to collect a 5\% import tax. On top of this, he created an early version of the Coast Guard to combat smuggling.  \end{itemize}}%
+
+\topic{If Madison and Jefferson truly were the strongest opposition to Hamilton's plan, why did they compromise? It seems strange that they would actually let the proposal pass.}{\begin{itemize} \item Hamilton would establish an economic base for the country through his \textit{Report Relative to a Provision for the Support of Public Credit}. He believed that the credit of the country could be restored only if the federal government took up the debts accrued by the revolution, whether it was federal or state. To his surprise, Madison and Jefferson were his biggest opposition. \item Hamilton was smart, though, as he created a plan. He invited Jefferson and Madison to his house for a dinner, during which he made a compromise. He said that the capital of the country would be shifted towards the south, which would facilitate travel for both Jefferson and Madison, and raised the value of the property near the Potomac river held by Madison. The three men would agree to the compromise, which meant Hamilton had succeeded. One problem, though, was that the approval of this plan would create a bold split between the country: the Federalist and Anti-federalist parties.  \end{itemize}}%
+
+\topic{If there was such a divide over Hamilton's national bank bill, how was it passed through both houses of Congress? Was this because there was a northern majority in both houses?}{\begin{itemize} \item Hamilton believed there was a necessity for a semi-private institution, such as a bank, to be created. Although Hamilton saw this as a straightforward solution to their current economic crisis, many Anti-federalists did not agree. In December, 1790, Hamilton put forward his bill to create the \textbf{Bank of the United States}. Even though the bill received much criticism from the population, it sailed through the houses of Congress. Now came the question of whether Washington was to sign it or not. \item Washington was unsure whether this bill was truly something the country needed. According to Madison, the bank was an unconstitutional overreach of power; he argued that this bill stepped over the tenth amendment, as a bank was not a right given to the federal government. On the other hand, Hamilton argued that it was constitutional on the basis that Congress had the authority to do anything ``necessary and proper.'' For Hamilton, it was clear that the national bank would create a solidified economy, now with official paper currency. In February, 1791, Washington signed the bill. \item In addition to a bank, Hamilton argued that there was a need for a government mint. Most agreed that there was a need for official coins, instead of using those based on the British pound, and, as such, this bill was passed with ease.  \end{itemize}}%
+
+\topic{If Hamilton was backed by the ideas of Adam Smith, what were the ideas of Jefferson based on? Was it the mercantilist system?}{\begin{itemize} \item Hamilton's last major report to Congress was unlike those which preceded it. In this report, he laid out an economic blueprint for the future, unlike those reports he gave before, which requested immediate legislative action. Jefferson saw country as a simple agrarian nation, and, although Hamilton agreed that farming was the backbone of the nation, he believed commerce in finished goods was necessary too. In addition to this, Hamilton wanted to build roads, raise tariffs to stimulate intranational development, and create a patent system for inventions. Jefferson still saw this as government overreach. \item Hamilton's economic ideas somewhat drew from Adam Smith's \textit{Wealth of Nations}, the founding novel for the idea of capitalism. In this book, Smith argues that government should withdraw from private economic affairs. He laid out a structure in which individual trade would create competition and flow of goods, which would build an economic system itself. This was a direct attack on the mercantilist system.  \end{itemize}}%
+
+\topic{Did the treaty that gave the United States the northwest territories concern all native tribes, by which I mean, did all of the tribes agree to this, or were only a select few involved?}{\begin{itemize} \item Washington, with his great experience in public office, knew the fragile state the nation was in. He knew he needed support for his administration $-$ and fast. As such, he decided to tour the country. He gave speeches throughout many of the United States. This did a great deal to gain him support, as the people could directly discuss with the head of the government, which seemed distant. \item A constant force was exerted on the new nation from their western neighbors. The government was too economically unstable to truly raise a strong army to defend their western settlers from the natives. Most early attempts to subdue the tribes were met with deadly force and resulted in defeat, as had those led by General Harmar and General St. Clair. \item The United States weren't very successful until a force led by General Wayne built Fort Recovery in the northwest territories. At the Battle of Fallen Timbers, near present-day Toledo, Ohio, Wayne defeated a force of Indian tribes, which, a year later, would result in the \textbf{Treaty of Greenville}. This treaty essentially ceded the northwestern territories (such as Ohio and Indiana) to the United States, while creating far off reservations for the Indian tribes. As such, Britain lost their biggest ally, and the United States would claim Ohio as a state in 1803, Indiana in 1816, Illinois in 1818, Michigan in 1837, and Wisconsin in 1848.  \end{itemize}}%
+
+\topic{Was this rebellion prominent on a national scale, or did it only take place in western Pennsylvania?}{\begin{itemize} \item Hamilton's economic plan of 1782 did solve a good number of problems; however, it did create new ones. The debt which was taken on by the federal government was of such magnitude that the five percent tax on imports was not enough. Looking for solutions, Hamilton decided that whiskey was a good tax, and, surprisingly, Madison agreed, as he believed it could promote public health. As such, a new tax on whiskey was passed. \item Many farmers depended on whiskey for income, as they grew corn and then distilled it to produce and then sell the whiskey for about \$16 a keg. This ``farmer whiskey'' was relatively cheap and easy to produced, and provided a much greater income than if the farmers simply sold corn. This tax, however, disrupted this flow, as it made whiskey, at least to the smaller producers, much less profitable. Resolutions by the state legislatures of Pennsylvania, North Carolina, Georgia, Maryland, and Virginia, which opposed the tax, were passed. After federal reluctance to repeal the tax, the western farmers decided to take arms. \item Washington knew what he had to do. He formed a large militia made up of 12,000 men and marched on the rebels. The rebels were frightened at the pure size of this federal force, and, as such, they disbanded. This event would become known as the \textbf{Whiskey Rebellion}.   \end{itemize}}%
+
+\topic{On what basis did the Federalist and Anti-federalist parties form (as parties usually form based on some kind of political text)?}{\centering \begin{tabular}{|p{.25\textwidth}|p{.3\textwidth}|p{.3\textwidth}|} \hline \rowcolor{BurntOrange} \textcolor{White}{\textbf{Topic}} & \textcolor{White}{\textbf{Federalists}} & \textcolor{White}{\textbf{Anti-federalists}} \\ \hline Leaders & Alexander Hamilton and John Adams & Thomas Jefferson and James Madison \\ \hline \rowcolor{red!15} Foreign Policy & Modeled US after Britain & Pro-French revolution \\ \hline Federal Government & Strongly centralized with strong army & Weak federal government, strong states \\ \hline \rowcolor{red!15} Economic Policy & Commercial, capitalist nation & Agrarian nation \\ \hline Regional Base & New England & Southern States \\ \hline \rowcolor{red!15} Slavery & Mildly against slavery & State's rights to support slavery \\ \hline Alien and Sedition Acts & Sponsor and enforce & Nullified these acts \\ \hline  \end{tabular}}%
+
+\topic{The text says that, although the United States took on a policy of neutrality, many of the Americans supported the French Revolution. In what ways did they support it? Did they send funds? Or does the book mean that, as an idea, they supported it?}{\begin{itemize} \item For the time period, news of the French Revolution spread quickly to the United States. Immediately, Washington knew this meant chaos for American foreign policy. As such, he decided that he needed to run for another term, leading him to reelection, again unanimous. As Washington had predicted, the forming French nation wanted diplomatic relations with the United States, which they attempted by sending Diplomat Citizen Gen\^et. In reality, Gen\^et was extremely undiplomatic, and he began to rally for support in America as soon as he got there. He was attempting to spread the war to America, something Washington was determined to stop. This incident became known as the \textbf{Citizen Gen\^et Affair}. \item If the economic disputes between Hamilton and Jefferson had begun a bipartisan split, the French Revolution magnified this split. Washington wanted to quell the revolution, which would ultimately stop political factioning. Washington sent John Jay, then Chief Justice, to Britain to negotiate a treaty. \textbf{Jay's Treaty} accomplished very little, as it was only a promise made by Britain to withdraw from western forts again. Another treaty, however, would become much more successful. \textbf{Pinckney's Treaty}, which was negotiated with Spain, gave more territory near Florida to the United States, as well as opened up New Orleans, and, therefore, the whole Mississippi river, to American trade.   \end{itemize}}%
+
+\topic{The book doesn't really mention Jefferson's actions while vice president with Adams. Was he generally supportive or against Adams's actions?}{\begin{itemize} \item The election of 1796 saw the election of John Adams as president, and Thomas Jefferson as vice president, even though these two were great enemies. In his inaugural address, Adams stated that it was his intention to promote peace and with all nations. Although this somewhat helped his relations with the Anti-federalists, the split between the factions was too great for a speech to fix. The French Directory rejected Adams's choice for a diplomat (Charles Pinckney), which caused Adams to reconsider and choose Elbridge Gerry and John Marshall to aid Pinckney in his endeavors. The French, however, led an undeclared war, where they captured US ships. \item French minister Talleyrand wanted to discuss peace only if the three negotiators, to whom Adams referred to as ``X, Y and Z,'' paid a \$250,000 bribe and gave France a \$10 to \$12 million loan. The negotiators saw this bribe as too high. This became known as the \textbf{XYZ Affair}, and it caused support for Adams to soar. \item In 1798 and 1799, America engaged in a \textbf{Quasi-War} with France. These were a series of small engagements where American ships would fire upon French ships on the Atlantic Coast or in the Caribbean. In addition to this, America supported the revolution in Haiti, a French colony. \item Hysteria caused the passing of the \textbf{Alien and Sedition Acts}. Even though Adams did not directly want to pass them, these acts hurt his reputation greatly. The Alien acts essentially extended the amount of time it took to become a citizen, which was meant to prevent French newcomers from voting. The Sedition Act essentially prevented any libel of the president or congress. The \textbf{Kentucky and Virginia Resolutions} were passed, which essentially stated that some of the states would not accept the Alien and Sedition acts, as they saw them as unconstitutional.  \end{itemize}}%
+
+\topic{Did Burr and Jefferson even know each other well? The book makes it seem as though the two were actually more like enemies, which brings up the question of how they could govern together?}{\begin{itemize} \item The election of 1800 would be quite different from any in history. News came that Washington had died at Mount Vernon, which, although all people mourned the loss, would make it evident that this was to be a difficult election. It was obvious that Jefferson and Adams would be taking part in this election, however, the two unofficial factions would be searching for others. The federalists tried to push Pinckney through, while the anti-federalists attempted to move Aaron Burr. \item On top of general feuding between the factions, slavery would become an important issue in this election. This was because of a foiled uprising in Prosser Plantation, near Richmond Virginia. Over 1,000 slaves were ready to fight, however, poor weather would cause the plan to be discovered, and militias to be alerted. As such, even though this rebellion was put down, it sparked questions about slavery in the upcoming election. \item Overall, the election would come extremely close. The electoral votes would end up as 73 for Jefferson, 73 for Burr, 65 for Adams, and 64 for Pinckney (and 1 for John Jay). These votes meant a new problem, though: who was to be president, Jefferson or Burr? As such, Congress had to settle this dispute. Ultimately, it would be decided that Jefferson was to become president.   \end{itemize}}%
+
+\summary{As the first president of the upcoming nation, George Washington was out to set a precedent. Washington began to appoint those whom he saw fit into positions of power. Then, he convinced Congress that an import tax was necessary to both, keep businesses in America, and pay of revolutionary war debts, and especially to fund a strong military. Washington had appointed Hamilton to the Secretary of the Treasury position. Hamilton, although with much opposition from the Anti-federalists, would pass bills creating a tax on whiskey (which would lead to the Whiskey Rebellion), establishing a national bank, and creating officially minted coins for the nation's new currency, the dollar. Furthermore, James Madison sought to keep his promises by passing amendments to guarantee citizens' rights. Although 17 were proposed, and 12 would make it to the Senate, only 10 would be officially approved. These 10 amendments would come to be known as the American Bill of Rights. This would guarantee the freedom of speech, press, religion, and assembly, as well as the right to bear arms, and much, much more. This eased intranational tensions. As the economy began to grow, Washington was finally able to form an army to stand up and defeat the natives in the northwest territories. This would ultimately grant the modern-day regions of Ohio, Illinois, Michigan, and many more. The French Revolution would create a whole new set of problems, though. The foreign policy (much like in wars to come) of the United States was neutrality. Foreign pressures would cause the United States, under president Adams, to negotiate peace with France. Initially, this would not go well, and an unofficial war in the Atlantic and Caribbean would take place. Under Napoleon, though, France would make peace with America. Finally, the election of 1800 came along. This was quite chaotic, with the first large campaigns taking place. Ultimately, following lots of slander and touring, Jefferson tied with Burr, meaning there was an issue of president vs vice president, which was to be decided by Congress. Jefferson was chosen as the president.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
