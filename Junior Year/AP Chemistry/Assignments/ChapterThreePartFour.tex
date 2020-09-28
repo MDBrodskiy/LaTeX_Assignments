@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 3 $-$ Problem 90}
+\date{September 28, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{89}
+
+  \item A $5.025[\si{\gram}]$ sample of calcium is burned in air to produce a mixture of two ionic compounds, calcium oxide and calcium nitride. Water is added to this mixture. It reacts with calcium oxide to form $4.832[\si{\gram}]$ of calcium hydroxide. How many grams of calcium oxide are formed? \eqref{2} How many grams of calcium nitride? \eqref{1}
+
+    \begin{equation}
+      \begin{split}
+        \ce{8Ca + O2 + 2N2 -> 2CaO + 2Ca3N2}\\
+        \si{\gram}_{\ce{Ca}} & = .0653\cdot 40 \\
+        5.025 - 2.612 & = 2.413[\si{\gram}_{\ce{Ca}}] \\
+        \si{\mole}_{\ce{Ca}} & = \frac{2.413}{40} \\
+        & = .0603[\si{\mole}_{\ce{Ca}}] \\
+        m_{\ce{Ca3N2}} & = \frac{.0603}{3} \cdot 148 \\
+        & = 2.97[\si{\gram}_{\ce{Ca3N2}}] \\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \ce{CaO + H2O -> Ca(OH)2} \\
+        \si{\mole}_{\ce{Ca(OH)2}} & = \frac{4.832}{74} \\
+        & = .0653[\si{\mole}_{\ce{Ca(OH)2}}] \rightarrow .0653[\si{\mole}_{\ce{CaO}}] \\
+        m_{\ce{CaO}} & = .0653\cdot56 \\
+        & = 3.66[\si{\gram}_{\ce{CaO}}] \\
+      \end{split}
+      \label{2}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
