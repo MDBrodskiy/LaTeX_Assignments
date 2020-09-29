@@ -32,6 +32,7 @@
     \vskip0.5em}%
 
 }
+\DeclareSIUnit\Molar{\textsc{m}}
 \usepackage{hyperref}
 \hypersetup{
 colorlinks=true,
@@ -44,8 +45,8 @@ citecolor=blue,
 \urlstyle{same}
 
 
-\title{Chapter 4 $-$ Reactions in Solutions}
-\date{\today}
+\title{Chapter 4 $-$ Problems 50, 56}
+\date{September 29, 2020}
 \author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
 
 % Mathematical Operations:
@@ -58,40 +59,27 @@ citecolor=blue,
 
 \maketitle
 
-\begin{itemize}
+\begin{enumerate}
 
-  \item Solute gets dissolved, Solvent does the dissolving
-
-  \item Molarity is \eqref{1}
+    \setcounter{enumi}{49}
+  \item The Vanadium (\ce{V}) ion in a $.5000[\si{\gram}]$ sample of ore is converted to \ce{VO2+} ions. The amount of \ce{VO2+} in solution can be determined by reaction with an acid solution of \ce{KMnO4}. The balanced equation for the reaction is \eqref{1}. What is the mass percent of vanadium in the ore if $26.45[\si{\milli\liter}]$ of $.02250[\si{\Molar}]$ permanganate solution is required to complete the reaction? \eqref{2}
 
     \begin{equation}
-      \begin{split}
-        M=\frac{\si{\mole}}{\si{\liter}}\\
-      \end{split}
+      \ce{5VO^{2+} + MnO4^- + 11H2O -> Mn^{2+} + 5V(OH4)^+ + 2H^+}
       \label{1}
     \end{equation}
 
-  \item Electrolytes are ionic compounds that breakup in a solution (Ex. \eqref{2})
-
     \begin{equation}
-      \ce{NaCl -> Na+ + Cl-}
+      \begin{split}
+        26.45[\si{\milli\liter}\rightarrow .02645[\si{\liter}] \\
+          .0225\cdot.02645=.000595[\si{\mole}_{\ce{MnO4^-}}]\rightarrow .002975[\si{\mole}_{\ce{VO^{2+}}}] \\
+          .002975\cdot51=.1517[\si{\gram}_{\ce{V}}]\\
+          \%_V=\frac{.1517}{.5}\cdot100\%=30.3\%\\
+      \end{split}
       \label{2}
     \end{equation}
 
-    \begin{enumerate}
-
-      \item Strong Electrolyte vs. Weak Electrolyte $-$ The more are broken up, the stronger the electrolyte
-
-      \item The Dilution Formula \eqref{3}
-
-        \begin{equation}
-          M_1V_1=M_2V_2
-          \label{3}
-        \end{equation}
-
-    \end{enumerate}
-
-\end{itemize}
+\end{enumerate}
 
 \end{document}
 
