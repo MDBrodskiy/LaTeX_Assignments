@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 4 Problem Set 1}
+\date{September 29, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Write the molecular, complete ionic, and net equations for the following:
+
+    \begin{enumerate}
+
+      \item \ce{BaCl2} and \ce{Na2SO4} \eqref{1}
+
+        \begin{equation}
+          \begin{split}
+            \ce{BaCl2(aq) + Na2SO4(aq) -> } & \ce{2NaCl(aq) + BaSO4(s)}\\
+            \hline
+            & \\
+            \ce{Ba^2+(aq) + 2Cl-(aq) + } & \ce{2Na+(aq) + SO4^2-(aq) ->} \\
+            & \ce{2Cl-(aq) + 2Na+(aq) + BaSO4(s)} \\
+            \hline
+            & \\
+            \ce{Ba^2+(aq) + SO4^2-(aq) -> } & \ce{BaSO4(s)} \\
+            \hline
+            & \\
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item \ce{KOH} and \ce{Fe(NO3)3} \eqref{2}
+
+        \begin{equation}
+          \begin{split}
+            \ce{3KOH(aq) + Fe(NO3)3(aq) -> } & \ce{3KNO3(aq) + Fe(OH)3(s)}\\
+            \hline
+            & \\
+            \ce{3K+(aq) + 3OH-(aq) + } & \ce{3NO3-(aq) + Fe^3+(aq) ->}\\
+            & \ce{3K+(aq) + 3NO3-(aq) + Fe(OH)3(s)}\\
+            \hline
+            & \\
+            \ce{3OH-(aq) + Fe^3+(aq) -> } & \ce{Fe(OH)3(s)}\\
+            \hline
+            & \\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \ce{Ca(C2H3O2)2} and \ce{K2SO4} \eqref{3}
+
+        \begin{equation}
+          \begin{split}
+            \ce{Ca(C2H3O2)2(aq) + K2SO4(aq)} & \ce{ -> 2KC2H3O2(aq) + CaSO4(s)}\\
+            \hline
+            & \\
+            \ce{Ca^2+(aq) + 2C2H3O2-(aq)} & \ce{ + 2K+(aq) + SO4^2-(aq) ->} \\
+            & \ce{2C2H3O2-(aq) + 2K+(aq) + CaSO4(s)}\\
+            \hline
+            & \\
+            \ce{Ca^2+(aq) + SO4^2-(aq) -> } & \ce{CaSO4(s)}\\
+            \hline
+            & \\
+          \end{split}
+          \label{3}
+        \end{equation}
+
+
+      \item \ce{FeCl3} and \ce{NaOH} \eqref{4}
+
+        \begin{equation}
+          \begin{split}
+            \ce{3NaOH(aq) + FeCl3(aq) ->} & \ce{Fe(OH)3(s) + 3NaCl(aq)} \\
+            \hline
+            & \\
+            \ce{Fe^3+(aq) + 3Cl-(aq) + } & \ce{3Na+(aq) + 3OH-(aq) -> }\\
+            & \ce{3Cl-(aq) + 3Na+(aq) + Fe(OH)3(s)}\\
+            \hline
+            & \\
+            \ce{Fe^3+(aq) + 3OH-(aq) ->} & \ce{Fe(OH)3(s)}\\
+            \hline
+            & \\
+          \end{split}
+          \label{4}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item What volume of $.25[\si{\Molar}]$ \ce{AgNO3} is required to react with:
+
+    \begin{enumerate}
+
+      \item $82[\si{\milli\liter}]$ of $.08[\si{\Molar}]$ \ce{Na2S} \eqref{5}
+
+        \begin{equation}
+          \begin{split}
+            82[\si{\milli\liter}] & = .082[\si{\liter}]\\
+            \ce{2AgNO3(aq) + Na2S(aq)} & \ce{ -> AgS(s) + 2NaNO3(aq)}\\
+            .082\cdot.08 = .00656[\si{\mole}_{\ce{Na2S}}] & \rightarrow .01312[\si{\mole}_{\ce{AgNO3}}]\\
+            \frac{.01312}{.25} & = .052[\si{\liter}_{\ce{AgNO3}}]\\
+          \end{split}
+          \label{5}
+        \end{equation}
+        
+      \item $15[\si{\milli\liter}]$ of $.44[\si{\Molar}]$ \ce{K2CrO4} \eqref{6}
+
+        \begin{equation}
+          \begin{split}
+            15[\si{\milli\liter}] & = .015[\si{\liter}]\\
+            \ce{2AgNO3(aq) + K2CrO4(aq)} & \ce{ -> Ag2CrO4(s) + 2KNO3(aq)}\\
+            .015\cdot.44 = .0066[\si{\mole}_{\ce{K2CrO4}}] & \rightarrow .0132[\si{\mole}_{\ce{AgNO3}}]\\
+            \frac{.0132}{.25} & = .053[\si{\liter}_{\ce{AgNO3}}]\\
+          \end{split}
+          \label{6}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item Write a net equation for the following:
+
+    \begin{enumerate}
+
+      \item \ce{HNO3} and \ce{Ba(OH)2} \eqref{7}
+
+        \begin{equation}
+          \ce{H+(aq) + OH-(aq)} & \ce{ -> H2O(l)}
+          \label{7}
+        \end{equation}
+
+      \item \ce{LiOH} and \ce{HB} \eqref{8}
+
+        \begin{equation}
+          \ce{HB(aq) + OH-(aq)} & \ce{ -> H2O(l) + B-(aq)}
+          \label{8}
+        \end{equation}
+
+      \item \ce{HClO4} and \ce{NH3} (weak base) \eqref{9}
+
+        \begin{equation}
+          \ce{H+(aq) + NH3(aq)} & \ce{ -> NH4+(aq)}
+          \label{9}
+        \end{equation}
+
+      \item \ce{CH3NH2} (weak base) and \ce{HBr} \eqref{10}
+
+        \begin{equation}
+          \ce{H+(aq) + CH3NH2(aq)} & \ce{ -> CH3NH3+(aq)}
+          \label{10}
+        \end{equation}
+
+      \item \ce{HF} and \ce{KOH} \eqref{11} 
+
+        \begin{equation}
+          \ce{HF(aq) + OH-(aq)} & \ce{ -> H2O(l) + F-(aq)}
+          \label{11}
+        \end{equation}
+
+      \item \ce{Mg(OH)2} and \ce{H2SO4} \eqref{12}
+
+        \begin{equation}
+          \ce{H+(aq) + OH-(aq)} & \ce{ -> H2O(l)}
+          \label{12}
+        \end{equation}
+
+      \item \ce{HClO4} and \ce{CsOH} \eqref{13}
+
+        \begin{equation}
+          \ce{H+(aq) + OH-(aq)} & \ce{ -> H2O(l)}
+          \label{13}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
