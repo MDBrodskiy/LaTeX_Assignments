@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 4 Problem Set 1}
+\date{September 29, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Assign oxidation numbers to each atom in the following:
+
+    \begin{enumerate}
+
+      \item \ce{Na2SO4} $\rightarrow \ce{Na}=1,\,\ce{O}=-2,\,S=6$
+
+      \item \ce{S2O7^2-} $\rightarrow \ce{S}=6,\,\ce{O}=-2$
+
+      \item \ce{BF3} $\rightarrow \ce{B}=3,\,\ce{F}=-1$
+
+      \item \ce{Zn(OH)4^2-} $\rightarrow \ce{H}=1,\,\ce{O}=-2,\,\ce{Zn}=2$
+
+    \end{enumerate}
+
+  \item Balance the following half reactions:
+
+    \begin{enumerate}
+
+      \item \ce{NO3- -> NO2-} $\rightarrow$ \ce{2H+ + 2e- + NO3- -> NO2- + H2O}
+
+      \item \ce{ClO- -> Cl-} $\rightarrow$ \ce{2H+ + 2e- + ClO- -> Cl- + H2O }
+
+      \item \ce{H2O2 -> H2O} $\rightarrow$ \ce{2H+ + 2e- + H2O2 -> 2H2O }
+
+      \item \ce{Cr(OH)3 -> CrO4^2-} $\rightarrow$ \ce{Cr(OH)3 + H2O -> 5H+ + CrO4^2- + 3e- }
+
+    \end{enumerate}
+
+  \item (a) Assign oxidation numbers to all atoms. (b) Determine how many electrons are lost and gained from reactants. (c) Determine which reactant is oxidized and which is reduced. (d) Determine the oxidizing agent and the reducing agent.
+
+    \begin{enumerate}
+
+      \item \ce{ClO3- + S^2- + H2O -> Cl- + S + OH-}
+
+        \begin{enumerate}
+
+          \item \ce{ClO3-} $\rightarrow \ce{Cl}=5,\,\ce{O}=-2$
+
+          \item \ce{S^2-} $\rightarrow \ce{S}=-2$
+
+          \item \ce{H2O} $\rightarrow \ce{H}=1,\,\ce{O}=-2$
+
+          \item \ce{Cl-} $\rightarrow \ce{Cl}=-1$
+
+          \item \ce{S} $\rightarrow \ce{S}=0$
+
+          \item \ce{OH-} $\rightarrow \ce{O}=-2,\,\ce{H}=1$
+
+          \item Sulfur loses two electrons, Chlorine gains six electrons
+
+          \item Sulfur is oxidized because it loses electrons and Chlorine is reduced because it gains electrons
+
+          \item Chlorine is the oxidizing agent and Sulfur is the Reducing agent
+
+        \end{enumerate}
+
+      \item \ce{PbS + 3O2 -> 2PbO + 2SO2}
+
+        \begin{enumerate}
+
+          \item \ce{PbS} $\rightarrow \ce{Pb}=2,\,\ce{S}=-2$
+
+          \item \ce{O2} $\rightarrow \ce{O2}=0$
+
+          \item \ce{PbO} $\rightarrow \ce{Pb}=2,\,\ce{O}=-2$
+
+          \item \ce{SO2} $\rightarrow \ce{S}=4,\,\ce{O}=-2$
+
+          \item Sulfur loses six electrons, Oxygen gains two electrons
+
+          \item Sulfur is oxidized because it lost electrons. Oxygen is reduced because it gains electrons
+          
+          \item Sulfur is the reducing agent and Oxygen is the oxidizing agent
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Balance the following redox reactions:
+
+    \begin{enumerate}
+
+      \item \ce{IO3- + Mn^2+ -> I- + MnO2} \eqref{1}
+
+        \begin{equation}
+          \begin{split}
+          \ce{6H+ + 6e- + IO3- ->} & \ce{I- + 3H2O}\\
+          \ce{2H2O + Mn^2+ ->} & \ce{MnO2 + 4H+ +2e-}\\
+          \ce{3H2O + 3Mn^2+ + IO3- ->} & \ce{3MnO2 + I- + 6H+}\\
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item \ce{HBrO3 + Bi -> HBrO2 + Bi2O3} \eqref{2}
+
+        \begin{equation}
+          \begin{split}
+          \ce{2e- + 2H+ + HBrO3 ->} & \ce{HBrO2 + H2O}\\
+          \ce{2Bi + 3H2O ->} & \ce{Bi2O3 + 6H+ + 6e-}\\
+          \ce{3HBrO3 + 2Bi ->} & \ce{3HBrO2 + Bi2O3}\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \ce{H2O2 + IO4- -> IO2- + O2} \eqref{3}
+
+        \begin{equation}
+          \begin{split}
+          \ce{H2O2 ->} & \ce{O2 + 2H+ + 2e-}\\
+          \ce{4e- + 4H+ + IO4- ->} & \ce{IO2- + 2H2O}\\
+          \ce{2H2O2 + IO4- ->} & \ce{2O2 + IO2- + 2H2O}\\
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
