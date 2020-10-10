@@ -1,0 +1,196 @@
+\documentclass{article}
+\usepackage[paperletter]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage[utf8]{inputenc}
+\usepackage{cancel}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+\usepackage{tikz}
+\usepackage{siunitx}
+\DeclareSIUnit\atm{atm}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+\urlstyle{same}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{multicol}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP Physics 2]{AP Physics 2}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+\usepackage[symbol]{footmisc}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%\usepackage{everysel}
+%\usepackage{ragged2e}
+%\renewcommand*\familydefault{\ttdefault}
+%\EverySelectfont{%
+%\fontdimen2\font=0.4em% interword space
+%\fontdimen3\font=0.2em% interword stretch
+%\fontdimen4\font=0.1em% interword shrink
+%\fontdimen7\font=0.1em% extra space
+%\hyphenchar\font=`\-% to allow hyphenation
+%}
+\title{An Approximate Graphical and Algebraic Analysis of the Volume of an Isolated, Spherical, Sodium Laureth Sulfate and Water Solution System Placed Within a Larger System with Increasing Pressure, both Filled with the Same Ideal, Diatomic Gas and Isolated from Outside Forces}
+\author{Michael \textsc{Brodskiy}}
+\date{October 13, 2020}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\begin{tabular}{l r}
+\underline{Date Performed}: & October 2020 \\\\ % Date the experiment was performed
+\underline{Partners}: & N/A\\
+\underline{Instructor}: & Mrs. Morse \\\\\\\\\\ % Instructor/supervisor
+\end{tabular}
+\end{center}
+\newpage
+
+\tableofcontents
+\listoftables
+\listoffigures
+\newpage
+
+\section{Gathered Data}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    Pressure [$\si{\atm}$] & Pressure [$\si{\pascal}$] & Diameter [$\si{\meter}$] & Volume [$\si{\meter\cubed}$] & Inverse Volume [$\si{\per\meter\cubed}$] \\
+    \hline
+    \rowcolor{Gray} .506 & 51270.45 & .0285 & 1.21$\cdot10^{-5}$ & 82504.87 \\
+    \hline
+    .411 & 41644.58 & .0305 & 1.49$\cdot10^{-5}$ & 67315.44 \\
+    \hline
+    \rowcolor{Gray} .305 & 30904.13 & .034 & 2.06$\cdot10^{-5}$ & 48593.42 \\
+    \hline
+    .205 & 20771.63 & .039 & 3.11$\cdot10^{-5}$ & 32197.37 \\
+    \hline
+    \rowcolor{Gray} .104 & 10537.8 & .05 & 6.54$\cdot10^{-5}$ & 15279.33\\
+    \hline
+    \rowcolor{Gray} .057 & 5775.53 & 0 & 0 & 0\\
+    \hline
+  \end{tabular}
+  \caption{Gathered Data}
+  \label{tab:1}
+\end{table}
+
+\section{Statement of Purpose}
+
+This laboratory experiment is intended to determine the relationship between pressure and volume in a controlled system by measuring and recording pressure and volume.
+
+\section{Materials Used}
+
+\begin{enumerate}
+
+  \item Sealed container
+
+  \item Bottle cap, dipped in soap
+
+  \item Phone, for pressure measuring purposes
+
+  \item Pressure pump
+
+\end{enumerate}
+
+\section{Procedure}
+
+\begin{enumerate}
+
+  \item Dip a bottle cap in soap
+
+  \item Place bottle cap in a sealed container
+
+  \item Change pressure (decrease in this case) in the sealed container
+
+  \item Record the corresponding diameter and pressure values
+
+  \item From the diameter, the volume needs to be determined using: $V=\frac{4}{3}\pi\left( \frac{d}{2} \right)^3$
+
+  \item Finally, graphs will be produced, linearized and curved, with the vertical axis being inverse volume and volume, respectively, and the horizontal axis being pressure because it was the independent variable
+
+    \begin{figure}[H]
+      \centering
+      \include{Figures/Diagram}
+      \caption{Set-up of the Laboratory Experiment, $V=\frac{4}{3}\pi\left( \frac{d}{2} \right)^3$}
+      \label{fig:1}
+    \end{figure}
+
+\end{enumerate}
+
+\section{Background Knowledge}
+
+\begin{equation}
+  PV=nRT
+  \label{1}
+\end{equation}
+
+\section{Graphical Analysis}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.75\textwidth]{Figures/Curved.png}
+  \caption{Curved Graph: $\frac{1}{V}=\frac{P}{nRT}$}
+  \label{fig:2}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.75\textwidth]{Figures/Linear.png}
+  \caption{Linear Graph (where $I_V=V^-1$): $I_V=\frac{P}{nRT}$}
+  \label{fig:3}
+\end{figure}
+
+\begin{enumerate}
+
+  \item The curved graph is of the form $y=\frac{A}{x}$
+
+  \item Because the graph represents an inverse correlation, the vertical column should be exponentiated to the power of negative one
+
+\end{enumerate}
+
+\section{Post-Lab Questions and Conclusion}
+
+\begin{enumerate}
+
+  \item According to the results of the experiment, there is an inverse relationship between $P$ and $V$ $\rightarrow$ $P\propto\frac{1}{V}$
+
+  \item The slope of the line given in graph \figref{fig:3} is 1.657[$\si{\per\joule}$]
+
+  \item The equation of the line is $I_V=\frac{P}{nRT}$, where $I_V$ represents the linearized function $\left( V^{-1} \right)^{-1}$. This means the slope may be represented as $\frac{1}{nRT}=1.657$
+
+  \item The graph has a non-zero intercept because the volume of the bubble becomes too great and it bursts at pressure $.057[\si{\atm}]$.
+
+  \item The vertical axis intercept shows us the theoretical volume of the bubble at 0 pressure.
+
+  \item Following the laboratory experiment, it becomes clear that there is an inverse relationship between pressure and volume, that is, as one increases, the other decreases, which makes sense, as a gas expands, there is less pressure. A calculation of error can not be provided, as there was no actual calculation performed. One source of error is that air is not an ideal gas. This means that collisions between the particles are not perfectly elastic, and therefore, the ideal gas law \eqref{1} only serves as an approximation. One lab I think would be very interesting to see is a correlation between pressure and temperature, where the experiment is heating up and boiling water through an increase of pressure.
+
+\end{enumerate}
+
+\newpage
+    
+\end{document}
