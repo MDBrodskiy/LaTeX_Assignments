@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 8 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{What caused the Federalists to pretty much disappear? What were elections like during the period when there was one political party?}{\begin{tabular}{p{.425\textwidth}!{\color{Gray}\vrule}p{.425\textwidth}} \rowcolor{BurntOrange} \textcolor{White}{Federalists} & \textcolor{White}{Democratic-Republicans} \\ Organized by supporters of constitution & Informal protest movement led by Jefferson and Madison\\ \rowcolor{red!15} George Washington, although he said he was neutral, is usually regarded as a federalist & Between 1800 and 1820 was the majority of the country \\ Wanted more national government, Hamilton's economic reforms, and sided with Britain & Wanted less national government, less federal involvement in economy, and sided with France over Britain \\ \rowcolor{red!15} Began to disperse in 1800, last presidential candidate nominated in 1816 & By 1820, it was the last political party before the Democrat-Whig split \\ \hline \end{tabular}}%
+
+\topic{Following the case of \textit{Marbury v. Madison}, did Jefferson and Marshall both get what they want? If not, what was missing for them?}{\begin{itemize} \item Jefferson pretty much embodied the ideals of the Jeffersonian-Republicans. He would cut down on a government which he thought was too complicated. Also, he found West Point Military Academy, in an attempt to replace federalist military personnel. One big economic move was the abolition of internal taxes (although Jefferson left \textbf{tariffs}, or taxes on imported goods).  \item During Jefferson's presidency, congress held a Jeffersonian-Republican majority. As such, the Judiciary Act of 1801 (which Adams passed last minute to increase the number of federal judges) was repealed. The judges appointed last minute by Adams were nicknamed ``midnight judges.'' \item Jefferson kept making attempts to shrink the size of the supreme court, which would cause him to clash with them often. This led to the case of \textit{Marbury v. Madison}. Marbury was a judge who Adams attempted to appoint last minute, however, he left office before Marbury was commissioned. The new Jefferson presidency refused to deliver Marbury's commission. As such, Marbury sued. The case had three main outcomes: First, Marbury was not to be appointed, second, Jefferson got the legal victory, and third, the Supreme Court could now use the power of \textbf{Judicial Review}. This power wouldn't be used to classify an act as unconstitutional until 1857.   \end{itemize}}%
+
+\topic{Did the Federalists attempt to smear Jefferson because they knew their power was waning, or just because they did not like him?}{\begin{itemize} \item Although, as president, Jefferson did not have lavish parties, his personal life was quite the opposite. When he came into office, news about his private affairs came to light. \textit{The Richmond Recorder} printed an article about a love affair Jefferson had with a slave named Sally. To this day, it is still disputed whether or not he had an affair, although DNA testing signifies this rumor may be true.  \end{itemize}}%
+
+\topic{If the Tenth Amendment guarantees State Rights, doesn't that mean the Constitution applies states as well? If so, why is it that separation of church and state was not applied as well?}{\begin{itemize} \item On his first New Year's day, Jefferson wrote to the Connecticut Baptist Association that there should be a ``wall of separation between church and state.'' At the time of this letter, there were four states that were ``\textbf{religious establishments},'' which meant that they did not have separation of church and state, and that they had an established religion. These four states were: Connecticut, New Hampshire, Massachusetts, and Maryland. \item Jefferson and Madison were against theocracies. In 1786, they had convinced the Virginia legislature to end government support of the Episcopal church. The greatest, and arguably the most important, battle between church and state took place in Connecticut. In 1817, Oliver Wolcott defeated a Federalist in the race for governor, and, subsequently, separated church and state. Lyman Beecher greatly opposed this, however, with time, he saw that it was beneficial. Even before the Jefferson presidency, the second \textbf{Great Awakening} has begun. These religious revivals grew in magnitude rapidly. One large gathering, with 20,000 or so people, occurred in Cane Ridge. This event would cause a great increase in followers for the Baptists and Methodists. Methodism was centralized and highly emotional, whereas Baptists were emotional too, but quite decentralized. Methodists spread their ideals through circuit riders, who would travel from town to town. Baptists, on the other hand, created many branches of Baptism due to their decentralization.   \end{itemize}}%
+
+\topic{Did the slave owners attempt to prohibit or bar slaves from worship for fear of rebellion?}{\begin{itemize} \item Within this great awakening, slave owners organized religious proceedings which would pray to the people that they should be virtuous and obedient. These slaves, however, would form an underground religion, where they would gather in secret locations or late at night. This religious revival gave them something they didn't have before: hope and unity. This would result in an increase of uprisings. \item In South Carolina in 1822, Denmark Vesey led a rebellion against the slave owners. In 1831, Nat Turner led the largest slave rebellion before the Civil War. Slaves would began to sing songs about their freedom, both religious and personal. Restrictions in white churches caused the formation of African churches: Methodist Episcopal and Methodist Episcopal Zion. \item The influx of religious freedom caused a deluge of migration. Prior and during the revolution, there were few Catholics and Jewish people in the colonies. During the second Great Awakening, These new communities took on Republican sentiments.  \end{itemize}}%
+
+\topic{Although France needed the money, why did they give such a good price to America? Why did they not try to receive more money for the territories they sold?}{\begin{itemize} \item Jefferson sought to appease the western farmers who had difficulty shipping their goods by acquiring the port of New Orleans. Jefferson sent James Monroe and Robert Livingston to France with an offer of 6 million dollars for the city of New Orleans. France, however, was highly in need of money due to their ongoing struggle for power. As such, they offered the whole middle section of the modern United States (then known as Louisiana) for 15 million dollars. Nearly all people, regardless of their political preference agreed this was a great offer, and Jefferson jumped on it. This became known as the \textbf{Louisiana Purchase}. \item Along with the whole region of Louisiana, America acquired a new cultural diversity in New Orleans. For decades, New Orleans had been a mixing pot of French, Spanish, Native, and African people. This resulted in a cultural diversity much different from that of America. One example of something new was the formation of early forms of Jazz. \item Even before the offer for the Louisiana Purchase, Jefferson commissioned Meriwether Lewis and William Clark to explore the western territories of the North American continent. Lewis and Clark created a \textbf{Corps of Discovery} to travel with them. Lewis and Clark's expedition would have failed if it were not for Toussaint Charbonneau and his partner Sacagewea, along with the Nez Perce Indians. Jefferson began to commission more and more expeditions into the western territories.   \end{itemize}}%
+
+\topic{If the Napoleonic Wars became a problem for the US, causing them to develop France and England as enemies, why did the United States not side with one or the other to alleviate some of the problems?}{\begin{itemize} \item The Napoleonic wars caused tensions to rise almost to the global level. While France controlled nearly all of the European continent, Britain controlled the seas. This would become a problem for the Americans, as they needed the sea to trade with other nations. Furthermore, Britain had started its policy of impressment again, which caused major outrage. This, coupled with French looting of American ships for supplies, meant that some action was required. \item First of all, Jefferson passed the \textbf{Embargo Act} which prohibited American ships from leaving for any foreign port. Jefferson did this in an attempt to choke Britain out by cutting off their food supply. This failed, as it not only destroyed American economy, but also had no effect on the British. In addition to this, the act caused an increase in smuggling. Jefferson's time was running out, and he needed to do something fast. \item In his final days as president, Jefferson passed the \textbf{Non-Intercourse Act}. This meant that trade was permitted to all countries, with the exception of France and Britain. Although this somewhat helped, war tensions were still up and rising, and they would be until the War of 1812 during Madison's term.  \end{itemize}}%
+
+\topic{Would the natives coordinate attacks between their united front and the Americans? If so, how would they have their messages reach from the northern part of America to the south?}{\begin{itemize} \item Tenskwatawa and Tecumseh, two Shawnee Indians, would try to lead a fight against the Americans. They would remember back to pre-revolutionary war times, when the British prohibited movement past Ohio, and sought to ally with them. The War of 1812 was a perfect opportunity for the natives to ally with the British to topple down their foe. \item Many in Congress believed a war would be beneficial. They reasoned that, with war, came territorial gains, and, as such, they believed they should try to take Canada. These Congressmen were known as the \textbf{War Hawks}. A declaration of war was still passed with a slight margin. The American forces, although initially taken aback, withstood the British and Indian attacks, and even advanced. Americans met with British to discuss the \textbf{Treaty of Ghent}. This treaty returned the boundaries of all nations to their pre-war states, and would lead to relative peace for nearly a century. In Connecticut, Federalist delegates met at the \textbf{Hartford Convention}. They demanded that this war be ended. \item The final battle of the war occurred after the treaty was signed (as news had not reached the troops yet). This battle saw 700 killed and 1400 wounded British, with only 8 Americans dead and 13 casualties. Following the war, America become significantly more autonomous, as well as gained much more land.  \end{itemize}}%
+
+\newpage
+
+\topic{Did the United States adopt Florida as a territory, or was it made a state right away?}{\begin{itemize} \item Following the War of 1812, an early form of Manifest Destiny was taking place. Americans were worried about foreign pressures from the south (as the Canadian border had made peace). The southern area was controlled by the Spanish, who did not have much of a use for Florida. As such, the Spanish agreed to give Florida, as well as its claims to Oregon in exchange for Americans to stay out of independence revolutions in Spanish territories, such as Mexico. In 1819, the \textbf{Adams-On\'is Treaty} confirmed these territorial negotiations. \item America did not keep its promises, as, in 1822, it recognized Chile, Colombia, Mexico, and Peru as independent nations. This was because, if Latin America was to become independent, America was keen on becoming trade partners. President Monroe even went so far as to state that he would prohibit any European country from intervening or acquiring new regions in North and South America. Along with this doctrine also came an announcement that the Americans would stay out of affairs of European revolutions, although they would recognize liberal states. This demarcated foreign policy that is still somewhat reflected in America today.  \end{itemize}}%
+
+\summary{Following the election of 1800, Thomas Jefferson was to be named president, with James Madison as his vice president. Jefferson would pursue his Jeffersonian-Republican ideals by limiting a government he deemed as too complicated, and cutting down on the size of all branches and the military. Jefferson would lead the country through the Second Great Awakening, which would lead into Madison's terms. Jefferson would expand the country to more than double its previous size through the Louisiana Purchase. The case of Marbury v. Madison saw the rise of the Supreme Court, as it gave itself the power to determine constitutionality of laws. Although there was a massive religious awakening, states began to separate their church from their state. The rebirth of religious ideals would also see the formation of underground slave churches, where slaves would unite and sing songs of freedom. This unity would lead to rebellions and hope for years to come. Furthermore, the western farmers were somewhat appeased by the Louisiana purchase, as trade was now facilitated. More and more expeditions would be sent into the western regions of the country, to discover what riches lay hidden, the first of these expeditions being Lewis and Clark. The French Revolution, whose tensions contributed to the start of the War of 1812, would somewhat divide the new nation. Madison dealt with the British and natives in the War of 1812, finally establishing the Monroe Doctrine, which stated that America would prevent European nations acquiring or intervening in North or South America. This would establish a foreign policy for years to come. Finally, the region of Florida, as well as parts of Oregon would be attained through the Adams-On\'is Treaty with Spain. Overall, America began to rise as a world superpower, establishing its position through trade and power.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
