@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Electrostatics $-$ Problems 11, 34, 57}
+\date{October 18, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Morse}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{10}
+
+  \item Positive particle with charge $6[\si{\nano\coulomb}] \rightarrow \ce{p^6+}$, positive particle with charge $5[\si{\nano\coulomb}] \rightarrow \ce{p^5+}$, negative particle with charge $-3[\si{\nano\coulomb}] \rightarrow \ce{e^3-}$ \eqref{1}
+
+    \begin{equation}
+      \begin{split}
+        F_{\ce{e^3-}\text{ on } \ce{p^5+}} &= k\frac{|(5\cdot10^{-9})(-3\cdot10^{-9})|}{.1^2}\\
+        &=1.35\cdot10^{-5}[\si{\newton}_{\text{down}}]\\
+        F_{\ce{e^6+}\text{ on } \ce{p^5+}} &= k\frac{|(5\cdot10^{-9})(6\cdot10^{-9})|}{.3^2}\\
+        &=3\cdot10^{-6}[\si{\newton}_{\text{left}}]\\
+        ||F_{\text{on }\ce{p^5+}}||&= \sqrt{\left( 1.35\cdot10^{-5} \right)^2 + \left( 3\cdot10^{-6} \right)^2}\\
+        &=1.38\cdot10^{-5}[\si{\newton}]\\
+        \angle\ce{p^5+}&=\tan^{-1}\left( \frac{3\cdot10^{-6}}{1.35\cdot10^{-5}} \right)\\
+        &=12.53^{\circ} \text{ (left of $270^{\circ}$ line)}\\
+        \angle_f&= 270-12.53=257.47^{\circ}\\
+        F_{\text{on }\ce{p^5+}}&=1.38\cdot10^{-5}[\si{\newton}]\text{ at }257.47^{\circ}
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \setcounter{enumi}{33}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item \eqref{2}
+
+        \begin{equation}
+          \begin{split}
+            q_1&=-6\\
+            q_2&=18\\
+            \frac{q1}{q2}&=-\frac{1}{3}\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \eqref{3}
+
+        \begin{equation}
+          \begin{split}
+            q_1&\text{ has a negative sign because the electric field is going into it}\\
+            q_2&\text{ has a positive sign because the electric field is leaving it}
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{56}
+
+  \item Field by particle with charge $3[\si{\nano\coulomb}]\rightarrow E_{\ce{p^3+}}$, Field by particle with charge $5[\si{\nano\coulomb}]\rightarrow E_{\ce{p^5+}}$, Field by particle with charge $-4[\si{\nano\coulomb}]\rightarrow E_{\ce{e^4-}}$ \eqref{4}
+
+    \begin{equation}
+      \begin{split}
+        E_{\ce{p^3+}}&=k\frac{3\cdot10^{-9}}{1.2^2}\\
+        &=18.72\left[ \frac{\si{\newton}}{\si{\coulomb}}\text{ right}\right]\\
+        E_{\ce{p^5+}}&=k\frac{5\cdot10^{-9}}{2^2}\\
+        &=11.23\left[ \frac{\si{\newton}}{\si{\coulomb}}\text{ right}\right]\\
+        E_{\ce{e^4-}}&=k\frac{4\cdot10^{-9}}{2.5^2}\\
+        &=5.75\left[ \frac{\si{\newton}}{\si{\coulomb}}\text{ left}\right]\\
+        18.72+11.23-5.75&=24.2\left[ \frac{\si{\newton}}{\si{\coulomb}}\text{ right} \right]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
