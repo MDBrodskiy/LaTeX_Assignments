@@ -1,0 +1,214 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 9 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{If other crops, such as rice, indigo, tobacco, and sugar were considered better cash crops than cotton, then what was the purpose of growing cotton? Wouldn't farm owners want to maximize profit, and, thus, sell more expensive crops?}{\begin{itemize} \item Although the cotton industry was already large and growing quickly, many factors would lead to quicker expansion. \item The first factor that contributed to accelerated growth of the industry was preference. Many people began to prefer cotton clothes, as they were warm, yet much more breathable as compared to wool or linen. In addition to this, the cotton crop itself was becoming more and more cheap. \item The second, and more important factor, was the age of industrialization. New inventions were coming out rapidly. One invention was the flying shuttle, which was able to weave cotton at a much faster rate, and required only one person to operate it. Next, the spinning jenny was a multi-spindled machine, which spun multiple strands of cotton at once. In addition to this, the water frame was patented. This machine was one of the earliest examples of mass production, as it used the power of moving water to spin cotton. In addition to this, the steam engine added much more power and automation to factories. \item Ultimately, there would be one most important invention. This invention would involve the first step to all of the cotton processing: actually picking cotton. Eli Whitney came along and made the cotton gin (short for engine). At first, it was made of wooden pins which were supposed to separate the seed from the cotton. The wood, however, was too weak and would break often. Next, Whitney tried wire from a chicken coup. This worked quite well, especially when combined with a brush that cleaned out the seeds that could get stuck. This new cotton gin would increase productivity more than 50 times what it had been. Although Whitney was famous for initially inventing the gin, this invention did not bring him much wealth, as people were creating better and more efficient versions of it daily.  \end{itemize}}%
+
+\topic{Did people flood into Alabama because they had heard of the rich soil, or did they move because it was recently discovered? Overall, what was the motive for moving west?}{\begin{itemize} \item There were two main types of cotton being grown. First was long-stem, which was grown primarily on the Atlantic coast. Second was the green-seed, which would soon overtake the long-stem production. \item As the United States acquired more territory, the production of green-seed cotton rose. This was due to the \textbf{Black Belt}, a stretch of fertile, black soil, which stretched from Georgia to Louisiana. This soil was great for growing cotton. \item As more western lands opened up, more people began to move there. When Alabama was admitted as a state in 1819, it had five times the population as it had in 1810. This move, which followed the War of 1812, was known as Alabama Fever. In 1801, America produced about nine percent of the world's cotton, and India produced about sixty. By 1820, America overtook India, and by 1850, America grew more than two-thirds of the worlds cotton.  \end{itemize}}%
+
+\topic{On what kind of farms were slaves treated the worst? Indigo, rice, sugar, or cotton? Also, in what state were they treated the worst?}{\begin{itemize} \item As plantations spread throughout the black belt, into the interior of the country, more and more slave labor was moved with them. With the move came more problems, such as worsening conditions for slaves. Slaves were now even more highly valued, which meant they were treated even worse. For example, many slaves near the coast, who had developed families over the years, would be divided from their family and sent to a different, more southwest state. \item Many slave owners would use this as a threat$-$they would tell their slaves to work harder, or risk being sent off to the expanding colonies. Slaves, especially those who had families, dreaded this possibility, and revolts came along with it. As treatment of the slaves worsened, revolts and runaways rose proportionally. Slaves were, however, given some limited rights by their owners. Some owners would permit slaves to keep their own small gardens in order to grow themselves food and fabric materials for clothes, and sell the surplus.  \end{itemize}}%
+
+\topic{Was the South generally for or against the new industrial age?}{\begin{itemize} \item When coming back to America from Britain, Francis Cabot Lowell, alongside new technology and innovations, brought with him a new business model and system. Lowell formed one of the early multi-shareholder companies. \item Within his new factories, Lowell needed workers, and fast. He looked to single females for employment, as the migration of many men to the west left many women behind. Thus, the factories employed many women, who were nicknamed Lowell Girls. Many press releases were issued, showing employees working happily in the factories, and talking about the perfect conditions. Although the conditions here were significantly better than England, the still were not ideal. \item When one of the Lowell Mills released news to their employees that wages needed to be cut to, ``meet the unusual pressure of the times,'' some of the first strikes erupted. These strikes, although they would not complete much, would place a mark which showed that workers should have the right to protest.  \end{itemize}}%
+
+\topic{What other coastal cities would become powerful commercial centers? The book only mentions New York.}{\begin{itemize} \item As commerce began to grow during the industrial age in America, New York began to grow as the biggest center of trade. New York led the United States for three reasons: first, ships could dock in one of the many docks available in New York. Second, New York was already powerful enough to sustain a high level of commerce. Third, New York already had many experience longshoremen who could unload the shipments with ease due to their experience. \item The whole industrial era, however, did not come without failures. In 1819, the price of cotton decreased drastically, to less than half the price. This resulted in one of the first depressions in American history. Many farms were foreclosed, and westward movement stopped. In the long run, the price of cotton would rebound.  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
