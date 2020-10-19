@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 4 $-$ Problem 58}
+\date{October 20, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi{57}
+
+    \item The iron content of hemoglobin is determined by destroying the hemoglobin molecule and producing small water-soluble ions and molecules. The iron in the aqueous solution is reduced to iron (II) ion and then titrated against potassium permanganate. In the titration, iron (II) is oxidized to iron (III) and permanganate is reduced to manganese (II) ion. A $5[\si{\gram}]$ sample of hemoglobin requires $32.3[\si{\milli\liter}]$ of a $.0021[\si{\Molar}]$ solution of potassium permanganate. The reaction with permanganate ion is \eqref{1}. What is the mass percent of iron in hemoglobin.
+      \vspace{-15pt}
+      \begin{equation}
+        \begin{split}
+          \ce{MnO4-(aq) + 8H+(aq) + 5Fe^2+(aq) -> Mn^2+(aq) + 5Fe^3+(aq) + 4H2O}
+        \end{split}
+        \label{1}
+      \end{equation}
+
+      \begin{equation}
+        \begin{split}
+          32.3[\si{\milli\liter}]&=.0323[\si{\liter}]\\
+          .0021\cdot.0323&=6.8\cdot10^{-5}[\si{\mole}]\\
+          6.8\cdot10^{-5}\cdot5&=3.4\cdot10^{-4}[\si{\mole}_{\ce{Fe}}]\\
+          56\cdot3.4\cdot10^{-4}&=.01904[\si{\gram}_{\ce{Fe}}]\\
+          \frac{.01904}{5}\cdot100\%&=.38\%
+        \end{split}
+        \label{2}
+      \end{equation}
+
+
+\end{enumerate}
+
+\end{document}
+
