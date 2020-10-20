@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\Celsius{\textsc{C}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 5 $-$ Problem Set 1}
+\date{October 22, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item How many grams of hydrogen is needed to fill a $80[\si{\liter}]$ tank to a pressure of $150[\si{\atm}]$ at $27[^{\circ}\si{\Celsius}]$? \eqref{1}
+
+    \begin{equation}
+      \begin{split}
+        n&=\frac{PV}{RT}\\
+        \frac{150\cdot80}{.0821\cdot300}&=487.211[\si{\mole}]\\
+        2\cdot487&=974[\si{\gram}_{\ce{H}}]\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item At what temperature does $16.3[\si{\gram}]$ of nitrogen have a pressure of $725[\si{\torr}]$ in a $25[\si{\liter}]$ tank? \eqref{2}
+
+    \begin{equation}
+      \begin{split}
+      725[\si{\torr}]&=.954[\si{\atm}]\\
+      \frac{16.3}{28}&=.582[\si{\mole}_{\ce{N}}]\\
+      T&=\frac{25\cdot.954}{.582\cdot.0821}\\
+      &=499[^{\circ}\si{\kelvin}]
+    \end{split}
+      \label{2}
+    \end{equation}
+
+  \item What is the volume, in $[\si{\milli\liter}]$, of $837[\si{\milli\gram}]$ of xenon gas at STP? \eqref{3}
+
+      \begin{equation}
+        \begin{split}
+          837[\si{\milli\gram}]&=.837[\si{\gram}]\\
+          V_{\si{\milli\liter}}&=\frac{1}{1000}\cdot
+        \end{split}
+        \label{3}
+      \end{equation}
+
+    \item A gas at STP is in a $25[\si{\liter}]$ container.  The volume is increased to $50[\si{\liter}]$ and pressure is increased to $1.5[\si{\atm}]$.  What is new temperature?  
+
+    \item A balloon is filled with $1.0[\si{\liter}]$ of helium at $1.0[\si{\atm}]$ and a starting temp.  The balloon rises to a point where the pressure is $220[\si{\torr}]$, temp is $-31[^{\circ}\si{\Celsius}]$, and the volume increases to $2.8[\si{\liter}]$.  What is the starting temp of the balloon? 
+
+    \item How many grams of gas must be released from a $45.2[\si{\liter}]$ sample of nitrogen at STP to reduce the volume to $45[\si{\liter}]$ at STP? 
+
+    \item A neon sign is made of glass tubing whose inside diameter is $2.0[\si{\centi\meter}]$ and whose length is $4.0[\si{\centi\meter}]$.  If the sign contains neon at a pressure of $1.5[\si{\torr}]$ at $35[^{\circ}\si{\Celsius}]$, how many grams of neon are in the sign? ($V=\pi r^2 h$)
+
+    \item Calculate the number of molecules in a deep breath of air whose volume is $2.55[\si{\liter}]$ at body temp of $37[^{\circ}\si{\Celsius}]$, and a pressure of $740[\si{\torr}]$. 
+
+\end{enumerate}
+
+\end{document}
+
