@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx} 
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\Celsius{^{\circ}\textsc{C}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\mmHg{\textsc{mmHg}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 5 $-$ Problem Set 2}
+\date{October 22, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Calculate the molecular mass of a liquid that, when vaporized at $99[\si{\Celsius}]$ and $716[\si{\torr}]$ gave $225[\si{\milli\liter}]$ of vapor with a mass of $0.773[\si{\gram}]$. \eqref{1}
+
+    \begin{equation}
+      \begin{split}
+        n&=\frac{PV}{RT}\\
+        &=.00694[\si{\mole}]\\
+        m_{molar}&=\frac{.773}{.00694}\\
+        &=111.4\left[ \frac{\si{\gram}}{\si{\mole}} \right]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item Calculate the density of ammonium dichromate at STP. \eqref{2}
+
+    \begin{equation}
+      \begin{split}
+        m_{molar}&=252\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        \frac{n}{V}&=\frac{1}{.0821\cdot273}\\
+        &=.0446\left[ \frac{\si{\mole}}{\si{\liter}} \right]\\
+        252\cdot.0446&=11.2\left[ \frac{\si{\gram}}{\si{\liter}} \right]
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item At what pressure will nitrogen have a density of $0.985\left[ \frac{\si{\gram}}{\si{\liter}} \right]$ at $25[\si{\Celsius}]$.
+
+  \item How many liters of \ce{CO2} measured at $26[\si{\Celsius}$ and $767[\si{\torr}]$ are produced in the combustion of $125[\si{\milli\liter}]$ of propanol ($d = 0.804\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$)?
+
+  \item Oxygen is collected over water (vapor pressure of water = $31.8[\si{\mmHg}]$) at $30[\si{\Celsius}]$ and a barometric pressure of $742[\si{\torr}]$.  What is the partial pressure and mole fraction of oxygen? 
+
+  \item What volume is occupied by $1.25[\si{\gram}]$ of oxygen saturated with water vapor at $25[\si{\Celsius}]$ (vp water = $23.8[\si{\mmHg}]$) and a total pressure of $749[\si{\mmHg}]$? 
+
+  \item A quantity of nitrogen gas originally held at $3.8[\si{\atm}]$ in $1.0[\si{\liter}]$ container at $25[\si{\Celsius}]$ is transferred to a $10.0[\si{\liter}]$ container at $20[\si{\Celsius}]$.  A quantity of oxygen gas originally at $4.75[\si{\atm}]$ and $26[\si{\Celsius}]$ in a $5.0[\si{\liter}]$ container is transferred to the same container.  What is the total pressure in the new container? 
+
+  \item Nitrogen gas is held in a $2.0[\si{\liter}]$ container at $1.0[\si{\atm}]$ and $25[\si{\Celsius}]$.  Oxygen gas is held in another $3.0[\si{\liter}]$ container at $2.0[\si{\atm}]$ and $25[\si{\Celsius}]$.  The containers are then put together to allow both gases to mix.  What is the partial pressure of each gas and the total pressure in the combined container?
+
+\end{enumerate}
+
+\end{document}
+
