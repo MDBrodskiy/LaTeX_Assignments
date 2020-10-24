@@ -99,22 +99,82 @@ citecolor=blue,
       \label{3}
     \end{equation}
 
-  \item How many liters of \ce{CO2} measured at $26[\si{\Celsius}$ and $767[\si{\torr}]$ are produced in the combustion of $125[\si{\milli\liter}]$ of propanol ($d = 0.804\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$)? \eqref{4}
+  \item How many liters of \ce{CO2} measured at $26[\si{\Celsius}]$ and $767[\si{\torr}]$ are produced in the combustion of $125[\si{\milli\liter}]$ of propanol ($d = 0.804\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$)? \eqref{4}
 
       \begin{equation}
         \begin{split}
-          \ce{}
+          \ce{2C3H8O + 9O2}& \ce{-> 6CO2 + 8H2O}\\
+          125\cdot.804&=100.5[\si{\gram}_{\ce{C3H8O}}]\\
+          \frac{100.5}{60}&=1.68[\si{\mole}_{\ce{C3H8O}}]\\
+          1.68\cdot3&=5.04[\si{\mole}_{\ce{CO2}}]\\
+          V&=\frac{5.04\cdot.0821\cdot299}{1.009}\\
+          &=123[\si{\liter}_{\ce{CO2}}]\\
         \end{split}
         \label{4}
       \end{equation}
 
-  \item Oxygen is collected over water (vapor pressure of water = $31.8[\si{\mmHg}]$) at $30[\si{\Celsius}]$ and a barometric pressure of $742[\si{\torr}]$.  What is the partial pressure and mole fraction of oxygen? 
+    \item Oxygen is collected over water (vapor pressure of water = $31.8[\si{\mmHg}]$) at $30[\si{\Celsius}]$ and a barometric pressure of $742[\si{\torr}]$.  What is the partial pressure and mole fraction of oxygen? \eqref{5}
 
-  \item What volume is occupied by $1.25[\si{\gram}]$ of oxygen saturated with water vapor at $25[\si{\Celsius}]$ (vp water = $23.8[\si{\mmHg}]$) and a total pressure of $749[\si{\mmHg}]$? 
+    \begin{equation}
+      \begin{split}
+        31.8[\si{\mmHg}]&=.0418[\si{\atm}]\\
+        742[\si{\torr}]&=.976[\si{\atm}]\\
+        .976-.0418&=.934[\si{\atm}]\\
+        \si{\mole}_f&=\frac{.934}{.976}\\
+        &=.96
+      \end{split}
+      \label{5}
+    \end{equation}
 
-  \item A quantity of nitrogen gas originally held at $3.8[\si{\atm}]$ in $1.0[\si{\liter}]$ container at $25[\si{\Celsius}]$ is transferred to a $10.0[\si{\liter}]$ container at $20[\si{\Celsius}]$.  A quantity of oxygen gas originally at $4.75[\si{\atm}]$ and $26[\si{\Celsius}]$ in a $5.0[\si{\liter}]$ container is transferred to the same container.  What is the total pressure in the new container? 
+  \item What volume is occupied by $1.25[\si{\gram}]$ of oxygen saturated with water vapor at $25[\si{\Celsius}]$ (vp water = $23.8[\si{\mmHg}]$) and a total pressure of $749[\si{\mmHg}]$? \eqref{6}
 
-  \item Nitrogen gas is held in a $2.0[\si{\liter}]$ container at $1.0[\si{\atm}]$ and $25[\si{\Celsius}]$.  Oxygen gas is held in another $3.0[\si{\liter}]$ container at $2.0[\si{\atm}]$ and $25[\si{\Celsius}]$.  The containers are then put together to allow both gases to mix.  What is the partial pressure of each gas and the total pressure in the combined container?
+    \begin{equation}
+      \begin{split}
+        23.8[\si{\mmHg}]&=.0313[\si{\atm}]\\
+        749[\si{\torr}]&=.986[\si{\atm}]\\
+        .986-.0313&=.9547[\si{\atm}]\\
+        \frac{1.25}{32}&=.0391[\si{\mole}_{\ce{O}}]\\
+        V&=\frac{.0391\cdot.0821\cdot298}{.9547}\\
+        &=1[\si{\liter}_{\ce{O}}]
+      \end{split}
+      \label{6}
+    \end{equation}
+
+  \item A quantity of nitrogen gas originally held at $3.8[\si{\atm}]$ in $1.0[\si{\liter}]$ container at $25[\si{\Celsius}]$ is transferred to a $10.0[\si{\liter}]$ container at $20[\si{\Celsius}]$.  A quantity of oxygen gas originally at $4.75[\si{\atm}]$ and $26[\si{\Celsius}]$ in a $5.0[\si{\liter}]$ container is transferred to the same container.  What is the total pressure in the new container? \eqref{7}
+
+    \begin{equation}
+      \begin{split}
+        n_{\ce{O}}&=\frac{3.8\cdot1}{.0821\cdot298}\\
+        &=.155[\si{\mole}_{\ce{O}}]\\
+        n_{\ce{N}}&=\frac{4.75\cdot5}{.0821\cdot299}\\
+        &=.967[\si{\mole}_{\ce{N}}]\\
+        P_{\ce{O}}&=\frac{.155\cdot.0821\cdot293}{10}\\
+        &=.373[\si{\atm}]\\
+        P_{\ce{N}}&=\frac{.967\cdot.0821\cdot293}{10}\\
+        &=2.33[\si{\atm}]\\
+        P_{total}&=2.33+.373\\
+        &=2.703[\si{\atm}]
+      \end{split}
+      \label{7}
+    \end{equation}
+
+  \item Nitrogen gas is held in a $2.0[\si{\liter}]$ container at $1.0[\si{\atm}]$ and $25[\si{\Celsius}]$.  Oxygen gas is held in another $3.0[\si{\liter}]$ container at $2.0[\si{\atm}]$ and $25[\si{\Celsius}]$.  The containers are then put together to allow both gases to mix.  What is the partial pressure of each gas and the total pressure in the combined container? \eqref{8}
+
+    \begin{equation}
+      \begin{split}
+        n_{\ce{N}}&=\frac{2\cdot1}{.0821\cdot298}\\
+        &=.0817[\si{\mole}_{\ce{N}}]\\
+        n_{\ce{O}}&=\frac{3\cdot2}{.0821\cdot298}\\
+        &=.245[\si{\mole}_{\ce{N}}]\\
+        P_{\ce{N}}&=\frac{.0817\cdot.0821\cdot298}{5}\\
+        &=.4[\si{\atm}]\\
+        P_{\ce{O}}&=\frac{.245\cdot.0821\cdot298}{5}\\
+        &=1.2[\si{\atm}]\\
+        P_{total}&=1.2+.4\\
+        &=1.6[\si{\atm}]
+      \end{split}
+      \label{8}
+    \end{equation}
 
 \end{enumerate}
 
