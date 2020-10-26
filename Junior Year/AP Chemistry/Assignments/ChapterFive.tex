@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx} 
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\Celsius{^{\circ}\textsc{C}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\mmHg{\textsc{mmHg}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 5 $-$ Problem 48}
+\date{October 22, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{47}
+    
+  \item Consider two bulbs separated by a valve. Both bulbs are maintained at the same temperature. Assume that when the valve between the two bulbs is closed, the gases are sealed in their respective bulbs. When the valve is closed, the following data (\ref{tab:1}) apply. Assuming no temperature change, determine the final pressure inside the system after the valve connecting the two bulbs is opened. Ignore the volume of the tube connecting the two bulbs. 
+
+    \begin{table}
+      \centering
+      \begin{tabular}{c c c}
+        \hline
+        & Bulb X & Bulb Y\\
+        \hline
+        Gas & \ce{CO2} & \ce{CH4}\\
+        \hline
+        V & $3.00[\si{\liter}]$ & $6.00[\si{\liter}]$\\
+        P & $1.25[\si{\atm}]$ & $2.66[\si{\atm}]$\\
+        \hline
+      \end{tabular}
+      \caption{Data for Bulb $X$ and Bulb $Y$}
+      \label{tab:1}
+    \end{table}
+
+    \begin{equation}
+      \begin{split}
+        \si{\mole}_{\ce{CO2}}\cdot T&=\frac{1.25\cdot3}{.0821}\\
+        &=45.68T\\
+        \si{\mole}_{\ce{CH4}}\cdot T&=\frac{2.66\cdot6}{.0821}\\
+        &=194.4T\\
+        \si{\mole}_{total}&=45.68+194.4\\
+        &=240.07[\si{\mole}]\\
+        \frac{n_{\ce{CH4}}}{P_{\ce{CH4}}\cdot V_{\ce{CH4}}}&=\frac{n_{f}}{P_{f}\cdot V_{f}}\\
+          \frac{\left(\frac{n_{f}}{n_{\ce{CH4}}}\right)\cdot P_{\ce{CH4}}\cdot V_{\ce{CH4}}}{V_f}&=\frac{\left( \frac{240.07}{194.4} \right)\cdot 2.66\cdot 6}{9}\\
+            &=2.19[\si{\atm}]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
