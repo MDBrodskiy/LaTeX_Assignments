@@ -1,0 +1,194 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 10 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{If Jackson was such an enemy of the national bank, why did he end up as the president on the twenty dollar bill?}{\begin{itemize} \item Jackson came into office with a clear plan in mind. First of all, he wanted to change personnel in many government positions, unlike his predecessors had done. Jackson used a system which was nicknamed as the \textbf{Spoils System}, in which the victor won the spoils of war, or, in other words, the person who won the executive office got the ``spoils'' of choosing their staff. Among Jackson's staff was Martin Van Buren, the man who would aid in Jackson's 1828 campaign, became the Secretary of State. Jackson would place many informal friends as his advisors, in, what he called, the ``Kitchen Cabinet.'' Jackson's modifications to many services, including the postal service, would harm those services until around 1880, when civil service reform took place. \item Jackson had many goals, not all of them related. He had an extreme distrust of government. One of his most important campaign promises was to remove Indians from northern Georgia, Alabama, and Mississippi. Furthermore, he hated the Bank of the United States and wanted to pare it down, if not remove it completely. His presidency was during a period in which \textbf{Nullification}, or the right of a state to decide not to follow a federal law within its borders, was becoming popular. Jackson, although as a citizen he might have supported this, was against any dissidence from his rule as a president.   \end{itemize}}%
+
+\topic{Were the tribes in communication with each other? If so, what tribes communicated with who? Did the tribes communicate their response plan to the Indian Removal Act?}{\begin{itemize} \item Among the biggest tribes that were displaced were the \textbf{Five Civilized Tribes}: the Cherokees, Choctaws, Chickasaws, Creeks, and Seminoles. The tribes had adopted and assimilated into the white culture. Sequoyah, a Cherokee warrior, was intrigued by written language, which would lead him to establish a written language for the Cherokees and Choctaws. Journals began to publish in English and Cherokee. Furthermore, many natives married with whites, further mixing the cultures. In addition to this, the tribes had developed crop growing techniques like the whites, and they grew cotton, as well as used slaves. \item Jackson passed the \textbf{Indian Removal Act}, claiming it would protect the Cherokees from Georgia laws. Jackson gave the natives a choice: move west, or submit to the laws of Georgia. This wasn't much of a choice, as Jackson himself said. The government treated the land, which they proclaimed ``Indian Territory,'' as though it were empty. This was untrue, as the land, which is modern-day Tennessee, was filled with numerous other tribes, with whom the new tribes would conflict. \item Contrary to popular belief, many whites did come to aid the natives. They claimed that these acts were brutal and unjust, though this would make little difference after the act was actually passed. The act would pass with a vote of 28:19 in the senate and 102:98 in the house. Attacks were made on the bill, such as calling it, ``Oppression with a vengeance.'' Not long after the passage of the act, many Indians came to court to fight it. The natives would win in cases such as \textit{Cherokee Nation v. Georgia} (1831) and \textit{Worcester v. Georgia} (1832). Chief Justice John Marshall ruled that the Cherokees were an independent nation, and, as such, could not be displaced. Jackson blatantly disregarded this, and continued to force migration of the natives. \item Of the five civilized tribes, the Seminoles were the only that did not migrate. Not all of the Creeks moved, though, and some remained to fight. The Second Creek War was put down easily, and lasted from 1836$-$1837, when the Indians were expelled by federal troops. Many of the remaining members of tribes were put in detention camps, where, after some time, 2,000 Cherokee men, women, and children were forced to march west. Around a third of the marching natives died in what is known as the \textbf{Trail of Tears}. During this period, around 2000 members of the Sac and Fox tribes moved east across the Mississippi to escape hostile Sioux tribes. This was seen as war by the Americans, who responded promptly and killed these natives. Overall, about 46,000 natives were removed during Jackson's administration. Today, around 300,000 Cherokee live in the United states, and they are the biggest federally recognized group.  \end{itemize}}%
+
+\topic{Did Jackson realize it was his fault for the panic in 1837? If so, did he feel bad about it, or did he continue happily knowing he caused the destruction of the bank?}{\begin{itemize} \item Jackson absolutely despised the \textbf{Second Bank of the United States}. He made it his duty to dissolve this bank, although he had many hurdles to jump through. The First Bank of the United States was shut down by Jefferson in 1811. The War of 1812 meant a strong economy was essential for the United States, and, as such, the Second Bank of the United States was created. Some people who wanted less government involvement in economy, including Andrew Jackson, argued that the Panic of 1819 was caused by the bank. \item Nicholas Biddle, the president of the United States Bank, would battle with Jackson. Ultimately, Jackson would be the victor. Because Jackson was a populist, he could not directly remove the bank, as many people supported it. In the elction of 1832, a modern political split occured. The Democrat-Republicans split into the democrats and the whigs. The democrats supported Jackson, while the whigs supported Henry Clay. Clay would team up with Biddle to have a platform against Jackson, however Jackson still easily won the majority. Biddle was trying to make the national bank more appealing to gain popular support. One of his moves was to loosen restrictions on credit. After this Jackson maded his move. He devised 23 state banks, into which he wanted to deposit the federal funds. He asked the treasury secretary, McLane, to move the funds, but McLane refused because it was illegal unless the funds were unsafe. Jackson promoted him to Secretary of State, and appointed a new Secretary of Treasury, who also refused to move the funds, and would later be fired. Finally, Roger B. Taney, a third secretary of state came up with a comrpomise: the funds would remain, but new funds would be deposited in state banks. This way, the national bank would bleed out, as bills were paid from there, with no new funds added. Jackson had got the victory he wanted, although he caused another panic in 1837. A new central bank would not be established until 1913.  \end{itemize}}%
+
+\topic{Prior to any personal or political hatred, what were relations between Calhoun and Jackson like?}{\begin{itemize} \item What began as a personal hatred would soon bloom into a debate on states' rights and, ultimately, the Civil War. John C. Calhoun, who had been elected vice president alongside Adams in 1824, was elected vice president again in 1828. As it can be predicted, relations between Jackson and Adam's former vice president were not very good. First of all, they had personal strife which occured as a result of feuding between their wives. This turned into a debate on tariffs, as Jackson, although he personally opposed them, supported them for the campaign to gain popular support. Calhoun, on the other hand, a South Carolinian, was strongly against tariffs, as it caused increase in prices for products in slave states, which did not have any industrial output. \item The tariff which would be passed in 1828 would become known as the \textbf{Tariff of Abominations}, as it was clearly in favor of the industrial north. This would be an early marker for the argument of states' rights, as South Carolina nullified the unfair tariff, for fear of banishment of slavery and federal power. When the federal government said it was to use force, South Carolina responded by threatening secession from the Union. South Carolina had threatened to secede nearly three decades before the Civil war. \item This tension between South Carolina and the government only worsened with Calhoun being the vice president, as Calhoun supported the Carolinians, while Jackson opposed them. Some modifications in the taxing rate for different products was made, however, Jackson refused to back down with the tariff. This stand off would finally end with South Carolina coming to terms, as a bill was passed in Congress which compromised and allowed Jackson to put down the rebellion. South Carolina, though, did not want to seem weak, and, as such, they nullfied this new government bill, which they called the ``Force Bill,'' although they did accept the terms of tariffs.   \end{itemize}}%
+
+\topic{What was the most common religious denomination at this time?}{\begin{itemize} \item In July, 1824, Charles Grandison Finney, a former lawyer, was ordained a Presbyterian minister. He preached with appeals to logos, as a lawyer would. Furthermore, in Connecticut, Lyman Beecher embraced religion, and he helped form interdenominational congregations. In addition to this, Beecher established an education and religious system in Ohio. This marked the beginning of the Second Great Awakening  \end{itemize}}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+\topic{}{}%
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
