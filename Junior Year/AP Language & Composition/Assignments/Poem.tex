@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx,lipsum}
+\def\pageanswers{}
+\newcounter{problemNo}
+\makeatletter
+\newcommand\problem[3][\relax]{%
+  \stepcounter{problemNo}%
+  \par\smallskip%
+  \theproblemNo.~~#2?%
+  \par\smallskip%
+  \protected@edef\pageanswers{\pageanswers$^{\theproblemNo}$#3\ \quad}%
+  \ifx\relax#1\else\showpageanswers\fi%
+}
+\makeatother
+\newcommand\showpageanswers{\if\relax\pageanswers\relax\else%
+  \revfootnote{\pageanswers}\def\pageanswers{}\fi}
+\newcommand\revfootnote[1]{\renewcommand{\thefootnote}{}%
+  \footnotetext{\savebox\fnbox{\parbox{%
+  \dimexpr\textwidth\relax}{#1\strut}}\kern-18pt%
+  \rotatebox{180}{\usebox{\fnbox}}}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+  \LARGE{Tone\footnote{\rotatebox{180}{apathetic (i.e. \emph{overwhelming indifference})}}}
+\end{center}
+
+\begin{center}
+  \Large{Unbiased demeanor}  \\
+  \Large{His passion was dispassion}  \\
+  \Large{I think, I am \dots okay}  \\
+\end{center}
+
+\begin{center}
+  \large{\underline{\textsc{Haiku}}}
+\end{center}
+
+\end{document}
+
