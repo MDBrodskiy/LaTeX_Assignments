@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx} 
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\Celsius{^{\circ}\textsc{C}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\mmHg{\textsc{mmHg}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 5 $-$ Problems 54, 56, 64, 86}
+\date{October 29, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{53}
+
+  \item Rank the gases \ce{Xe}, \ce{CH4}, \ce{F2}, and \ce{CH2F2} in order of (a) increasing speed of effusion through a pinhole (b) increasing time of effusion
+
+    \begin{enumerate}
+
+      \item Speed:
+
+    \begin{tabular}[H]{l c c c c r}
+      Least & \ce{Xe} & \ce{CH2F2} & \ce{F2} & \ce{CH4} & Greatest\\
+    \end{tabular}
+
+      \item Time:
+
+    \begin{tabular}[H]{l c c c c r}
+      Least & \ce{CH4} & \ce{F2} & \ce{CH2F2} & \ce{Xe} & Greatest\\
+    \end{tabular}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{55}
+
+  \item A balloon filled with nitrogen gas has a small leak. Another balloon filled with hydrogen gas has an identical leak. How much faster will the hydrogen balloon deflate? \eqref{1}
+
+    \begin{equation}
+      \begin{split}
+        m_{\ce{H2}}&=2\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        m_{\ce{N2}}&=28\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        \frac{U_{\ce{H2}}}{U_{\ce{N2}}}&=\sqrt{\frac{28}{2}}\\
+        &=3.742
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \setcounter{enumi}{63}
+
+  \item A sample of methane gas (\ce{CH4}) is at $50[\si{\Celsius}]$ and $20[\si{\atm}]$. Would you expect it to behave more or less ideally if (a) the pressure were reduced to $1[\si{\atm}]$? (b) the temperature were reduced to $-50[\si{\Celsius}]$
+
+    \begin{enumerate}
+
+      \item More
+
+      \item Less
+
+    \end{enumerate}
+
+    \newpage
+
+    \setcounter{enumi}{85}
+
+  \item Each bulb contains argon gas with amounts proportional to the number of circles pictorially represented ($A\rightarrow2$, $B\rightarrow4$, $C\rightarrow10$) in the chamber. All three bulbs are maintained at the same temperature. Unless otherwise stated, assume that the valves connecting the bulbs are closed and seal the gases in their respective chambers. Assume also that the volume between each bulb is negligible. (a) Which bulb has the highest pressure? (b) If the pressure in bulb A is $.5[\si{\atm}]$, what is the pressure in bulb C? (c) If the pressure in bulb A is $.5[\si{\atm}]$, what is the total pressure? (d) If the pressure in bulb A is $.5[\si{\atm}]$, and the valve between bulbs A and B is opened, redraw the figure shown above to accurately represent the gas atoms in all three bulbs. What is $P_A + P_B + P_C$? Compare your answer in part (d) to part (c). (e) Follow the instructions in part (d) but now open only the valve between bulbs B and C. 
+
+    \begin{enumerate}
+
+      \item The bulb with the most particles (C)
+
+      \item \eqref{2}
+
+        \begin{equation}
+          \begin{split}
+            .5&=\frac{2\cdot.0821\cdot T}{1}\\
+            T&=3.05[\si{\kelvin}]\\
+            P_{C}&=\frac{10\cdot.0821\cdot3.05}{1}\\
+            &=2.5[\si{\atm}]
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \eqref{3}
+
+        \begin{equation}
+          \begin{split}
+            P_{total}&=P_A+P_B+P_C\\
+            P_A&=.5[\si{\atm}]\\
+            P_B=2P_A&=1[\si{\atm}]\\
+            P_C=5P_A&=2.5[\si{\atm}]\\
+            P_{total}&=.5+1+2.5\\
+            &=4[\si{\atm}]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item Figure \ref{fig:1}
+
+        \begin{figure}[H]
+          \centering
+          \include{Figures/ABOpen}
+          \caption{Result of Opening Valve AB. Total Pressure Remains $4[\si{\atm}]$}
+          \label{fig:1}
+        \end{figure}
+
+      \item Figure \ref{fig:2}
+
+        \begin{figure}[H]
+          \centering
+          \include{Figures/BCOpen}
+          \caption{Result of Opening Valve BC. Total Pressure Remains $4[\si{\atm}]$}
+          \label{fig:2}
+        \end{figure}
+
+    \end{enumerate}
+
+    
+\end{enumerate}
+
+\end{document}
+
