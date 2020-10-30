@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Differential Equations (MATH-294)
+% Professor: M. Shah
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead[\textsc{Fall 2020}]{\textsc{Fall 2020}}
+\chead[\textit{Differential Equations Exam 2 Equation Sheet}]{\textit{Differential Equations Exam 2 Equation Sheet}}
+\rhead[\textsc{Math-294}]{\textsc{Math-294}}
+\cfoot[\thepage]{\thepage}
+
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\begin{multicols}{2}
+
+  \begin{equation}
+    \begin{split}
+      W(f_1,f_2,f_n)&=\begin{vmatrix} f_1 & f_2 & f_n \\ f_1' & f_2' & f_n' \\ \vdots & \vdots & \vdots \\ f_1^{n-1} & f_2^{n-1} & f_n^{n-1}\\ \end{vmatrix}\\
+    \text{If }W(f)\neq0\text{, } $f$& \text{ is linearly independent}
+      \end{split}
+    \label{1}
+  \end{equation}
+
+  \begin{equation}
+    \begin{split}
+      y_2=y_1(x)&\int\frac{e^{-\int P(x)\,dx}}{(y_1(x))^2}\,dx\\
+    \text{Where $y_1(x)$ is a}& \text{ known function}\\
+  \text{And $P(x)$ is the}& \text{coefficient of $y'$}
+    \end{split}
+    \label{2}
+  \end{equation}
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+  \begin{equation}
+    \begin{split}
+      \alpha\pm \beta i&\Rightarrow e^{\alpha x}\left( c_1\cos(\beta x)+c_2\sin(\beta x) \right)\\
+    \beta i&\Rightarrow  c_1\cos(\beta x)+c_2\sin(\beta x) \\
+      \alpha, \beta&\Rightarrow c_1e^{\alpha x}+c_2e^{\beta x}\\ 
+      \alpha &\Rightarrow c_1e^{\alpha x}+c_2xe^{\alpha x}\\ 
+    \end{split}
+    \label{3}
+  \end{equation}
+
+  \begin{equation}
+      \begin{split}
+        D^n\text{; } & x^{n-1}\\
+        (D-\alpha)^n\text{; } & x^{n-1}e^{\alpha x}\\
+        [D^2-2\alpha D+\alpha^2+\beta^2]^{n}\text{; }& x^{n-1}e^{\alpha x} \cos \beta x
+    \end{split}
+      \label{4}
+    \end{equation}
+
+
+\end{multicols}
+
+\hline
+
+\end{document}
+
