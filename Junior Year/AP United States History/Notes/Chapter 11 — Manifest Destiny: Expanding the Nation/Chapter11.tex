@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 11 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{How did the term Manifest Destiny spread throughout the United States? Communication methods weren't as effective, so was it published in a newspaper, or did it just spread by word of mouth?}{\begin{itemize} \item By the 1840s, a name would be placed on a common sentiment and idea throughout the United States. This would be that of \textbf{Manifest Destiny}. Many believed that the US should not only be a beacon for democracy, but also for Protestant beliefs. As such, many people supported the expansion of the United States, and they believed that it should reach to the Pacific. As a direct result of this, America would nearly double in size from 1845 to 1848, going from 1.8 million square miles, to nearly 3 million. Regarding religion, some people also believed that there was a tension between Catholic Mexico and the Protestant United States for control of the continent. \item There were, however, counterarguments to expansion. Usually, the democrats supported westward movement, whereas the Whigs wanted a more reserved government. Furthermore, the southern states were worried that, with new territories like Oregon and California, the non-slave states would have a political advantage. On the other hand, the north was worried about admitting Texas, as it meant a new slave state. As such, the tensions between the north and south, the anti-slave versus slave, would lead to the Civil War.  \end{itemize}}%
+
+\topic{In terms of military, who was stronger, the US or Mexico? If it was the US, why didn't they just make a large push to avoid months of bloodshed?}{\begin{itemize} \item During this period, tensions in Texas began to elevate. The Mexican government had allowed Moses Austin, who sent his son, Stephen, colonize part of Texas as an \textit{empresario}, or a colonizing agent. Mexico had believed that, given time and more settlers, the growth of this colony in Texas would establish stable borders between the US and Mexico. The only direct result of this, though, would be that an overwhelming American population would fill the vast territory. Furthermore, the capital of Mexico was too far away and too new to do anything about this migration, until 1830 when they prohibited any new American settlers. The Mexican government began to station more troops at the borders and near the American colonies to combat more immigrants. \item This is when the conflict began to grow exponentially. The stationing of more troops caused many of the American colonies to to revolt, which drew support from the Tejanos. In addition to this, Mexico wanted American trade to be routed through Mexico, rather than to go directly to Texas. These demands somewhat infuriated the Americans, which prompted American colonists to organize a militia of 30,000 men under command of Sam Houston. Austin was also sent to Mexico City, however, he was imprisoned for almost two years. Most Americans seemed to agree that war was the only way out. \item In 1835, Americans captured the Alamo at San Antonio de Bexar. Mexican president Santa Anna ordered an attack on the Alamo, where many important men were killed and captured, resulting in a Mexican victory. The American call to arms became, ``remember the Alamo!'' On top of this, Santa Anna marched on Goliad, and captured it in March of 1836, executing all of the captured Americans. On March 2, 1836, Americans recognized the independence of the Spanish republic. On April 21, 1836, Americans, under Houston, defeated Santa Anna at the battle of San Jacinto. This would result in the Treaty of Velasco, which required that Mexico recognize Texan independence, withdraw its troops, and end the war. Although Texas wanted to be annexed by America, the Americans were reluctant, which left Sam Houston as president, and Austin as Secretary of State. \end{itemize}}%
+
+\topic{Was the access to the sea the only reason the Americans had taken interest in California, or were they aware of the fertile lands there as well?}{\begin{itemize} \item Even prior to the revolt in Texas, Americans looked west at (Alta) California. They were interested in the long coast, where they could set up naval bases and establish ports for their maritime trade. Most of the people living in Alta California at the time were either Priests and Friars or converts of the missionary system. There were very little American settlers here, although there were some, most of who took on Catholicism and Mexican citizenship. In December 1845, John C. Fr\'emont, a Captain in the US Army, went on, what he said to be, a map-making expedition to California. Fr\'emont, along with a naval ship which arrived in April 1846 and Thomas Oliver Larkin, the US counsel in California, were supposed to spread revolutionary sentiment so that California would become part of the United States.  \end{itemize}}%
+
+\topic{Although the Democratic-Republican Party and the Federalists had pretty much dissolved, did that mean that their ideas were dissolved as well? Or did those ideas just transfer to the new parties?}{\begin{itemize} \item During his presidency, Jackson truly defined the new Democrat party. He made it based on two main things: first, reduction of federal power (small government), and second, the idea of Manifest Destiny. In 1835, Jackson and Van Buren called the first national political convention in an attempt to form, strong, independent parties, which would be a precursor to the modern parties. At this convention, Jackson controlled Van Buren to push him through the election. In addition to this, Jackson chose Richard Mentor Johnson to be Van Buren's vice president. \item In response, to Jackson's new, strong party, the Whigs emerged with their party, which was based on two things: first, creating a larger government, and second, opposition to Jackson. The Whigs were not strong enough to call a convention, and, as such, they needed to decide on a new candidate, as Henry Clay lost in 1832. They nominated William Henry Harrison, one who won as many battles in the War of 1812 as Jackson, as their candidate. The Whigs failed, which meant Van Buren was to be president. Van Buren would face many challenges, mostly as a result of Jackson's presidency. \item First of all, Van Buren wanted to repay his southern supporters. He did so by passing the \textbf{Gag Rule}, which essentially meant that any abolitionist petition to Congress meant nothing. John Quincy Adams found many ways to circumvent or antagonize Van Buren and his attempts to appease the south. \item One of the biggest problems Van Buren faced was that of the \textbf{Panic of 1837}. A direct result of Jackson's decision to destroy the national bank and pay off the national debt, the Panic caused loss of money for almost everyone in the nation. The \textbf{Specie Circular}, which essentially removed any government notes, caused a reversion back to gold and silver, which meant many people pulled their money out of banks at once.  \end{itemize}}%
+
+\topic{Why did Harrison decide not to wear a coat? Isn't it kind of contradictory that he had the longest inauguration speech, but the shortest presidency?}{\begin{itemize} \item Another panic hit in 1839, and lasted until 1843. This was the most severe economic failure prior to the Great Depression. In 1840, Harrison and Tyler won the presidency. While giving his inauguration speech, Harrison did not wear a jacket, and, as such, caught a cold. This would prove to be fatal, as this would develop into pneumonia, from which he died a month into office. His vice president, Tyler, took over. Tyler saw expansion as the most important issue at hand. He signed the \textbf{Webster-Ashburton Treaty}, which established the western border with Canada as war west as Minnesota. \item From here, Tyler turned to other issues concerning expansion. He moved to annex Texas. Initially, he attempted to sign a treaty, which failed, as far less than two-thirds of the Senate approves it. With James K. Polk's advice, Tyler, instead of signing a treaty, directly annexed Texas, meaning that it was officially a state. Three days after Tyler officially admitted Texas, Polk was sworn into office.  \end{itemize}}%
+
+\topic{What was the primary reason that Polk wanted the Oregon territory for? Was it for the coastline? The land itself?}{\begin{itemize} \item When running, president Polk promised to attain a large portion of the Oregon territory, up to Alaska, or $54^{\circ}40'$. Ultimately, Polk would settle for the 49th parallel. Calhoun greatly despised the Oregon area, as he wanted to avoid any conflict with Britain, and wanted less anti-slave states in Congress. On the other hand, Adams wanted the region for the exact reasons Calhoun hated it.  \end{itemize}}%
+
+\topic{What was the reason for the shift in Santa Anna's policy regarding relations with Americans? Did he want revenge to the wars in Texas in the 1830s?}{\begin{itemize} \item Polk was trying to jump on any opportunity to attain Texas, as well as New Mexico and California. Tensions first arose when Polk argued that the border of Texas was the Rio Grande, which meant that Texas was much larger than the Mexicans believed. They though that the border of Texas was the Nueces, which would've meant a much smaller Texas. Polk considered any options, whether it be to buy the land or to invade. \item Polk decided to invade. He sent Zachary Taylor to the Rio Grande, with orders to destroy any Mexican troops that crossed it. Once Taylor encountered a force, a battle did take place. This was publicized as a Mexican attack on Americans, meaning that Polk went to Congress to authorize a war. Although many were against it, the declaration of war ultimately passed. The war Polk had started would last much longer, though. Taylor began to move into Mexico, towards Mexico City. The closer he got, though, the more his force would be stretched. He encountered a problem that Hitler would encounter less than 100 years later: extreme temperatures, vast, difficult terrain, and limited forces. \item Polk realized this war was not going to be as quick as he anticipated. He accelerated the process by appointing Winfield Scott to plan an invasion$-$the largest amphibious invasion until D-Day. Ultimately, Scott would be successful, but Polk quickly removed him following the victory so that Scott would not become a political enemy. Overall, America had invested as much as \$100 million dollars into the war, and both the American and Mexican economy had been decimated.  \end{itemize}}%
+
+\topic{If it was a well-known fact that the United States wanted the California territory, why would the Californios revolt? Did they not understand that it would make them an easier target?}{\begin{itemize} \item Fighting occurred in places other than Texas. This was mostly in the New Mexico and California regions, however, it was much smaller than those of the Texas battles. In California, Mexican General Mariano Vallejo was jailed in Fort Sutter. As no other Mexican authorities were present, American immigrants and Californios declared the \textbf{Bear Flag Revolt}. This declared California an independent entity, to the delight of Polk. \item In April 1847, Nicholas Trist was negotiating a treaty with Mexico. Although Polk kept demanding more and more from Mexico, Trist was embarrassed and saddened by the fact that he was taking this land following a war. Ultimately, the \textbf{Treaty of Guadalupe Hidalgo} was agreed upon, and the United States received California, most of New Mexico, and Texas, now up to the Rio Grande. \item There was still a thin strip of land around the southwestern region of modern America that was in possession of Mexico. This piece would be obtained through the \textbf{Gadsden Purchase}, and would mark the completion of the conquest of the 48 contiguous United States, and Polk's presidential goals, which meant he would not run in the next election.  \end{itemize}}%
+
+\topic{Who were the most successful people in gold mining, and why?}{\begin{itemize} \item While the drafting of the Treaty of Guadalupe Hidalgo was still proceeding in Mexico, a man in Sacramento, California discovered a shiny yellow metal. This, of course, was gold, and news would spread quickly. The population of Indians in California who knew the land would skyrocket, as they moved to get a shot at making a fortune. Along with them came many Mexicans from down south, while many Americans came from the north or whaling companies out at sea. Many Chinese and French would move out as well. \item This made the population, as well as the economy of California, shoot up. For many who were too late, chances of success were extremely low. This would lead to the formation of mining companies and corporations. As time progressed, chances of success as a solo miner became less and less, and many would move to working for corporations. This meant that the chances of making a personal fortune virtually went to zero. \item At the same time as the \textbf{California Gold Rush}, whaling was becoming a growing industry. More and more men (and some women) were joining crews to hunt whales, which provided fat for lamps, and bones, which were used in dresses and various structures. Many slaves would join these crews in an attempt to run away, as most men who sailed on such ships were paid the same.  \end{itemize}}%
+
+\topic{Why were China and Japan so reluctant to engage with the western world? Was it a feeling of superiority? Was it more for preservation of culture?}{\begin{itemize} \item A period of early imperialism would follow the establishment of the contiguous United States. This was because, now that the US obtained its own ports, in both Oceans, they needed to establish loyal trading partners in the Pacific. This would manifest itself in the near-total takeover of Hawaii, the British Opium wars with China, and the forced opening of ports by Commodore Perry in Japan.  \end{itemize}}%
+
+\summary{America would increase the most in size during the first half of the \nth{19} century. With the Louisiana Purchase came a national sentiment of desire for expansion. Up until the 1840s, there was no such official term$-$it was only an idea. Around 1840, however, that would change. The idea was officially proclaimed to be \textit{Manifest Destiny}, for America to stretch coast to coast, Atlantic to Pacific. The most growth would be seen under President Polk, a ruthless leader who let the end justify the means. He would indirectly cause conflict with Mexico over the regions of Texas, New Mexico, and California. After a few decades of war, he would achieve his goal. Less than a year after he achieved his goal, gold would be found in California, bringing on an economic boom. People flooded from all over the world; industries boomed. Trade would be established with countries in the Pacific: China, Hawaii, and Japan. Ultimately, this period from the 1830s to the 1850s would see the rise of America as a powerhouse, both economically and militaristically.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
