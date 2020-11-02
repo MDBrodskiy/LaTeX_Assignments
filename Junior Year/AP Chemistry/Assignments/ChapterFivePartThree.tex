@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx} 
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\Celsius{^{\circ}\textsc{C}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\mmHg{\textsc{mmHg}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 5 $-$ Problems 12}
+\date{November 3, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{11}
+
+  \item A sealed tank at room temperature, $25[\si{\Celsius}]$, has $22[\si{\gram}]$ of \ce{CO2}. The gas has a pressure of $732[\si{\mmHg}]$. The tank is moved to a room kept at $12[\si{\Celsius}]$ and an additional $10[\si{\gram}]$ of \ce{CO2} are added to the tank. What is the pressure in the tank? Assume no loss of gas when more \ce{CO2} is added. \eqref{1}
+
+    \begin{equation}
+      \begin{split}
+        732[\si{\mmHg}]=&.963[\si{\atm}]\\
+        22[\si{\gram}_{\ce{CO2}}]=&.5[\si{\mole}_{\ce{CO2}}]\\
+        V=&\frac{.5\cdot.0821\cdot298}{.963}\\
+        =&12.7[\si{\liter}]\\
+        32[\si{\gram}_{\ce{CO2}}]=&.727[\si{\mole}_{\ce{CO2}}]\\
+        P=&\frac{.727\cdot.0821\cdot285}{12.7}\\
+        =&1.34[\si{\atm}]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
