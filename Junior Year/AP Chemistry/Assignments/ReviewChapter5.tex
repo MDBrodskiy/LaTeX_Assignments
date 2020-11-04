@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx} 
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\Celsius{^{\circ}\textsc{C}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\mmHg{\textsc{mmHg}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 5 $-$ Problems 12}
+\date{November 3, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Calculate the density of water at STP.
+
+    \begin{equation}
+      \begin{split}
+        \text{At STP: }& n=1[\si{\mole}],\,V=22.4[\si{\liter}]\\
+        \rho&=\frac{18\cdot1}{22.4}\\
+        &=.804\left[ \frac{\si{\gram}}{\si{\liter}} \right]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item What volume of oxygen at $50[\si{\Celsius}]$ and $1[\si{\atm}]$ is required to combust with $2[\si{\gram}]$ of \ce{C8H18}?
+
+    \begin{equation}
+      \begin{split}
+        \ce{C8H18 + O2 &-> CO2 + H2O}\\
+        \ce{2C8H18 + 25O2 &-> 16CO2 + 18H2O}\\
+        \ce{C8H18 &->} 114\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        \frac{2}{114}&=.0175[\si{\mole}]\\
+        .0175\cdot\frac{25}{2}&=.219[\si{\mole}]\\
+        V&=\frac{nRT}{P}\\
+        \frac{.219\cdot.0821\cdot323}{1}&=5.808[\si{\liter}]
+      \end{split}
+      \label{2}
+    \end{equation}
+    
+  \item Explain in terms of Kinetic Molecular Theory what happens to a container with gas in it when the volume is increased.
+
+    \begin{justifying}
+      When the volume is increased, the pressure decreases because the molecules make contact with the walls less often.
+    \end{justifying}
+
+  \item What volume of oxygen is collected with water vapor at $23[\si{\Celsius}]$ by reacting $2.3[\si{\gram}]$ of \ce{KClO3} if the total pressure is $742[\si{\mmHg}]$ and water vapor pressure is $21.07[\si{\mmHg}]$?
+
+    \begin{equation}
+      \ce{2KClO3 -> 2KCl + 3O2}
+      \label{3}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        742[\si{\mmHg}]&=.976[\si{\atm}]\\
+        21.07[\si{\mmHg}]&=.0277[\si{\atm}]\\
+        m_{\ce{KClO3}}&=123\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        \frac{2.3}{123}&=.0187[\si{\mole}]\\
+        \frac{3}{2}\cdot.0187&=.028[\si{\mole}_{\ce{O2}}]\\
+        V&=\frac{nRT}{P}\\
+        \frac{.028\cdot.0821\cdot296}{.976-.0277}&=.718[\si{\liter}]\\
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item A refrigerant system uses $5.0[in^3]$ of \ce{He} compressed to 195[psi] at $20[\si{\Celsius}]$. What mass of \ce{He}, in grams, is needed for such a system? ($1[in]=2.54[\si{\centi\meter}]$)
+
+    \begin{equation}
+      \begin{split}
+        195[psi]&=13.27[\si{\atm}]\\
+        5[in^3]&=.082[\si{\liter}]\\
+        n&=\frac{13.27\cdot.082}{.0821\cdot293}\\
+        &=.045[\si{\mole}]\\
+        4\cdot.045&=.18[\si{\gram}]
+      \end{split}
+      \label{5}
+    \end{equation}
+
+  \item A balloon is filled with $1[\si{\liter}]$ of helium at $1[\si{\atm}]$ and a starting temperature. The balloon rises to a point where the pressure is $220[\si{\torr}]$, temperature is $-31[\si{\Celsius}]$, and the volume of the balloon increases $2.8[\si{\liter}]$. What is the starting temperature of the balloon?
+
+    \begin{equation}
+      \begin{split}
+        T&=\frac{PV}{nR}\\
+        \frac{1\cdot1}{.0821}&=\frac{12.18}{n}[^{\circ}\si{\kelvin}]\\
+        n&=\frac{PV}{RT}\\
+        220[\si{\torr}]&=.289[\si{\atm}]\\
+        \frac{2.8\cdot.289}{.0821\cdot242}&=.0407[\si{\mole}]\\
+        \frac{12.18}{.0407}&=299.26[^{\circ}\si{\kelvin}]
+      \end{split}
+      \label{6}
+    \end{equation}
+
+  \item If $7.75[\si{\gram}]$ of \ce{SO2} is added, at constant temp and volume, to $5.87[\si{\liter}]$ of \ce{SO2} at $705[\si{\mmHg}]$ and $26.5[\si{\Celsius}]$, what will be the new gas pressure?
+
+    \begin{equation}
+      \begin{split}
+        705[\si{\mmHg}]&=.928[\si{\atm}]\\
+        \ce{SO2 &->} 64\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        \frac{7.75}{64}&=.121[\si{\mole}]\\
+        n&=\frac{5.87\cdot.928}{.0821\cdot299.5}\\
+        &=.222[\si{\mole}]\\
+        P&=\frac{(.222+.121)\cdot.0821\cdot299.5}{5.87}\\
+        &=1.44[\si{\atm}]
+      \end{split}
+      \label{7}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
