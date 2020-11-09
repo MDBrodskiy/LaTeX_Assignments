@@ -1,0 +1,158 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 12 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{What was the greatest push factor from the immigrants' countries? Famine? War? Oppression? What was the greatest pull factor in America? Freedom? Equality of Opportunity? More Jobs?}{\begin{itemize} \item From 1830$-$1850, America would nearly double its population. Although most of this was a result of births within the United States, immigration would account for a large part of the increase. Another thing which effected the population, but is often overlooked, is the vast areas that were acquired. These areas housed many people$-$ Mormons in Utah, Mexicans in Texas, New Mexico, and California, and many natives. \item In 1840, America had three major groups: (mostly English) Europeans, African-Americans, and native Indians. The Europeans and the African-Americans were usually Protestant, whereas the natives followed their traditional religions. Even though the percentage of African Americans in the American population decreased, the actual numbers increased. This was a result of increasing white migration from Europe, caused by famines, such as the one in Ireland, oppression, and conflict. By 1860, America would house about 1.5 million Irish-born immigrants, 1 million German-born immigrants, and 35,000 Chinese-born immigrants.  \end{itemize}}%
+
+\topic{How was the Chinese population able to grow to such a magnitude without having the means for survival?}{\begin{itemize} \item In 1762, the population of China was around 200 million. In 1846, the population more than doubled to 421 million. Such a large population was impossible to maintain for the Chinese government$-$they were simply not able to produce enough rice to feed everyone. This, along with the Opium Wars with Britain and stories and legends of the riches in America caused a mass emigration from China. Initially, the Chinese were welcomed, as they were good laborers for cheap prices. However, there would be more and more Chinese moving to the US and Hawaii, many of which chose California due to the ongoing gold rush. \item The increasing amounts of Chinese would cause public attitudes to change. When shortages of workers were filled, but Chinese immigrants kept coming, people began to exclaim ``California for Americans!'' Chinese would be driven from the gold fields. Of all the Chinese immigrants, around 95 percent were men. The few women that came, though, were forced into prostitution. As gold mining became less successful, Chinese immigrants began to work for railroad companies. Work would be long and difficult, but many came regardless of this, as it was better than the events in China.  \end{itemize}}%
+
+\topic{While the immigration factor for the Irish was the potato famine, what pushed the Germans to move to America? The book doesn't mention this.}{\begin{itemize} \item During the \textbf{Great Famine of 145$-$1850} (more commonly known as the Irish Potato Famine), many poor Irish scraped together enough cash to migrate to the United States. With about 90 percent of the fall potato crop gone, the Irish either had to stay and die, or move. Some 2 million Irish migrated during the decade following the famine. Most of these people set out for America. \item Once settled in America, the Irish would find jobs, usually building cities or railroads for men, factories for both, and house work for women. The journeys from Ireland were awful. It took around 5-6 weeks, and the ships' conditions were horrible. Thus, the ships were nicknamed ``coffin ships.'' In 1848, Irish immigrants sent over 500,000 British pounds back to their homes for their families. Many Irish were also often mistreated for being Catholic$-$something the general population saw as inferior. In 1845, an anti-immigrant and anti-Catholic political party, known as the \textbf{Know Nothing Party} (a reference to asking a member about the party, as they replied, ``I know nothing'') \item Along also came the Germans, a much more religiously-diverse group. From Catholics to the Amish, the migrating Germans would establish many traditions we know today, such as the Christmas tree and beer. Unlike the Irish, the Germans generally established their own communities, where they would set up shops, churches, and homes.   \end{itemize}}%
+
+\topic{Is the lawlessness and violence discussed in this section what modern Westerns are based off of?}{\begin{itemize} \item Unlike the native Americans, the Mexicans felt an impact as soon as the Treaty of Guadalupe Hidalgo was passed. Many Mexicans, such as Mariano Vallejo and Juan Bandini actually wanted an American takeover, even before the war with M\'exico. For them, America looked more opportunistic and free, as compared to the distant Mexican capital. The gold rush, however, would crush their dreams. The US government had planned to sell the lands they acquired to those now moving to California, and this was unexpected for those who wanted American acquisition. \item For people like Vallejo, the lands, which were given to them by the Mexican government, were seized and/or sold by the American government. The Mexicans proclaimed these people ``legal thieves'' of their land. The Treaty of Guadalupe Hidalgo had promised these Mexicans that their liberty and property was to be preserved. \item In Texas, the Tejanos were getting a similar treatment once Texas became a state. Where the state government used to be controlled by Tejanos, the Americans changed that. Following the gaining of statehood in Texas, the amount of Tejanos in government decline sharply. \item In New Mexico, the Hispanic elites fared better, as Americans were still a minority when it became a state. There were many revolts in such territories, however, most people came to terms with the new normal. Gertrudis Barcelo, a saloon and gambling house owner made a fortune thanks to the Santa Fe Trail, which went from St. Louis to Santa Fe, where her gambling house stood. Because of the divide created by the annexation of the new lands and the Mexican protests to it, \textbf{Committees of Vigilantes} began to form in the California gold fields. Such groups were meant to administer justice, although they were usually prejudiced. Many lynchings and attacks took place because of this.  \end{itemize}}%
+
+\topic{At what point in United States History was treatment of slaves the ``best?'' It seems as though the most reforms were passed during the period right before the civil war.}{\begin{itemize} \item As it had over the decades, slavery began to change once again. Many anti-slavery forces began to form throughout the north. The Liberty Party and the Free Soil Party both campaigned for abolition of slavery, however, their candidates would not be elected. Earlier, southerners had argued that slavery was a ``necessary evil'' to keep the American economy moving. Later on, southerners began to argue that, unlike factory workers, slaves were given food, clothed, and sheltered, and, therefore, they got better treatment. \item Along with the increasing followers of abolition came strong supporters of slavery. One example is Roger B. Taney, who defended a methodist preacher who called slaves evil, saying that they will rise up and kill their owner's children. \item Treatment of slaves, however, did get better, but it was because they became worth more. The owners began to reason that, if a slave was well-fed, they would work harder than if they were starved and beaten. Due to the high prices, slaves began to be seen as too valuable to be killed by a beating. More meat was given to slaves, as well as better quarters (usually built by the slaves themselves, though). \item In 1820, the slave population was 1.5 million, whereas it grew to 4 million in 1860. As it was agreed upon, importation of slaves was forbidden in 1808, which means that the population increase was a direct result of reproduction in the African communities. Oftentimes, slaves would be raped by their owners, which meant that the children were often of mixed heritage. Slaves began to protest smartly, though, as, instead of directly disagreeing or rebelling against an owner, they would feign illness or pregnancies to slow down work. \end{itemize}}%
+
+\topic{How did news of the Underground Railroad and such activities spread among the African-American slaves?}{\begin{itemize} \item Although many combated slavery through passive means, newspaper advertisements that announced a lost slave were common, and thus indicate that this was a common occurrence. It is estimated that roughly 50,000 slaves made attempts to escape yearly. As more slaves escaped, more were inspired, which meant that the rate at which slaves escaped increased over time. Many famous abolitionists were escaped slaves, such as Harriet Tubman and Frederick Douglass. Tubman was famous for the creation of \textbf{The Underground Railroad}. This was a collection of underground (secret) routes used by ``conductors,'' or those who would lead slaves to freedom. These routes connected plantations to houses of sympathizers who would help escapists. \item Although not too common, slave revolts did occur to some extent. Most were small, single-plantation call to arms, but some did reach numbers in the tens of thousands. For example, Denmark Vesey's 1822 revolt garnered support from thousands of slaves, before word of the plans got out. Nat Turner's 1831 revolt saw the death of about 60 whites and over 100 slaves. After this revolt, slave owners became increasingly worried regarding revolts.   \end{itemize}}%
+
+\topic{Why was there such an increase in the amount of abolitionists? Was it mostly due to the Second Great Awakening?}{\begin{itemize} \item Around the 1830s, there was a sharp increase in the amount of white abolitionists, and abolitionists in general. For example, William Lloyd Garrison, the publisher of \textit{The Liberator}, berated slavery starting in 1831, and would do so until 1865, when the thirteenth amendment was passed. Although Garrison usually worked alone, he was a key component in starting the \textbf{American Anti-Slavery Society}. Garrison befriended other abolitionists, such as Frederick Douglass. At a civil rights rally, Garrison burned a copy of the Fugitive Slave Act of 1850. Many other Americans like Garrison would pursue the liberation of slaves, although Garrison tried to do so through peaceful means. \item Theodore Dwight Weld, a man who worked closely with Charles Grandison Finney, would also work to free the slaves. Weld was a strong supporter of revivalism and activism.  \end{itemize}}%
+
+\topic{Like with the increase in abolitionists, what prompted more feminists to appear? Was it also the Second Great Awakening?}{\begin{itemize} \item Overall, the sisters Grimk\'e would be some of the most important and influential feminists of their time. Angelina Grimk\'e married Theodore Dwight Weld and moved in with him, along with her sister. Together, the trio campaigned for both, slave rights and women rights. The Grimk\'e sisters were some of the earliest feminist writers, and, often, when they would campaign with Weld, they would hear yells from the crowd telling them not to tell the men what to do. This was often the case, as women were not supposed to present to a crowd of men and women. \item In 1848, Elizabeth Cady Stanton and Lucretia Mott organized the \textbf{Seneca Falls Women's Rights Convention}. Many people joined in, and, quickly, the event became much bigger than Stanton and Mott projected. Soon, journals from Texas to Maine began to belittle the event. Here, those who met would sign the \textbf{Declaration of Sentiments and Resolution}. This piece would resonate as the first feminist document, which would inspire many. \item Many people would begin to support feminism, as word of it spread around. Lucy Stone, who was asked to give a commencement speech at Oberlin College, was told that a man was to read it, as a woman was not allowed to lecture a mixed crowd. Amelia Bloomer invented a different, more comfortable kind of clothes for women so that they did not have to wear the standard hoop skirts. Soon, states began to allow women to control their property. In 1851, Sojourner Truth gave a speech connecting the fight for slave rights to the fight for women's rights.  \end{itemize}}%
+
+\summary{Prior to the Civil War, many factors contributed to tensions. First of all, an increase in population, which nearly doubled the population in twenty years, would result in a greater workforce. Irish people either settled as railroad or house workers. Germans formed their own communities, where they continued to practice their traditions. The Chinese worked on railroads on the west coast, as well as panned for gold. Many people would look down upon these new immigrants. The Irish were mistreated because of their Catholic faith. The Chinese were discriminated against due to the influx of immigrants. These immigrants, however, were hard workers, and, as such, would work to better their positions. Furthermore, during this time period, slavery would see further changes. The slaves become exponentially more valuable, and, thus, owners began to treat them better. The development of run away slaves, such as those that Tubman helped escape through the Underground Railroad, and those involved in Nat Turner's slave rebellion would increase the tension between the southern owners and the slaves, ultimately coming to the abolitionists. The harder the abolitionists fought to prevent slavery from spreading, and, ultimately, forbid it in the United States, the harder the southerners fought to keep it. Furthermore, the fight for freedom would cause women to fight for their own rights. Many writers and educated women would fight for their cause, such as their property rights. Overall, these decades were important precursors to the Civil War, as people began to question evil institutions.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
