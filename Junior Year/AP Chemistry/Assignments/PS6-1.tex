@@ -48,6 +48,14 @@
     \vskip0.5em}%
 
 }
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
 \DeclareSIUnit\Molar{\textsc{m}}
 \DeclareSIUnit\atm{\textsc{atm}}
 \DeclareSIUnit\Celsius{^{\circ}\textsc{C}}
@@ -94,12 +102,20 @@ citecolor=blue,
       \item Tungsten
 
       \begin{center}
-        \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 4f^14 5p^6 5d^4 6s^2}
+        \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^6 6s^2 4f^14 5d^4}
       \end{center}
 
       \item Oxygen
 
+      \begin{center}
+        \ce{1s^2 2s^2 2p^4}
+      \end{center}
+
       \item Lead
+
+      \begin{center}
+        \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^6 6s^2 4f^14 5d^10 6p^2}
+      \end{center}
 
     \end{enumerate}
 
@@ -108,12 +124,28 @@ citecolor=blue,
     \begin{enumerate}
 
       \item Fluorine
+        
+        \begin{center}
+          \orbital{1s}{\+\-} \quad \orbital{2s}{\+\-} \quad \orbital{2p}{\+\-\ \+\-\ \+\1}
+        \end{center}
 
       \item Vanadium
 
+        \begin{center}
+          \orbital{1s}{\+\-} \quad \orbital{2s}{\+\-} \quad \orbital{2p}{\+\-\ \+\-\ \+\-} \quad \orbital{3s}{\+\-} \quad \orbital{3p}{\+\-\ \+\-\ \+\-} \quad \orbital{4s}{\+\-} \quad \orbital{3d}{\+\1\ \+\1\ \+\1\ \0\1\ \0\1}
+        \end{center}
+
       \item Bismuth
 
+        \begin{center}
+          \orbital{1s}{\+\-} \quad \orbital{2s}{\+\-} \quad \orbital{2p}{\+\-\ \+\-\ \+\-} \quad \orbital{3s}{\+\-} \quad \orbital{3p}{\+\-\ \+\-\ \+\-} \quad \orbital{4s}{\+\-} \quad \orbital{3d}{\+\-\ \+\-\ \+\-\ \+\-\ \+\-} \quad \orbital{4p}{\+\-\ \+\-\ \+\-} \quad \orbital{5s}{\+\-} \quad \orbital{4d}{\+\-\ \+\-\ \+\-\ \+\-\ \+\-} \quad \orbital{5p}{\+\-\ \+\-\ \+\-} \quad \orbital{6s}{\+\-} \quad \orbital{4f}{\+\-\ \+\-\ \+\-\ \+\-\ \+\-\ \+\-\ \+\-} \quad \orbital{5d}{\+\-\ \+\-\ \+\-\ \+\-\ \+\-} \quad \orbital{6p}{\+\1\ \+\1\ \+\1}
+        \end{center}
+
       \item Silver
+
+        \begin{center}
+          \orbital{1s}{\+\-} \quad \orbital{2s}{\+\-} \quad \orbital{2p}{\+\-\ \+\-\ \+\-} \quad \orbital{3s}{\+\-} \quad \orbital{3p}{\+\-\ \+\-\ \+\-} \quad \orbital{4s}{\+\-} \quad \orbital{3d}{\+\-\ \+\-\ \+\-\ \+\-\ \+\-} \quad \orbital{4p}{\+\-\ \+\-\ \+\-} \quad \orbital{5s}{\+\-} \quad \orbital{4d}{\+\-\ \+\-\ \+\-\ \+\-\ \+\1}
+        \end{center}
 
     \end{enumerate}
 
@@ -123,15 +155,39 @@ citecolor=blue,
 
       \item Calcium
 
+        \begin{center}
+          $n=4,\, l=0,\, m_l=0,\, m_s=\frac{1}{2}$
+        \end{center}
+
       \item Iodine
+
+        \begin{center}
+          $n=5,\, l=1,\, m_l=-1,\, m_s=-\frac{1}{2}$
+        \end{center}
 
       \item Tin
 
+        \begin{center}
+          $n=5,\, l=1,\, m_l=-1,\, m_s=\frac{1}{2}$
+        \end{center}
+
       \item Carbon
+
+        \begin{center}
+          $n=2,\, l=1,\, m_l=-1,\, m_s=\frac{1}{2}$
+        \end{center}
 
       \item Radon
 
+        \begin{center}
+          $n=6,\, l=1,\, m_l=0,\, m_s=-\frac{1}{2}$
+        \end{center}
+
       \item Gallium
+
+        \begin{center}
+          $n=3,\, l=2,\, m_l=2,\, m_s=-\frac{1}{2}$
+        \end{center}
 
     \end{enumerate}
 
@@ -141,15 +197,39 @@ citecolor=blue,
 
       \item f orbital
 
+        \begin{center}
+          14
+        \end{center}
+
       \item d sublevel
+
+        \begin{center}
+          10
+        \end{center}
 
       \item All sublevels where $n=3$
 
+        \begin{center}
+          18
+        \end{center}
+
       \item All sublevels where $n=5$
+
+        \begin{center}
+          32
+        \end{center}
 
       \item $l=2$
 
+        \begin{center}
+          10
+        \end{center}
+
       \item $l=0$
+
+        \begin{center}
+          2
+        \end{center}
 
     \end{enumerate}
 
@@ -159,11 +239,27 @@ citecolor=blue,
 
       \item Iron
 
+        \begin{center}
+          4
+        \end{center}
+
       \item Arsenic
+
+        \begin{center}
+          3
+        \end{center}
 
       \item Tin
 
+        \begin{center}
+          2
+        \end{center}
+
       \item Silver
+
+        \begin{center}
+          1
+        \end{center}
 
     \end{enumerate}
 
@@ -173,15 +269,39 @@ citecolor=blue,
 
       \item \ce{3d^3}
 
+        \begin{center}
+          \ce{V}
+        \end{center}
+
       \item \ce{4p^2}
+
+        \begin{center}
+          \ce{Ge}
+        \end{center}
         
       \item \ce{4f^7}
 
+        \begin{center}
+          \ce{Eu}
+        \end{center}
+
       \item \ce{5s^1}
+
+        \begin{center}
+          \ce{Rb}
+        \end{center}
 
       \item \ce{6s^2}
 
+        \begin{center}
+          \ce{Ba}
+        \end{center}
+
       \item \ce{5d^8}
+
+        \begin{center}
+          \ce{Pt}
+        \end{center}
 
     \end{enumerate}
 
