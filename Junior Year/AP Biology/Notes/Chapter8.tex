@@ -18,7 +18,13 @@
 \usepackage{ragged2e}
 \usepackage{geometry}
 \usepackage{fancyhdr}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
 \usepackage{cancel}
+\usepackage{siunitx}
 \geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
 \newcommand{\subtitle}[1]{%
   \posttitle{%
@@ -40,7 +46,7 @@ citecolor=blue,
 
 
 \title{Chapter 8}
-\date{October 14, 2020}
+\date{November 13, 2020}
 \author{Michael Brodskiy\\ \small Instructor: Mrs. Polivka}
 
 % Mathematical Operations:
@@ -55,135 +61,283 @@ citecolor=blue,
 
 \begin{itemize}
 
-  \item Cells communicate through Signal Transduction, started by the attachment of a ligand to a receptor,  which has three steps:
+  \item A living cell is like a miniature factory, where thousands of reactions occur, which converts energy in many ways
+
+  \item All of these chemical reactions transform energy from one form to another
 
     \begin{enumerate}
 
-      \item Reception
-
-      \item Transduction
-
-      \item Response
+      \item Example: Plants convert solar energy to ATP and organic molecules
 
     \end{enumerate}
 
-  \item There are two types of signals:
+  \item A \textbf{metabolic pathway} begins with a specific molecule and ends with a product
+
+  \item Each step is catalyzed by a specific enzyme
+
+  \item Catabolic Reactions:
 
     \begin{enumerate}
 
-      \item Local signaling
+      \item \textbf{Breaking bonds} between molecules releases energy (hydrolysis)
 
-        \begin{enumerate}
-
-          \item Paracrine Signaling
-
-          \item Synaptic Signaling (specific to nervous system)
-
-          \item Cell Junctions (Gap junctions in animals, and Plasmodesmata in plant cells)
-
-          \item Cell-cell Recognition
-
-        \end{enumerate}
-
-      \item Long-distance signaling
-
-      \item Signaling Pathway
-
-        \begin{enumerate}
-
-          \item G-Protein Linked Reception
-
-            \begin{enumerate}
-
-              \item First step in protein relay, activated by GTP (Guanine Triphosphate)
-
-            \end{enumerate}
-
-          \item Kinase: a protein that phosphorylates (adds a phosphate) to another molecule
-
-          \item Ligand-gated Ion Channels
-
-            \begin{enumerate}
-
-              \item Attachment of ligand will open up a gate, through which some kind of particles move
-
-            \end{enumerate}
-
-        \end{enumerate}
+      \item Example: cellular respiration breaks down glucose
 
     \end{enumerate}
 
-  \item Second Messengers $-$ Internal signaling molecules released due to external (``first'') signals. Trigger sub-response pathways.
+  \item Anabolic Reactions:
 
     \begin{enumerate}
 
-      \item Cyclic AMP $-$ A typical second messenger that affects metabolism
+      \item \textbf{Forming bonds} between molecules consumes energy (dehydration synthesis)
 
-      \item Calcium ions are another common second messenger
+      \item Example: Protein synthesis
 
     \end{enumerate}
 
-  \item Epinephrine (Adrenaline) $-$ A common hormone in vertebrates, and involved in short term stress (``fight or flight'')
+  \item Organisms are \textbf{endergonic} systems. What is energy used for?
 
     \begin{enumerate}
 
-      \item Acts as a first messenger, which activates G-protein, which activates an enzyme, which releases cAMP. Overall, this inhibits glycogen synthesis and promotes breakdown
+      \item Synthesis (making biomolecules)
+
+      \item Reproduction
+
+      \item Movement
+
+      \item Active Transport
+
+      \item Temperature Regulation
 
     \end{enumerate}
+
+  \item Energy is obtained from using \textbf{exergonic} (catabolic) reactions to fuel \textbf{endergonic} (anabolic) reactions
+
+  \item Energy is obtained through:
+
+    \begin{enumerate}
+
+      \item Eating high energy \textbf{organic molecules}
+        
+      \item Breaking those molecules down
+
+      \item Capture released energy in a form the cell can use (ATP)
+
+    \end{enumerate}
+
+  \item An energy currency:
+
+    \begin{enumerate}
+
+      \item A way to pass energy around
+
+      \item A short-term way of storing energy (ATP)
+
+    \end{enumerate}
+
+  \item What is an ATP?
+
+    \begin{enumerate}
+
+      \item A modified nucleotide = adenine + ribose +$P_i \to$ AMP (monophosphate)
+
+      \item AMP + $P_i \to$ ADP (diphosphate)
+
+      \item ADP + $P_i \to$ ATP (triphosphate)
+
+      \item Adding phosphates is endergonic 
+
+      \item High energy bonds are located between phosphates
+
+    \end{enumerate}
+
+  \item Subsequent \ce{PO4} molecules become more and more difficult to add
+
+  \item Bonding of the negative $P_i$ groups is unstable, and is ``spring-loaded'' in that it may be taken off to release energy easily
+
+  \item ATP to ADP releases about $\Delta G=7.3 \left[ \frac{\kilo\calorie}{\mole}  \right]$
+
+  \item This fuels other reactions
+
+  \item The molecules phosphorylate (therefore, it is a \textbf{kinase})
+
+  \item ATP can not be stored (this is why it is short-term)
+
+  \item Carbohydrates and fats are long-term energy storage
+
+  \item Breaking down large molecules requires an initial input of energy (\textbf{activation energy}). Large biomolecules are stable, and, therefore, require more energy.
+
+  \item Activation Energy $-$ Amount of energy needed to destabilize the bonds of a molecule, and move the reaction over an ``energy hill''
+
+  \item Catalysts $-$ Proteins that reduce the amount of energy needed to start a reaction
+
+  \item An enzyme is a type of catalyst, as they increase the rate of reaction without being consumed, as well as reduce the activation energy required, and they do not change free energy ($\Delta G$) released or required.
+
+  \item Catalysts are highly specific, as they are used on a specific substrate (also, catalysts are required to sustain life)
+
+  \item \textbf{Substrate} $-$ A reactant which binds to an enzyme, and form enzyme-substrate complexes, which are a temporary association.
+
+  \item \textbf{Active Site} $-$ An enzyme's catalytic site, where the substrate fits in.
+
+  \item \textbf{Reaction Specific} $-$ Each enzyme only works with a specific substrate (chemical fit between active site and substrate).
+
+  \item Single enzyme molecules are not consumed during reactions
+
+  \item Enzymes are affected by any condition that affects protein structure (temperature, pH, salinity)
+
+  \item Example: \textbf{Sucrase} breaks down sucrose
     
-  \item Signaling process through epinephrine:
+  \item Substrate binding causes enzymes to change shape to become a tighter fit (known as \textbf{conformational change}), and bring chemical groups to a position to catalyze the reaction
+
+  \item There are multiple ways catalysts lower activation energy:
 
     \begin{enumerate}
 
-      \item Epinephrine binds to G-protein, which becomes an active G-protein, which activates adenylyl cyclase, which turns ATP into cAMP, which activates the protein kinase, which activates the phosphorylation kinase, which activates glycogen phosphorylase, which turns glycogen into glucose, ultimately releasing $10^8$ molecules
+      \item Synthesis $-$ active site orients substrates in correct position for reaction (enzyme brings substrate closer together)
+
+      \item Digestion $-$ active site binds substrate and puts stress on bonds that must be broken, making it easier to separate molecules
 
     \end{enumerate}
 
-  \item Complication $-$ A branching network
+  \item What factors affect enzyme function:
 
     \begin{enumerate}
 
-      \item Quorum Sensing $-$ Communication among microbes trigger group response once a certain population density is reached
+      \item Enzyme concentration
 
-      \item Yeast Mating $-$ Mating type in (haploid) yeast is genetically determined. Two mating types (a and $\alpha$). Each makes signaling molecules that the other receives. The reception of a mating factor leads to the production of a mating ``shmoo.'' Fusion of shmoos = diploid yeast cell, and meiosis ensues.
+      \item Substrate concentration
 
-      \item Apoptosis $-$ Programmed cell death is programmed because of the signaling pathway that it is programmed to. Death proteins are always present, but inactive.
+      \item Temperature
+
+      \item pH
+
+      \item Salinity
 
     \end{enumerate}
 
-  \item Hormones: Chemical signals that cause a response in \textit{target cells} (receptor proteins for specific hormones)
+  \item As enzyme concentration increases, the reaction rate increases
 
     \begin{enumerate}
 
-      \item Affects 1 tissue, a few, or most tissues in body
-
-      \item Regulation of homeostasis by positive and negative feedback
-
-      \item Homeostasis: maintaining a constant internal balance
+      \item Reaction rate may level off when the substrate becomes a limiting factor, meaning that not all enzyme molecules may find a substrate
 
     \end{enumerate}
 
-  \item Negative Feedback Loop Example: Insulin and Glucagon control blood glucose levels
-
-  \item Control of blood glucose in steps:
+  \item As substrate concentration increases, the reaction rate increases
 
     \begin{enumerate}
 
-      \item High blood glucose
-
-      \item Insulin released from pancreas
-
-      \item Body cells take up glucose, Liver stores glucose as glycogen
-
-      \item Blood glucose drops
-
-      \item Glucagon released from pancreas
-
-      \item Liver breaks down glycogen and released glucose into blood
+      \item Reaction rate may level off when the enzyme is saturated (reaches maximum level of reaction rate)
 
     \end{enumerate}
 
-  \item Positive Feedback Loop: Reinforces a signal, leading to an even greater response (amplification)
+  \item Enzymes have optimal temperature (temperature at which greatest collisions occur)
+
+    \begin{enumerate}
+
+      \item \textbf{Optimum Temperature} $-$ Around 35 to 40 degrees Celsius for humans
+
+      \item Heat will increase movement of molecule to certain extent, which will cause the bonds in the enzyme and the bonds between enzyme and substrate to disrupt (known as \textbf{denaturation}, when a structure loses 3D shape)
+
+      \item Cold makes molecules move slower and collide less often, causing less reactions
+
+      \item Optimal Temperature depends on organism (for example, bacteria in geysers will need to be able to take heat)
+
+    \end{enumerate}    
+
+  \item A certain level of pH is most optimal
+
+    \begin{enumerate}
+
+      \item Adding or removing \ce{H+} ions may disrupt bonds and cause denaturation
+
+      \item Optimal pH for humans is around 6-7
+
+      \item Pepsin (in stomach) functions best around 2-3
+
+      \item Trypsin (in small intestines) functions best around 8 
+
+    \end{enumerate}
+
+  \item Salt concentration also has an optimal level
+
+    \begin{enumerate}
+
+      \item Changes in salinity can cause removal or addition of cations (+) and anions (-)
+
+      \item Dead sea is dead for a reason
+
+    \end{enumerate}
+
+  \item \textbf{Activators} $-$ Compounds which aid enzymes
+
+    \begin{enumerate}
+
+      \item \textbf{Cofactors} $-$ Non-protein, small, inorganic compounds and ions (Ex. \ce{Mg}, \ce{K}, \ce{Ca}, \ce{Zn}, \ce{Fe}, and \ce{Cu})
+
+      \item \textbf{Coenzymes} $-$ Non-protein, small, organic molecules  (bind to enzyme near active site, includes many vitamins)
+
+    \end{enumerate}
+
+  \item Inhibitors
+
+    \begin{enumerate}
+
+      \item Molecules reduce enzyme activity
+
+      \item Competitive Inhibitor
+
+      \item Noncompetitive Inhibitor
+
+      \item Irreversible Inhibition
+
+      \item Feedback Inhibition
+
+    \end{enumerate}
+
+  \item Competitive Inhibitor:
+
+    \begin{enumerate}
+
+      \item Compete for active site with substrate
+
+      \item Example: penicillin blocks enzyme bacteria use to build cell walls
+
+      \item Example: Disulfiram (antabuse) treats chronic alcoholism by blocking enzyme that breaks down alcohol, and causes severe hangover and vomiting 5-10 minutes after drinking
+
+      \item Can be overcome by increasing substrate concentration
+
+    \end{enumerate}
+
+  \item Noncompetitive Inhibitor:
+
+    \begin{enumerate}
+
+      \item Binds to other sites than active site
+
+      \item Allosteric Inhibitor $-$ binds to allosteric site, causing enzyme to change shape (conformational change), and active site becomes non-functional
+
+      \item Example: Cyanide inhibits production of ATP by stopping Cytochrome C, an enzyme involved in cellular respiration.
+
+    \end{enumerate}
+
+  \item Irreversible Inhibitor:
+
+    \begin{enumerate}
+
+      \item Competitors bind to active site permanently
+
+      \item Allosterics bind to allosteric site, permanently changing shape of enzyme
+
+      \item Allosteric regulation causes conformational changes by regulatory molecules (inhibitors will keep enzymes in inactive form, while activators keep enzyme in active form)
+
+    \end{enumerate}
+
+  \item Metabolic pathways are results of evolution and increase efficiency with intermediate branching points, and increase control and regulation
+
+  \item A product is used in the next step of a pathway. A final product is usually an inhibitor of a previous step. This is called \textbf{feedback inhibition}, and it helps unnecessary accumulation of a product
+
+  \item Example: Synthesis of amino acid isoleucine from amino acid threonine causes more isoleucines to form, which are allosteric inhibitors of the first step in teh pathway
 
 \end{itemize}
 
