@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 13 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Was slavery usually a partisan or regional issue (or both)?}{\begin{itemize} \item Both, supporters of slavery, and those who opposed it, were concerned about California. Although California would just bring back the slave-free state balance to 15:15, people were worried about other territories, like Oregon, which was obviously anti-slave, and New Mexico, which did not contain any slaves. Much of the tensions in Congress in 1850 were a result of the US war with Mexico. For example, in 1846 David Wilmot, a Congressman from Pennsylvania, proposed the \textbf{Wilmot Proviso}, which stated that any territory acquired from Mexico during the war would not be a slave state. \item Wilmot's proposition evoked anger from the South. Wilmot had proposed this in response to the pro-southern Polk administration. Due to the amount of Northern members of the House, it moved on to the senate, but died down there once the it had to go past the southern senators. Overall, Wilmot's actions were important in that it brought up a question that would cause tensions until the start of the Civil War. The ethical implications of slavery would now be constantly brought up by the growing abolitionist force in the North.   \end{itemize}}%
+
+\topic{Was this tension-compromise cycle kind of like the later idea of appeasement (which ultimately failed as well)?}{\begin{itemize} \item Zachary Taylor, elected after the War with Mexico, wanted greatly to attain California as a state. Although Taylor himself owned a plantation with slaves, which made the South perceive him as favorable, he participated in the Army for over 40 years, which caused him to value the Union. In 1849, Taylor proposed admittance of New Mexico and California as states. This caused uproar from the South, as it was clear that New Mexico would also be a free state, as no slaves lived in the territory. \item Senator Henry Clay from Kentucky, known as ``The Great Compromiser,'' tried to come up with something that would appeal to both sides. He created four compromises, which were as follows: 1) California becomes a state, but New Mexico was a territory, which meant it did not restrict slavery. 2) Some of Texas's border land was given to New Mexico, but Texas was given 10 million dollars to pay off debts. 3) Slave trade, but not slavery, was abolished in the District of Columbia. 4) Southern slave owners would be allowed to retrieve run away slaves in the North, as well as receive support in retrieving them. \item In 1850, Zachary Taylor and Calhoun died in office. Taylor was replaced by Millard Fillmore, who wanted a compromise to go through. Thoughts on Clay's Compromise were quite split, as most either supported it greatly, or were completely against it. Stephan A. Douglas set out to finalize Clay's Compromise. Ultimately, California became a free state, while New Mexico and Utah were territories, slave trade was abolished in the District of Columbia, and Congress passed the \textbf{Fugitive Slave Act} in 1850. This act was essentially Clay's fourth compromise. Many rejoiced at this compromise, although many others knew this was not the end of the tension.  \end{itemize}}%
+
+\topic{How would escaped slaves be tracked down? Was it common for a random black man to be taken as slave?}{\begin{itemize} \item When Millard Fillmore and Franklin Pierce enforced the Fugitive Slave act, public and social relations would go down the drain. Under the act, a corps of slave finders was established. These finders worked closely with plantation owners, who would go to any lengths to capture their slaves. \item One example of a captured slave was that of Anthony Burns, who had escaped slavery and came to Massachusetts. In May of 1854, Burns was tracked down by a federal marshal. As a result of this, mad protesters flooded the location in which Burns was being held. A federal marshal was killed in the process, which caused President Franklin Pierce to respond by sending in marines, cavalry, and artillery. Burns was taken on a Coast Guard vessel to be transported to Virginia back to his owner. Burns would only get his freedom back when the abolitionists in his town garnered the funds to pay for Burns's freedom. \item A similar event occurred with Margaret Garner, another escaped slave. Once she realized she was found out, she tried to kill her children instead of allowing them to be transported back to slavery. Only one of her kids died. Overall, the slave act caused uproars, which prompted people to circumvent this act. It was argued that there was no difference between the slave states ignoring the decree of 1808 which banned importation of slaves, and the fighting of the Fugitive Slave act.  \end{itemize}}%
+
+\topic{What inspired Stowe to write the book? Was it based on an actual story, or a summary of events Stowe had witnessed?}{\begin{itemize} \item Opposition to the Fugitive Slave act took many forms. One example is that of Harriet Beecher Stowe, who wrote \textit{Uncle Tom's Cabin}. This book became the bestselling book of the century, alongside The Bible. Stowe had actually witnessed many slaves and their treatment, as she lived on the border between Ohio and Kentucky, where she could see atrocities. As such, she wrote the book, where she describes the treatment of a kind slave. This book horrified the Northerners, as it portrayed the evils of slavery, and angered the South, as they denied this to be true.  \item From here, North-South relations would only become more tense. It was now clear that the 1850 compromise was not an endpoint to tensions, as Fillmore had hoped. The Whigs no longer supported Fillmore, and, thus, they selected General Winfield Scott as their nominee for the next election. The Democrats selected Franklin Pierce, who was said to be as reliable as Calhoun. Ultimately, Pierce would win. During his term, Stephen A. Douglas proposed a transcontinental railroad. This would further tensions, as land in the Nebraska territory was required. \item When Douglas and his companion, William Richardson had decided they needed this land, they did not take into account that this area would have to be declared as a free or slave state. Douglas proposed to split the Nebraska area into Nebraska and Kansas, and let each state decide whether they were slave or not. He called this \textbf{popular sovereignty}. This was in direct violation of the Missouri Compromise, which caused outrage from the North and great support from the South. Ultimately the \textbf{Kansas-Nebraska Act} was passed in 1854.  \end{itemize}}%
+
+\topic{What for did the creators of the party decide to name it Republican? Was it taken from the earlier Democratic-Republicans?}{\begin{itemize} \item In 1854, many northern Whigs and Free Soil party members decided to create their own party to better represent their views. They created the \textbf{Republican Party}. During the 1854 midterms, Democrats and Republicans both campaigned furiously. It seemed as though during this election people were only concerned with candidates' views on slavery. A former Whig, Abraham Lincoln campaigned across the state for the election of a Republican to senate. Lincoln went head to head with Douglas. \item Douglas argued for self government and States' rights. Lincoln countered by saying that self-governing is when one governs himself, not when one governs himself and another. Overall, Democrats' control over the House dropped greatly, as they lost 70 seats. In the end, the speaker of the house would be Nathaniel P. Banks of Massachusetts, a Republican. This meant the party that had existed for less than two years was now in control of the house.  \end{itemize}}%
+
+\topic{Which side was generally less violent? Which side generally cheated the elections less?}{\begin{itemize} \item As was obvious, Kansas became a blood bath. Antislavery northerners flooded in from the north and east, while proslavery southerners flooded in from Missouri. This deluge of people and different opinions caused violence to become commonplace. Each side would intimidate voters to vote for their side, beating and sometimes killing them if they refused. Most of the elections for state representatives in Kansas would be cheated or modified in some way. \item A proslavery convention which met in Lecompton, Kansas drafted the \textbf{Lecompton Constitution}. This constitution, although it was intended for the state, was clearly a proslavery document. It stated that, even if Kansas was admitted as a free state, the slaves already in the state were to remain states. In a proslavery convention, the slave clause passed 6226:569. A re-vote was called under a different legislature, which defeated the constitution 10226:162. \item The violence and brutality would lead to the nickname ``Bleeding Kansas.'' Each side would try to set the other side straight, and they were not afraid of any damage or death in the process. Congress called for another re-vote on the Lecompton Constitution, and legislation stated that, if Kansas passed the constitution, it would become a state immediately, while time would be required if the constitution was not passed. The constitution was once again defeated, 11300:1788, meaning Kansas did not become a state until 1861.    \end{itemize}}%
+
+\topic{When the ruling that gave Scott his freedom was repealed, did he simply lose his freedom without any appeal? How did the case end up in the Supreme Court?}{\begin{itemize} \item One of the most important decisions of the time was the case of \textit{\textbf{Dred Scott v. Sandford}}. Taken to Supreme Court, the case ended with Dred Scott, Sandford's slave, being declared property, without any rights of a white men. It was stated that black men are not entitled to any rights of a white men, and, furthermore, they are not entitled to rights out of their own state. \item People brought up that, in five of the states in 1789, black men made up a portion of those who voted, and, therefore, were entitled to the same rights. Roger Taney countered by saying that the slaves ``have all the rights and privileges of the citizen of a state,'' but were not ``entitled to the rights and privileges of a citizen in any other state.'' Although this completely contradicted Article IV, section 2 of the constitution, Taney's ruling still stood.  \end{itemize}}%
+
+\topic{When a Democrat succeeded a Whig or Republican, did they remove the tariffs the Whig or Republican put in place? If so, isn't this kind of flip-flop bad for economy?}{\begin{itemize} \item Beginning in the 1850s, the economic differences between the North and the South began to show. Republicans and northerners wanted improvements in infrastructure and protection of domestic industry, whereas the southerners saw no need for improvements, as it mostly benefited the North, and the tariffs set to protect industry only decreased the profit for the South, as they needed to purchase finished goods from elsewhere. \item The \textbf{Panic of 1857} showed a concrete difference between the North and the South. Following the Crimean War, prices for wheat, iron, and coal fell, which caused a sharp decline in the Northern economy. The South, on the other hand, were safe from any hardships, as cotton prices remained static. \item In 1858, Lincoln and Douglas would debate in a race for senate. The speeches given set parameters for the beliefs of the Republicans and Democrats. During this period, Lincoln gave his ``house divided against itself'' speech, while Douglas portrayed Lincoln as a radical, saying that the Republicans promised only civil war, while the Democrats were a party of unity.  \end{itemize}}%
+
+\topic{What did John Brown hope to achieve by taking Harper's Ferry? It seems as though the book does not mention this.}{\begin{itemize} \item In 1859, not far from the \textbf{Mason-Dixon Line} (the name for the border between Pennsylvania and Maryland, and, therefore, free and slave), Frederick Douglass gave a speech. The speech however, was not his main purpose for traveling to this land. He was meeting John Brown. Upon discussion, Brown told Douglass that he planned to seize Harper's Ferry, a lightly-guarded federal arsenal. \item Brown had been planning this for months. Brown attacked with 21 men$-$five were black and 16 were white. They were quickly surrounded, and most of them died. Brown was wounded and captured, and sentenced to death. It was the six weeks between his jailing and his execution that were most influential, as he wrote about himself making a sacrifice, and that slavery must be stopped. Many, such as Henry David Thoreau, wrote about the events. Thoreau stated that the violence of John Brown could not be compared to slavery, which is much worse. News of the perspired events traveled quickly.  \end{itemize}}%
+
+\topic{If it was clear that there would be such tensions during the election of 1860, why did the Democrats not try to unify to the best of their abilities?}{\begin{itemize} \item The election of 1860 would be unlike any other. Lincoln was selected as the Republican nominee. The slave states were too dangerous for the Republicans to campaign in, and, as such, the Republicans had to carry as many Northern states as possible. With only 40 percent of the popular, and 180 electoral votes, Lincoln would be the winner. The disorganized and in-fighting in the Democrat party would be a key factor in Lincoln's victory. Regardless of that, this would be a big win for the anti-slave North, however, no one saw war in the future. \item Lincoln's election caused outrage. Even before he took office, South Carolina seceded, on December 20, 1860, with a unanimous vote. They were followed, in January of the following year, by Mississippi, Florida, Alabama, Georgia, and Louisiana. Texas joined on February 1st. Still, no one expected a full war. Each side believed the other would come to their senses. Kentucky Senator John Crittenden proposed a compromise to keep the Union together. The \textbf{Crittenden Compromise} stated that the slavery border should be extended to California and the New Mexico territory. Lincoln absolutely refused, as he had campaigned on allowing slavery to remain in states in which it had already existed, and stopping it from spreading to other states. \item Some southern states that did not secede, at least right away. These were Maryland, Arkansas, North Carolina, Delaware, Kentucky, Tennessee, and Virginia, with Kentucky and Virginia being the most important, as Kentucky had a tactical position, and Virginia was the most industrialized Southern state. Many were willing to fight for Lincoln. Conflict came to Fort Sumter in South Carolina, where the South fired upon the Union-controlled fort. \item Following the defeat at Sumter, Lincoln called for 75,000 troops. Four of the previously still-Union states voted for secession$-$North Carolina, Tennessee, Arkansas, and Virginia. Virginia was nowhere near unanimous, and, as such, it split into Virginia and West Virginia. Even given the circumstances, neither side expected a full on war.   \end{itemize}}%
+
+\summary{Around a decade and a half before the American Civil War, tensions were already rising. Economic factors and, of course, slavery, played big roles in the divide between the states. The constant demands from the South for more slave states and rights to control states, and the constant calls from the North to stop the South became obvious. The takeover of Harper's Ferry, although itself unsuccessful, would result in many more abolitionist supporters. Uncle Tom's Cabin showed the true colors of slavery. The election of Lincoln would be the breaking point, which caused the South to finally snap and secede from the Union. Although the United States was on the brink of war, with shots already fired at Fort Sumter, people seemed to think that the possibility of a full-on war was never going to happen. They were wrong.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
