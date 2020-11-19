@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Differential Equations (MATH-294)
+% Professor: M. Shah
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Homogeneous Linear Systems}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Meetal Shah}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item The general solution of the homogeneous system $\bold{X}'=\begin{pmatrix}1 & 3\\ 5 & 3\\ \end{pmatrix}\bold{X}$ is \eqref{1}
+
+    \begin{equation}
+      \bold{X}=c_1\bold{X}_1+c_2\bold{X}_2=c_1\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-2t}+c_2\begin{pmatrix} 3 \\ 5\end{pmatrix}e^{6t}
+      \label{1}
+    \end{equation}
+
+  \item Because the solution vectors $\bold{x}_1$ and $\bold{x}_2$ have the form \eqref{2}, where $k_1$, $k_2$, $\lambda_1$, and $\lambda_2$ are constants, we are prompted to ask whether we can always find a solution of the form \eqref{3} for the general homogeneous linear first-order system $\bold{X}'=\bold{AX}$, where $\bold{A}$ is an $nxn$ matrix of constants.
+
+    \begin{equation}
+      \bold{x}_i=\begin{pmatrix} k_1 \\ k_2 \end{pmatrix}e^{\lambda_it},\,\,i=1,2
+      \label{2}
+    \end{equation}
+
+    \begin{equation}
+      \bold{X}=\begin{pmatrix}k_1\\k_2\\\vdots\\k_n\end{pmatrix}e^{\lambda t}=\bold{K}e^{\lambda t}
+      \label{3}
+    \end{equation}
+
+  \item Given the above, $\bold{X}'=\bold{K}\lambda e^{\lambda t}$, so the system becomes $\bold{K}\lambda e^{\lambda t}=\bold{AK}e^{\lambda t}$. After dividing $e^{\lambda t}$ and rearranging, we obtain $\bold{AK}-\lambda\bold{K}=0$, giving us $(\bold{A}-\lambda\bold{I})\bold{K}=0$
+
+  \item To figure out whether solutions exist for $(\bold{A}-\lambda\bold{I})\bold{K}=0$, we take $\det(\bold{A}-\lambda\bold{I})=0$
+
+  \item The polynomial equation $\lambda$ is called the characteristic equation of the matrix $\bold{A}$; its solutions are the eigenvalues of $\bold{A}$ A solution $\bold{K}\neq0$ of the above corresponding to an eigenvalue, $\lambda$ is called an eigenvector of $\bold{A}$. A solution of the homogeneous system is then $\bold{X}=\bold{K}e^{\lambda t}$
+
+  \item If $\lambda_1,\lambda_2,\dots,\lambda_n$ has $n$ distinct real eigenvalues of the coefficient matrix $\bold{A}$ of the homogeneous system and let $\bold{K}_1,\bold{K}_2,\dots,\bold{K}_n$ be the corresponding eigenvectors. Then the general solution of the system on the interval $(-\infty,\infty)$ is given by \eqref{4}
+
+    \begin{equation}
+      \bold{X}=c_1\bold{K}_1e^{\lambda_1t}+c_2\bold{K}_2e^{\lambda_2 t}+\dots+c_n\bold{K}_ne^{\lambda_nt}
+      \label{4}
+    \end{equation}
+
+  \item For the two parametrized functions of $t$, they can be represented together in the $xy$-plane, or the phase plane. For different values of the arbitrary constants, each new curve is called a trajectory.
+
+  \item A collection of trajectories is a phase portrait.
+
+  \item When both lambdas are positive, it is an attractor, whereas, when both lambdas are negative, it is a repeller
+
+  \item If there is only one eigenvalue corresponding to the eigenvalue $\lambda_1$ of multiplicity $m$, then $m$ linearly independent solutions of the form \eqref{5} exist, where $\bold{K}_{ij}$ are column vectors, and can always be found
+
+    \begin{equation}
+      \begin{split}
+        \bold{X}_1&=\bold{K}_{11}e^{\lambda_1t}\\
+        \bold{X}_2&=\bold{K}_{21}te^{\lambda_1t}+K_{22}e^{\lambda_1t}\\
+        &\hspace{5pt}\vdots\\
+        \bold{X}_m&=\bold{K}_{m1}\frac{t^{m-1}}{(m-1)!}e^{\lambda_1t}+\bold{K}_{m2}\frac{t^{m-2}}{(m-2)!}e^{\lambda_1t}+\dots+\bold{K}_{mm}e^{\lambda_1t}\\
+      \end{split}
+      \label{5}
+    \end{equation}
+
+  \item If $\lambda_1$ is an eigenvalue of multiplicity two and that there is only one eigenvector associated with this value. A second solution can be found of the form \eqref{6}
+
+    \begin{equation}
+      \bold{X}_2=\bold{K}te^{\lambda_1t}+\bold{P}e^{\lambda_1t}
+      \label{6}
+    \end{equation}
+
+  \item To confirm \eqref{6}, we can substitute into the system $\bold{X}'=\bold{AX}$:
+
+    \begin{equation}
+      (\bold{AK}-\lambda_1\bold{K})te^{\lambda_1t}+(\bold{AP}+\lambda_1\bold{P}-\bold{K})e^{\lambda_1t}
+      \label{7}
+    \end{equation}
+
+\end{itemize}
+
+\end{document}
+
