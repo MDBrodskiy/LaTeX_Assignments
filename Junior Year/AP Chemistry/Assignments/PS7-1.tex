@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Problem Solving $-$ Chapter 7}
+\date{November 19, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Draw the Lewis Structure and all resonance forms for each:
+
+    \begin{enumerate}
+
+      \item \ce{SO3}
+
+      \chemfig{S(=[:-210]\lewis{2:6:,O})(-[:-90]\lewis{0:4:6:,O})(-[:-330]\lewis{0:2:6:,O})}\hspace{20pt}
+      \chemfig{S(-[:-210]\lewis{2:4:6:,O})(=[:-90]\lewis{0:4:,O})(-[:-330]\lewis{0:2:6:,O})}\hspace{20pt}
+      \chemfig{S(-[:-210]\lewis{2:4:6:,O})(-[:-90]\lewis{0:4:6:,O})(=[:-330]\lewis{2:6:,O})}\hspace{20pt}
+
+      \item \ce{PF5}
+
+        \chemfig{P(-[:-72]\lewis{0:4:6:,F})(-[:-144]\lewis{2:4:6:,F})(-[:-216]\lewis{2:4:6:,F})(-[:-288]\lewis{0:2:4:,F})(-[:-0]\lewis{0:2:6:,F})}
+
+      \item \ce{NO2-}
+
+        \chemfig{\lewis{6:,N}(-[:-180]\lewis{2:4:6:,\ce{O-}})(=[:-0]\lewis{2:6:,O})}\hspace{20pt}
+        \chemfig{\lewis{6:,N}(=[:-180]\lewis{2:6:,O})(-[:-0]\lewis{0:2:6:,\ce{O-}})}\hspace{20pt}
+
+      \item \ce{NO3-}
+
+        \chemfig{\lewis{2:,\ce{N+}}(-[:-90]\lewis{0:4:6:,\ce{O-}})(=[:-210]\lewis{2:6:,O})(-[:-330]\lewis{0:2:6:,\ce{O-}})}\hspace{20pt}
+        \chemfig{\lewis{2:,\ce{N+}}(-[:-90]\lewis{0:4:6:,\ce{O-}})(-[:-210]\lewis{2:4:6:,\ce{O-}})(=[:-330]\lewis{2:6:,O})}\hspace{20pt}
+        \chemfig{\lewis{2:,\ce{N+}}(=[:-90]\lewis{0:4:,O})(-[:-210]\lewis{2:4:6:,\ce{O-}})(-[:-330]\lewis{0:2:6:,\ce{O-}})}\hspace{20pt}
+
+      \item \ce{SF4}
+
+        \vspace{5pt}
+        \chemfig{\lewis{4:,S}(-[:-90]\lewis{0:4:6:,F})(-[:-45]\lewis{2:4:6:,F})(-[:-270]\lewis{0:2:4:,F})(-[:45]\lewis{0:2:6:,F})}\hspace{20pt}
+        \vspace{5pt}
+
+      \item \ce{N2O4}
+
+        \vspace{5pt}
+        \chemfig{N(-[2]\lewis{0:2:4:,O})(=[6]\lewis{0:4:,O})-N(=[2]\lewis{0:4:,O})-[6]\lewis{0:4:6:,O}}\hspace{20pt}
+        \chemfig{N(-[2]\lewis{0:2:4:,O})(=[6]\lewis{0:4:,O})-N(-[2]\lewis{0:2:4:,O})=[6]\lewis{0:4:,O}}\hspace{20pt}
+        \chemfig{N(=[2]\lewis{0:4:,O})(-[6]\lewis{0:4:6:,O})-N(=[2]\lewis{0:4:,O})-[6]\lewis{0:4:6:,O}}\hspace{20pt}
+        \chemfig{N(=[2]\lewis{0:4:,O})(-[6]\lewis{0:4:6:,O})-N(-[2]\lewis{0:2:4:,O})=[6]\lewis{0:4:,O}}\hspace{20pt}
+        \vspace{5pt}
+
+      \item \ce{CO2}
+
+        \chemfig{\lewis{6:,N}(-[:-180]\lewis{2:4:6:,\ce{O-}})(=[:-0]\lewis{2:6:,O})}\hspace{20pt}
+        \chemfig{\lewis{6:,N}(=[:-180]\lewis{2:6:,O})(-[:-0]\lewis{0:2:6:,\ce{O-}})}\hspace{20pt}
+
+      \item \ce{ClF3}
+
+      \item \ce{C2O4^2-}
+
+      \item \ce{C2H3O-}
+
+      \item \ce{O2^2-}
+
+      \item \ce{NH2OH}
+
+      \item \ce{XeF2}
+
+      \item \ce{HSO4-}
+
+      \item \ce{PO4^3-}
+
+      \item \ce{HSO4-}
+
+      \item \ce{H2Se}
+
+      \item \ce{ClF5}
+
+      \item \ce{SeO2}
+
+      \item \ce{C2H4}
+
+      \item \ce{SF2}
+
+      \item \ce{O2}
+
+      \item \ce{XeF4}
+
+      \item \ce{CHCl3}
+
+      \item \ce{SO3^2-}
+
+      \item \ce{CN-}
+
+      \item \ce{C3H8}
+
+      \item \ce{ClF2+}
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
