@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Problem Set 2 $-$ Chapter 7}
+\date{November 20, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item For the following, draw the Lewis Structure, predict the molecular structure, state bond angles, and state if the compound is polar or not.
+
+    \begin{enumerate}
+
+      \item \ce{NF3}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{100pt}\chemfig{\lewis{2:,N}(-[:-90]\lewis{0:4:6:,F})(-[:-210]\lewis{2:4:6:,F})(-[:-330]\lewis{0:2:6:,F})}\hspace{20pt}
+        The molecular structure is most likely a \underline{Tri-pyramid}; however, it follows the exception that the bond angles are $102^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{RnF4}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{\lewis{2:6:,Rn}(-[:-45]\lewis{0:2:6:,F})(-[:-135]\lewis{2:4:6:,F})(-[:-225]\lewis{2:4:6:,F})(-[:-315]\lewis{0:2:6:,F})}\hspace{20pt}
+          The molecular structure is most likely a \underline{square pyramid}. The bond angles are $90^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{PCl3}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{100pt}\chemfig{\lewis{2:,P}(-[:-90]\lewis{0:4:6:,Cl})(-[:-210]\lewis{2:4:6:,Cl})(-[:-330]\lewis{0:2:6:,Cl})}\hspace{20pt}
+          The molecular structure is most likely a \underline{Tri-pyramid}; The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{KrF2}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{\lewis{0:2:4:,Kr}(-[:-45]\lewis{0:2:6:,F})(-[:-225]\lewis{2:4:6:,F})}\hspace{20pt}
+          The molecular structure is most likely \underline{linear}; The bond angles are $180^{\circ}$. The compound is non-polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{SeCl4}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{\lewis{2:,Se}(-[:-45]\lewis{0:2:6:,Cl})(-[:-135]\lewis{2:4:6:,Cl})(-[:-225]\lewis{2:4:6:,Cl})(-[:-315]\lewis{0:2:6:,Cl})}\hspace{20pt}
+          The molecular structure is most likely a \underline{Tri-bipyramid}. The bond angles are $90^{\circ}$. The compound is non-polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{CH3Cl}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{C(-[:-45]H)(-[:-135]H)(-[:-225]H)(-[:-315]\lewis{0:2:6:,Cl})}\hspace{20pt}
+          The molecular structure is most likely \underline{tetrahedral}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{CH3OH}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{C(-[:-45]H)(-[:-135]H)(-[:-225]H)-[:-315]\lewis{2:6:,O}(-[:-45]H)}\hspace{20pt}
+          The molecular structure is most likely \underline{tetrahedral}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{O3^2-}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{\lewis{2:,O}(=[:-35]\lewis{0:2:6:,O})(-[:-144.5]\lewis{2:4:6:,O})}\hspace{20pt}
+          The molecular structure is most likely \underline{bent}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{IBr2^-}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{\lewis{2:,\ce{I-}}(=[:-35]\lewis{0:2:6:,Br})(=[:-144.5]\lewis{2:4:6:,Br})}\hspace{20pt}
+          The molecular structure is most likely \underline{bent}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{ClO3^-}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{100pt}\chemfig{\lewis{2:,Cl}(-[:-90]\lewis{0:4:6:,O})(-[:-210]\lewis{2:4:6:,O})(-[:-330]\lewis{0:2:6:,\ce{O-}})}\hspace{20pt}
+          The molecular structure is most likely a \underline{Tri-pyramid}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{BeF2}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{\lewis{2:,Be}(-[:-45]\lewis{0:2:6:,F})(=[:-225]\lewis{2:4:6:,F})}\hspace{20pt}
+          The molecular structure is most likely \underline{linear}. The bond angles are $180^{\circ}$. The compound is non-polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{CO3^2-}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{100pt}\chemfig{\lewis{2:,C}(-[:-90]\lewis{0:4:6:,\ce{O-}})(-[:-210]\lewis{2:4:6:,\ce{O-}})(=[:-330]\lewis{2:6:,O})}\hspace{20pt}
+          The molecular structure is most likely a \underline{Tri-pyramid}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{CSN-}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{C(=[:-144.5]\lewis{2:6:,S})(=[:-35]\lewis{2:6:,\ce{N-}})}\hspace{20pt}
+          The molecular structure is most likely \underline{bent}. The bond angles are $109.5^{\circ}$. The compound is polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{N2O4}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{N(=[:-225]\lewis{2:6:,O})(-[:-135]\lewis{2:4:6:,O})-N(-[:45]\lewis{0:2:6:,O})(=[:-45]\lewis{2:6:,O})}\hspace{20pt}
+          The molecular structure is most likely \underline{Triangular planar}. The bond angles are $120^{\circ}$. The compound is non-polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{N2O}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{O(-[:-45]\lewis{0:2:6:,N})(-[:-225]\lewis{2:4:6:,N})}\hspace{20pt}
+          The molecular structure is most likely \underline{linear}. The bond angles are $180^{\circ}$. The compound is non-polar.
+      \end{multicols}
+        \vspace{5pt}
+
+      \item \ce{PCl5}
+
+        \vspace{5pt}
+        \begin{multicols}{2}
+          \hspace{110pt}\chemfig{P(-[:-72]\lewis{0:4:6:,Cl})(-[:-144]\lewis{2:4:6:,Cl})(-[:-216]\lewis{2:4:6:,Cl})(-[:-288]\lewis{0:2:4:,Cl})(-[:-0]\lewis{0:2:6:,Cl})}\hspace{20pt}
+          The molecular structure is most likely \underline{Tri-bipyramid}. The bond angles are $120^{\circ}$ between \ce{F} and \ce{P} and $180^{\circ}$ between \ce{F} and \ce{F}. The compound is non-polar.
+      \end{multicols}
+        \vspace{5pt}
+
+    \end{enumerate}
+\newpage
+  \item Give the bond angles to all carbon atoms in the following molecules:
+
+    \begin{enumerate}
+
+      \item \ce{CH3CCH}
+
+        \begin{itemize}
+
+          \item On the carbon attached to three hydrogen: $109.5^{\circ}$ 
+
+          \item On the carbon bonded with the other carbons: $109.5^{\circ}$
+
+          \item On the carbon triple bonded to another carbon and single bonded to hydrogen: $109.5^{\circ}$
+
+        \end{itemize}
+
+      \item \ce{C2H4}
+
+        \begin{itemize}
+
+          \item On both carbons: $120^{\circ}$
+
+        \end{itemize}
+
+      \item \ce{CHOOH}
+
+        \begin{itemize}
+
+          \item $120^{\circ}$
+
+        \end{itemize}
+
+      \item \ce{CH3CHCHCH3}
+
+        \begin{itemize}
+
+          \item On the carbons attached to three hydrogen: $109.5^{\circ}$
+
+          \item On the carbons double bonded to each other and hydrogen: $120^{\circ}$
+
+        \end{itemize}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
