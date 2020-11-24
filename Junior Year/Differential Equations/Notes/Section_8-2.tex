@@ -120,6 +120,57 @@ citecolor=blue,
       \label{7}
     \end{equation}
 
+  \item With an eigenvalue of multiplicity three, we obtain \eqref{8}
+
+    \begin{equation}
+      \bold{X}_3=\bold{K}\frac{t^2}{2}e^{\lambda_1 t}+\bold{P}te^{\lambda_1t} + \bold{Q}e^{\lambda_1t}
+      \label{8}
+    \end{equation}
+
+  \item The matrices in \eqref{8} are represented by $\bold{K}=\begin{pmatrix} k_1 \\ k_2\\ \vdots \\ k_n \\ \end{pmatrix}$, $\bold{P}=\begin{pmatrix} p_1 \\ p_2\\ \vdots \\ p_n \\ \end{pmatrix}$, and $\bold{Q}=\begin{pmatrix} q_1 \\ q_2\\ \vdots \\ q_n \\ \end{pmatrix}$
+
+  \item To determine $\bold{K}$, $\bold{P}$, and $\bold{Q}$, we apply \eqref{9}
+
+    \begin{equation}
+      (\bold{A}-\lambda_1\bold{I})\bold{K}=0\\
+      (\bold{A}-\lambda_1\bold{I})\bold{P}=\bold{K}\\
+      (\bold{A}-\lambda_1\bold{I})\bold{Q}=\bold{P}\\
+      \label{9}
+    \end{equation}
+
+  \item The Solution Process:
+
+    \begin{enumerate}
+
+      \item Determine $\bold{A}$ ($\bold{X}'=\bold{AX}$)
+
+      \item Plug into the equation $\bold{A}-\lambda_1\bold{I}$, where $\bold{I}$ is the identity matrix $\begin{pmatrix} 1 & 0 & 0\\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{pmatrix}$
+
+      \item Take the determinant of the matrix resulting from $\bold{A}-\lambda_1\bold{I}$, and set equal to zero. The solution(s) are $\lambda_1$, $\lambda_2$, \dots, $\lambda_n$, respectively.
+
+      \item Now, find a system of equations using the various $\lambda_n$ values, and the formula $(\bold{A}-\lambda_1\bold{I})\bold{K}=0$ to find $\bold{K}$. Plug in simple values for $k_1$, $k_2$, and $k_n$ to find values that work as solutions for the systems. 
+
+      \item If the eigenvalues have multiplicity greater than one, solve using the various formulas given in \eqref{8} and \eqref{9}. If the multiplicity is equal to one, solve for each eigenvalue. 
+
+    \end{enumerate}
+
+  \item If $\lambda_1=\alpha+\beta i$ and $\lambda_2=\alpha - \beta i$, where $\beta>0$, then solutions are \eqref{10}
+
+    \begin{equation}
+      \bold{K}_1e^{\lambda_1 t}\text{ and } \bold{\bar{K}}_1e^{\bar{\lambda}_1 t}
+      \label{10}
+    \end{equation}
+
+  \item Furthermore, given $\bold{B}_1$ and $\bold{B}_2$ are column vectors, linearly independent solutions with complex eigenvalues are \eqref{11}
+
+    \begin{equation}
+      \begin{split}
+      \bold{X}_1=[\bold{B}_1\cos\beta t-\bold{B}_2\sin\beta t]e^{\alpha t}\\
+      \bold{X}_2=[\bold{B}_2\cos\beta t+\bold{B}_1\sin\beta t]e^{\alpha t}
+    \end{split}
+      \label{11}
+    \end{equation}
+
 \end{itemize}
 
 \end{document}
