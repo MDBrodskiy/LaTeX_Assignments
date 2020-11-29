@@ -1,0 +1,168 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 14 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{At what point was it clear to the public that there was going to be a prolonged war?}{\begin{itemize} \item For the two months following the Battle of Fort Sumter, no major battles took place. Both sides were measuring out the capabilities of the other. On July 21, 1861, the first major battle took place. Union General McDowell, with 18,000 troops, crossed the Potomac into Virginia. Confederate General Pierre Beauregard was alerted of the movement by spies. The two armies met at Manassas, Virginia on Bull Run Creek. The Confederates charged at the Union troops, and screamed. Their battle cry became known as the \textbf{rebel cry}. \item It was clear this battle ended with a Confederate victory, as the Union forces retreated. For Lincoln, it became clear that this was not going to be a short war. For the South, both troops and high command become confident, and dangerously so. Lincoln called for one million more men, as he reorganized the military. He fired McDowell and appointed McClellan to the new army on the Maryland-Virginia Line, which was named the \textbf{Army of the Potomac}. This would become the strongest and most important army throughout the Civil War. \item Unlike the North, the South was at an advantage. All they had to do to win was hold the Union troops off of their land, until they were recognized as a legitimate government. The North needed to push through their defenses and seize the Confederate capital. By October, McClellan already commanded 120,000 men. All he asked of Lincoln was not to rush him.   \end{itemize}}%
+
+\topic{Why was the navy of the North stronger than that of the South? Was it because they were more industrialized or greater in numbers?}{\begin{itemize} \item Although the armies of the North and South were roughly even at the beginning of the war, the North had the maritime advantage due to their superior navy. Throughout late 1861 and early 1862, the strings of northern military victories allowed the implementation of the ``Anaconda Plan'' in many ports and rivers. The idea of this plan was to, instead of resorting to violence which would lead to everlasting hatred, choke out the enemy by cutting all supply lines. \item The South began to think outside the box, though. They created an early version of modern ships by placing armor plates on the U.S.S. \textit{Merrimack}, which was renamed the C.S.S. \textit{Virginia}. The Union responded by creating the \textit{Monitor}, which faced off against the Virginia for hours, until both ships returned to port, where both sides declared victory. Although the \textit{Virginia} would later be destroyed when the Union invaded the state, these ships changed naval warfare forever. By April of 1862, the Confederacy controlled only three ports: Charleston, South Carolina, Wilmington, North Carolina, and Savannah, Georgia.  \end{itemize}}%
+
+\topic{What exactly caused the reversal of winners in 1862. How was the Confederacy allowed to get within 20 miles of Washington D.C?}{\begin{itemize} \item General Grant led an assault with 40,000 troops on Corinth, Mississippi, where the north-south and east-west railroads of the Confederacy met. Before Grant was able to attack, though, Confederate forces attacked Shiloh Church, in Tennessee. After two days of bloody violence, the Union was victorious, but not without 13,047 casualties, as well as 10,699 for the Confederates. \item Still, the Union came a long way from the beginning of the war. By May, 1862, Union forces held control of several southern rivers, as well as disrupted the railway system, and took many prisoners. More eastward, Lincoln was pushing McClellan to attack the Confederates. If McClellan was to listen to Lincoln's urging, he would go up against the \textbf{Army of Northern Virginia}, the South's strongest force. \item Nevertheless, McClellan followed through, and he began the invasion by landing on the peninsula of Virginia. Thus, this attack was named the \textbf{Peninsular Campaign of 1862}. McClellan moved slowly, and, during his invasion, Stonewall Jackson took the Shenandoah Valley, as well as much of Knoxville and East Tennessee. With Jackson's victories, Northern troops needed to be diverted to stop him. Lee pushed McClellan out of Richmond, and it seemed the tide was turning. By the end of August, 1862, the Confederate army was within 20 miles of Washington D.C. Both sides wanted a final, decisive end to the war, however, it was clear this was to be a prolonged war. At Antietam Creek, near Sharpsburg, Maryland, the bloodiest battle of the war would take place. Over 23,000 soldiers were wounded or killed. Lincoln began to grow impatient.  \end{itemize}}%
+
+\topic{What made the slaves who joined the ranks of the Union army think that they were to be freed? Did they see this as a chance, or did rumor spread that this was a fact?}{\begin{itemize} \item As expected, slaves began to escape the South, as they saw the war as a good opportunity to do so. The first occurrence of such an exodus was recorded on May 23, 1861, when three slaves escaped and traveled to Fort Monroe in Virginia, which was under the control of General Benjamin F. Butler. Because Butler needed men to work, he accepted and allowed them entrance to the fort. Butler called escaped slaves such as this ``contraband of war,'' as the South was angered by the North's use of what they thought of as their slaves. \item By technicality, the North was allowed to use the slaves in such a way. As the law declared slaves as private property, it was an acceptable move to ``seize'' the property of the enemy. Thus, the amount of contraband of war which the North possessed grew as more slaves heard of their opportunity to escape. Although the American government permitted for slaves to be used the Butler at Fort Monroe had, many generals declared that they would free and allow slaves to fight for their cause. Despite this, Lincoln still enforced the Fugitive Slave Act, as he was firm in that he wished to maintain the Union, and he had no intentions to change slavery. \item Lincoln began to look for different ways to preserve the Union. One such attempt was \textbf{colonization}, where slaves were allowed to travel to Central America or Africa. This was quite unappealing to most, though. Another idea Lincoln pursued was to pay off the Confederate states to free their slaves. Most Confederate states, though, were no longer interested in just money. At this point, Lincoln's views began to somewhat fluctuate, as he began to think that freeing slaves was his only choice.  \end{itemize}}%
+
+\topic{Of the slaves that defected from the South to the North, how many joined the army? Did the escaped women contribute to the war effort?}{\begin{itemize} \item As the war continued through 1863, Lincoln's mind began to change. He began to see emancipation as a great tool to undermine the South. Lincoln was still a bit tentative, as he knew that many northerners were afraid of free blacks. On January 1, 1863, Lincoln signed the \textbf{Emancipation Proclamation} into action. Although, upon passage, this act did not free any slaves because it only applied to non-Union areas in which the Union did not have any control, it would be a great military strategy, as it pushed the slaves to migrate to the North to be freed. Furthermore, Lincoln's move was a greater success than expected, as Confederate troops were diverted to stop slaves from escaping.  \end{itemize}}%
+
+\topic{What was the general opinion of the Union soldiers regarding fighting alongside slave or free blacks? What about the Confederates?}{\begin{itemize} \item Upon passage of the Emancipation Proclamation, over 180,000 blacks enlisted in the army. The \nth{54} and \nth{55} regiments were established and were completely filled with black soldiers. The Militia Act of 1862 set the pay of the black soldiers equal with military laborers, as it assumed they were to stay behind lines. After some campaigning and protest, though, the black soldiers were given equal pay. It would turn out that the black soldiers were some of the bravest and most courageous, as they knew this fight meant their freedom. \item As more slaves migrated north, and more and more men died, the situation began to look worse and worse for the South. Their lack of economic infrastructure, coupled with no taxation of its citizens, caused an economic shortage. Big food shortages began in spring of 1863. In March of the same year, the Army of Northern Virginia was subsisting on half-rations. In April, over 1,000 women in Richmond began to riot, as bread prices soared. These women rioted and looted clothes and food for their families.   \end{itemize}}%
+
+\topic{Which region of the North and the South did the war least effect?}{\begin{itemize} \item Although conditions were generally better in the North, the war was still taking a heavy toll on them. As was expected, upon Lincoln's Emancipation Proclamation, many groups did not want to fight for black freedom. The toll on life that the war had taken prompted both sides to ask for more troops. In the Union, this reached the point of drafting for war. This caused mass riots, especially for those who didn't want to fight for the slaves. Draft offices were attacked and blacks were lynched. The greatest riot occurred in New York and became known as the \textbf{New York Draft Riot}, where 105 men, most of whom were black, were killed. \item Even though the North was much more economically stable than the South, with the tax system and Department of Treasury in place, the funding received was no where near enough for a war. This prompted the establishment of the \textbf{Internal Revenue Service (IRS)}, which subsequently created a federal income tax in August of 1861. This tax, however, did not apply to many, as it was only for those who made more than \$800 a year. In addition to this, a national currency, backed by the government rather than gold or silver, was established. Nicknamed ``\textbf{greenbacks}'' because of their green ink, this legal tender was not to be refused as a method of payment.   \end{itemize}}%
+
+\topic{Which non-South area saw the most fighting during the Civil War?}{\begin{itemize} \item Although the war was generally fought in the South, other areas saw fighting as well. New Mexico saw a Union victory at Glorieta Pass, which was near Santa Fe. This allowed the Union to keep New Mexico as one of their territories. \item In Missouri, William Clarke Quantrill, a Missouri ``Border Ruffian,'' stirred up attacks on Union supporters. In 1863, Quantrill, along with a following of 450 southern sympathizers, raided Lawrence, Kansas, as payback for ``Bleeding Kansas.'' Quantrill ordered that all men and every house should be burned. This resulted in the deaths of 183 men and boys, as well as 185 burned houses. \item Furthermore, both sides sought support from the Native Americans. The Cherokees, Creeks, and Seminoles were all unsure of who to support, and, as such, were quite split on the decision. Overall, regardless of who would win the war, the situation got worse and worse for the natives.   \end{itemize}}%
+
+\topic{Which year saw the peak military achievement for the South?}{\begin{itemize} \item 1863 would mark one of the final military pushes for the South. Both sides wanted the war to end at this point. As such, the Confederacy came up with a plan to end it. They wanted to march straight to the capital to encircle Washington D.C. in order to end the war. Although they were somewhat successful initially, this plan would lead to devastating results for both sides. \item from July \nth{1} to July \nth{3}, the two sides clashed at Gettysburg, Pennsylvania. Both sides were decimated. The Confederate army was shattered, and it would never achieve such a presence in the North again. In total, about 51,000 soldiers were killed or wounded, with 23,000 for the Union and 28,000 for the Confederacy. Much like in 1862 when McClellan did not attack the retreating Confederates, Lincoln was furious at Meade for not pursuing the Confederates after Gettysburg. As a result, Lincoln made Grant General-in-Chief of all Union armies. Grant's main opponent was Lee. Both men were not afraid of large and violent engagements.  \end{itemize}}%
+
+\topic{Which state saw the most fighting during the Civil War? Did the same state see the most death and casualties?}{\begin{itemize} \item In early 1864, General Grant began his march into Virginia. In May of 1864, at the Battle of Wilderness, both sides took heavy casualties. This time, though, Grant followed the retreating southern forces, unlike his predecessors. In addition to this, Grant held Cold Harbor, Virginia. Lee ordered an attack on this city, while Grant ordered a counterattack. Grant instantly regretted this, as he saw the loss of 13,000 Union troops, while the South only lost 2,500. \item New advances in militaristic technology made this war worse than anything seen before. Rifles were built as repeaters, which made firing multiple shots significantly easier. Furthermore, rifling, which resulted in bullet spin, made the firearms significantly more dangerous. On top of this, artillery guns that fired shotgun-like canisters, instead of traditional cannonballs, began to come into use. This was much more devastating to each side, especially to the South which was not as industrialized as the North. \item Disease and poor medicine also accounted for the large loss of life. Women began to be employed in nursing facilities close to the battlefield, where they tended to the sick and injured. The injured men would often be crowded in these hospitals, which meant disease spread easily. Elizabeth Blackwell, the first female M.D., organized the \textbf{Sanitary Comission}, which worked to aid the soldiers. Most importantly, this change occurred in the North and the South, though the South viewed women as more fragile than the North did.  \end{itemize}}%
+
+\topic{If not for Sherman's success in moving towards the southern heartland, would Lincoln have lost the election?}{\begin{itemize} \item Although Union generals had kicked the Confederate troops out of the North, things remained relatively static during mid 1864. Lincoln's hopes of being reelected looked grim. That is, until Sherman began invading the South. Prior to Sherman's invasion, most people believed McClellan, who was elected by the democrats, was going to win. Sherman's tactic was essentially just marching into southern territory, while passing everything in sight. He tried to avoid large fights, but he wouldn't run from conflicts. Confederate General John Bell Hood tried to stop Sherman, until Sherman changed direction. Hood believed this meant Sherman was retreating, but this was not so. \item By circumventing conflict, Sherman reached Atlanta, where he burned everything in sight. In addition to this, Admiral Farragut had captured Mobile Bay, Alabama. Things were looking quite grim for the South. Sherman continued on what would be nicknamed ``Sherman's March to Sea.'' In November, it turned out Lincoln was elected 212:21 electoral votes. Sherman's plan was to move and attack Lee's men from the South, thereby achieving an early version of a pincer movement. In January 1865, Sherman began to proceed north. This war of attrition made both sides thirsty for blood. Towns and villages in Sherman's path were burned, and civilians killed. When the troops reached South Carolina, all seemed to agree with the idea that the war was going to end where it had started.  \end{itemize}}%
+
+\topic{Was Lee focused on fighting for the actual cause, or was he simply acting as a good and focused general?}{\begin{itemize} \item In early April, Richmond, Virginia was taken. This paved the path for Union victory. On April 9, 1865, Lee met Grant at the Appomattox courthouse with promise to surrender. The whole proceeding would be quite peaceful$-$friendly, even. \item In the meantime, Jefferson Davis fled, with hopes of recuperating his supporters and starting another government in Texas. On May 10, Davis was captured in Georgia. He was held for two years, until he was set free on bail, although the charges of treason would never be pressed on him. He would, however, be barred from ever holding public office. The surrender of the Confederate forces marked relative peace (there were still some guerilla groups in certain areas) for the American people. The only issue now was what to do with the traitors.  \end{itemize}}%
+
+\topic{What plans did Lincoln hold that he was unable to execute because of his assassination?}{\begin{itemize} \item Overall, Lincoln left a strong legacy. Even before Lee's surrender, the United States passed the \nth{13} amendment, which essentially forbid slavery. It seemed that the nation was now at peace, however, there were many unprecedented questions that needed to be dealt with, such as what rights to give the newly freed slaves, and what to do with the formerly Confederate states. \item One of the main arguments revolved around whether the Confederate states had truly seceded, and, therefore, needed to be readmitted, or whether they were to be restored as they were pre-war. Although this question may seem trivial, whether the states needed to be readmitted defined whether the Union could impose restrictions for them to be admitted. Lincoln seemed to side with those who believed that the states should simply be restored. This meant, however, that no new laws could be imposed on the states. \item On April 14, 1865, Lincoln met with the cabinet to discuss this new era which he called ``reconstruction.'' That very evening, Lincoln would attend the Ford Theater, where John Wilkes Booth would assassinate him. The new nation entered into a state of mourning, but it was at peace at the same time. It was in a state of peaceful mourning.  \end{itemize}}%
+
+\summary{As the United States entered the war against the newly formed Confederate States, both sides expected this to be a quick display of power. It wouldn't be until more than a year later that this was not to be so. Early engagements, such as the battle at Bull Run Creek, showed the true power of both sides. Large engagements would be sparse, as generals like McClellan wanted to take things slowly, so they could measure the strength of their opponent. The engagement at Shiloh Church would prove bloody, as the public, whether North or South, became disheartened. Their idea of war, which had been glorified in the months leading up to secession, had been proven to be vile and disgusting. Both sides wanted the war to end quickly, the longer it went. Although the South had the advantage of home territory, and that they simply had to defend this land, the North held more advantages, especially in that it was significantly more industrialized. On top of this, the North was able to transport supplies with ease, as they had a more intricate network of railroads. Furthermore, new technologies proved deadly. Repeating rifles with spinning bullets caused death on a never before seen scale. Artillery became more effective at mowing down men. Disease decimated the ranks. Medicine was not very advanced, and troops were crowded in hospitals. With the passage of the Emancipation Proclamation, former slaves began to flood to the North, draining the South's workforce, and providing new troops for the North. Economic troubles hit both sides, as war was an expensive game to play. The Battle of Gettysburg proved deadlier than any engagement prior, with 51,000 wounded or injured. Although Gettysburg ended with a decisive United States' victory, Lincoln was still worried for his reelection. Sherman's March to Sea would save Lincoln's chances, as he ultimately won with more than ten times the electoral vote. Lee's troops at Petersburg were pincered in early April, which caused the taking of Richmond, and subsequent surrender. At the Appomattox Courthouse, Grant and Lee fleshed out the details of the terms of peace. Overall, it was clear that this was a war to end separatism.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
