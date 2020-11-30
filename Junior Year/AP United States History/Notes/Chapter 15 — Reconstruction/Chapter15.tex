@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 15 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2020 $-$ \textit{All Rights Reserved} ]{\copyright 2020 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{What was Lincoln's intention with the Freedmen's Bureau? The text says it ended up doing much more than Lincoln expected, so what did Lincoln expect?}{\begin{itemize} \item With the end of the Civil War, political discussions diverted to the question of what rights to give the former slaves. Although Lincoln did think the freed men should get the right to vote, he also knew that it was up to each state to decide voting laws, and, as such, he did not want to interfere. After Lincoln's assassination, the Republican party was still divided over the same question. Many Republicans began to be called the \textbf{Radical Republicans}, as they believed that the former slaves should not only get their freedom, but also the right to vote and hold office. \item The issue of readmitting the Confederate states was at hand as well. Many people argued that the states should simply be readmitted, as the war was fought to preserve the Union, and, as such, the states should be readmitted for that very purpose. Radical Republicans, however, thought that the formerly Confederate states should be readmitted only after a period in which each of the states governments was to be reconstructed. \item Prior to his assassination, in March of 1865, Lincoln created the \textbf{Freedmen's Bureau}. This bureau lasted longer and did more than Lincoln could ever imagine. Furthermore, a new government was established in Louisiana. There, the new legislature passed the thirteenth amendment, although it did not allow black men the right to vote. Congress did not want to give Louisiana full state rights until it gave blacks the right to vote. \item The post-Civil War era is generally split into three time frames which are not great for explaining the finer details, but do set up a good general structure. These frames are: \textbf{Presidential Reconstruction} (1865$-$1866), \textbf{Congressional Reconstruction} (1867$-$1877), and \textbf{Redemption} (1877$-$1890).   \end{itemize}}%
+
+\topic{Did Johnson actually do anything that was beneficial for the slaves? Did his actions disappoint the radical Republicans?}{\begin{itemize} \item After Lincoln's assassination, it was time for Andrew Johnson to take up the presidential office. This excited many radical Republicans, as they believed that Johnson was going to be significantly tougher on the southern states than Lincoln. Many even said that god had killed Lincoln because he was no longer useful, so that Johnson could take his place. In reality, all Johnson did was require the thirteenth amendment to be passed in the states that were rebellious. He pardoned pretty much everyone, with the exception of those who owned over \$20,000 of property or held high offices. Overall, Johnson gave much more pardons than people expected. His loose rulings paved the way for the southern states to create all-white governments, as well as pass ``black codes'' that limited the rights of the former slaves. Police would often beat and force slaves to return to owners for contracted work.  \end{itemize}}%
+
+\topic{At what point did it become clear to the Congressmen that Johnson was not going to take action against the South?}{\begin{itemize} \item The Congress elected in 1864 did not meet until eight months after Lincoln's death, in December of 1865. Overwhelmingly Republican, this Congress was already quite angered by Johnson's loose policies. Election of over 60 formerly Confederate leaders in the South made it clear that Johnson had failed. The Congress began by blocking Southern senators and house members from meeting with them. Although Johnson considered them states, which, therefore, meant they had representatives in Congress, other Congressmen did not want to accept this. \item In 1866, Lyman Trumbull proposed two new bills. First, he wanted to extend the Freedmen's Bureau's existence until 1870. In addition to this, the Bureau was to receive the authority to make sure that all black men received the same rights as white men. Furthermore, Trumbull passed the Civil Rights Bill of 1866. This bill stated that all persons born in the United States are citizens, and, therefore, enjoy the same rights as citizens. Also, the bill allowed federal authorities to prosecute violations in federal courts. \item Johnson was quite resistant to change, though, and he vetoed both bills. Although he thought he had won, this marked the end of Congress's cooperation with Johnson. The Congress then passed both of these bills with a two-thirds vote in the senate. From here, Congress moved to pass a new amendment$-$the fourteenth amendment, which guaranteed civil rights to all citizens. This amendment was passed in June of 1866. Still, Congress did not stop here. They now required that the Confederate states were to be ruled from Washington D.C. for some time. Black males were then given the right to vote in the District of Columbia. The Reconstruction Act of 1867 broke the Confederate states into five territories, which would be governed by the military. Immediately, black men began to participate in politics, as well as protest and form unions. Also, the \textbf{Union League} helped black men gain experience in politics and political discussions.  \end{itemize}}%
+
+\topic{Why did Johnson begin to move against reconstruction, even though, as a vice president, he seemed to support it? Was this supposed to be a move of power to show he did not need Congress?}{\begin{itemize} \item As Johnson became less and less important when it came to Reconstruction, Congress began to become more and more important, and it was clear that there was a conflict. If Johnson was a passive president, it is probable that there would not have been a conflict, but Johnson was prideful. Even though Congress was able to pass bills which he vetoed, he was still in control of the Freedmen's Bureau and Commander-in-Chief of the military, and, therefore, the newly-formed military zones in the former Confederate states. Congress knew they had to cut his influence off. \item To combat any actions from Johnson, Congress passed a law that required presidential military orders to go through the army chief (General Grant at that time) prior to being processed and given to soldiers. Furthermore, Congress passed the Tenure of Office Act. This act stated that, to remove and replace someone from a position which the senate approved, the person to replace that position must be approved by the senate as well. This was passed mostly to keep Secretary of War Stanton in place. \item Johnson, however, wanted to be tenacious. He replaced many tough military generals in the South with those who would let events take their course. Also, after Johnson's request to remove Stanton as Secretary of War was denied, Johnson decided to fire him. From here, Congress began to launch an impeachment vote. The final vote would show that Johnson won by just one vote, meaning he could continue his presidency, although reelection was unprobable.  \end{itemize}}%
+
+\topic{Would the safeguards that were not included in order to pass the law added in later?}{\begin{itemize} \item For the election of 1868, the Republican party chose Ulysses S. Grant, the former Union general and war hero, as their president, and Schuyler Colfax as the vice president. Grant was chosen because, as the Civil War progressed, he was in awe of the bravery and courage demonstrated by the black men. He began to respect, and even fight for them, and, as such, the Republicans would be able to pass legislation to give more rights to the former slaves. The democrats selected Horatio Seymour for president, and Francis Blair as vice president. Grant won the election, with 73\% of the electoral vote. Congress quickly moved to work, and they passed the fifteenth amendment, which guaranteed voting rights to all men. \item Although the passage of the fifteenth amendment was a big step in the right direction, it lacked some important clauses. First of all, it did not guarantee the right to participate in politics. This was done because Congress was afraid that California would not ratify the amendment, as they had a large Chinese population, and, therefore, they wanted to keep white control of the government. Also, nothing about voting rights for women was included. This angered feminists such as Susan B. Anthony and Elizabeth Cady Stanton. \item Despite a lack of a clause stating that all citizens were allowed to participate in politics in the fifteenth amendment, black men began to participate and even get elected to positions. Hiram R. Revels was the first African-American to be elected to the senate. Surprisingly, this was for the southern state of Mississippi. This occurred in January of 1870. Mississippi also later sent Blanche K. Bruce in 1874. Overall, 22 black men were elected during Reconstruction, 13 of which were former slaves, and nine of which were free. Nothing was more significant of the Northern victory than the participation of black men in politics.  \end{itemize}}%
+
+\topic{Was education for former slaves roughly the same in the North and South? If not, what was different?}{\begin{itemize} \item As slaves used to be forbidden from reading or writing, and, thus acquiring literary skills, the question of education during Reconstruction was brought up. Thousands of teachers (mostly white women, although it would later shift in favor of more black women) would migrate to places to teach eager students. By forbidding literacy, the South had made education a symbol of power for the former slaves. The Freedmen's Bureau and the Reconstruction Act both helped in establishing education as a civil right in the South, not only for whites, but for blacks now too.   \end{itemize}}%
+
+\topic{Did any of the black sharecroppers realize what their white partners were doing? If so, did they take it to the authorities?}{\begin{itemize} \item Also, there was a question of land floating about. Initially, in Georgia (around 1864, when Sherman arrived), General Sherman distributed the lands for the black families. The deal became ``40 acres and a mule,'' as Grant also provided some old military mules. The Freedmen's Bureau worked on getting this land for the former slaves. Johnson, however, did not like such proceedings. He ordered that the land be returned to the former owners. These owners had laws that forbid vagrancy passed, which meant black men had to find work or risk being jailed. This forced many into low-wage jobs with their former owners. \item Low wages angered the blacks, as it made them feel dependent on their owners, as they were when they were slaves. Then, beginning in Louisiana, the idea of \textbf{sharecropping} came to light. This was a system where a black family shared land with the former owner. This family would receive a small property, as well as a small loan to get started, and they would continue to work the fields. Unlike before, the workers would now split the profits with their owners, which made the former slaves now feel more independent. The white men, however, quickly took advantage of the former slaves. They would give them accounts of funds, where the black men would usually make meager or no profits, as the men were usually illiterate, and, therefore, unable to confirm the truth of the accounts. \item This sharecropping idea began to develop into small communities. Shops within the actual property would be established, and they were usually owned by the white owner of the property. These shops would give food, clothes, and fabrics for credit until crops were planted. This credit system, though, was purposefully rigged so that, as time went on, the black sharecroppers fell farther and farther into debt.  \end{itemize}}%
+
+\topic{Did the abolitionists and black right activists know about the anti-black, formerly Confederate people coming into office? If so, why didn't they try to stop them somehow?}{\begin{itemize} \item Following the Civil War, former Confederates were not completely excluded from government, however, the war did cause an increase in supporters of the Republican party. The Republican Party was quite diverse, as it had many white and black supporters (usually organized in Union Leagues), as compared to the all-white Democrat policy. In the South, Republicans were given nicknames. Native southerners who were Republicans and supported multiracial efforts were named \textbf{scalawags}. Northern whites who moved to the South were named \textbf{carpetbaggers} (as it was said they could carry all of their belongings in carpet-like bags). \item Lucius Quintus Cincinnatus Lamar of Mississippi, who came from an elite Southern family, is an example of a member of the Democrat Party. Prior to the war, he was a strong supporter of secession, and during the war, he was a Confederate general. After the war, he decided to go into politics again, after being pardoned. Elected to Congress, he attempted to do anything to block passage of more civil rights for blacks. He blocked the passage of the Enforcement Act of 1875, which would have given Grant more power to implement the fourteenth and fifteenth amendment in Mississippi. Most importantly, Lamar found his own organization outside of the Democrat Party: the \textbf{Ku-Klux Klan}. \item Although the Reconstruction era was going somewhat well, violence plagued the South, and would undo much of the changes that were ushered in. The Ku-Klux Klan and other such organizations terrorized not only the blacks, but also their white Republican supporters. Meetings in many states would be cut short with shootings and violence which attempted to stop and reverse the changes made by the Republicans. Quickly, the Reconstruction era ended with what was called by the southerners, ``\textbf{redemption}.'' \item Northerners did try to make things right. Grant was easily reelected in 1872, and Enforcement Acts were passed. Denial of the right to vote now became a federal offense. In addition to this, the government was also now able to intervene in elections that were deemed unfair. Crimes against individuals could now be prosecuted by the federal government. Despite these efforts, resistance by the South was fierce, and thousands of men were killed. The era of redemption was now on.  \end{itemize}}%
+
+\topic{If Hayes won the electoral vote, what was the problem with the election? Did the South not want to concede because Hayes lost the popular vote?}{\begin{itemize} \item As time went on, it seemed that Reconstruction was falling apart. Many factors played a part in this. First, lots of talk about corruption in the Grant administration, as well as the federally controlled governments in the formerly Confederate states, caused general public distrust. Furthermore, in \textit{United States v. Cruikshank}, the Supreme Court made the decision that took power away from the federal government. The \textit{Cruikshank} decision made it clear that the federal government was not to protect individual rights, as that was a task for the states. \item The Supreme Court would go even further. In 1883, it was said that the Civil Rights Act of 1875 was unconstitutional. This meant that the federal government could not outlaw discrimination by individuals, as the fourteenth amendment only applied to outlawing state government actions. At this point, the country was getting ready for the election of 1876. Here, Republicans nominated Rutherford B. Hayes, while Democrats nominated Samuel Tilden. In the end, Hayes won the electoral but not the popular vote. This made the election heavily contested, as the South argued against his victory. Both sides would come to an agreement, where Hayes was to become president, but he was to take federal troops out of the Southern states. With the exodus of federal troops, persecution of African-Americans, as well as Republican supporters in the South would become widespread. They were now able to maintain their white power.  \end{itemize}}%
+
+\topic{Did the types of Jim Crow segregation change over time, or did segregation remain the same throughout the decades?}{\begin{itemize} \item After the fall of the Reconstruction era, the South would resume persecution. Although slavery was outlawed, blacks were worked like slaves. Laws made sharecropping pretty much the only option for blacks, as sharecropping became more and more beneficial for the white property owners. Many southern states began practicing \textbf{Jim Crow segregation}, as they would well into the 1900s.   \end{itemize}}%
+
+\summary{The post-Civil War era would be quite successful for about a decade. Under Johnson, no progress was made until Congress took control, marking the beginning of the Congressional Reconstruction era. African-Americans began to participate and be elected in politics. Schools, often all black, popped up to educated the formerly illiterate segment of the population. The impeachment of Johnson, although it did not mark his removal from office, did end his political career. Grant followed him, and even more progress was made under him. The Civil Rights Act of 1875 helped guarantee the rights of black citizens. At the same time, sinister communities formed anti-black and Republican movements, such as the Ku-Klux Klan. Violence was constantly perpetrated on those that supported civil rights. The Supreme Court kept ruling against Reconstruction, as it gave power to the individual states. As Reconstruction fell apart, the South entered the era of Redemption, where they sought to persecute and restrict the former slaves. }
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
