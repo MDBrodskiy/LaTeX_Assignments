@@ -133,18 +133,18 @@ citecolor=blue,
 
   \begin{equation*}
     \begin{split}
-      (\bold{A}-\lambda_1\bold{I})\bold{K}&=0\\
-      (\bold{A}-\lambda_1\bold{I})\bold{P}&=\bold{K}\\
-      (\bold{A}-\lambda_1\bold{I})\bold{Q}&=\bold{P}\\
+      \text{Laplace Derivative Formulas:}\\
+      t^nf(t)=(-1)^n\frac{d^n}{ds^n}[F(s)]\\
+      \mathcal{L}\left\{ f^{(n)}(t) \right\}=s^nF(s)-s^{n-1}f(0)-s^{n-2}f'(0)
     \end{split}
     \label{5}
   \end{equation*}
 
   \begin{equation*}
     \begin{split}
-      \text{If }\lambda_n&=\alpha\pm\beta i\\
-      \bold{X}_1&=[\bold{B}_1\cos\beta t-\bold{B}_2\sin\beta t]e^{\alpha t}\\
-      \bold{X}_2&=[\bold{B}_2\cos\beta t-\bold{B}_1\sin\beta t]e^{\alpha t}\\
+      |\bold{A}-\lambda_n\bold{I}|\bold{K}&=0\\
+      \text{If a }k\text{ value is not explicitly zero,}\\
+      \text{assume it is equal to one}
     \end{split}
     \label{6}
   \end{equation*}
@@ -155,12 +155,21 @@ citecolor=blue,
 
   \begin{equation*}
     \begin{split}
+      k_1&=f\left(x,y\right)\\
+      k_2&=f\left(x+\frac{h}{2},y+\frac{h\cdot k_1}{2}\right)\\
+      k_3&=f\left(x+\frac{h}{2},y+\frac{h\cdot k_2}{2}\right)\\
+      k_4&=f\left(x+h,y+h\cdot k_3\right)\\
+      RK4&=y+h\left( \frac{k_1}{6}+\frac{k_2}{3}+\frac{k_3}{3}+\frac{k_4}{6} \right)
     \end{split}
     \label{7}
   \end{equation*}
 
   \begin{equation*}
     \begin{split}
+      \text{For &truncation errors:}\\
+      O(h^n)=y^{(n)}\left( c \right)&\frac{h^n}{n!}\\
+      O(h^5)\text{ for global &truncation on } RK4\\
+      O(h^4)\text{ for local &truncation on } RK4\\
     \end{split}
     \label{8}
   \end{equation*}
@@ -172,34 +181,38 @@ citecolor=blue,
 
   \begin{equation*}
     \begin{split}
+      \text{Orthog&onal if:}\\
+      (\phi_m,\phi_n)&=\int_a^b \phi_m(x)\phi_n(x)\,dx=0
     \end{split}
     \label{9}
   \end{equation*}
 
   \begin{equation*}
     \begin{split}
+      ||\phi_n(x)||^2&=\int_a^b \phi_n^2(x)\,dx\\
+      ||\phi_n(x)||&=\sqrt{\int_a^b \phi_n^2(x)\,dx}\\
     \end{split}
     \label{10}
   \end{equation*}
 
 \end{multicols}
 
-\vspace{45pt}
-
-\hline
-
-\newpage
-
 \begin{multicols}{2}
 
   \begin{equation*}
     \begin{split}
+      c_n&=\frac{\int_a^b f(x)w(x)\phi_n(x)\,dx}{||\phi_n(x)||^2}\\
+        ||\phi_n(x)||^2&=\int_a^b w(x)\phi_n^2(x)\,dx\\
     \end{split}
     \label{11}
   \end{equation*}
 
   \begin{equation*}
     \begin{split}
+      f(x)&=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left( a_n\cos\left( \frac{n\pi}{p}x \right)+b_n\sin\left( \frac{n\pi}{p}x \right) \right)\\
+      a_0&=\frac{1}{p}\int_{-p}^pf(x)\,dx\\
+      a_n&=\frac{1}{p}\int_{-p}^pf(x)\cos\left( \frac{n\pi}{p}x \right)\,dx\\
+      b_n&=\frac{1}{p}\int_{-p}^pf(x)\sin\left( \frac{n\pi}{p}x \right)\,dx\\
     \end{split}
     \label{12}
   \end{equation*}
@@ -210,43 +223,19 @@ citecolor=blue,
 
   \begin{equation*}
     \begin{split}
+      \int_a^b f(t)\delta(t-t_0)\,dt=f(t_0)\\
     \end{split}
     \label{13}
   \end{equation*}
 
   \begin{equation*}
     \begin{split}
+      \delta(t-t_0)&=\left\{\begin{array}{ll} 0, & 0\leq t <t_0-a\\ \frac{1}{2a}, & t_0-a\leq t < t_0+a\\ 0, & t\geq t_0+a \end{array}
     \end{split}
     \label{14}
   \end{equation*}
 
 \end{multicols}
-
-\begin{multicols}{2}
-
-  \begin{equation*}
-    \begin{split}
-    \end{split}
-    \label{15}
-  \end{equation*}
-
-  \begin{equation*}
-    \begin{split}
-    \end{split}
-    \label{16}
-  \end{equation*}
-
-\end{multicols}
-
-\begin{equation*}
-  \begin{split}
-\end{split}
-  \label{17}
-\end{equation*}
-
-\vfill
-
-\hline
 
 \end{document}
 
