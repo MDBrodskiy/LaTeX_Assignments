@@ -33,6 +33,14 @@
     \vskip0.5em}%
 
 }
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
 \DeclareSIUnit\Molar{\textsc{m}}
 \DeclareSIUnit\atm{\textsc{atm}}
 \DeclareSIUnit\torr{\textsc{torr}}
@@ -257,6 +265,44 @@ citecolor=blue,
       \caption{Incorrect Energy Required to Break \ce{I2} and \ce{F2} Bonds}
       \label{fig:2}
     \end{figure}
+
+  \item Hybridization of Orbitals $-$ When an atom should be able to bond an $n$ amount of times, but, according to the box diagram, it can not, electrons are moved around to fit the expected number of bonds. (Ex. \ce{sp^3} for \ce{C}, \ce{sp^2} for \ce{B}, or \ce{sp} for \ce{Be})
+
+  \item \textit{Example:}
+
+    \begin{center}
+      Carbon:\\
+    \orbital{s}{\+\1} \quad \orbital{p}{\+\1 \+\1 \+\1}\\
+      Instead of:\\
+    \orbital{s}{\+\-} \quad \orbital{p}{\+\1 \+\1 \0\1}
+    \end{center}
+
+\newpage
+
+  \item Table for hybridization:
+
+    \begin{tabular}{c | c}
+      \underline{# \ce{e-} pairs} & \underline{hybrid}\\
+      2 & \ce{sp}\\
+      3 & \ce{sp^2}\\
+      4 & \ce{sp^3}\\
+      5 & \ce{sp^3d}\\
+      6 & \ce{sp^3d^2}\\
+    \end{tabular}
+
+  \item Sigma and Pi Bonds $-$ Sigma ($\sigma$)-bond on axis, while Pi ($\pi$)-bond not on axis
+
+  \item Coulomb's Law: The force between two charged particles is proportional to the magnitude of each of the two charges, and inversely proportional to the square of the distance between them (further apart, weaker force) ($\frac{kq_1q_2}{r^2}$)
+
+  \item Electron Shielding $-$ Core electrons are generally closer to the nucleus than calence electrons and are considered to ``shield'' the valence electrons from the full electrostatic attraction of the nucleus
+
+  \item Lattice Energy $-$ Energy of an ionic structure
+
+  \item \textit{Example: } Which has more lattice energy, \ce{ZnCl2} or \ce{ZnO}?
+
+    \begin{center}
+      \ce{ZnO} has more lattice energy than \ce{ZnCl2} because oxygen has a larger negative charge
+    \end{center}
 
 \end{itemize}
 
