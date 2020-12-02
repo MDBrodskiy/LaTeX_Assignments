@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Biology
+% Professor: J. Polivka
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 9}
+\date{November 30, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Polivka}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Steps of Cellular Respiration:
+
+    \begin{enumerate}
+
+      \item Glycolysis
+
+      \item The Kreb's Cycle\footnote{Also referred to as the Citric Acid Cycle}
+
+      \item Oxidative Phosphorylation
+
+    \end{enumerate}
+
+  \item Cellular Respiration $-$ A set of metabolic reactions and processes that convert biochemical energy from nutrients into ATP, and then release waste products. The chemical reaction is:    
+
+    \begin{center}
+    \ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O + 36ATP}
+  \end{center}
+
+\item Catabolism (breakdown) of glucose to produce ATP occurs
+
+\item Energy is harvested by digesting large molecules into smallers ones (particularly glucose), where bonds are then broken, and electrons are move from one molecule to another. As the electrons move, they carry energy.
+
+\item When a molecule loses an electron, it is oxidized, while the molecule gaining an electron is reduced.
+
+\item Electron carrier molecules move electrons by shuttling \ce{H} atoms around.
+
+\item \ce{NAD+ -> NADH} (reduced)
+
+\item \ce{FAD^2+ -> FADH2} (reduced)
+
+\item In Glycolysis, glucose is broken into pyruvates
+
+\item In the Kreb's Cycle, pyruvates become carbon dioxide
+
+\item In the Electron Transport Chain, electrons are passed to oxygen by \ce{NADH}  
+
+\item Step One $-$ Glycolysis:
+
+  \begin{enumerate}
+
+    \item Glucose broken down into pyruvates (1 6-carbon molecule to 2 3-carbon molecules)
+
+    \item Transfers energy from organic molecules to ATP (generates only 2 ATP per glucose, as pyruvates still hold most of energy)
+
+    \item Occurs in cytosol
+
+    \item Happens with or without oxygen
+
+    \item Process occurs as follows: \ce{C6H12O6 -> 2Pyruvate + 2H2O -> 2ADP + 2P_i -> 2ATP + 2NAD -> 2ATP + 2NADH + 2H+}
+
+    \item Net yield of \ce{2ATP} and \ce{2NADH}
+
+  \end{enumerate}
+
+\item Step Two $-$ The Kreb's Cycle:
+
+  \begin{enumerate}
+
+    \item Occurs in the mitochondrial matrix as an 8-step pathway
+
+    \item It is aerobic (meaning it only occurs if \ce{O2} is present)
+
+    \item Happens twice, one for each pyruvate
+
+    \item Pyruvate become Acetyl-CoA
+
+    \item \ce{CO2} comes from breakdown of pyruvates in the Kreb's Cycle
+
+    \item \ce{NAD+} becomes \ce{NADH}, while \ce{FAD^2+} becomes \ce{FADH2}
+
+    \item Net yield of \ce{2ATP}, \ce{6NADH}, and \ce{2FADH2} per glucose molecule
+
+    \item This stage marks the oxidation of glucose to \ce{CO2}
+
+    \item Although not much ATP is produced, the \ce{NADH} and \ce{FADH2} are more important, as they are used in the Electron Transport Chain
+
+    \item Per pyruvate, \ce{3NAD+} is reduced to \ce{NADH}, 1 \ce{FAD+} is reduced to \ce{FADH2}, and one ATP is produced
+
+  \end{enumerate}
+
+\item Step Three $-$ The Electron Transport Chain:
+
+  \begin{enumerate}
+
+    \item The chain consists of series of proteins built into the inner mitochondrial membrane
+
+    \item Electrons are released from \ce{NADH} and \ce{FADH2}, and, as they are passed along the series of enzymes, they give up energy, which is used to fuel chemiosmosis
+
+    \item This yields about 34 ATP per glucose
+
+    \item Is an aerobic process (aerobic respiration)
+
+    \item 6 water molecules are formed when the electrons unite with oxygen at the end of the electron transport chain
+    
+    \item \ce{NADH} dehydrogenase convert \ce{NADH} to \ce{NAD}
+
+    \item Hydrogen molecules are removed from \ce{NADH} and \ce{FADH2}
+
+    \item Electrons are then stripped from hydrogen atoms causing them to become protons (\ce{H+})
+
+    \item Electrons are then passed from one electron carrier to the next in mitochondrial membrane
+
+    \item Flowing electrons make energy do work
+
+    \item Transport proteins in membrane pump \ce{H+} (protons) across inner membrane into intermembrane space
+
+    \item \ce{H+} gradient causes flow of protons through ATP synthase, which synthesizes ATP (\ce{ADP + P_i -> ATP})
+
+    \item Oxidative Phosphorylation is the process of Chemiosmosis and Electron Transport Chain combined
+
+  \end{enumerate}
+
+    \item Chemiosmosis $-$ The diffusion of ions across a membrane (this is what links the ETC to ATP synthesis)
+
+    \item Oxygen is the final electron acceptor in the ETC
+
+    \item If \ce{O2} is unavailable, the ETC backs up, which means nothing to pull electrons down, which causes a build up of \ce{NADH} and \ce{FADH2}, which makes it impossible to unload \ce{H}, and ATP production ceases. Ass a result, cells run out of energy and the organism dies.
+
+    \item Anywhere between 30-38 ATP is produced in one cycle
+      
+    \item Without oxygen, anaerobic respiration, or fermentation occurs:
+
+      \begin{enumerate}
+
+        \item Another molecule must accept \ce{H} from \ce{NADH}
+
+        \item Depending on the organism, either alcoholic fermentation or lactic acid fermentation occurs. Humans have lactic acid fermentation.
+        
+        \item In lactic acid fermentation, lactate accepts \ce{H}, whereas, in alcoholic, \ce{CO2} is produced and \ce{H} is accepted.
+
+      \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
