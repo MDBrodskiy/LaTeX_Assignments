@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Practice FRQ}
+\date{December 3, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \setcounter{enumi}{4}
+
+  \item \hspace{20pt}\chemfig{P(-[:-72]\lewis{0:4:6:,F})(-[:-144]\lewis{2:4:6:,F})(-[:-216]\lewis{2:4:6:,F})(-[:-288]\lewis{0:2:4:,F})(-[:-0]\lewis{0:2:6:,F})}\\
+    \vspace{50pt}
+    \hspace{20pt}\chemfig{\lewis{2:,P}(-[:-210]\lewis{2:6:,F})(-[:-90]\lewis{0:4:6:,F})(-[:-330]\lewis{0:2:6:,F})}\\
+
+    \begin{center}
+
+      \ce{PF3} is most likely a tri-pyramid, while \ce{PF5} is most likely a tri-bipyramid. \ce{PF3} is then most likely polar. 
+
+    \end{center}
+    \begin{center}
+
+    \ce{AsF5} exists. To form the atom, it is required to use an expanded octet, which \ce{As} can handle, but \ce{N} can not. Therefore, \ce{As} can exist, but \ce{N} can not.
+
+    \end{center}
+
+    \setcounter{enumi}{5}
+
+  \item
+
+    \begin{enumerate}
+
+      \item The periodic table holds a trend that, the higher to the top right, the more ionization energy it requires. Potassium is below lithium in the same column, and, therefore, it requires less ionization energy.
+
+      \item The periodic table holds a trend that, the closer to the bottom left, the greater the ionic radius. Because nitrogen is closer to the bottom right, as compared to oxygen, nitrogen has a greater radius. Although with \ce{3^-} and \ce{2^-}, respectively, both land on the same spot as neon, nitrogen has less protons, which means the electrons repel stronger, and, therefore, are farther away from the nucleus.
+
+      \item As with (b), calcium is closer to the bottom right, and, therefore, is greater. This is because it has less of protons, which causes for the force on the outer layer of electrons to be greater in a direction opposite the nucleus.
+
+      \item Unlike (a), boron holds the exception that, although it is closer to the top right, it requires less ionization energy because of the greater protons.
+
+    \end{enumerate}
+
+    \setcounter{enumi}{5}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{enumerate}
+
+          \item \ce{S}: \ce{1s^2 2s^2 2p^6 3s^2 3p^4}, \ce{S^2-}: \ce{1s^2 2s^2 2p^6 3s^2 3p^6}
+
+          \item \ce{S^2-} has a larger radius because it has a stronger repellent force, to the same amount of protons, and, therefore, is larger.
+
+          \item \ce{S} would be attracted because it has two unpaired valence electrons, while \ce{S^2-} would not be attracted because it does not have any unpaired electrons.
+
+        \end{enumerate}
+
+      \item \ce{S^2-} would have a lower ionization energy, and, therefore, can have an electron removed more easily, because, although the amount of electrons is the same as argon, it has less protons, which means the repellent force makes it larger, and, therefore, an electron is easier to remove. 
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
