@@ -1,0 +1,284 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Review Set $-$ Chapter 6 \& 7}
+\date{December 10, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Write the complete electron configuration for the following atoms:
+
+    \begin{enumerate}
+
+      \item Boron $-$ \ce{1s^2 2s^2 2p^1}
+
+      \item Silver $-$ \ce{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^9}
+
+    \end{enumerate}
+
+  \item Write the box diagram for the following:
+
+    \begin{enumerate}
+
+      \item Barium:
+
+        \begin{center}
+          \orbital{1s}{\+\-} \quad \orbital{2s}{\+\-} \quad \orbital{2p}{\+\- \+\- \+\-} \quad \orbital{3s}{\+\-} \quad \orbital{3p}{\+\- \+\- \+\-} \quad \orbital{4s}{\+\-} \quad \orbital{3d}{\+\- \+\- \+\- \+\- \+\-} \quad \orbital{4p}{\+\- \+\- \+\-} \quad \orbital{5s}{\+\-} \quad \orbital{4d}{\+\- \+\- \+\- \+\- \+\-} \quad \orbital{5p}{\+\- \+\- \+\-} \quad \orbital{6s}{\+\-}
+        \end{center}
+
+      \item Potassium:
+
+        \begin{center}
+          \orbital{1s}{\+\-} \quad \orbital{2s}{\+\-} \quad \orbital{2p}{\+\- \+\- \+\-} \quad \orbital{3s}{\+\-} \quad \orbital{3p}{\+\- \+\- \+\-} \quad \orbital{4s}{\+\1} 
+        \end{center}
+
+    \end{enumerate}
+
+  \item Write the noble gas short-hand for the following atoms:
+
+    \begin{enumerate}
+
+      \item Calcium $-$ \ce{[Ar] 4s^2}
+
+      \item Tin $-$ \ce{[Kr] 5s^2 4d^10 5p^2}
+
+      \item Iodine $-$ \ce{[Kr] 5s^2 4d^10 5p^5}
+
+      \item Bismuth $-$ \ce{[Xe] 6s^2 4f^14 5d^10 6p^3} 
+
+    \end{enumerate}
+
+  \item Write the four quantum numbers for the last electron in the following atom:
+
+    \begin{enumerate}
+
+      \item Vanadium $-$ $n=3,\,l=2,\,m_l=0,\,m_s=\frac{1}{2}$
+
+      \item Calcium $-$ $n=4,\,l=0,\,m_l=0,\,m_s=-\frac{1}{2}$ 
+
+      \item Uranium $-$ $n=6,\,l=2,\,m_l=-2,\,m_s=\frac{1}{2}$ 
+
+      \item Copper $-$ $n=3,\,l=2,\,m_l=1,\,m_s=-\frac{1}{2}$ 
+
+    \end{enumerate}
+
+  \item State the number of valence electrons in the following: 
+
+    \begin{enumerate}
+
+      \item Antimony $-$ 5
+
+      \item Neon $-$ 8
+
+      \item Mercury $-$ 2 
+
+      \item \ce{[Kr] 5s^2 4d^10 5p^2} $-$ 4
+
+      \item Sodium $-$ 1
+
+      \item \ce{[Xe] 6s^1} $-$ 1
+
+    \end{enumerate}
+
+  \item Draw the Lewis Structure for the following molecules. For those molecules that exhibit resonance, draw all possible resonance forms.
+
+    \begin{enumerate}
+
+      \item \ce{C2H4} 
+
+        \begin{center}
+          \chemfig{C(-[:-135]H)(-[:-225]H)=C(-[:-45]H)(-[:-315]H)}
+        \end{center}
+
+      \item \ce{HSO4^-}
+
+        \begin{center}
+          \chemfig{S(-[0]\lewis{2:6:,O}(-[:45]H))(=[2]\lewis{0:4:,O})(-[4]\lewis{2:4:6:,\ce{O-}})(=[6]\lewis{0:4:,O})}\\\vspace{15pt}
+          \chemfig{S(-[2]\lewis{0:4:,O}(-[:135]H))(=[0]\lewis{2:6:,O})(-[6]\lewis{0:4:6:,\ce{O-}})(=[4]\lewis{2:6:,O})}\\\vspace{15pt}
+          \chemfig{S(-[4]\lewis{2:6:,O}(-[:225]H))(=[2]\lewis{0:4:,O})(-[0]\lewis{0:2:6:,\ce{O-}})(=[6]\lewis{0:4:,O})}\\\vspace{15pt}
+          \chemfig{S(-[6]\lewis{2:6:,O}(-[:315]H))(=[0]\lewis{0:4:,O})(-[2]\lewis{0:2:4:,\ce{O-}})(=[4]\lewis{0:4:,O})}\\\vspace{15pt}
+        \end{center}
+
+      \item \ce{N2O4} 
+
+        \begin{center}
+          \chemfig{N(-[:-135]\lewis{2:4:6:,O})(-[:-225]\lewis{2:4:6:,O})-N(-[:-45]\lewis{0:2:6:,O})(-[:-315]\lewis{0:2:6:,O})}\\\vspace{15pt}
+        \end{center}
+
+      \item \ce{NH2OH}
+
+        \begin{center}
+          \chemfig{\lewis{2:,N}(-[:-90]H)(-[:-210]H)(-[:-330]\lewis{2:6:,O}(-[:-45]H))}
+        \end{center}
+
+    \end{enumerate}
+
+\item For the following molecules: a) predict the molecular structure; b) predict the bond angle; c) state the polarity of the molecule.
+
+\begin{enumerate}
+
+  \item \ce{N2O}
+
+    \begin{enumerate}
+
+      \item Linear
+
+      \item $180^{\circ}$
+
+      \item Non-polar
+
+    \end{enumerate}
+
+  \item \ce{BF3}
+
+    \begin{enumerate}
+
+      \item Triangular Planar
+
+      \item $120^{\circ}$
+
+      \item Non-polar
+
+    \end{enumerate}
+
+  \item \ce{Cl2O}
+
+    \begin{enumerate}
+
+      \item Bent
+
+      \item $109.5^{\circ}$
+
+      \item Polar
+
+    \end{enumerate}
+
+  \item \ce{NI3}
+
+    \begin{enumerate}
+
+      \item Tri-pyramid
+
+      \item $109.5^{\circ}$
+
+      \item Polar
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\item State what hybridization the center atom must use.
+
+\begin{enumerate}
+
+\item \ce{N2}
+
+  \begin{center}
+    \ce{sp^3}
+  \end{center}
+
+\item \ce{F2CO}
+
+  \begin{center}
+    \ce{sp^3}
+  \end{center}
+
+\item \ce{SeCl4}
+
+  \begin{center}
+    \ce{sp^3d}
+  \end{center}
+
+\item \ce{IF3}
+
+  \begin{center}
+    \ce{sp^3d}
+  \end{center}
+
+\item \ce{PCl5}
+
+  \begin{center}
+    \ce{sp^3d}
+  \end{center}
+
+\item \ce{SF6}
+
+  \begin{center}
+    \ce{sp^3d^2}
+  \end{center}
+
+  \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
