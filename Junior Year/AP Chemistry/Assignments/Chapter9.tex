@@ -47,6 +47,7 @@
 \DeclareSIUnit\torr{\textsc{torr}}
 \DeclareSIUnit\psi{\textsc{psi}}
 \DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{$^{\circ}$C}
 \usepackage{hyperref}
 \hypersetup{
 colorlinks=true,
@@ -77,11 +78,80 @@ citecolor=blue,
 
     \setcounter{enumi}{1}
 
-  \item 
+  \item Benzene, a known carcinogen, was once widely used as a solvent. A sample of benzene vapor in a flask of constant volume exerts a pressure of $325[\si{\mmHg}]$ at $80[\si{\Celsius}]$. The flask is slowly cooled.
+
+    \begin{enumerate}
+
+      \item Assuming no condensation, use the ideal gas law to calculate the pressure of the vapor at $50[\si{\Celsius}]$; at $60[\si{\Celsius}]$
+
+        \begin{equation}
+          \begin{split}
+            P_{50[\si{\Celsius}]}&=\frac{273+50}{80+273}\cdot325=297[\si{\mmHg}]\\
+            P_{60[\si{\Celsius}]}&=\frac{60+273}{80+273}\cdot325=307[\si{\mmHg}]\\
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item Compare your answers in (a) to the equilibrium pressure of benzene: $269[\si{\mmHg}]$ at $50[\si{\Celsius}]$, $389[\si{\mmHg}]$ at $60[\si{\Celsius}]$
+
+        \begin{equation}
+          \begin{split}
+            297[\si{\mmHg}]>269[\si{\mmHg}]\\
+            307[\si{\mmHg}]<389[\si{\mmHg}]\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item On the basis of your answers to (a) and (b), predict the pressure exerted by the benzene at $50[\si{\Celsius}]$, at $60[\si{\Celsius}]$
+
+        \begin{equation}
+          \begin{split}
+            P_{50[\si{\Celsius}]}&=269[\si{\mmHg}]\\
+            P_{60[\si{\Celsius}]}&=307[\si{\mmHg}]\\
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
 
     \setcounter{enumi}{5}
 
-  \item
+  \item $p$-Dichlorobenzene, \ce{C6H4Cl2}, can be one of the ingredients in mothballs. Its vapor pressure at $20[\si{\Celsius}]$ is $0.40[\si{\mmHg}]$
+
+    \begin{enumerate}
+
+      \item How many milligrams of \ce{C6H4Cl2} will sublime into an evacuated $750[\si{\milli\liter}]$ flask at $20[\si{\Celsius}]$?
+        
+        \begin{equation}
+          \begin{split}
+            n=\frac{.75\cdot.0005}{.0821\cdot293}\\
+            =.0000164[\si{\mole}]\\
+            .0000164\cdot146=2.4[\si{\milli\gram}]\\
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item If $5[\si{\milli\gram}]$ of $p$-Dichlorobenzene were put into an evacuated $750[\si{\milli\liter}]$ flask, how many milligrams would remain in the solid phase?
+
+        \begin{equation}
+          \begin{split}
+            5-2.4=2.6[\si{\milli\gram}]\\
+          \end{split}
+          \label{5}
+        \end{equation}
+
+      \item What is the final pressure in an evacuated $500[\si{\milli\liter}]$ flask at $20[\si{\Celsius}]$ that contains $2[\si{\milli\gram}]$ of $p$-Dichlorobenzene? Will there be any solid in the falsk?
+
+        \begin{equation}
+          \begin{split}
+            \frac{.0000137\cdot.0821\cdot293}{.5}\cdot760=.5[\si{\mmHg}]\\
+            \text{The vapor pressure is: }.4[\si{\mmHg}]\\
+              \text{There will be solid}
+          \end{split}
+          \label{6}
+        \end{equation}
+
+    \end{enumerate}
 
     \setcounter{enumi}{17}
   
@@ -91,19 +161,67 @@ citecolor=blue,
 
       \item What is the physical state of the compound at $35[\si{\mmHg}]$ and $120[\si{\Celsius}]$?
 
+        \begin{center}
+
+          Vapor
+          
+        \end{center}
+
       \item What is the normal freezing point of the compound?
+
+        \begin{center}
+
+          $20[\si{\Celsius}]$
+          
+        \end{center}
 
       \item What is the point $A$ called?
 
+        \begin{center}
+
+          Liquid
+          
+        \end{center}
+
       \item What is the point $B$ called?
+
+        \begin{center}
+
+          Triple Point
+          
+        \end{center}
 
       \item What is the point $C$ called?
 
+        \begin{center}
+
+          Normal Boiling Point
+          
+        \end{center}
+
       \item What change occurs when, at a constant pressure of $33[\si{\mmHg}]$, the temperature is decreased from $40[\si{\Celsius}]$ to $-20[\si{\Celsius}]$?
+
+        \begin{center}
+
+          Deposition (Vapor to Solid) 
+          
+        \end{center}
 
       \item Will the solid float on the liquid?
 
+        \begin{center}
+
+          No
+          
+        \end{center}
+
       \item Can the compound exist as a liquid at $180[\si{\Celsius}]$ and $2[\si{\atm}]$?
+
+        \begin{center}
+
+          Yes
+          
+        \end{center}
 
 
     \end{enumerate}
