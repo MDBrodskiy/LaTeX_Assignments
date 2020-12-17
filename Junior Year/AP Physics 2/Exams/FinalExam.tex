@@ -1,0 +1,362 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Physics 2
+% Professor: S. Morse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Physics 2 Final Exam}
+\date{\today}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Morse}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+  Problem One:
+\end{center}
+    \hline
+
+    \begin{equation}
+      \begin{split}
+        W=F_g\\
+        F_g=(4\cdot10^{-3})(1000)+3+4\\
+        =11[\si{\newton}]\\
+        \text{Because total weight is ball plus fluid plus beaker}
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \begin{figure}[h]
+      \centering
+      \include{fbd}
+      \caption{Free Body Diagram of Rubber Ball}
+      \label{fig:1}
+    \end{figure}
+
+    \begin{equation}
+      \begin{split}
+        F_b-F_g-F_T=0\\
+        F_b=F_T+F_g\\
+        4+6=10[\si{\newton}]\\
+      \end{split}
+      \label{2}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        P=\rho g h\\
+        1000\cdot10\cdot.15=1500[\si{\pascal}]\\
+      \end{split}
+      \label{3}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \text{The ball will displace less fluid, so lower}
+      \end{split}
+      \label{4}
+    \end{equation}
+
+    \hline
+
+    \newpage
+
+\begin{center}
+  Problem Two:
+\end{center}
+    \hline
+    
+    \begin{equation}
+      \begin{split}
+        A_1v_1=A_2v_2\\
+        \frac{v_2}{v_1}=\frac{A_1}{A_2}\\
+      \end{split}
+      \label{5}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \text{Velocity is greater, and is inversely related to pressure, so pressure decreases}
+      \end{split}
+      \label{6}
+    \end{equation}
+
+    \hline
+
+    \newpage
+
+\begin{center}
+  Problem Three:
+\end{center}
+
+\hline
+
+\begin{equation}
+  \begin{split}
+    \Delta U=\frac{3}{2}\Delta(PV)\\
+    \frac{3}{2}\cdot-2000\cdot\frac{1}{2}=-1500[\si{\joule}]\\
+  \end{split}
+  \label{7}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    \Delta U=Q+W\\
+    Q=1000[\si{\joule}]\\
+    W=P\Delta V\\
+    \Delta V=0\\
+    \Delta U = 1000[\si{\joule}]\\
+  \end{split}
+  \label{8}
+\end{equation}
+
+\hline
+
+\newpage
+
+\begin{center}
+  Problem Four:
+\end{center}
+
+\hline
+
+\begin{equation}
+  \begin{split}
+    Q(6)\approx400\\
+    Q(3)\approx200\\
+  \frac{Q(6)-Q(3)}{6-3}=\frac{200}{3}=66.7\left[ \frac{\si{\joule}}{\si{\second\kelvin}} \right]
+\end{split}
+  \label{9}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    2[\si{\centi\meter}]=.02[\si{\meter}]\\
+    6[\si{\centi\meter\squared}]=.0006[\si{\meter\squared}]\\
+    \frac{Q}{\Delta t}=k\frac{A\Delta T}{L}\\
+    k\frac{A}{L}=66.7\\
+  k=\frac{.02}{.0006}\cdot66.7=2222.2\left[ \frac{\si{\joule}}{\si{\second\kelvin\meter}} \right]
+\end{split}
+  \label{10}
+\end{equation}
+
+\hline
+
+\newpage
+
+\begin{center}
+  Problem Five:
+\end{center}
+\hline
+
+\begin{center}
+  Diagrams on next two pages
+\end{center}
+
+    \begin{equation}
+      \begin{split}
+        E_6=k\frac{Q}{r^2}\\
+        9\cdot10^9\cdot\frac{6\cdot10^{-6}}{5^2}=2160\left[ \frac{\si{\newton}}{\si{\coulomb}} \right]\\
+        E_4=k\frac{Q}{r^2}\\
+        9\cdot10^9\cdot\frac{4\cdot10^{-6}}{4^2}=2250\left[ \frac{\si{\newton}}{\si{\coulomb}} \right]\\
+        \tan^{-1}\left( \frac{4}{3} \right)=53^{\circ}\\
+        2\cdot2160\cdot\cos(53)=260\left[ \frac{\si{\newton}}{\si{\coulomb}} \right]\\
+        2600-2250=350\left[ \frac{\si{\newton}}{\si{\coulomb}} \right]\text{ up }
+      \end{split}
+      \label{11}
+    \end{equation}
+
+\begin{equation}
+  \begin{split}
+    V=k\frac{Q}{r}\\
+    V_t=k\left( \frac{6\cdot10^{-6}}{5}+\frac{6\cdot10^{-6}}{5}-\frac{4\cdot10^{-6}}{4} \right)\\
+    =12600[\si{\volt}]\\
+  \end{split}
+  \label{12}
+\end{equation}
+
+
+\hline
+
+\newpage
+
+    \begin{figure}[h]
+      \centering
+      \include{fbd2}
+      \caption{Free Body Diagram for left particle}
+      \label{fig:2}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \include{fbd3}
+      \caption{Free Body Diagram for center particle}
+      \label{fig:3}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \include{fbd4}
+      \caption{Free Body Diagram for right particle}
+      \label{fig:4}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \include{ev}
+      \caption{Electric Field Vectors at point P}
+      \label{fig:5}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \include{efieldv}
+      \caption{Electric Field Drawing}
+      \label{fig:6}
+    \end{figure}
+    
+    \newpage
+
+\begin{center}
+  Problem Six:
+\end{center}
+\hline
+
+\begin{equation}
+  \begin{split}
+    \text{Positive (lines are moving out)}
+  \end{split}
+  \label{13}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    0[\si{\joule}]\\
+  \end{split}
+  \label{14}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    10[\si{\joule}]\\
+  \end{split}
+  \label{15}
+\end{equation}
+
+\hline
+\newpage
+
+\begin{center}
+  Problem Seven:
+\end{center}
+\hline
+
+\begin{enumerate}
+
+  \item This means the current needs to be doubled. Initially, the capacitor may be neglected, so the identical resistor needs to be placed in parallel with the first one, which would make the total resistance, half, and, assuming voltage is kept constant, the current would be doubled.
+
+  \item This would mean that the voltage would need to be doubled. This would be done by adding another battery in series, while placing a resistor in series. By doubling the resistance, while also doubling the voltage, the current remains the same.
+
+  \item This would mean that current and voltage would need to be doubled. This may be done by simply placing an additional battery in series. By doubling the voltage, and keeping resistance the same, current would be doubled as well.
+
+\end{enumerate}
+
+\hline
+\newpage
+
+\begin{center}
+  Problem Eight:
+\end{center}
+\hline
+
+\begin{center}
+  Circuit on Next Page
+\end{center}
+
+\begin{figure}[H]
+  \centering
+  \include{circ}
+  \caption{Circuit For Problem 8}
+  \label{fig:7}
+\end{figure}
+
+\begin{equation}
+  \begin{split}
+    \frac{108}{6}=18[\si{\ohm}]\\
+  \end{split}
+  \label{16}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    18\cdot120=2160[\si{\watt}]\\
+  \end{split}
+  \label{17}
+\end{equation}
+
+\hline
+
+\end{document}
+
