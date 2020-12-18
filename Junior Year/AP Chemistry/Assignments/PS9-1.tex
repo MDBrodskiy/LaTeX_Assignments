@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{$^{\circ}$C}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Problem Set Chapter 9}
+\date{December 18, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Name the intermolecular force the following is using in the liquid state:
+
+    \begin{enumerate}
+
+      \item \ce{CCl4}
+
+        \begin{center}
+          London Dispersion
+        \end{center}
+
+      \item \ce{CH3F}
+
+        \begin{center}
+          Dipole
+        \end{center}
+
+      \item \ce{NH3}
+
+        \begin{center}
+          Hydrogen Bonding
+        \end{center}
+
+      \item \ce{N2H4}
+
+        \begin{center}
+          Hydrogen Bonding
+        \end{center}
+
+      \item \ce{F2}
+
+        \begin{center}
+          London Dispersion
+        \end{center}
+
+    \end{enumerate}
+
+  \item Choose the lower boiling compound and explain why:
+
+    \begin{enumerate}
+
+      \item \underline{\ce{F2}} or \ce{Cl2} $-$ \ce{F2} has a lower boiling point because, even though both use the same intermolecular forces, \ce{F2} has bigger molecules, meaning the distance between them is greater, resulting in a weaker intermolecular force.
+
+      \item \underline{\ce{PH3}} or \ce{AsH3} $-$ \ce{PH3} has a lower boiling point because, even though both use the same intermolecular forces, \ce{PH3} has bigger molecules, meaning the distance between them is greater, resulting in a weaker intermolecular force.
+
+      \item \ce{NH3} or \underline{\ce{BF3}} $-$ \ce{BF3} uses London Dispersion forces, instead of hydrogen bonding (which is much stronger). As a result, \ce{BF3} would have a lower boiling point.
+
+      \item \underline{\ce{SO2}} or \ce{SiO2} $-$ Silicon Oxides are known for extremely strong bonds. As such, \ce{SO2} must be weaker, and, therefore, have a lower boiling point.
+
+    \end{enumerate}
+
+  \item Only one of the following is a gas at STP: \ce{NI3}, \ce{BF3}, \ce{PCl3}, \ce{CH3COOH}. Which do you think and why?
+
+    \begin{center}
+      Most likely, \ce{BF3} is a gas at STP. This is because, although \ce{NI3}, \ce{BF3}, and \ce{PCl3} all use the same type of bonding, \ce{BF3} has the biggest molecules, and, therefore weakest intermolecular forces, resulting in a high vapor pressure. It is definitely not \ce{CH3COOH} because the molecule uses hydrogen bonding.
+    \end{center}
+
+  \item Arrange the following substances in the expected order of increasing boiling point: \ce{C4H9OH}, \ce{NO}, \ce{C6H14}, \ce{N2}, \ce{(CH3)2O}.
+
+    \begin{tabular}{l c c c c c r}
+      Least & \ce{N2} & \ce{C6H14} & \ce{NO} & \ce{(CH3)2O} & \ce{C4H9OH} & Greatest\\
+    \end{tabular}
+
+  \item Explain the following:
+
+    \begin{enumerate}
+
+      \item \ce{I2} has a lower melting point than \ce{NaI}
+
+        \begin{center}
+          \ce{I2} uses London Dispersion forces, while \ce{NaI} uses dipole forces. Therefore, \ce{I2} has a lower melting point.
+        \end{center}
+
+      \item \ce{H2O} has a higher boiling point than \ce{C2H6}
+        
+        \begin{center}
+          \ce{H2O} uses hydrogen bonding, while \ce{C2H6} uses London Dispersion. As such, a hydrogen bond indicates a higher boiling point.
+        \end{center}
+
+      \item \ce{N2} has a lower boiling point than \ce{CO}
+
+        \begin{center}
+          \ce{N2} uses London Dispersion forces, meaning it has weaker bonds than the dipole force used by \ce{CO}. Therefore, \ce{N2} has a lower boiling point.
+        \end{center}
+
+      \item \ce{SiH4} has a higher vapor pressure than \ce{GeH4}
+        
+        \begin{center}
+          Although both use London Dispersion forces, the size of the \ce{Si} atom makes this true.
+        \end{center}
+
+    \end{enumerate}
+
+  \item Underline the molecule with the lower vapor pressure and explain why
+
+    \begin{enumerate}
+
+      \item \ce{Ne} or \underline{\ce{Ar}} $-$ Argon is a bigger molecule than neon. This means that it has a lower vapor pressure.
+
+      \item \underline{\ce{C2H5OH}} or \ce{C2H6} $-$ \ce{C2H5OH} uses hydrogen bonding, meaning that it is stronger than the London Dispersion of \ce{C2H6}.
+
+      \item \underline{\ce{C2H6}} or \ce{CH4} $-$ \ce{C2H6} has stronger bonds because the central \ce{C} atoms are bonded to each other. As a result, it has a lower vapor pressure.
+
+      \item \ce{C2H5OH} or \underline{\ce{NaF}} $-$ \ce{NaF} has stronger bonds, which gives it the property of lower vapor pressure.
+
+      \item \ce{CO2} or \underline{\ce{H2S}} $-$ \ce{CO2} has nonpolar bonding, meaning it uses London Dispersion, while \ce{H2S} uses polar, and, therefore dipole bonding. This stronger bond means it has a lower vapor pressure.
+
+      \item \underline{\ce{CO}} or \ce{N2} $-$ \ce{CO2} uses dipole bonding, which is stronger than the London bonding of the \ce{N2}, making it have a lower vapor pressure.
+
+    \end{enumerate}
+
+  \item A $1.82[\si{\gram}]$ sample of water is injected into a $2.55[\si{\liter}]$ flask at $30[\si{\Celsius}]$ (VP = $31.8[\si{\mmHg}]$).  How many grams of water are in the liquid phase and in the gas phase? 
+
+    \begin{equation}
+      \begin{split}
+        \ce{H2O}\rightarrow 18\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        \frac{1.82}{18}=.101[\si{\mole}]\\
+        P=\frac{nRT}{V}\\
+        P=\frac{.101\cdot.0821\cdot303}{2.55}\\
+        .985[\si{\atm}]=748.83[\si{\mmHg}]\\
+        748.83-31.8=717.03[\si{\mmHg}]=.93[\si{\atm}]\\
+        n=\frac{PV}{RT}\\
+        \frac{.93\cdot2.55}{.0821\cdot303}=.095[\si{\mole}]\\
+        .095\cdot18=1.71[\si{\gram}_{solid}]\\
+        1.82-1.71=.11[\si{\gram}_{gas}]\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item A $1.25[\si{\gram}]$ sample of water is injected into a $178.5[\si{\gram}]$ flask at $0[\si{\Celsius}]$ (VP = $4.6[\si{\mmHg}]$). How many atoms of water are in the liquid phase and in the gas phase?
+
+    \begin{equation}
+      \begin{split}
+        \frac{1.25}{18}=.0694[\si{\mole}]\\
+        P=\frac{nRT}{V}\\
+        P=\frac{.0694\cdot.0821\cdot273}{178.5}=.0087[\si{\atm}]\\
+        .0087[\si{\atm}]=6.62[\si{\mmHg}]\\
+        6.62>4.6\\
+        \text{Because $6.62>4.6$, liquid and gas exist in the flask}
+      \end{split}
+      \label{2}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
