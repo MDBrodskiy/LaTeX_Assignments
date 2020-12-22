@@ -1,0 +1,329 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Physics C
+% Professor: S. Morse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Physics C: Mechanics Final Exam}
+\date{\today}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Morse}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+  Problem One:
+\end{center}
+    \hline
+
+    \begin{equation}
+      \begin{split}
+        \frac{1}{2}kx^2=mgh\\
+        h=\frac{kx^2}{2mg}\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        h(60)\approx.6[\si{\meter}]\\
+        h(10)\approx.1[\si{\meter}]\\
+        \frac{.6-.1}{60-10}=.01[\si{\kilo\gram\meter}]\\
+      \end{split}
+      \label{2}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        h=\frac{1}{100m}\\
+      \end{split}
+      \label{3}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \frac{1}{100}=\frac{kx^2}{2g}\\
+        \frac{1}{5}=kx^2\\
+        x^2=.05^2=.0025[\si{\meter\squared}]\\
+        k=\frac{.2}{.0025}=80\left[ \frac{\si{\newton}}{\si{\meter}} \right]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+    \hline
+
+    \newpage
+
+\begin{center}
+  Problem Two:
+\end{center}
+    \hline
+    
+    \begin{figure}[h]
+      \centering
+      \include{fbd}
+      \caption{Free Body Diagram at point B}
+      \label{fig:1}
+    \end{figure}
+
+    \begin{equation}
+      \begin{split}
+        F_g=\frac{mv^2}{r}\\
+        v^2=gr\\
+        v=\sqrt{gr}\\
+        v=4.47\left[ \frac{\si{\meter}}{\si{\second}} \right]
+      \end{split}
+      \label{5}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        mgh_o+\frac{1}{2}mv^2_o=\frac{1}{2}mv^2_f\\
+        KE_o=\frac{1}{2}mv^2_f-mgh_o+mgh_f\\
+      .5\cdot.05\cdot(4.47)^2-.05\cdot10\cdot3.6+.05\cdot10\cdot4=.7[\si{\joule}]\\
+      \end{split}
+      \label{6}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        E_{total}=\frac{1}{2}mv^2+mgh\\
+        .5\cdot.05\cdot(4.47)^2+.05\cdot10\cdot4=2.5\left[  \si{\joule}\right]\\
+        kx^2=5\\
+        x=\sqrt{\frac{5}{200}}\\
+        x=.16\left[ \si{\meter} \right]\\
+      \end{split}
+      \label{7}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        mgh+\frac{1}{2}mv^2=2.5\\
+        mv^2=5-2mgh\\
+        v=\sqrt{\frac{5-2mgh}{m}}\\
+        =7.75\left[ \frac{\si{\meter}}{\si{\second}} \right]
+      \end{split}
+      \label{8}
+    \end{equation}
+
+    \hline
+
+    \newpage
+
+\begin{center}
+  Problem Three:
+\end{center}
+
+\hline
+
+\begin{equation}
+  \begin{split}
+    \Delta x=3t\\
+    5=\frac{1}{2}gt^2\\
+    t=1[\si{\second}]\\
+    \Delta x= 3(1)=3[\si{\meter}]\\
+  \end{split}
+  \label{9}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    v_x=3\left[ \frac{\si{\meter}}{\si{\second}} \right]\\
+    v_y=10(1)=10\left[ \frac{\si{\meter}}{\si{\second}} \right]\\
+    v_t=\sqrt{3^2+10^2}\\
+    v_t=10.44\left[ \frac{\si{\meter}}{\si{\second}} \right]
+  \end{split}
+  \label{10}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    m_1v_1+m_2v_2=(m_1+m_2)v_f\\
+    15\cdot3=(60)v_f\\
+    v_f=.75\left[ \frac{\si{\meter}}{\si{\second}} \right]
+  \end{split}
+  \label{11}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    .5\cdot60\cdot.75^2=\mu F_N\cdot7\\
+    F_N=600[\si{\newton}]\\
+    \mu=\frac{.5\cdot60\cdot.75^2}{600\cdot7}\\
+    =.004\\
+  \end{split}
+  \label{12}
+\end{equation}
+
+\hline
+
+\newpage
+
+\begin{center}
+  Problem Four:
+\end{center}
+
+\hline
+
+\begin{center}
+  Free Body Diagrams on next page
+\end{center}
+
+\begin{equation}
+  \begin{split}
+    \text{Situation One:}\\
+    F_{N_{10}}=100[\si{\newton}]\\
+  F_f=30[\si{\newton}]\\
+  F_T-F_f=m_{10}a\\
+  F_T=F_f+m_{10}a\\
+  F_g-F_T=m_{5}a\\
+  F_g-F_f=15a\\
+  a=\frac{20}{15}=1.33\left[ \frac{\si{\meter}}{\si{\second\squared}} \right]\\
+\end{split}
+  \label{13}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    \text{Situation Two:}\\
+    F_{N_{10}}=100[\si{\newton}]\\
+  F_f=30[\si{\newton}]\\
+  F_T-F_f=ma\\
+  F_T=F_f+ma\\
+  F_a-F_f=ma\\
+  F_a-F_f=10a\\
+  a=\frac{20}{10}=2\left[ \frac{\si{\meter}}{\si{\second\squared}} \right]\\
+\end{split}
+  \label{14}
+\end{equation}
+
+    \begin{figure}[H]
+      \centering
+      \include{fbd2}
+      \caption{Situation 1}
+      \label{fig:2}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \include{fbd3}
+      \caption{Situation 2}
+      \label{fig:3}
+    \end{figure}
+
+\hline
+
+\newpage
+
+\begin{center}
+  Problem Five:
+\end{center}
+\hline
+
+\begin{center}
+  Free Body Diagrams on next page
+\end{center}
+
+\begin{equation}
+  \begin{split}
+    \int_0^6 100-10x\,dx=100x-5x^2\Big|_0^6\\
+    =420[\si{\joule}]\\
+  \end{split}
+  \label{15}
+\end{equation}
+
+    \begin{figure}[H]
+      \centering
+      \include{fbd4}
+      \caption{Free Body Diagram for Doll}
+      \label{fig:4}
+    \end{figure}
+
+    \begin{equation}
+      \begin{split}
+        420=\frac{1}{2}mv^2+mgh\\
+        420-2.8\cdot10\cdot6\sin(60^{\circ})=\frac{1}{2}mv^2\\
+        v=\sqrt{\frac{2(420-2.8\cdot10\cdot6\sin(60^{\circ}))}{2.8}}\\
+        =14\left[ \frac{\si{\meter}}{\si{\second}} \right]
+      \end{split}
+      \label{16}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        v_x=7\left[ \frac{\si{\meter}}{\si{\second}} \right]\\
+        v_y=7\sqrt{3}\left[ \frac{\si{\meter}}{\si{\second}} \right]\\
+        t=\frac{7\sqrt{3}}{10}=1.21[\si{\second}]\\
+        t_{total}=2.42[\si{\second}]\\
+        \Delta x=2.42\cdot7\\
+        \Delta x=17[\si{\meter}]\\
+      \end{split}
+      \label{17}
+    \end{equation}
+
+\hline
+
+\end{document}
+
