@@ -94,8 +94,8 @@ citecolor=blue,
       \begin{split}
         q&=.89\cdot25\cdot(34-22)\\
         &=267[\si{\joule}]\\
-        267&=4.184\cdot75\cdot(34-T_o)\\
-        T_o&=33.15[\si{\degree\Celsius}]
+        267&=4.184\cdot75\cdot(T_o-34)\\
+        T_o&=34.85[\si{\degree\Celsius}]
       \end{split}
       \label{2}
     \end{equation}
@@ -118,12 +118,13 @@ citecolor=blue,
     \begin{equation}
       \begin{split}
         \ce{4KClO3 -> KCl + 3KClO4}\\
-        \Delta H_{KClO3}=55\cdot350\\
-        =19.25[\si{\kilo\joule}]\\
+        \Delta H_{KClO3}=55\cdot-350\\
+        =-19.25[\si{\kilo\joule}]\\
         \frac{35}{139}=.2518[\si{\mole}_{\ce{KClO4}}]\\
         \frac{4}{3}\cdot.2518=.3357[\si{\mole}_{\ce{KClO3}}]\\
-        \Delta H_{KClO4}=.3357\cdot19.25\\
-        =6.462[\si{\kilo\joule}]\\
+        .3357\cdot123=41.29[\si{\gram}_{\ce{KClO3}}]\\
+        \Delta H_{KClO4}=41.29\cdot-350\\
+        =-14.45[\si{\kilo\joule}]\\
       \end{split}
       \label{4}
     \end{equation}
