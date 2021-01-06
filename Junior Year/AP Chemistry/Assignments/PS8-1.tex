@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Problem Set Chapter 8}
+\date{January 7, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Calculate the final temperature of a $25[\si{\gram}]$ piece of \ce{Al} $\left(c=.89\left[ \frac{\si{\joule}}{\si{\gram\Celsius}} \right]\right)$ that is initially at $25[\si{\degree\Celsius}]$ when $2.3[\si{\kilo\joule}]$ of heat is applied
+
+    \begin{equation}
+      \begin{split}
+        2300&=.89\cdot25\cdot(T_f-25)\\
+        T_f&=\frac{2300}{.89\cdot25}+25\\
+        &=128.37[\si{\degree\Celsius}]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item A $25[\si{\gram}]$ sample of \ce{Fe} $(c=.89\left[ \frac{\si{\joule}}{\si{\gram\Celsius}} \right])$ at $22[\si{\degree\Celsius}]$ is placed in $75[\si{\gram}]$ of water $\left(c=4.184\left[ \frac{\si{\joule}}{\si{\gram\Celsius}} \right]\right)$. The final temperature of the mixture is $34[\si{\degree\Celsius}]$. What was the initial temperature of the water?
+
+    \begin{equation}
+      \begin{split}
+        q&=.89\cdot25\cdot(34-22)\\
+        &=267[\si{\joule}]\\
+        267&=4.184\cdot75\cdot(34-T_o)\\
+        T_o&=33.15[\si{\degree\Celsius}]
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item The enthalpy change for the combustion of \ce{CH4} is $-891[\si{\kilo\joule}]$. Calculate the amount of energy given off if you start with $52[\si{\gram}]$ of oxygen. Calculate the change of energy for the formation of $125[\si{\gram}]$ of water.
+
+    \begin{equation}
+      \begin{split}
+        \ce{CH4 + 2O2 &-> 2H2O + CO2}\\
+        E_{\ce{O2}}&=52\cdot\frac{1}{32}\cdot\frac{-891}{2}\\
+        &=-723.94[\si{\joule}]\\
+        E_{\ce{H2O}}&=125\cdot\frac{1}{18}\cdot\frac{-891}{2}\\
+        &=-3093.8[\si{\joule}]
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item Upon heating, $1[\si{\gram}]$ of \ce{KClO3} decomposes to \ce{KCl} and \ce{KClO4}, evolving $350[\si{\joule}]$ of heat. Calculate $\Delta H$ if you start with $55[\si{\gram}]$ of \ce{KClO3}. Calculate $\Delta H$ for the formation of $35[\si{\gram}]$ of \ce{KClO4}.
+
+    \begin{equation}
+      \begin{split}
+        \ce{4KClO3 -> KCl + 3KClO4}\\
+        \Delta H_{KClO3}=55\cdot350\\
+        =19.25[\si{\kilo\joule}]\\
+        \frac{35}{139}=.2518[\si{\mole}_{\ce{KClO4}}]\\
+        \frac{4}{3}\cdot.2518=.3357[\si{\mole}_{\ce{KClO3}}]\\
+        \Delta H_{KClO4}=.3357\cdot19.25\\
+        =6.462[\si{\kilo\joule}]\\
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item Calculate $\Delta H$ for the reaction of \ce{2PCl5 +  2H2O -> 2POCl3 + 4HCl}
+
+    \begin{tabular}[H]{l c r}
+      Given: & \ce{2POCl3 -> 2P + 3Cl2 + O2} & $\Delta H=559[\si{\kilo\joule}]$ \\
+      & \ce{4HCl -> 2H2 + 2Cl2} & $\Delta H=185[\si{\kilo\joule}]$\\
+      & \ce{2PCl5 -> 2P + 5Cl2} & $\Delta H=375[\si{\kilo\joule}]$\\
+      & \ce{2H2 + O2 -> 2H2O} & $\Delta H=241[\si{\kilo\joule}]$\\
+    \end{tabular}
+
+    \begin{equation}
+      \begin{split}
+        \ce{2P + 3Cl2 + O2 -> 2POCl3}\\
+        \Delta H=-559[\si{\kilo\joule}]\\
+        \ce{2H2 + 2Cl2 -> 4HCl}\\
+        \Delta H=-185[\si{\kilo\joule}]\\
+        \hline\\
+        \ce{2P + 5Cl2 + 2H2 + O2 -> 2POCl3 + 4HCl}\\
+        \Delta H=-744[\si{\kilo\joule}]\\
+        \ce{2PCl5 -> 2P + 5Cl2}\\
+        \Delta H=375[\si{\kilo\joule}]\\
+        \hline\\
+        \ce{2PCl5 + 2H2 + O2 -> 2POCl3 + 4HCl}\\
+        \Delta H=-369[\si{\kilo\joule}]\\
+        \ce{2H2O -> 2H2 + O2}\\
+        \Delta H=-241[\si{\kilo\joule}]\\
+        \hline\\
+        \ce{2PCl5 + 2H2O -> 2POCl3 + 4HCl}\\
+        \Delta H=-610[\si{\kilo\joule}]\\
+      \end{split}
+      \label{5}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
