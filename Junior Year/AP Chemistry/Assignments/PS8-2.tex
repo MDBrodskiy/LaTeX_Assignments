@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Problem Set Chapter 8 Part 2}
+\date{January 11, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Using the enthalpies of formation, calculate the enthalpy change in the following:
+
+    \begin{enumerate}
+
+      \item \ce{C2H5OH(l) + O2(g) -> CH3CHO(g) + H2O(l)}, where \ce{CH3CHO(g)} has an enthalpy of formation of $-166\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]$
+
+        \begin{equation}
+          \begin{split}
+            \ce{C2H5OH(l) ->}&\,-277.7\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{O2(g) ->}&\,0\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{H2O(l) ->}&\,-285.8\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \hline\\
+            -285.8-166-(-277.7)=-174.1[\si{\kilo\joule}]\\
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item \ce{2Al^3+(aq) + 3Zn(s) -> 3Zn^2+(aq) + 2Al(s)}
+
+        \begin{equation}
+          \begin{split}
+            \ce{2Al^3+(aq) ->}&\,2(-531)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{3Zn(s) ->}&\,0\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+          \ce{3Zn^2+(aq) ->}&\,3(-153.9)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{2Al(s) ->}&\,0\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \hline\\
+            3(-153.9)-2(-531)=600.3[\si{\kilo\joule}]\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item Using enthalpies of formation the enthalpy of the reaction, calculate the enthalpy of formation for \ce{Cr2O7^2-}; $\Delta H=-1855[\si{\kilo\joule}]$
+
+    \begin{enumerate}
+
+      \item \ce{8H+(aq) + Cr2O7^2-(aq) + 2Al(s) -> 2Al^3+(aq) + Cr2O3(s) + 4H2O(l)}
+
+        \begin{equation}
+          \begin{split}
+            \ce{8H+(aq) ->}&\,8(0)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+          \ce{2Al(s) ->}&\,2(0)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+          \ce{2Al^3+(aq) ->}&\,2(-531)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+          \ce{Cr2O3(s) ->}&\,-1139.7\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+          \ce{4H2O(l) ->}&\,4(-285.8)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{Cr2O7^2-(aq) ->}&\,?\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \hline\\
+            2(-531)+(-1139.7)+4(-285.8)-x=-1855\\
+            x=-1489.9[\si{\kilo\joule}]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item Using bond energies, calculate the enthalpy of the following reactions:
+
+    \begin{enumerate}
+
+      \item \ce{N2H4 + H2 -> 2NH3}
+
+        \begin{equation}
+          \begin{split}
+            \text{Broken:}\\
+            \chemfig{\ce{N}-\ce{N}}=\,159[\si{\kilo\joule}]\\
+            4\cdot\chemfig{\ce{N}-\ce{H}}=\,4(389)[\si{\kilo\joule}]\\
+            \chemfig{\ce{H}-\ce{H}}=\,436[\si{\kilo\joule}]\\
+            \text{Made:}\\
+            6\cdot\chemfig{\ce{N}-\ce{H}}=\,6(389)[\si{\kilo\joule}]\\
+            \hline\\
+            159+4(389)+436-6(389)=183[\si{\kilo\joule}]
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item \ce{CH4 + Cl2 -> CH3Cl +HCl}
+
+        \begin{equation}
+          \begin{split}
+            \text{Broken:}\\
+            4\cdot\chemfig{\ce{C}-\ce{H}}=\,4(414)[\si{\kilo\joule}]\\
+            \chemfig{\ce{Cl}-\ce{Cl}}=\,243[\si{\kilo\joule}]\\
+            \text{Made:}\\
+            3\cdot\chemfig{\ce{C}-\ce{H}}=\,3(414)[\si{\kilo\joule}]\\
+            \chemfig{\ce{C}-\ce{Cl}}=\,331[\si{\kilo\joule}]\\
+            \chemfig{\ce{H}-\ce{Cl}}=\,431[\si{\kilo\joule}]\\
+            \hline\\
+            4(414)+243-3(414)-331-431=-105[\si{\kilo\joule}]\\
+          \end{split}
+          \label{5}
+        \end{equation}
+
+      \item \ce{C2H2 + 2Br2 -> C2H2Br4}
+
+        \begin{equation}
+          \begin{split}
+            \text{Broken:}\\
+            \chemfig{\ce{C}~\ce{C}}=\,820[\si{\kilo\joule}]\\
+            2\cdot\chemfig{\ce{C}-\ce{H}}=\,2(414)[\si{\kilo\joule}]\\
+            2\cdot\chemfig{\ce{Br}-\ce{Br}}=\,2(193)[\si{\kilo\joule}]\\
+            \text{Made:}\\
+            4\cdot\chemfig{\ce{C}-\ce{Br}}=\,4(276)[\si{\kilo\joule}]\\
+            2\cdot\chemfig{\ce{C}-\ce{H}}=\,2(414)[\si{\kilo\joule}]\\
+            \chemfig{\ce{C}-\ce{C}}=\,347[\si{\kilo\joule}]\\
+            \hline\\
+            820+2(414)+2(193)-4(276)-2(414)-347=-245[\si{\kilo\joule}]
+          \end{split}
+          \label{6}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item Calculate the $\Delta H$ for the formation of $45.7[\si{\gram}]$ of oxygen in the following; $\Delta H=286[\si{\kilo\joule}]$
+
+    \begin{enumerate}
+
+      \item \ce{2H2 + O2 -> 2H2O}
+
+        \begin{equation}
+          \begin{split}
+            \frac{45.7}{32}=1.425[\si{\mole}]\\
+            1.425\cdot286=408[\si{\kilo\joule}]\\
+          \end{split}
+          \label{7}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item The heat evolved on combustion of \ce{C2H6} is $3120[\si{\kilo\joule}]$ and \ce{C2H4} is $1411[\si{\kilo\joule}]$.  If the heat of formation of \ce{CO2} is $-394[\si{\kilo\joule}]$ and \ce{H2O} is $-286[\si{\kilo\joule}]$, calculate the $\Delta H$ for the following reaction:
+
+    \begin{enumerate}
+
+      \item \ce{C2H4 + H2 -> C2H6}
+
+        \begin{equation}
+          \begin{split}
+            \ce{2C2H4 + 6O2 -> 4CO2 + 4H2O}\\
+            4(-394)+4(-286)-2(1411)=-5542[\si{\kilo\joule}]\\
+            \ce{2C2H6 + 7O2 -> 4CO2 + 6H2O}\\
+            4(-394)+6(-286)-2(3120)=-9532[\si{\kilo\joule}]\\
+            \ce{4CO2 + 6H2O -> 2C2H6 + 7O2}\\
+            -[4(-394)+6(-286)-2(3120)]=9532[\si{\kilo\joule}]\\
+            \hline\\
+            \ce{2C2H4 + 6O2 -> 4CO2 + 4H2O}\\
+            \ce{4CO2 + 6H2O -> 2C2H6 + 7O2}\\
+            \hline\\
+            \ce{2C2H4 + 2H2O -> 2C2H6 + O2}\\
+            \Delta H = 9532-5542=3990[\si{\kilo\joule}]\\
+            \ce{2H2 + O2 -> 2H2O}
+            2(-286)=-572[\si{\joule}]
+          \end{split}
+          \label{8}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
