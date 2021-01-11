@@ -1,0 +1,168 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 16 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.6}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Prior to any treaty or peace negotiations, were any of the Comanche farmers, or were they a purely hunting-gathering tribe?}{\begin{itemize} \item Even throughout the Civil War, conflicts with natives were always a worry for Americans. Lincoln, as well as his successors, held various peace talks; however, most were unsuccessful. In this manner, no one welcomed the start of the Civil War more than the Comanches — a militaristic, buffalo-hunting tribe in the Great Plains. Expertly trained with rifles and horses, for a long time this was a tribe to be reckoned with, and, given the outbreak of war, the Comanches would steal cattle from Texans and sell it to people in New Mexico, in addition to trading people — captive men and women from other tribes. \item Although the US government did look down upon this trade, nothing was officially done until 1867, when William Sherman led negotiations with Comanches, Kiowas, Naishans, Cheyennes, and Arapahoes at Medicine Lodge Creek. Although many chiefs were dismayed at the terms offered by Sherman, in the end, the \textbf{Medicine Lodge Creek Treaty} was signed. As usual, though, the wording was quite loose, which left the terms open to interpretation. The US government hoped that, given a reservation, the natives would settle down and become farmers and hunters, as they were also permitted to hunt below the Arkansas river. \item The Comanches did not intend to settle down, though. They continued to harass Texan ranchers, which the US government hoped would not happen. After several unsuccessful attempts at peace, the American army was sent in. Over a seven year period, more than 6000 horses and 11000 cattle were stolen. As a result, from 1871–1873, the Americans fought the Comanches. During the war, American hunters decimated buffalo populations — as new industrial uses for the hide were found — which resulted in food shortages for the Comanche. The natives organized an attack against American buffalo hunters, which indicated that aggression between the two groups was the only option. An American counterattack on the main encampment of the natives decimated their numbers, mostly by destroying their food supply. These shortages caused Comanche surrenders in small groups. Quannah Parker, a new Comanche chief, decided to make peace with the Americans, as he helped his tribe settle down to farming.  \end{itemize}}%
+
+\topic{The book states that the Navajos were as warlike as the Comanches. Was there any tribe already settled in farming?}{\begin{itemize} \item The Navajo (Din\'e) tribe spanned modern-day Colorado, Kansas, and New Mexico. When, in 1863, General James H. Carleton arrived in New Mexico, only to find out the Confederate army had already been defeated there, he ordered an attack on the Navajo and Apache. Consequently, around 400 Apaches were confined to \textbf{Bosque Redondo}, in central New Mexico. Furthermore, Carleton ordered Kit Carson to attack a Navajo tribe of over 10000. After hard-fought battles, over 8000 Navajos were forced on the long walk. The Apaches and Navajo, however, were enemies, which meant they fought each other in their new land. This land could not sustain both tribes, even if they turned to farming. \item On June 1, 1868, a congressional peace commissioner witnessed the Bosque Redondo disaster. In an attempt to rectify the situation, the Apaches were given new land in central New Mexico, and the Navajos were given large lands in their former home lands. Both sides were appeased, and the Navajos became a prosperous nation, with their population tripling over a three decade period.  \end{itemize}}%
+
+\topic{What was the biggest cause of death for the natives? Was it disease?}{\begin{itemize} \item The deluge of settlers into California caused a further decline in the populations of native tribes, such as the Nez Perce or the Modocs. Most reservations for natives were held in Northern California or Oregon. For example, in 1872, Kintpuash, a leader of the Modoc tribe, led his people away from a reservation they had shared with other tribes since a treaty signed in 1864. Returning to their lands, the Modocs were proclaimed criminals for breaking the treaty. Warfare followed, and, although the Modocs initially succeeded, the American Army eventually overpowered them. The Modocs were then relocated far from their home land. \item A similar story followed the Nez Perce, who, not so long ago, aided Lewis and Clark on a crucial expedition. Part of their tribe, nicknamed the ``Progressives,'' had signed a treaty to move to a reservation, although the other part, the ``Nonprogressives,'' did not want to move. As a result each part did what they wanted; some moved, some stayed. For some time, life was peaceful, but immigration to the Wallowa Valley increased. The Army began to force the Nez perce from their lands. In response, the tribe fled east, and then north in an attempt to reach Canada. At this point, the army caught up. Few made it across the border, but most surrendered, as they were starved and cold.  \end{itemize}}%
+
+\topic{Is the Ghost Dance a purely Sioux tradition, or is it known among all Native Americans?}{\begin{itemize} \item In December 1866, the Lakota Sioux ambushed American troops, killing them in the process. Instead of proceeding to battle, the US government sought to make peace. The 1868 Fort Laramie Treaty stated that, in exchange for refraining from war, the US would abandon three forts. Although this was seen as a victory, Sitting Bull critiqued the treaty, and he would prove to be right. \item When gold was discovered in the Black Hills, miners and prospectors fled to the region. Consequently, the Lakota were asked to move, which they refused to do. Thus began the Great Sioux War of 1876–1877. General Custer led a force of troops to the Little Bighorn River where they were surrounded by the Sioux and Cheyenne tribes. A bloody battle later, the US troops were wiped, without a single survivor. Less than a month later, General Sheridan defeated the Sioux. The unified reservation was partitioned into six fragments: Standing Rock, Cheyenne River, Lower Brule, Crow Creek, Pine Ridge, and Rosebud. The best land was deemed a surplus and given to white settlers. \item Following these defeats, a call for unity would ring throughout the Sioux. The \textbf{Ghost Dance} called for a return to their old ways, as well as promise to remove the white man from their lands. A detachment of the tribe, led by Big Foot, left the camp, but they were asked to return. This was done peacefully, but the leaders were determined to resist. Fire rang out, leading to hundreds of dead natives. After 1890, the Sioux were in decline, and they would not recover as the Navajo and Comanche for quite a while.  \end{itemize}}%
+
+\topic{What made Grant decide on specifically Ely S. Parker? How did he know of Parker?}{\begin{itemize} \item Prior to the Civil War, the goal with the natives was to prevent conflict. This was to facilitate the movement of white settlers to the west. For example, the First Treaty of Fort Laramie (1851) did not prohibit Indian land use, but it did try to keep the tribes apart so as to limit conflict in the area. As promised, Lincoln wanted to stimulate white movement to the western area, which resulted in the passage of the \textbf{Homestead Act}. This act promised 160 acres of federal land that would be settled and maintained by a white family. The question lay in where the land was to be taken from. \item Much of the land was given from great buffalo hunting areas. In addition to this, white settlement was spurred by the discovery of minerals in the area. Following the Civil War, Congress had decided that the Indians would be best off living on reservations — the same approach that was taken with the eastern tribes — however, there was a problem: the eastern tribes were pushed to western lands, but what would be done when there were no more western lands? \item As Grant came into office, so did new policies. The \textbf{Grant Peace Policy} was introduced in an attempt to treat the natives with dignity and to try to make them assimilate to white culture. Ely S. Parker, a member of the Seneca tribe, was appointed as the first native Commissioner of Indian Affairs, the first nonwhite to hold high office. The policies of peace would work somewhat well until wars broke out in 1871 and onward. Most natives did not want to be confined to a reservation, and many army officers did not want to follow the law, as they were to refrain from entering reservation territories. With such tensions, conflict was imminent.  \end{itemize}}%
+
+\topic{Was the Dawes plan actually meant to be beneficial to the natives, or was it intentionally malicious?}{\begin{itemize} \item Trying to stimulate the natives into assimilation, the \textbf{Dawes Plan} was passed. This plan was essentially like the Homestead act for natives, but with one major difference: it held that the land could only be sold after 25 years instead of 5. This had two major implications: first, this shattered the tribal life of natives, and, second, it greatly decreased the land owned by natives, as they migrated from the reservations to these smaller plots. \item Furthermore, schools for assimilation were established. These schools were quite forceful in their efforts, as most sought to convert the natives religion, language, and cultural aspects. Any deviation from white culture was harshly punished.  \end{itemize}}%
+
+\topic{How were the projects in the west and east coordinated? In other words, how was a location to connect railroad tracks agreed upon?}{\begin{itemize} \item The \textbf{transcontinental railroad} may have been the largest engineering project of its time. Spanning roughly 2000 miles, the railroad connected San Francisco to Iowa. The commercial and social impact which the construction of this railroad carried would be more significant than nearly any project prior. The establishment of time zones was used to monitor train arrivals. Where journeys of the same length used to take 6-8 weeks, they could now be traveled in a timely manner and in comfort in only 10 days. Furthermore, this aided the US in becoming a world superpower and trading empire. \end{itemize}}%
+
+\topic{Were tales such as that of Deadwood Dick responsible for today's portrayals of the ``Wild West'' and cowboys?}{\begin{itemize} \item As time moved into the late nineteenth century, word of unhealthy pork got out. This manifested itself in articles and discussions of whether pork was truly unhealthy, which led to an increase in beef. It became the recommended meat. The most important result of this was the fabrication of the cowboy. These ``cowboys'' took their cattle on long, cross-country drives to places where the cattle could be shipped by train. \item Shortages in demand caused the price of beef to drop often, which would lead to fighting between ranchers. Often, smaller ranchers were driven away by the more powerful large ranch owners. Over time, barbed wire provided a way to fence off areas. Often, these large ranchers would fence in land that wasn't even theirs. The smaller ranchers were obviously against this, especially when the land being unrightfully seized was public property. This tension occurred all over America in various cattle ranching towns. \item Furthermore, in southern, formerly Mexican areas, Mexican-American resistance began to rise up due to this illegal ranching. Often, Texas Rangers would take the side of the large ranchers, as they were usually white. Resistance occurred usually in peaceful means, such as fence cutting, running for office, and printing articles. Carlos Velasco launched \textit{El Fronterizo} to protest white control and elect some Mexican-Americans by spreading the word.  \end{itemize}}%
+
+\topic{What was the major immigrant group during this period?}{\begin{itemize} \item Even during the Civil War, immigration to America did not stop. Some major groups were the Irish and Chinese, as they helped build railroads, usually in poor conditions. Other groups included Norwegians, Ukrainians, Russians, Italians, and many more. Often, these immigrants, under the Homestead Act, adopted new property to start farms and raise families. The cost of starting a farm was estimated, in 1862, to be around \$968. Still, many immigrants were able to scrape together the funds.\item In addition to this, there was much domestic migration as well. Many former slaves moved west, as one example of a newspaper article advertises a \$5 trip to Kansas. Also, the Dawes plan instigated lots of motion from native communities. Many natives abandoned the tribal ways and tried their hand at farming. Over 60 years, the amount of farms over quadrupled in number.   \end{itemize}}%
+
+\topic{Did people from one mining rush generally move to the next, or were the people in newly formed mining towns usually different from previous ones?}{\begin{itemize} \item Along with farming, a major occupation was mining. Given the amount of mineral rushes, starting with the California Gold Rush, people migrated to various pop-up cities, which would often be abandoned when mining play out. While larger companies, like the Anaconda Company, became successful, those who couldn't afford expensive equipment were usually unsuccessful. After the Gold Rush came the Silver rush in Nevada, and other mining options in the Black Hills in Sioux territory, which was ignored by the 15000 or so settlers. Racial discrimination was flagrant in the mining towns, especially towards the Chinese.   \end{itemize}}%
+
+\topic{What was Cody's show like? Was it like a theater act with a backdrop?}{\begin{itemize} \item As is seen in media, outlaws rose during the late nineteenth century, except they weren't at all like the movies show. These outlaws usually protested unethical, large ranchers by leading raids, robbing them, attacking stagecoaches and trains, and, sometimes, by simply cutting fencing of the ranchers. In addition to this, unlike is commonly portrayed, natives did not fight the cowboys. In reality, the natives fought the Army, as the cowboys usually tried to keep out of such conflicts. \item Much of the modern idea of a cowboy comes from Buffalo Bill's Wild West Show, where William Cody staged fights with Indians and cowboys, featured Native American dances, and, of course, Annie Oakley, who was a women from Ohio, known for her great aim. These often illustrated historically inaccurate battles. In addition to this, once his show was in decline, Cody aided in creations of some early westerns, which also added to these historically erroneous situations.  \end{itemize}}%
+
+\topic{What prompted the US government to switch most of the territories to states? Was it an issue of population?}{\begin{itemize} \item Towards the end of the nineteenth century, and with the beginning of the twentieth century, western territories would be taken in as states. The reasons for the time lags between the admittance of each state is quite interesting, however. These issues range from economic to social, but almost all territories had some reason not to be admitted. Mainly for all territories, it was more profitable for Congress and for the big companies to stay territories, and, as such, statehood was delayed in many regions. \item Admitted in 1890, Wyoming was the first state to give women the right to vote. Three years after that, Colorado also gave women the right to vote. The third state would be Utah, but its admission was delayed for a complex reason: the idea of polygamy within mormonism. Ultimately, the Mormon church decided it would rather become a state, which meant they passed an act removing polygamy from their practices, although many ignored this. \item Other territories, such as New Mexico, Arizona, and Oklahoma held racial questions. In Oklahoma, people wanted to split into a white and Indian zone. Ultimately, Oklahoma was kept in tact. Next, New Mexico and Arizona, initially one region, were admitted separately, although worries of a Mexican-American majority population circled.   \end{itemize}}%
+
+\newpage
+
+\summary{Although often eclipsed by the Civil War and Reconstruction, the west was quite a diverse, dangerous, and interesting area. The encounters with Native Americans, although, initially, both sides wanted peace, quickly appeared to be unsolvable. It became apparent to both sides that violence was the answer. As happened in pretty much every instance, a tribe would be destroyed and moved forcibly, until they would settle down, out of sight, in a different territory. Although these reservations were somewhat successful initially, treaties were generally ignored, as whites migrated to every corner of the American territories, whether it be in search of work, for the Homestead Act, or for mining, migration seemed to be a major issue. Advances in farming, coupled with the Homestead Act and an increase in food demand led to the creations of millions of new farms and ranches. In addition to this, mining became a large business. People from all over America would migrate to areas when rare minerals were found. On top of this, cowboys and outlaws became prominent. Cowboys, during the explosion of demand for beef, would drive cattle long distances to places where railroads, which were also developed during this period, could ship them to other places. Built through hard work by Irish and Chinese immigrants, the railroads connected the American territory as never before. With this, America was becoming more and more integrated into the world economy. Overall, the advances in transportation, in conjunction with the increasing industrialization brought America onto the world stage.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
