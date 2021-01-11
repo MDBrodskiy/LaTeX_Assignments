@@ -81,15 +81,15 @@ citecolor=blue,
 
     \begin{enumerate}
 
-      \item \ce{C2H5OH(l) + O2(g) -> CH3CHO(g) + H2O(l)}, where \ce{CH3CHO(g)} has an enthalpy of formation of $-166\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]$
+      \item \ce{2C2H5OH(l) + O2(g) -> 2CH3CHO(g) + 2H2O(l)}, where \ce{CH3CHO(g)} has an enthalpy of formation of $-166\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]$
 
         \begin{equation}
           \begin{split}
-            \ce{C2H5OH(l) ->}&\,-277.7\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{C2H5OH(l) ->}&\,2(-277.7)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
             \ce{O2(g) ->}&\,0\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
-            \ce{H2O(l) ->}&\,-285.8\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \ce{H2O(l) ->}&\,2(-285.8)\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
             \hline\\
-            -285.8-166-(-277.7)=-174.1[\si{\kilo\joule}]\\
+            2(-285.8)-2(166)-2(-277.7)=-348.2[\si{\kilo\joule}]\\
           \end{split}
           \label{1}
         \end{equation}
@@ -148,7 +148,7 @@ citecolor=blue,
             \text{Made:}\\
             6\cdot\chemfig{\ce{N}-\ce{H}}=\,6(389)[\si{\kilo\joule}]\\
             \hline\\
-            159+4(389)+436-6(389)=183[\si{\kilo\joule}]
+            159+4(389)+436-6(389)=-183[\si{\kilo\joule}]
           \end{split}
           \label{4}
         \end{equation}
@@ -210,24 +210,20 @@ citecolor=blue,
 
     \begin{enumerate}
 
-      \item \ce{C2H4 + H2 -> C2H6}
+      \ce{C2H4 + H2 -> C2H6}
 
         \begin{equation}
           \begin{split}
-            \ce{2C2H4 + 6O2 -> 4CO2 + 4H2O}\\
-            4(-394)+4(-286)-2(1411)=-5542[\si{\kilo\joule}]\\
-            \ce{2C2H6 + 7O2 -> 4CO2 + 6H2O}\\
-            4(-394)+6(-286)-2(3120)=-9532[\si{\kilo\joule}]\\
-            \ce{4CO2 + 6H2O -> 2C2H6 + 7O2}\\
-            -[4(-394)+6(-286)-2(3120)]=9532[\si{\kilo\joule}]\\
+            \ce{C2H4 + H2 -> C2H6}\\
+            \text{Broken:}\\
+            4\cdot\chemfig{C-H}=4(414)\\
+            \chemfig{C=C}=612\\
+            \chemfig{H-H}=436\\
+            \text{Made:}\\
+            6\cdot\chemfig{C-H}=6(414)\\
+            \chemfig{C-C}=347\\
             \hline\\
-            \ce{2C2H4 + 6O2 -> 4CO2 + 4H2O}\\
-            \ce{4CO2 + 6H2O -> 2C2H6 + 7O2}\\
-            \hline\\
-            \ce{2C2H4 + 2H2O -> 2C2H6 + O2}\\
-            \Delta H = 9532-5542=3990[\si{\kilo\joule}]\\
-            \ce{2H2 + O2 -> 2H2O}
-            2(-286)=-572[\si{\joule}]
+            2704-2831=-127[\si{\kilo\joule}]\\
           \end{split}
           \label{8}
         \end{equation}
