@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Physics C
+% Professor: Mrs. Morse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{AP Physics C $-$ Center of Mass}
+\date{\today}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Morse}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+    \begin{equation}
+    \text{Center of Mass }=\sum_i^{\infty} \frac{x_im_i}{M_{total}}\\
+      \label{1}
+    \end{equation}
+    \begin{equation}
+      x_{com}=\frac{m_1x_1+m_2x_2+\dots+m_nx_n}{m_1+m_2+\dots+m_n}
+      \label{2}
+    \end{equation}
+    \begin{equation}
+      y_{com}=\frac{m_1y_1+m_2y_2+\dots+m_ny_n}{m_1+m_2+\dots+m_n}
+      \label{3}
+    \end{equation}
+
+  \item Shape center of mass:
+
+    \begin{equation}
+      \frac{1}{M_{total}}\int x\,dm
+      \label{4}
+    \end{equation}
+
+  \item Center of Mass for rigid objects with uniform densities:
+
+    \begin{equation}
+      \text{Volume Mass Density } = \rho = \frac{m}{V}=\frac{dm}{dV}
+      \label{5}
+    \end{equation}
+    \begin{equation}
+      \text{Surface Mass Density } = \sigma = \frac{m}{A}=\frac{dm}{da}
+      \label{6}
+    \end{equation}
+    \begin{equation}
+      \text{Linear Mass Density } = \lambda = \frac{m}{L}=\frac{dm}{dL}
+      \label{7}
+    \end{equation}
+
+\end{itemize}
+
+\end{document}
+
