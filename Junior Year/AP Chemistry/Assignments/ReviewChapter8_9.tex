@@ -1,0 +1,188 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 8 \& 9 $-$ Review Set}
+\date{January 14, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item The $\Delta H$ for the combustion of \ce{C6H12O6} is $–2820[\si{\kilo\joule}]$.  Determine $\Delta H$ if you start with 35.8 g of oxygen.  
+
+    \begin{equation}
+      \begin{split}
+        \ce{C6H12O6 + 6O2 -> 6CO2 + 6H2O}\\
+        \frac{35.8}{32}\cdot\frac{-2820}{6}=-525.81[\si{\kilo\joule}]\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item The enthalpy change for the combustion of \ce{CH4} is $-891[\si{\kilo\joule}]$.  Calculate the enthalpy change if you end with $52[\si{\gram}]$ of water. 
+
+    \begin{equation}
+      \begin{split}
+        \ce{CH4 + 2O2 -> CO2 + 2H2O}\\
+        \frac{52}{18}=2.\bar{8}[\si{\mole}]\\
+        2.\bar{8}\cdot\frac{-891}{2}=-1287[\si{\kilo\joule}]\\
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item Calculate the heat of formation of \ce{AlCl3} when the enthalpy change of the reaction is $-2677[\si{\kilo\joule}]$, given \ce{3Al + 3NH4ClO4$(\Delta H=-295[\si{\kilo\joule}])$ -> Al2O3$(\Delta H=-1676[\si{\kilo\joule}])$ + AlCl3 + 3NO$(\Delta H=90[\si{\kilo\joule}])$ + 6H2O$(\Delta H=-242[\si{\kilo\joule}])$}
+
+    \begin{equation}
+      \begin{split}
+        (-1676) + x + 3(90) + 6(-242) - 3(-295) = -2677[\si{\kilo\joule}]\\
+        x=-704[\si{\kilo\joule}]\\
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item What are the strongest attractive forces that must be overcome to:
+
+    \begin{enumerate}
+
+      \item Melt Ice $-$ Hydrogen Bonding
+
+      \item Vaporize \ce{CaCl2} $-$ Ionic
+
+      \item Melt \ce{KNO3} $-$ Ionic
+        
+      \item Dissolve \ce{Br2} in \ce{CCl4} $-$ London
+
+      \item Sublime \ce{CO2} $-$ London
+
+      \item Boil \ce{CH4} $-$ London
+
+      \item Melt Iodine $-$ London
+
+      \item Melt \ce{SiO2} $-$ Network Covalent
+
+      \item Boil \ce{C2H5OH} $-$ Hydrogen Bonding
+
+      \item Melt \ce{NH3} $-$ Hydrogen Bonding
+
+    \end{enumerate}
+
+  \item \ce{C8H18} has a vapor pressure of $45.2\[\si{\mmHg}]$ at $25[\si{\degree\Celsius}]$.  If $10[\si{\milli\liter}]$ ($\rho= 0.692\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$) is added to a $15[\si{\liter}]$ container, how many molecules will be left in the liquid phase after equilibrium is established?
+
+    \begin{equation}
+      \begin{split}
+        10\cdot.692=6.92[\si{\gram}]\\
+        \frac{6.92}{130}=.0532[\si{\mole}]\\
+        P=\frac{nRT}{V}=\frac{.0532\cdot.0821\cdot 298}{15}\\
+        =.0868[\si{\atm}]\rightarrow65.947[\si{\mmHg}]\\
+        65.947-45.2=20.747[\si{\mmHg}_{\text{liquid}}]\\
+        \frac{20.747}{45.2}\cdot.0532=.0244[\si{\mole}]\\
+        .0244\cdot6.22\cdot10^{23}=1.51\cdot10^{22}[\text{molecules}]\\
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item Playing tennis for half an hour consumes $225[\si{\kilo\calorie}]$ of energy.  How long would you have to play tennis to lose one pound of body fat?  (one gram of body fat = $32[\si{\kilo\joule}]$ of energy)
+
+    \begin{equation}
+      \begin{split}
+        225[\si{\kilo\calorie}]=941.4[\si{\kilo\joule}]\\
+        2\cdot\frac{941.4}{32}=58.84\left[ \frac{\si{\gram}}{\si{\hour}} \right]\\
+        58.84\left[ \frac{\si{\gram}}{\si{\hour}} \right]=.13\left[ \frac{\text{lb}}{\si{\hour}} \right]\\
+        .13\cdot x=1\\
+        x=7.7[\si{\hour}]\\
+      \end{split}
+      \label{5}
+    \end{equation}
+
+  \item Calculate the $\Delta H$ using bond energies when \ce{C2H4} is combusted.
+
+    \begin{equation}
+      \begin{split}
+        \ce{C2H4 + 3O2 -> 2CO2 + 2H2O}\\
+        \text{Broken: }\\
+        3(\chemfig{O=O})=3(498)\\
+        \chemfig{C=C}=612\\
+        4(\chemfig{C-H})=4(414)\\
+        \hline\\
+        \text{Made: }\\
+        4(\chemfig{C=O})=4(715)\\
+        4(\chemfig{O-H})=4(464)\\
+        \hline\\
+        -4(715)-4(464)+3(498)+612+4(414)=-954[\si{\kilo\joule}]\\
+      \end{split}
+      \label{6}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
