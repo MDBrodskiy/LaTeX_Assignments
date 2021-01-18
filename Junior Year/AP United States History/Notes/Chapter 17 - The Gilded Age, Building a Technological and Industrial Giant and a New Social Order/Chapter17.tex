@@ -1,0 +1,158 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering AP US History Chapter 17 Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Which of the inventions was accepted by the public quickest? Why did inventors decide to make all of these new tools? Were they fueled by an interest in furthering humanity, financial gain, or something else?}{\begin{itemize} \item Throughout the late nineteenth, and into the early twentieth century, America faced scientific invention like never before. With 440,000 patents released from 1860 to 1890, the average quality of life increased greatly, in addition to creating a place on the world stage for the up-and-coming American superpower. Some of the most important inventions are as follows: \end{itemize}\begin{center}\begin{tabular}[H]{| c | c | c |} \hline \rowcolor{BurntOrange} Inventor & Invention & Year(s) \\ \hline A. Graham Bell & Telephone & 1874$-$1876 \\ \hline \rowcolor{red!15} Thomas Edison & Multiplex Telegraph & 1873 \\ \rowcolor{red!15} & Stock Printer & 1871 \\ \rowcolor{red!15} & (DC) Light Bulb & 1879 \\ \hline Nikola Tesla & Alternating Current & 1870s \\ & (AC) Light Bulb & 1879 \\ \hline \rowcolor{red!15} Elisha G. Otis & Elevator & 1861 \\ \hline Henry Ford & Ford Motor Co. & 1910 \\ & Assembly Line & 1913 \\ \hline \rowcolor{red!15} Wright Brothers & Flying Machine & 1903 \\ \hline  \end{tabular}\end{center}}%
+
+\topic{In modern equivalents, how much money did Vanderbilt make from each of his ventures described in the book?}{\begin{itemize} \item With the successes and advances of capitalism, nicknamed the \textbf{Gilded Age} by Mark Twain, came a magnitude of never before seen bank and corporate influence. For example, Jay Cooke, the most influential banker following the Civil War, caused the \textbf{Panic of 1873}. Cooke sponsored investment into a railroad that was meant to connect the American breadbasket to the oceans. With the end of the Franco-Prussian War in 1871, grain prices dropped. This caused many to withdraw investments from the aforementioned railroad, consequently causing Cooke's bank to go bankrupt. As a result, half a million people lost jobs, as the Stock Exchange closed for ten days. \item Additionally, entrepreneurship began to rise to unprecedented levels. Rich men, such as Cornelius Vanderbilt, put more and more money into becoming richer. Robert Fulton's invention of the steamboat in 1815 marked the beginning of his business career. Moving into another sect of transportation, Vanderbilt began to invest in railroads. Vanderbilt created early, crude versions of modern managing hierarchies, which he employed in his ventures. Purchasing the New York and Harlem railroad, Vanderbilt began to take control of New York. He then purchased the connecting Hudson River railroad in 1863. The purchase of these railroads, however, was carefully planned out, as Vanderbilt used them to threaten the New York Central railroad, as he told he would cut them off from his tracks. In this man, he was the richest American man when he died in 1877. \item Capitalistic ventures, however, did not end there. Daniel Drew, Jay Gould, and Jim Fisk became known as corporate pirates, as they extracted wealth from companies. This trio would invest in companies, far beyond the value of said companies, and then withdraw all of the stock, causing a crash for the company, while they walked away with all the money. In addition to this, the three convinced President Grant to appoint Daniel Butterfield to the treasury position, This meant that Butterfield was controlling the nation's gold supply, while the three men hoarded gold, raising the price of it greatly. Grant did catch wind of their plans, and, although he ordered the treasury to sell four million dollars worth of gold, the trio were able to sell their gold prior to the price drop. This caused ``Black Friday,'' a day that dragged the nation's economy.  \end{itemize}}%
+
+\topic{In terms of liquid cash, as well as all combined assets, who was the richest of the three major entrepreneurs: JP Morgan, John D. Rockefeller, or Andrew Carnegie?}{\begin{itemize} \item Towards the end of the 1800s, three main men who had created major monopolies had risen: John D. Rockefeller, Andrew Carnegie, and JP Morgan. What did these men have in common, aside from the money they paid for someone to fight the Civil War from them? All three were quite business savvy. \item With oil found near Titusville, Pennsylvania, Rockefeller began his oil career. Instead of focusing on drilling and obtaining oil, Rockefeller began by moving into the oil refining business. Unlike much of the competition, Rockefeller focused on a different variable than that of profit: cost. By decreasing costs, Rockefeller ended up spending less, thereby keeping more money in his pocket. He kept oil costs lower than his competitors, and, soon, he began to grow. Rockefeller closed deals for cheaper shipping with railroad companies, as his company continued to expand by purchasing the competition. Combining into Standard Oil and the Standard Oil Trust, Rockefeller's control became known as horizontal integration (or a monopoly, in this case). Essentially, horizontal control boils down to ownership of competing companies. Even with the invention of the light bulb, automobiles meant there was still a need for oil, as Rockefeller's bank account accrued more and more wealth. \item Then, came along Andrew Carnegie. His path was similar to that of Rockefeller, however, his specialization concerned steel, in addition to a vertical monopoly system. In such a system, a company, instead of owning all the actual producing companies, owns the means of production. In Carnegie's world, this includes, but is not limited to coal and iron, transport of materials, and production and sales of steel. Also, although Carnegie and Rockefeller are some of the best known monopolists, other monopolies did exist, such as: Gustavus Swift in meat, Charles Pillsbury with grain, Henry Havemeyer with sugar, Frederick Weyerhaeuser in lumber, and James B. Duke in tobacco. \item As opposed to Carnegie and Rockefeller, Morgan's profession concerned banking, and, therefore, although he did not at a single time have more liquid money than Carnegie or Rockefeller, he did have a lot more power over the economy, as well as influence in many high offices. Morgan's tactics did not surround actually owning a company, but rather appearing on the board of each company. In this manner, he would aid companies with transactions or other such fiscal processes, and, in return, he would take some money, but usually, he would take a board seat. Morgan piqued his control when he loaned lots of money to the government in exchange for bonds, which, although it prevented an economic collapse, showed his influence over all aspects of financial endeavors. Most importantly, Morgan later purchased Carnegie Steel for \$480 million.  \end{itemize}}%
+
+\topic{How similar was this forming middle class to the modern middle class? What was most significantly different?}{\begin{itemize} \item As quality of life increased, the middle class became a rising margin of the American society. John Lewis, a British man, migrated to the US before the Civil War had started, and he got a job in the wholesale business. By 1870, Lewis had developed his own business. Furthermore, following the Civil War, Christmas and other holidays became large, festive celebrations, although, before, they were quite limited, and varied from house to house. Furthermore, architects hired to renovate cities used ancient and modern styles to convey elegance. For once, a large portion of the population was actually able to afford luxuries. \item One important city update was that of indoor plumbing. Although it did exist in the early and mid 1800s, cholera was often spread, as most water people drank was collected from rain in barrels, and stood still for days, maybe weeks at a time. The New Croton Aqueduct, which was built from 1885 to 1893, made clean water more accessible to New Yorkers. \item In addition to the social changes, religion pivoted as well. Becoming more individualistic to fit the up-and-coming ``Business-man Attitude,'' the following of Protestant churches more than tripled over a 40 year period. Dwight L. Moody embodied the changes, as he was described to be a religious businessman. He believed that home was the same as Jesus, and that theater, disregarding Sabbath, and believing atheists were all sins.  \end{itemize}}%
+
+\topic{Were these Democrat and Republican parties reminiscent of their modern counterparts, or no? If not, what makes them different?}{\begin{itemize} \item In terms of politics, elections were proceeding as usual: chaotically. The Republican party had split into two main parts: the \textbf{Stalwarts} and the ``futurists,'' the former of which wanted to be proactively antislavery, and the latter of which wanted to move on from Reconstruction and proceed and embrace the new, booming economy. In addition to this, during the 1884 election, many Republicans supported the democratic nominee, as they stood against Blaine's corruption. These people were nicknamed the \textbf{Mugwumps} The presidential results from 1876$-$1896 proceeded as follows:  \end{itemize}\begin{center}\begin{tabular}[H]{|c|c|c|c|} \hline \rowcolor{BurntOrange} Republican & Democrat & Year & Winner \\ \hline Hayes & Tilden & 1876 & Hayes \\ \hline \rowcolor{red!15} Garfield & Hancock & 1880 & Garfield \\ \hline Cleveland & Blaine & 1884 & Cleveland \\ \hline \rowcolor{red!15} Harrison & Cleveland & 1888 & Harrison \\ \hline Cleveland & Harrison & 1892 & Cleveland \\ \hline \rowcolor{red!15} McKinley & Bryan & 1896 & McKinley\\\hline \end{tabular}\end{center}}%
+
+\topic{At what point was it definite that America was a world superpower, on par with other European countries?}{\begin{itemize} \item With a growing economy came an interconnectedness, not only domestic, but worldwide. Although it did occur in the early 1800s, in the 1880s and 90s, missionary work in other countries increased greatly. With missionaries, however, came merchants and diplomats. From 1865 to 1900, American export values jumped from \$234 million to \$1.5 billion. Furthermore, during this imperialistic period, the United States was looking to expand its horizons. Most importantly, the US wanted to trade in Cuba, which it did through forgery. \item With the influx of American goods into Europe, may trade wars almost sparked. A series of bad harvests caused European dependence on America for help. Europe, however, did not want to be dependent on the United States, and they quickly boycotted American meat products. Eventually, there would be an agreement and compromise, and the US would import twice the previous amount. \item In addition to Cuba, America also began looking to Korea, China, and Japan. Through a series of treaties (some forced), America would gain trading rights in Korea, whose citizens also came to the US to study at West Point, and, later, Japan. \end{itemize}}%
+
+\topic{What was stronger for the new immigrants, the push factors from their respective countries, or the pull factors of opportunity in America? How many immigrants during the same period moved to places other than the US?}{\begin{itemize} \item With the increasingly international economy, in tandem with word of mouth of opportunity in America, many people began to immigrate. From 1815$-$1890, 15 million people moved into the US, and, from 1890$-$1914, the same number moved in again. As usual, in Russia and eastern Europe, push factors were the strongest. \textbf{Pogroms} and anti-Jewish propaganda and scapegoating caused about a third of Russian-Jewish people to migrate to the US. Much like the natives in America, Jewish people had designated living areas, and they were not allowed to own their own land. \item Another migrating region was southern Italy. Violence during unification in 1871 and the eruption of Vesuvius in 1906 destroyed farmers' lives. In response, many Italians moved to escape these disasters, as well as criminal gangs. In contrast with the Russian-Jewish migrants, the Italians hoped to one day come back to their home. \item By far, one of the greatest migrating groups was the Chinese. Many citizens, seeing the rapidly-rising number of Chinese were worried that all jobs would be taken. In this manner, many people began sending petitions to Congress, after which the \textbf{Chinese Exclusion Act} was passed in 1882. This made immigration for Chinese virtually impossible, unless they could prove their skills would be useful in the United States. \item Additionally, French-Canadians also moved to New England and New York from 1860 to 1900. During this period, as many as 300,000 French-Canadians moved. Overall, around four million Italians, six million Russian-Jewish, and nine million other migrants would come to the United States in the thirty years prior to 1920. \item In additon to this, pull factors were just as important. Faster travelling times allowed for easier migration. Also, family members in the US would often send letters detailing better conditions and more opportunities. Such spread of job opportunities caused much of this mass-migration. \end{itemize}}%
+
+\topic{The quote at the beginning reminds of the movie \textit{American Tale}, where ``the streets are paved with cheese!'' Also, did most immigrants realize their names were being changed? Is this something they expected?}{\begin{itemize} \item With mass-immigration came the need for immigration centers, the two most important ones being Ellis Island (1892) in New York and Angel Island (1910) in San Francisco. From its opening to its closure in 1954, Ellis Island processed over 12 million immigrants. Here, as in any other immigration center, immigrants would be placed under heavy questioning and examined for physical or mental illnesses. Most people who were held back carried some kind of disease or appeared too poverty-stricken to be of use. Often, names would be pared down to something more American (i.e. Cooperstein $\rightarrow$ Cooper, Huttama $\rightarrow$ Hanson, Kiriacopoulis $\rightarrow$ Campbell). \item A big difference between Ellis Island and Angel Island, though, was the treatment of migrants. Due to the Chinese Exclusion Act, in tandem with the San Francisco earthquakes of 1906, many records on immigration were lost, which meant previous residents could not be verified. In this manner, many would claim to have previously lived in the US, although they hadn't. As a result of these ``paper sons,'' many Chinese were held for weeks, maybe even months at a time before they were let in or deported. \item During this migration period, the term \textbf{melting pot} became popular, as it was used to describe the idea that immigrants were supposed to ``melt'' and add to the culture, while at the same time assimilating. Contrary to this idea, most people who moved went to communities of people like them, where they continued to engage in their own culture (i.e. the lower east side of Manhattan for Jewish). Many people became peddlers or street salesman. Others who knew how to stitch well (because sewing machines were a big export to Russia) would work in sweatshops, where they were forced to mass-produce articles of clothing. For all immigrants, many worshipping places, whether it be synagogues, Buddhist temples, or Catholic churches, were established in their tight-knit communities.  \end{itemize}}%
+
+\summary{Following the Civil War and leading into the twentieth century, the largest economic and opportunistic boom for the United States was created. With hundreds of thousands of inventions coming to fruition, quality of life began to improve steadily. Consequently, people had to spend less time worrying about themselves and their families, and more time on working, establishing businesses, or creating new, unheard of economic ventures. The rise of corporational giants, such as John D. Rockefeller, Andrew Carnegie, and JP Morgan showed the true extent of capitalism in an industrialized nation. Word quickly spread of life in the United States, and, soon, migrants began came to create a better life for them and their families. The emerging middle class created an example of an American Dream $-$ a stable income, a great family, and a nice house. Such western promises brought impoverished people from all around the world. Russian-Jewish people migrated due to their oppression, Italians came in search of work and money, and Chinese came for work, and to escape war. Overall, one thing unified all of these people: the search for opportunity.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
