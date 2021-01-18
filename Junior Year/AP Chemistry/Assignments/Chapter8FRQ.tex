@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 8 $-$ Practice FRQ}
+\date{January 19, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+  
+  \item Aluminum metal can be recycled from scrap metal by melting the metal to evaporate impurities.
+
+    \begin{enumerate}
+
+      \item Calculate the amount of heat needed to purify $1[\si{\mole}]$ of \ce{Al} originally at $298[\si{\kelvin}]$ by melting it. The melting point of \ce{Al} is $933[\si{\kelvin}]$. The molar heat capacity of \ce{Al} is $24\left[ \frac{\si{\joule}}{\si{\mole\kelvin}} \right]$, and the heat of fusion of \ce{Al} is $10.7\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]$
+
+        \begin{equation}
+          \begin{split}
+            Q=cm\Delta T\\
+            24\cdot1\cdot(933-298)=15240[\si{\joule}]\\
+            15.42+10.7=25.94[\si{\kilo\joule}]
+            \end{split}
+          \label{1}
+        \end{equation}
+
+      \item The equation for the overall process of extracting \ce{Al} from \ce{Al2O3} is shown below. Which requires less energy, recycling existing \ce{Al} or extracting \ce{Al} from \ce{Al2O3}? Justify your answer with a calculation.
+
+        \begin{center}
+          \ce{Al2O3(s) -> 2Al(s) + 3/2O2(g)}\quad\quad$\Delta H^{\circ}=1675\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]$
+        \end{center}
+
+        \begin{equation}
+          \begin{split}
+            .5\cdot1675=837.5[\si{\kilo\joule}]\\
+            837.5>25.94\\
+          \therefore\text{ It makes more sense to recycle}\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
