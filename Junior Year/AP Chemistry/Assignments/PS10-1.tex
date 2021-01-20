@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 10 $-$ Problem Set}
+\date{January 21, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item A solution is made by dissolving $1.25[\si{\gram}]$ of \ce{C2H5OH} in $11.6[\si{\gram}]$ of water ($\rho=1.38\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$).  Calculate the molality of the solution.
+
+    \begin{equation}
+      \begin{split}
+        \frac{1.25}{46}=.0272[\si{\mole}]\\
+        \frac{.0272}{.0116}=2.34[\si{\Molal}]\\
+        \frac{12.85}{1.38}=9.31[\si{\milli\liter}]\\
+        \frac{.0272}{.00931}=2.92[\si{\Molar}]\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item A solution contains $50[\si{\gram}]$ of \ce{CS2} and $50[\si{\gram}]$ of \ce{CHCl3}.  Calculate the mole fraction of each.
+
+    \begin{equation}
+      \begin{split}
+        \frac{50}{76}=.658[\si{\mole}]\\
+        \frac{50}{119}=.42[\si{\mole}]\\
+        \frac{.658}{.42+.658}=.39_{\ce{CHCl3}}\\
+        1-.39=.61_{\ce{CS2}}\\
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item The molality of a solution of \ce{C12H22O11} is $1.62[\si{\Molal}]$.  Calculate the mass percent.
+
+    \begin{equation}
+      \begin{split}
+        \ce{C12H22O11} \rightarrow 342\left[ \frac{\si{\gram}}{\si{\mole}} \right]\\
+        1.62\cdot342=554[\si{\gram}]\\
+        \frac{554}{1000+554}=36\%
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item The mole fraction of a solution of \ce{C2H5OH} is $0.0532$. Calculate the molality.
+
+    \begin{equation}
+      \begin{split}
+        1[\si{\mole}_{total}]\rightarrow.0532[\si{\mole}_{\ce{C2H5OH}}]\\
+        1-.0532=.9468[\si{\mole}_{\ce{H2O}}]\\
+        .9468\cdot18=17.04[\si{\gram}]\\
+        \frac{.0532}{.01704}=3.12[\si{\Molal}]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item Complete the following table for three different solutions of \ce{NaOH}:
+
+    \begin{center}
+    \begin{tabular}[H]{|c|c|c|c|c|}
+      \hline
+      & Density $\left( \frac{\si{\gram}}{\si{\milli\liter}} \right)$ & Molarity $\left( \si{\Molar} \right)$ & Molality $\left( \si{\Molal} \right)$ & Mass ($\%$) \\
+      \hline
+      Solution 1 & 1.05 & 1.32 & \textcolor{red}{1.32} & \textcolor{red}{5} \\
+      \hline
+      Solution 2 & 1.22 & \textcolor{red}{6.1} & \textcolor{red}{6.25} & 20.0\\
+      \hline
+      Solution 3 & 1.35 & \textcolor{red}{10.8} & 11.8 & \textcolor{red}{32} \\
+      \hline
+    \end{tabular}
+    \end{center}
+
+    \begin{equation}
+      \begin{split}
+        \text{Solution 1:}\\
+        1.32[\si{\mole}_{\ce{NaOH}}]\rightarrow1000[\si{\milli\liter}]\\
+        1000\cdot1.05=1050[\si{\gram}]\\
+        1.32\cdot40=52.8[\si{\gram}]\\
+        1050-52.8=997.2[\si{\gram}]\\
+        \frac{1.32}{.9972}=1.32[\si{\Molal}]\\
+        \frac{52.8}{1050}=5\%\\
+      \end{split}
+      \label{5}
+    \end{equation}
+    \begin{equation}
+      \begin{split}
+        \text{Solution 2:}\\
+        1220[\si{\gram}]\rightarrow1000[\si{\milli\liter}]\\
+        1220\cdot.2=244[\si{\gram}_{\ce{NaOH}}]\\
+        \frac{244}{40}=6.1[\si{\mole}]\\
+        \frac{6.1}{1}=6.1[\si{\Molar}]\\
+        \frac{6.1}{.976}=6.25[\si{\Molal}]\\
+      \end{split}
+      \label{6}
+    \end{equation}
+    \begin{equation}
+      \begin{split}
+        \text{Solution 3:}\\
+        11.8[\si{\mole}]\rightarrow1000[\si{\gram}]\\
+        40\cdot11.8=472[\si{\gram}]\\
+        1000+472=1472[\si{\gram}]\\
+        \frac{1472}{1.35}=1090[\si{\milli\liter}]\\
+        \frac{11.8}{1.09}=10.8[\si{\Molar}]\\
+        \frac{472}{1472}\cdot100\%=32\%\\
+      \end{split}
+      \label{7}
+    \end{equation}
+  
+\end{enumerate}
+
+\end{document}
+
