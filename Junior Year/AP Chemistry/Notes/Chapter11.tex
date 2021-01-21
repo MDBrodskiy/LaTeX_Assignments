@@ -59,7 +59,7 @@ citecolor=blue,
 \urlstyle{same}
 
 
-\title{Chapter 10 $-$ Solutions}
+\title{Chapter 11 $-$ Rates}
 \date{\today}
 \author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
 
@@ -75,51 +75,57 @@ citecolor=blue,
 
 \begin{itemize}
 
-  \item Solution = Solvent + Solute
+  \item General Rate = Change in concentration per change in time.
 
-    \begin{enumerate}
+  \item Rate is dependent on concentration $-$ More collisions, more reactions, faster rate.
 
-      \item Solvent does dissolving
+  \item Rate Law Formula = $k[A]^m$, where $k$ is a constant, $A$ is the reactant, and $m$ is the order.
 
-      \item Solute gets dissolved
+  \item If there are two reactants, then the rate = $k[A]^m[B]^n$, where $B$ is the other reactant, and $n$ is the order for the second reactant
 
-      \item If noting is mentioned, assume water is the solvent
+  \item Order $-$ Tells how rate changes when concentration changes ($0,1,2$)
 
-    \end{enumerate}
+  \item Example: Calculate $k$ for \ce{CH3CHO -> CH4 + CO}
 
-  \item Molarity $-$ The amount of moles of solute per liters of solution
+    \begin{tabular}[H]{l c c c c}
+      Concentration: & .1 & .2 & .3 & .4\\
+      Rate: & .085 & .34 & .076 & 1.4\\
+    \end{tabular}
 
-  \item Mole Fraction $-$ The moles of a substance per the total moles
+    \begin{equation}
+      \begin{split}
+        \frac{Rate_1}{Rate_2}=\left( \frac{(\ce{CH3CHO})_1}{(\ce{CH3CHO})_2} \right)^m\\
+        \frac{.085}{.34}=\left( \frac{.1}{.2} \right)^m\\
+        m=2\\
+        .085=k(.1)^2\\
+        k=8.5
+      \end{split}
+      \label{1}
+    \end{equation}
 
-  \item Mass Percent $-$ Mole Fraction times $100\% $
+  \item Example: Calculate $k$ for \ce{2NO + Cl2 -> 2NOCl}
 
-  \item ppm = milligrams per liter, whereas ppb = micrograms per liter
+    \begin{tabular}[H]{l c c c}
+      Experiment & \ce{NO} & \ce{Cl2} & Rate\\
+      \hline
+      1 & .0125 & .0255 & $2.27\cdot10^{-5}$\\
+      2 & .0125 & .051 & $4.55\cdot10^{-5}$\\
+      3 & .025 & .0255 & $9.08\cdot10^{-5}$\\
+    \end{tabular}
 
-  \item Molality $-$ Moles of solute per kilograms of solvent
-
-  \item Solubility $-$ How much of a substance will dissolve
-
-  \item Principles
-
-    \begin{enumerate}
-
-      \item Nature of Solute $-$ Solvent interaction (like dissolves like).
-
-      \item Temperature $-$ Increase in temperature will increase solubility of endothermic reaction (solids). Gases are exothermic.
-
-      \item Pressure $-$ Increase in pressure will increase solubility for gas-liquid systems, such as bottled soda.
-
-    \end{enumerate}
-
-  \item Colligative Properties $-$ Depends on concentration, not nature.
-
-    \begin{enumerate}
-
-      \item Vapor Pressure $-$ Rate at which a solution evaporates is reduced by increase of solute.
-
-      \item Boiling Point Elevation or Freezing Point Depression $-$ Increase in solute causes boiling point to go up, and freezing point to go down.
-
-    \end{enumerate}
+    \begin{equation}
+      \begin{split}
+        \frac{Rate_1}{Rate_3}=\left( \frac{(\ce{NO})_1}{(\ce{NO})_3} \right)^m\\
+        \frac{Rate_1}{Rate_2}=\left( \frac{(\ce{Cl2})_1}{(\ce{Cl2})_2} \right)^n\\
+        \frac{2.27}{9.08}=\left( \frac{.0125}{.025} \right)^m\\
+        m=2\\
+        \frac{2.27}{4.5}=\left( \frac{.0225}{.051} \right)^n\\
+        n=1\\
+        2.27\cdot10^{-5}=k[.0125]^2[.0255]^1\\
+        k=5.7
+      \end{split}
+      \label{2}
+    \end{equation}
 
 \end{itemize}
 
