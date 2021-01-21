@@ -1,0 +1,158 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering Doctor's Dessert-ation
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[]{}
+\chead[]{}
+\rhead[]{}
+
+\begin{document} 
+\maketitle
+
+\vspace{-125pt}
+\includegraphics[scale=.05]{Images/scioly.png}\hspace{300pt}\includegraphics[scale=.1]{Images/MITLogo.png}
+\vspace{35pt}
+
+\topic{\textbf{\underline{\textsc{DESCRIPTION}}}}{Collegiate admissions has become significantly more difficult in recent years $-$ no point in arguing it hasn't. Your performance in \textit{Doctor's Dessert-ation} will not only determine your team's event placement, but also the eligibility of your members to be admitted to major scientific or culinary schools. Each team member must take this event individually.  \begin{itemize} \item \textbf{\underline{\textsc{A TEAM OF UP TO:}}} One \item \textbf{\underline{\textsc{EYE PROTECTION:}}} Upon poor placement (crying is not permitted at MIT Science Olympiad) \item \textbf{\underline{\textsc{IMPOUND:}}} Your collegiate application rights (in the case of poor placement) \end{itemize}}%
+
+\vspace{-20pt}
+
+\topic{\textbf{\underline{\textsc{EVENT}}} \textbf{\underline{\textsc{PARAMETERS}}}}{Each team will be given a GNU/Linux setup (to be used only during the event). This machine will only be running two processes: A text redactor, such as Vim, Nano, or Emacs, a LaTeX typesetting program, such as TeXLive or teTex (in earlier years, students were given a typewriter). A PDF viewer will \textbf{\underline{NOT}} be permitted, and students must depend on their thorough knowledge of the TeX typesetting language without seeing the final product. Bringing individual run commands, such as a $.vimrc$, will be permitted for only one team member.}%
+
+\vspace{-20pt}
+
+\topic{\textbf{\underline{\textsc{THE}}} \textbf{\underline{\textsc{COMPETITION}}}}{Students from teams are led to individual, sound-proofed rooms, furnished with a desk, a chair, and the aforementioned system, in addition to all necessary kitchen equipment. This is because, in previous years, students have been known to scream violently or commit academic dishonesty through use of Morse Code messaging. 50 minutes are allotted for this event, during which you are required to complete the following from scratch: \begin{enumerate} \item Students must create a doctorate-level thesis on a scientific topic of the organizer's choosing. \item Students must cook the favorite dessert of the organizer, without knowing what it is.  \end{enumerate}}%
+
+\vspace{-20pt}
+
+\topic{\textbf{\underline{\textsc{SCORING}}}}{Given the simple nature of this event, with respect to other MIT events, there is usually a greater weight on this event than other events. An exact weight, however, can not be given, as this depends on your actual score (better score means lower weight, worse score means higher weight). In recent years, the event has been given less weight, because it has become easier than in previous years (students used to rewrite G\"odel's Ontological Proof, in addition to the two requirements)}%
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
