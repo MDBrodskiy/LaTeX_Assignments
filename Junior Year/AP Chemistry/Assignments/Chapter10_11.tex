@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 10 \& 11 $-$ Problems 22, 70 \& 12, 19, 26}
+\date{January 26, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+      \underline{Chapter 10}
+    \end{center}
+
+    \setcounter{enumi}{21}
+
+  \item Which is more likely to dissolve in \ce{CCl4}? In each case, explain your answer.
+
+    \begin{enumerate}
+
+      \item \underline{benzene} or \ce{KCl}
+
+        \begin{center}
+          Because both molecules hold nonpolar bonds, benzene is more likely to dissolve.
+        \end{center}
+
+      \item \underline{octane} or glycerol
+
+        \begin{center}
+          Because octane holds nonpolar bonds, and so does \ce{CCl4}, it is more likely to dissolve.
+        \end{center}
+
+      \item \underline{\ce{CHCl3}} or \ce{C6H11Cl3}
+
+        \begin{center}
+           They both have the same dispersion forces.
+        \end{center}
+
+      \item \underline{\ce{CBr4}} \ce{CHBr3}
+
+        \begin{center}
+          They both have nonpolar bonds.
+        \end{center}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{69}
+
+  \item One mole of \ce{CaCl2} is represented as a square and two circles, where the square represents \ce{Ca} and each circle represents \ce{Cl}. Complete the picture showing only the calcium and chloride ions. The water molecules need not be shown. What is the molarity of \ce{Ca^2+}? of \ce{Cl-}?
+
+      \begin{figure}[h]
+        \centering
+        \include{Figures/Dissociation}
+        \caption{Dissociation of \ce{CaCl2} atoms}
+        \label{fig:1}
+      \end{figure}
+
+      \begin{equation}
+        \begin{split}
+          4(\ce{CaCl2})\rightarrow4[\si{\mole}_{\ce{Ca^2+}}]\,\,\,\&\,\,\,8[\si{\mole}_{\ce{Cl-}}]\\
+          \frac{4}{1}=4[\si{\Molar}_{\ce{Ca^2+}}]\\
+          \frac{8}{1}=8[\si{\Molar}_{\ce{Cl-}}]\\
+        \end{split}
+        \label{1}
+      \end{equation}
+
+      \newpage
+
+    \begin{center}
+      \underline{Chapter 11}
+    \end{center}
+
+    \setcounter{enumi}{11}
+
+  \item A reaction has two reactants $Q$ and $P$. What is the order with respect to each reactant and the overall order of the reaction described by the following rate expressions?
+
+    \begin{enumerate}
+
+      \item rate = $k_1$
+
+        \begin{itemize}
+
+          \item $P$ $-$ 0
+
+          \item $Q$ $-$ 0
+
+          \item Overall $-$ 0
+
+        \end{itemize}
+
+      \item rate = $k_2[P]^2[Q]$
+
+        \begin{itemize}
+
+          \item $P$ $-$ 2
+
+          \item $Q$ $-$ 1
+
+          \item Overall $-$ 3
+
+        \end{itemize}
+
+      \item rate = $k_3[Q]^2$
+
+        \begin{itemize}
+
+          \item $P$ $-$ 0
+
+          \item $Q$ $-$ 2
+
+          \item Overall $-$ 2
+
+        \end{itemize}
+
+      \item rate = $k_4[P][Q]$
+
+        \begin{itemize}
+
+          \item $P$ $-$ 1
+
+          \item $Q$ $-$ 1
+
+          \item Overall $-$ 2
+
+        \end{itemize}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{18}
+
+  \item The decomposition of nitrogen dioxide is a second-order reaction. At $550[\si{\degree\kelvin}]$, a $.25[\si{\Molar}]$ sample decomposes at the rate of $1.17\left[ \frac{\si{\mole}}{\si{\liter\minute}} \right]$.
+
+    \begin{enumerate}
+
+      \item Write the rate expression
+
+        \begin{equation}
+          \begin{split}
+            rate=k(.25)^2
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item What is the rate constant at $550[\si{\degree\kelvin}]$?
+
+        \begin{equation}
+          \begin{split}
+            1.17=k(.25)^2\\
+            k=18.72\left[ \frac{\si{\liter}}{\si{\mole\minute}} \right]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item What is the rate of decomposition when $[\ce{NO2}]=.8[\si{\Molar}]$?
+
+        \begin{equation}
+          \begin{split}
+            rate=18.72(.8)^2\\
+            rate=12\left[  \frac{\si{\mole}}{\si{\liter\minute}} \right]
+          \end{split}
+          \label{4}
+        \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{25}
+
+  \item When nitrogen dioxide reacts with carbon monoxide, the following reaction occurs: \ce{NO2(g) + CO(g) -> NO(g) + CO2(g)}. The following data is obtained:
+
+    \begin{tabular}[H]{c c c c}
+      \hline
+      Expt. & [\ce{NO2}] & [\ce{CO}] & Initial Rate $\left( \frac{\si{\mole}}{\si{\liter\second}} \right)$\\
+      \hline
+      1 & .138 & .1 & .00565\\
+      2 & .189 & .2 & .0106\\
+      3 & .276 & .1 & .0226\\
+      4 & .276 & .3 & .0226\\
+      \hline
+    \end{tabular}
+
+    \begin{enumerate}
+
+      \item What is the order of the reaction with respect to \ce{NO2}, \ce{CO}, and overall?
+
+        \begin{equation}
+          \begin{split}
+          \frac{.00565}{.0226}=\left(\frac{.138}{.276}\right)^m\\
+          m=2\\
+          \frac{.0226}{.0226}=\left(\frac{.1}{.3}\right)^n\\
+          n=0\\
+          \text{Overall order is 2}
+          \end{split}
+          \label{5}
+        \end{equation}
+
+      \item Write the rate expression of the reaction.
+
+        \begin{equation}
+          \begin{split}
+            rate=k[\ce{NO2}]^2[\ce{CO}]^0
+          \end{split}
+          \label{6}
+        \end{equation}
+
+      \item Calculate $k$ for the reaction.
+
+        \begin{equation}
+          \begin{split}
+            rate=k[\ce{NO2}]^2[\ce{CO}]^0\\
+            .0226=k[.276]^2\\
+            k=.297\left[ \frac{\si{\liter}}{\si{\mole\second}} \right]
+          \end{split}
+          \label{7}
+        \end{equation}
+
+      \item When $[\ce{NO2}]=.421[\si{\Molar}]$ and $[\ce{CO}]=.816[\si{\Molar}]$, what is the rate of the reaction at the temperature of the experiments?
+
+        \begin{equation}
+          \begin{split}
+            rate&=k[\ce{NO2}]^2[\ce{CO}]^0\\
+            &=.297\cdot[.421]^2\\
+            &=.0526\left[ \frac{\si{\mole}}{\si{\liter\second}} \right]
+          \end{split}
+          \label{8}
+        \end{equation}
+
+    \end{enumerate}
+  
+\end{enumerate}
+
+\end{document}
+
