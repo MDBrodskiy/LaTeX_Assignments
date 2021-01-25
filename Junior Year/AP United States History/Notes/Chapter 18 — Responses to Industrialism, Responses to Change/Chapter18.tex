@@ -1,0 +1,171 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 18 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Were most ``new southerners'' the same ``old southerners?'' What was the migration like? What portion of the new southerners were northerners who moved? Could this have fueled the subtle ideological change which took place following the Civil War?}{\begin{itemize} \item As Henry Grady put it, a \textbf{New South} was being born. Radically different from its previous state, this New South was done apologizing for the Civil War, slavery, and for their rigid rules over former slaves. Most importantly, this New South was economically completely different, as it industrialized and built railroads, connecting it to the North, and, ultimately, the world stage. \item Previously dominated by agriculture, the reincarnated region now saw the rise of sawmills, factories, mines, railroads, and the replacement of old, wooden buildings with new brick ones. Although the South lacked many railroad lines prior and during the Civil War, large investments, American or European, brought jobs, economic prosperity, and, ultimately, railroad lines whose span rivaled that of the North. On this rise, a journalist commented that, formerly, a person would travel to town annually, or semiannually at most, but, with the rail lines, people could travel cheaply and safely two or three times a day. \item With new economic developments, many stores began to sell credit on their goods, which essentially gave them a bank-like status, and made them more money in the long run. Phosphate mining rose, but was outshined by coal mining. With the new, modernized economy, many firms took on early marketing campaigns. Julian Carr shipped his tobacco bags worldwide using trains. Washington and James Duke shipped pre-rolled cigarettes, which were advertised as clean, quick, and potent. Most importantly, Coca Cola began to rise during this time, with campaigns where it sold each bottle for five cents, a price maintained for roughly a hundred years. \end{itemize}}%
+
+\topic{Which group despised the ongoing changes the most? What did they hate most about these changes? Does the ``dislocation'' Frazer references supposed to be urbanization?}{\begin{itemize} \item With an increasing level of urbanization, many southerners missed the old life, and even began to revere the Civil War and pre-Civil War era. Many Confederate veterans recalled a slower time in life, and they mourned the new, fast-paced, urbanized way of life. Often, tensions arose between the veterans who remembered the old days, and those born too late to remember the war. Southern writers created works on this feeling of ``lost cause.'' One important work was that of a loyal, fictional slave, named Uncle Remus, and his alter-ego Brer Rabbit (Disney Splash Mountain?). These stories were first published in 1879 in the \textit{Atlanta Constitution}. \item Religion began to make quite a comeback during this period, as many freed slaves established their own churches. By 1890, upwards of 1.3 million black Baptists resided in the South. Black churches began to pop up in the North too, where religions were most commonly African Methodist Episcopal, or African Methodist Episcopal Zion denominations. These churches became safe places for black people to worship and create a cultural identity. White people also had a religious resurrection, with Baptists claiming the most followers, with Methodists in a close second. Disciples of Christ and Presbyterians, as well as, in certain areas, Episcopalians and Roman Catholics dominated.  \end{itemize}}%
+
+\topic{What prompted people to segregate transportation? Was it a single (fictitious or real) incident? Was the tension always present? Also, were women only allowed in first class? If so, did they have to pay for first class fare?}{\begin{itemize} \item As always with the South, expansion and growth led to racial tension. Although pretty much everything was segregated, from hospitals to theaters, railroad cars were one of the last remaining frontiers that had not been segregated. Of course, this was not because of progressive ideals, but due to business and economy $-$ separate trains or lines were just too expensive to build. \item At the time, trains had first or second class options $-$ First was for men and women who preferred to sit in an area where people did not smoke or use tobacco, and second class was for those who wanted to smoke, or poor men who couldn't afford a first class fare. Although railroad companies and state legislature did not segregate the black men and women, trips would often turn troublesome, with black men in first class being beaten. State government took action, and they quickly passed laws to separate black sections from white sections. This was chalked up to be a case in which white people were the victim, as it was said that people were afraid of black men sitting next to white women. Although this was only the beginning, it occurred a decade prior to the 1896 Supreme Court decision in \textit{Plessy vs. Ferguson}, where ``separate but equal'' transportation was said to not violate the fourteenth amendment.  \end{itemize}}%
+
+\topic{Were northerners generally aware of what was going on in the South or not? Did most turn a blind eye? Did any northern states take a turn for the worst like their southern counterparts?}{\begin{itemize} \item As Reconstruction began to dissolve, southerners wanted to return to their former way of life as close as possible. Through large campaigns, which featured voter intimidation, many state legislatures were able to return to Democratic-segregationist control. The order in which this took place is as follows: \begin{center}\begin{tabular}{|c|c|} \hline \rowcolor{BurntOrange} \textcolor{white}{State} & \textcolor{white}{Year} \\ \rowcolor{white} \hline Virginia & 1869 \\ \rowcolor{grey!15} N. Carolina & 1870 \\ \rowcolor{white} \hline Georgia & 1871 \\ \hline \rowcolor{grey!15} Texas & 1873 \\ \rowcolor{white} \hline Alabama & 1874 \\ \hline \rowcolor{grey!15} Arkansas & 1874 \\ \rowcolor{white} \hline S. Carolina & 1876 \\ \hline \rowcolor{grey!15} Mississippi & 1876 \\ \rowcolor{white} \hline Louisiana & 1877 \\ \hline \rowcolor{grey!15} Florida & 1877 \\ \hline  \end{tabular}\end{center} \item The aforementioned processes, though, were only the beginning. Originating in Mississippi, state legislatures found ways to go around the fourteenth amendment. To vote, they passed requirements, which include, but are not limited to: literacy tests, ``grandfathered voting,'' property requirements, poll taxes and living requirements. Although some blacks were present in state legislatures as late as the 1890s, the previous requirements essentially removed them from office, and made voting impossible. It was around this time that the South was nicknamed the ``Solid South,'' as it was solidly white and Democratic. Although these voting requirements did bar some poor whites from voting too, it succeeded in blocking the black population from voting. The Supreme Court deemed poll taxes and literacy tests constitutional in the 1898 \textit{Williams vs. Mississippi} case. Furthermore, people convicted of crimes such as petty theft or arson were barred from voting, even though, ironically, those convicted of rape, murder, or grand larceny could still vote. This made life for blacks, who were often wrongly convicted of these small crimes, more difficult than it had been since before reconstruction. \item Life took an even further, worse turn for the southern black population, as public lynchings became rampant. Black men were often accused of rape or sexual harassment, even though incidents could be as little as not allowing a women to pass first, or claiming one's political rights.   \end{itemize}}%
+
+\topic{Were the white supporters of the NAACP generally from the north? What percents of whites and blacks supported this movement?}{\begin{itemize} \item Of course, many people did not just sit still and take such treatment. Ida B. Wells, and African-American woman, wrote about segregation and lynchings. She called the rape charge for lynching a ``thread-bare lie,'' and stated that violence was a way to maintain the control over the African-American population. In response, a white mob destroyed her printing press at the \textit{Memphis Free Press}. In addition to this, W.E.B. Du Bois described the problem of the twentieth century as the ``color line,'' and that a country that excluded a major part of its population could be called liberal. \item Of course, there were also the complicit. Booker T. Washington believed that blacks should simply adjust to segregation, and he urged them to create a solid economic foundation for themselves. Du Bois, a harsh critic of Washington, met with other leaders at a Niagara Falls hotel, on the Canadian side, as the American side did not allow them rooms. The \textbf{Niagara Movement} arose from this, with many people, white or black, supporting the movement, and creating the \textbf{National Association for the Advancement of Colored People} (NAACP). This group fought for full adherence to the fourteenth and fifteenth amendments, and wanted to expose the lies embedded in lynchings, segregation, and ``separate but equal'' laws.   \end{itemize}}%
+
+\topic{Was the Farmers' Alliance like an early version of a union for farmers?}{\begin{itemize} \item With industrial changes came pitfalls of farming. Mass production became a requirement, not only to feed the increasing population, but also to afford shipping costs, as sending only a little bit was not worth it. Standard Oil caused shipping rates to rise to such levels that farmers would not even make money, and go deeper and deeper into debt, as they could not pay off their mortgages. It was clear that farmers needed to band together, and fast. The Patrons of Husbandry, or ``\textbf{The Grange},'' as they were called, was an early organization to unite farmers. Farmers gathered in Grange Halls and discussed ideas about culture and community, as well as tried to fight off financial arrangements and inequities. With this unification, farmers received better rates for shipping,  and better prices for crops and tools.  Additionally, farming methods and diversification was promoted. \item Other organizations were founded. In 1882, in Arkansas, the \textbf{Agricultural Wheel} was established. By 1885, the Wheel had 1,105 local chapters in four states. The size of this organization was used to negotiate prices for farm equipment, while organizing warehouses to hold crop surpluses. Sometimes, tools could be purchased for 50 percent of the initial price. By far the largest of such unions was the \textbf{Farmers' Alliance}, which was initially established in Lampasas County, Texas, in the 1870s. Charles W. Macune was elected president of this organization in 1886, when he made it grow rapidly. Over a three year period, from 1886 to 1889, membership grew from 38,000 to 225,000. The concept of such organizations was simple: to rival large businesses, the farmers would form large communities. \item A big problem, however, was that Macune adopted an anti-African American policy, which prompted black farmers to create the \textbf{Colored Farmers' National Alliance and Cooperative Union}, which received over 1.2 million members by 1890. Although the black chapter of this organization did gain more members, it was never as recognized as the white chapter. The formations of such unions marked important milestones, as people banded together so they wouldn't be had by large corporations.  \end{itemize}}%
+
+\topic{At what point did it become clear that some kind of government influence was necessary for farmers to do better?}{\begin{itemize} \item With the rise in prices for shipping, it became clear that private ownership of railroads was detrimental to farmers. The California president of the Farmers' Alliance, Marion Cannon, following several battles with the Union Pacific Railroad, decided that public ownership of railroads was the only way farmers could get a fair deal. Subsequently, Alliance lecturer Marion Todd published \textit{Railways of Europe and America} in 1893, where she discussed her opinions on railroads, especially that they should be controlled by the government, like post offices. Eventually, Macune also joined in on campaigning, and he advocated the \textbf{subtreasury system}. This was a system that would be controlled by the Department of Treasury, and it would protect and give farmers low-interest loans. In the end, the system would never be passed. \item A big problem for the farmers was that they were dependent on the American finance state. If money was inflating, and it was more available, they could pay off their debts easier. On the other hand, if money was in tight supply, paying their debts and selling crops was a nightmare. During the Civil War, the greenbacks, which weren't backed by gold, inflated fairly easily, which made farmers' lives easier. A lot of farmers were angered when the government paid of its Civil War debts and began to remove greenbacks, and demonetize gold. Some people thought more silver coins were necessary, while others thought more greenbacks needed to be issued, but all agreed that something needed to be done.  \end{itemize}}%
+
+\topic{I'm interested to know: if Bryan had run as a Populist (still with Democratic support), would he have won? If not, what was the biggest reason for his loss, as the book made him seem like an ideal candidate.}{\begin{itemize} \item With the growth of the Farmers' Alliance, many people wanted for the organization to involve itself in politics. There were three main leaders who advocated such a move: Leonidas L. Polk, Benjamin R. Till, and Tom Watson. Polk, a Confederate war hero, made a fortune from real estate development. Polk lobbied for the creation of a Department of Agriculture, and he became the first commissioner of this very department in 1877. In 1886, he began to publish his own newspaper, \textit{Progressive Farmer}. All three advocates greatly supported the Farmers' Alliance, however, of them, Polk was the best known. \item Due to a fall in the price of cotton in 1891, and further deterioration of the farm economy, the \textbf{People's Party}, better known as the \textbf{Populist Party}, came to fruition at a Cincinnati convention. Although Macune continued to oppose political involvement, Polk eventually won at an 1892 convention, and Macune resigned. The rise of a party as quick as the populists hadn't happened since the Republican party, and, it seemed they were winning everywhere. Ultimately, the 1896 election would decide their fate. William Jennings Bryan, endorsed by the Democratic Party and the Populist Party, had beliefs that aligned more closely with the Populists. In the end, McKinley defeated Bryan, which shattered the Populist Party. In 1900 and 1904, the Populist Party endorsed Tom Watson, who was unpopular because he ran on a white supremacist platform. \end{itemize}}%
+
+\topic{Were the people involved in the 1877 strikes part of unions, or did they just want to improve working conditions?}{\begin{itemize} \item In 1877, a reduction in wages caused several large-scale strikes to take place against the massive railroad corporations. Two miles from Baltimore, a Fireman simply refused to move a train. Other people began to join in, and, quickly, the Baltimore and Ohio Railroads came to a halt. The strikers were fired, but that just made them angrier. By July 19, railroad workers prevented any freight from moving out of Pittsburgh. This strike led to the creation of the National Guard, and many Guard armories lay in various cities, to remind of this event. \item In 1869, the \textbf{Knights of Labor} formed. Following the 1877 strikes, they would become the largest union. They welcomed all workers, with Terrence V. Powderly at the head as Grand Master Workman. They tried to stay away from violence, and they campaigned for 8 hour work days, equal pay for women, and government ownership of railroads and banks. By 1886, they had 700,000 members. In an 1886 strike, however, many people became violent. This prompted the Knights to call off the strike, but it showed their power. Their close ties to the Populist party caused the union to decrease in size in the late 90s, which gave way to other unions.  \end{itemize}}%
+
+\topic{What defined a skilled or elite worker? Were there some kinds of tests that needed to be taken in order to get in?}{\begin{itemize} \item While the Knights of Labor accepted all workers, the \textbf{American Federation of Labor}, started in 1886, accepted only elite and skilled craftsmen. Samuel Gompers, part of the Cigar Makers Union was elected its present, and stayed in the position until his death in 1924, when they reached 3 million members. Gompers worked to create specific trade unions, such as the cigar makers, plumbers, and iron molders. Additionally, Gompers fought for 8 hour work days, benefits, and the right for unions to bargain collectively. \item On May 4, 1886, conflict erupted in Chicago. Forty to Sixty thousand workers went on strike, starting Saturday, May 1. They wanted an eight hour work week. Socialists and anarchists alike met at this event, and, on May 3, Albert Parsons and August Spies held a meeting. During the rally, someone threw a bomb at a crowd of police officers, killing one and injuring six. Parsons, Spies, and six other men were convicted, although it was not them. They were all hung on November 11, 1887. Because the events took place in Haymarket Square, what precipitated became known as \textbf{Haymarket}.  \end{itemize}}%
+
+\topic{Why did the union workers decide to ambush the Pinkertons, instead of the plant itself, or even Frick? Were the Pinkertons too forceful in doing their jobs?}{\begin{itemize} \item In 1892, at Carnegie's Mill in Homestead, Pennsylvania, workers went on strike. Carnegie, busy at his castle in Scotland, appointed Henry Clay Frick to deal with the problem. Frick simply fired the Union workers and hired 300 Pinkerton agents to protect the factory, while he hired non-union workers. On July 6, two barges carrying Pinkerton detectives arrived at the plant, where they were ambushed by union workers. It is unbeknownst who shot first, but bloodshed ensued. People generally blamed Carnegie and Frick for the event, and Carnegie blamed Frick for his poor handling of the situation. \item At the 1893 World's Fair, in Chicago, marvels of invention were shown to the public. At this event, an Ohio businessman by the name of Jacob Coxey saw mass poverty and unemployment. For him, a solution was clear: roads were needed. Jobs were needed. To build roads, people would need to take on jobs. In this manner, Coxey protested for Congress to permit funding to build roads, with each person being paid \$1.50 a day, for eight hours, to work. When Congress refused, Coxey built up an ``army'' of supporters, as he marched from Chicago to the District of Columbia. Starting with 100 marchers, it built up to 1,200 by the time they arrived in Washington, D.C. Supporters of the movement were nicknamed \textbf{Coxey's Army}. Coxey, until he died at the age of 97, advocated government funding for roads and highways, which he was pleased to somewhat see in the New Deal.  \end{itemize}}%
+
+\topic{What were rents like in Pullman? Were they somewhat cheaper than in other cities because it was provided by the company?}{\begin{itemize} \item Created in 1893 by Eugene V. Debs, The American Railway Union unified all walks of railway workers. This union was initially extremely successful, until it ran into the Pullman Palace Car Company. Pullman produced luxury train cars, and, to avoid union problems, he created his own town: Pullman, Illinois, about 12 miles from Chicago. During the Panic of 1893, Pullman cut jobs and lowered wages, while keeping housing prices the same. Of course, this was reason for outrage, and 90\% of of Pullman workers did not show up the next day. On strike, they asked The American Railway Company to join them. Initially reluctant, as protesting is not well done during depressions, Debs refused, and asked to postpone, but after a refusal to postpone, he joined them. After governemnt intervention, many, including Debs, were arrested. Debs came out of prison a different man. Creating the American \textbf{Socialist Party}, he now advocated for change through political means. \item Another major industry at this time was mining. From coal to gold, all these resources required hard labor. Miners were always paid the least amount possible, In the 60s and 70s, the miners were forced to dig in deeper mines, which was extremely dangerous for several reasons: water pumps could burst and miners could drown, methane could gather and cause suffocation, tunnels could collapse, or fires could start easily. Caused by the Panic of 1873, workers banded together to strike after wages were lowered. Eventually this failed, and many Irish strike members (Molly Maguires) were arrested for murdering mine attendants, including one mine owner. This failure led to the \textbf{United Mine Workers of America} union in 1890. With John Mitchell, a former Knight of Labor, at its head, working conditions began to become better. This union included all people, no matter of skin color, religion, or anything else, as it looked at previous unions that failed. Together, these people marched. In 1900, mine workers received a ten percent pay increase, and, in 1903, they received another raise, as well as a promise to weigh mined coal properly. In the west, similar mine problems occurred. In Coeur d'Alene, in Idaho (the northern, thin part), workers had to mine in deep locations, where lead and coal was available. After a wage dispute, strike occurred. Striking miners blew up mines using dynamite. The Idaho governor called for order, but he was later assassinated.  \end{itemize}}%
+
+\topic{Was the IWW supported by all other union leaders? If not, why?}{\begin{itemize} \item On June 27, 1905, over 200 delegates founded the \textbf{Industrial Workers of the World}, nicknamed the \textbf{Wobblies}. This organization was radically different from its predecessors. Getting fair working rights was only a part of their mission. To support their cause, the created a song book of songs many workers sang. These included hopes for the future, and wants for raises and long term goals. The IWW was attacked by press, government, and the corporate world. For 15 years, it was a big force. \item The garment industry, which employed mostly women, was one of the biggest industries during this period. Clara Lemlich, a Russian immigrant from 1903, organized the International Ladies' Garment Workers Union. In late fall of 1909, the ILGWU, along with Samuel Gompers, and Anne Morgan of daughter of JP Morgan, joined to strike. The strike lasted a long time, and, in early 1911, factories and union leaders agreed to compromise. In late March of 1911, a fire broke out at the Triangle Shirtwaist Factory. The garments inside caused the fire to spread quickly. Over 50 people jumped from windows, and 20 died when a fire escape collapsed. Over 146 people died in the \textbf{Triangle Shirtwaist Factory Fire}.  \end{itemize}}%
+
+\newpage
+
+\topic{Did the moving picket line seem groundbreaking at the time it was proposed?}{\begin{itemize} \item On New Year's Day 1912, a new Massachusetts law limited work week hours from 56 to 54. For this reason, the Lawrence Mills decided to cut wages accordingly. Immediately, workers began to walk off the job. About 14,000 workers were on strike by the end of the first day. The IWW immediately took action, organizing meetings. Many signs held read ``We want bread and roses, too.'' The strike, which turned out to be successful, was nicknamed the \textbf{Bread and Roses Strike}. \item In Ludlow, Colorado, workers struck at a mine owned by Rockefeller. The workers wanted recognition for their union, a ten percent increase in wages, an 8 hour day, election of coal-weighing officials, choice of stores and doctors, and enforcement of Colorado mining laws. Eighty to ninety percent of miners protested. Many were evicted from their company houses, and many tents were set up. On April 20, 1914, militia troops took up positions around the tents. It was unknown who fired first, but around 30 people were killed in the \textbf{Ludlow Massacre}  \end{itemize}}%
+
+\summary{During the late eighteenth century, America entered the Gilded Age, caused by mass industrialization and urbanization. This improved quality of life, not only for the businessmen who became rich, but for the average citizen too. With this heavy industrialization came a need for hard labor, which was often exploited, as people were paid minimal amounts. This was cause for outrage, as people would often be cheated out of money, or wages would be decreased. Many workers banded together to strike, whether it be for farmers, former slaves, or any workers. Many organizations were founded to better the lives of people, such as the National Association for the Advancement of Colored People, the Farmers' Alliance, the Industrial Workers of the World, or the United Mine Workers of America. These groups often bound together to try to get 8 hour work days, higher wages, benefits, or lower prices for necessary tools, in the case of farmers. Often, strikes would occur as a result of lowered wages, which often occurred following economic recessions, such as the Panics of 1873 or 1893. Overall, people were often exploited during this time, which led to the creation of socialist parties, who wanted to unite the workers of the world.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
