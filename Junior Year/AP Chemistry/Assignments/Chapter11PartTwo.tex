@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 11 $-$ Problems 28}
+\date{January 26, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Diethylhydrazine reacts with iodine according to the following equation. The rate of reaction is followed by monitoring the disappearance of the purple color due to iodine. The following data are obtained at a certain temperature. 
+
+    \begin{center}
+      \ce{(C2H5)2(NH)2(l) + I2(aq) -> (C2H5)2N2(l) + 2HI(aq)}
+    \end{center}
+
+    \begin{tabular}[H]{c c c c}
+      \hline
+      Expt. & $[\ce{(C2H5)2(NH)2}]$ & $[\ce{I2}]$ & Initial Rate \\
+      \hline
+      1 & .15 & .25 & $1.08\cdot10^{-4}$ \\
+      2 & .15 & .362 & $1.56\cdot10^{-4}$ \\
+      3 & .2 & .4 & $2.3\cdot10^{-4}$ \\
+      4 & .3 & .4 & $3.44\cdot10^{-4}$\\
+      \hline
+    \end{tabular}
+
+    \begin{enumerate}
+
+      \item What is the order of the reaction with respect to diethylhydrazine, iodine, and overall?
+
+        \begin{equation}
+          \begin{split}
+            \frac{1.08}{1.56}=\left( \frac{.25}{.362} \right)^m\\
+            m=1\\
+            \frac{2.30}{3.44}=\left( \frac{.2}{.3} \right)^n\\
+            n=1\\
+          \text{Order of reaction is 2}\\
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item Write the rate expression for the reaction.
+
+        \begin{equation}
+          \begin{split}
+          rate=k[\ce{(C2H5)2(NH)2)}][\ce{I2}]
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item Calculate $k$ for the reaction.
+
+        \begin{equation}
+          \begin{split}
+            3.44\cdot10^{-4}=k(.3)(.4)\\
+            k=.0029\left[  \frac{\si{\liter}}{\si{\mole\hour}} \right]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item What must $[\ce{(C2H5)2(NH)2}]$ be so that the rate of the reaction is $5\cdot10^{-4}\left[ \frac{\si{\Molar}}{\si{\hour}} \right]$ when $[\ce{I2}]=.5[\si{\Molar}]$?
+
+        \begin{equation}
+          \begin{split}
+            5\cdot10^{-4}=.0029(a)(.5)\\
+            a=.345[\si{\Molar}]
+          \end{split}
+          \label{4}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
