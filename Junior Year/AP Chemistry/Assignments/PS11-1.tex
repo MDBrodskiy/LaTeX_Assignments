@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 11 $-$ Problem Set 1}
+\date{January 28, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Given the following data for the reaction of \ce{NO} with \ce{H2}, calculate $k$
+
+    \begin{center}
+      \begin{tabular}[H]{c c c}
+        [\ce{NO}] & [\ce{H2}] & Rate \\
+        0.0064 & 0.0022 & 0.000026 \\
+        0.0128 & 0.0022 & 0.0001 \\
+        0.0064 & 0.0045 & 0.000051\\
+      \end{tabular}
+    \end{center}
+
+    \begin{equation}
+      \begin{split}
+        \frac{.26}{1}=\left( \frac{64}{128}  \right)^m\\
+        m=2\\
+        \frac{.26}{.51}=\left( \frac{22}{45}  \right)^n\\
+        n=1\\
+        .0001=k[.0128]^2[.0022]\\
+      k=277\left[ \frac{1}{\si{\Molar\squared\second}} \right]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item How long will it take a first order substance with $k = .27\left[ \frac{1}{\si{\second}} \right]$ to be reduced to $\frac{1}{3}$ the original concentration?
+
+    \begin{equation}
+      \begin{split}
+        t_{1/3}=\frac{\ln(3)}{.27}\\
+        =4.069[\si{\second}]\\
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item How long will it take a first order substance with $k = .59\left[ \frac{1}{\si{\second}} \right]$ to be reduced to 25\% of original?
+
+    \begin{equation}
+      \begin{split}
+        t_{1/4}=\frac{\ln(4)}{.59}\\
+        =2.35[\si{\second}]
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item The decomposition of \ce{NO2} is second order with a rate of $0.002\left[ \frac{\si{\mole}}{\si{\liter\second}} \right]$ when the concentration is $0.08[\si{\Molar}]$. Calculate the rate when the concentration of \ce{NO2} is $0.02[\si{\Molar}]$.
+
+    \begin{equation}
+      \begin{split}
+        .002=k[.08]^2\\
+        k=.3125\left[ \frac{\si{\liter}}{\si{\mole\second}} \right]\\
+        rate=.3125\cdot[.02]^2\\
+        =.000125=1.25\cdot10^{-4}
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item For the first order reaction \ce{SO2Cl2 -> SO2 + Cl2} the rate constant is $0.000022\left[ \frac{1}{\si{\second}} \right]$. If you start with $0.0248[\si{\Molar}]$ of the reactant, what is the concentration of \ce{SO2Cl2} after $4.5[\si{\hour}]$?
+
+    \begin{equation}
+      \begin{split}
+        1[\si{\hour}]\longrightarrow3600[\si{\second}]\\
+        \ln\left( x_f \right)=\ln\left( .0248 \right)-.000022(4.5)(3600)\\
+        x_f=e^{\ln(.0248)-.000022(4.5)(3600)}\\
+      =.0174\left[ \si{\Molar} \right]
+      \end{split}
+      \label{5}
+    \end{equation}
+
+  \item The half-life of ethyl bromide at $720[\si{\degree\kelvin}]$ is $650\left[ \si{\second} \right]$ for the first order reaction. Find the time required for the concentration to drop from $0.05[\si{\Molar}]$ to $0.0125[\si{\Molar}]$.
+
+    \begin{equation}
+      \begin{split}
+        \frac{.0125}{.05}=\frac{1}{4}\\
+        650\cdot2=1300[\si{\second}]
+      \end{split}
+      \label{6}
+    \end{equation}
+
+  \item The first order reaction of diazomethane has a half-life of $17.3[\si{\minute}]$ at $873[\si{\degree\kelvin}]$. If the concentration is $0.058[\si{\Molar}]$ after $10[\si{\minute}]$, what is the original concentration?
+
+    \begin{equation}
+      \begin{split}
+        17.3=\frac{\ln(2)}{k}\\
+        k=\frac{\ln(2)}{17.3}\\
+        k=.04\left[ \frac{1}{\si{\minute}} \right]\\
+        \ln(x_o)=\ln(.058)+.04(10)\\
+        x_o=e^{\ln(.058)+.4}\\
+        x_o=.087[\si{\Molar}]
+      \end{split}
+      \label{7}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
