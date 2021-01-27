@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Biology
+% Professor: J. Polivka
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{The Chi-Square Test}
+\date{January 25, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Polivka}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item The chi-square tests determines whether the observed value is significantly different from the expected value
+
+    \begin{enumerate}
+
+      \item The test tells us whether this is due to chance or some kind of outside influence
+
+    \end{enumerate}
+
+  \item The null hypothesis is a statement that assumes there is no difference between the observed and expected values
+
+    \begin{enumerate}
+
+      \item For Example: ``There is no significant difference between the experimental results and those which would be expected''
+
+    \end{enumerate}
+
+  \item The formula is as given:
+
+    \begin{equation}
+      \mathcal{X}^2=\sum\left( \frac{\left( O-E \right)^2}{E} \right)\\
+      \label{1}
+    \end{equation}
+
+  \item The number of degrees of freedom is always one less than the number of terms in the formula above (one less than the possibilities)
+    
+  \item A table with degrees of freedom will always be given. In biology, we will use the 5\% column (probability equals 95\% true)
+
+  \item If $\mathcal{X}^2$ is greater than the critical value, reject the null hypothesis
+
+  \item This means that the difference you are seeing in your results is \textbf{NOT} due to chance
+
+  \item If $\mathcal{X}^2$ is lower than the critical value, accept the null hypothesis
+
+  \item This means that the difference you are seeing in your results \textbf{IS} due to chance
+
+\end{itemize}
+
+\end{document}
+
