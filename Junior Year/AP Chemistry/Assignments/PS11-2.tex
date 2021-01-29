@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 11 $-$ Problem Set 2}
+\date{February 1, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+  \ce{8H+(aq) + 4Cl-(aq) + MnO4-(aq) -> 2Cl2(g) + Mn^3+(aq) + 4H2O(l)}
+\end{center}
+
+\begin{enumerate}
+
+  \item \ce{Cl2(g)} can be generated in the laboratory by reacting potassium permanganate with an acidified solution of sodium chloride. The net-ionic equation for the reaction is given above.
+
+    \begin{enumerate}
+
+      \item A $25[\si{\milli\liter}]$ sample of $0.250[\si{\Molar}]$ \ce{NaCl} reacts completely with excess \ce{KMnO4(aq)}. The \ce{Cl2(g)} produced is dried and stored in a sealed container. At $22[\si{\degree\Celsius}]$ the pressure of the \ce{Cl2(g)} in the container is $.95[\si{\atm}]$
+
+        \begin{enumerate}
+
+          \item Calculate the number of moles of \ce{Cl-(aq)} present before any reaction occurs.
+
+          \item Calculate the volume, in $\si{\liter}$, of the \ce{Cl2(g)} in the sealed container.
+
+        \end{enumerate}
+
+        \begin{center}
+          An initial-rate study was performed on the reaction system. Data for the experiment are given in the table below.\\
+          \begin{tabular}[H]{| c | c | c | c | c |}
+            \hline
+          Trial & $[\ce{Cl-}]$ & $[\ce{MnO4-}]$ & $[\ce{H+}]$ & Rate of Disappearance of \ce{MnO4-} in $\si{\Molar\per\second}$\\
+          \hline
+          1 & 0.0104 & 0.00400 & 3.00 & $2.25\cdot10^{-8}$\\
+          \hline
+          2 & 0.0312 & 0.00400 & 3.00 & $2.03\cdot10^{-7}$\\
+          \hline
+          3 & 0.0312 & 0.00200 & 3.00 & $1.02\cdot10^{-7}$\\
+          \hline
+          \end{tabular}
+        \end{center}
+
+      \item Using the information in the table, determine the order of the reaction with respect to each of the following. Justify your answers.
+
+        \begin{enumerate}
+
+          \item \ce{Cl-}
+
+          \item \ce{MnO4-}
+
+        \end{enumerate}
+
+      \item The reaction is known to be third order with respect to \ce{H+}. Using this information and your answers to part (b) above, complete both of the following:
+
+        \begin{enumerate}
+
+          \item Write the rate law for the reaction.
+
+          \item Calculate the value of the rate constant, $k$, for the reaction, including appropriate units.
+
+        \end{enumerate}
+
+      \item Is it likely that the reaction occurs in a single elementary step? Justify your answer.
+
+    \end{enumerate}
+
+  \item \begin{center}
+      $\begin{array}{l r} Step I & \ce{O3 + Cl -> O2 + ClO} \\ Step II & \ce{ClO + O -> Cl + O2}  \end{array}$
+    \end{center}
+
+    \begin{enumerate}
+
+      \item Write a balanced equation for the overall reaction represented by Step I and Step II above.
+
+      \item Clearly identify the catalyst in the mechanism above. Justify your answer.
+
+      \item Clearly identify the intermediate in the mechanism above. Justify your answer.
+
+      \item If the rate law for the overall reaction is found to be $rate=k[\ce{O3}][\ce{Cl}]$, determine the following: 
+
+        \begin{enumerate}
+
+          \item The overall order of the reaction
+
+          \item Appropriate units for the rate constant, $k$
+
+          \item The rate-determining step of the reaction, along with justification for your answer.
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
