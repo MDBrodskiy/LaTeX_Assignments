@@ -93,12 +93,26 @@ citecolor=blue,
 
           \item Calculate the number of moles of \ce{Cl-(aq)} present before any reaction occurs.
 
+            \begin{equation}
+              .025\cdot.25=6.25\cdot10^{-3}[\si{\mole}]
+              \label{1}
+            \end{equation}
+
           \item Calculate the volume, in $\si{\liter}$, of the \ce{Cl2(g)} in the sealed container.
+
+            \begin{equation}
+              \begin{split}
+                V=\frac{nRT}{P}\\
+                \frac{6.25\cdot10^{-3}\cdot .0821\cdot295}{.95}\cdot\frac{1}{2}=.0797[\si{\liter}]\\
+              \end{split}
+              \label{2}
+            \end{equation}
 
         \end{enumerate}
 
         \begin{center}
           An initial-rate study was performed on the reaction system. Data for the experiment are given in the table below.\\
+          \vspace{10pt}
           \begin{tabular}[H]{| c | c | c | c | c |}
             \hline
           Trial & $[\ce{Cl-}]$ & $[\ce{MnO4-}]$ & $[\ce{H+}]$ & Rate of Disappearance of \ce{MnO4-} in $\si{\Molar\per\second}$\\
@@ -116,9 +130,25 @@ citecolor=blue,
 
         \begin{enumerate}
 
-          \item \ce{Cl-}
+          \item \ce{Cl-} 
+
+            \begin{equation}
+              \begin{split}
+                \frac{.225}{2.03}=\left( \frac{.0104}{.0312} \right)^m\\
+                m=2\\
+              \end{split}
+              \label{3}
+            \end{equation}
 
           \item \ce{MnO4-}
+
+            \begin{equation}
+              \begin{split}
+                \frac{1.02}{2.03}=\left( \frac{.02}{.04} \right)^n\\
+                n=1\\
+              \end{split}
+              \label{4}
+            \end{equation}
 
         \end{enumerate}
 
@@ -128,25 +158,54 @@ citecolor=blue,
 
           \item Write the rate law for the reaction.
 
+            \begin{equation}
+              rate=k[\ce{Cl-}]^2[\ce{MnO4-}][\ce{H+}]^3
+              \label{5}
+            \end{equation}
+
           \item Calculate the value of the rate constant, $k$, for the reaction, including appropriate units.
+
+            \begin{equation}
+              \begin{split}
+                1.02\cdot10^{-7}=k[.0312]^2[.002][3]^3\\
+              k=.00194\left[ \frac{1}{\si{\Molar^5\second}} \right]
+              \end{split}
+              \label{6}
+            \end{equation}
 
         \end{enumerate}
 
       \item Is it likely that the reaction occurs in a single elementary step? Justify your answer.
 
+        \begin{center}
+          No, because the orders of \ce{Cl-} and \ce{H+} differ from those in the equation
+        \end{center}
+
     \end{enumerate}
 
   \item \begin{center}
-      $\begin{array}{l r} Step I & \ce{O3 + Cl -> O2 + ClO} \\ Step II & \ce{ClO + O -> Cl + O2}  \end{array}$
+      $\begin{array}{l r} \text{Step I} & \ce{O3 + Cl -> O2 + ClO} \\ \text{Step II} & \ce{ClO + O -> Cl + O2}  \end{array}$
     \end{center}
 
     \begin{enumerate}
 
       \item Write a balanced equation for the overall reaction represented by Step I and Step II above.
 
+        \begin{center}
+          \ce{O3 + O -> 2O2}
+        \end{center}
+
       \item Clearly identify the catalyst in the mechanism above. Justify your answer.
 
+        \begin{center}
+          \ce{Cl} drives the whole process, as it is not used up throughout the process
+        \end{center}
+
       \item Clearly identify the intermediate in the mechanism above. Justify your answer.
+
+        \begin{center}
+          \ce{ClO} is the intermediate, as it is formed in the second step, and is used up throughout the process
+        \end{center}
 
       \item If the rate law for the overall reaction is found to be $rate=k[\ce{O3}][\ce{Cl}]$, determine the following: 
 
@@ -154,9 +213,21 @@ citecolor=blue,
 
           \item The overall order of the reaction
 
+            \begin{center}
+              The overall order is 2
+            \end{center}
+
           \item Appropriate units for the rate constant, $k$
 
+            \begin{center}
+            The units are then $\left[ \frac{1}{\si{\Molar\cdot time}} \right]$
+            \end{center}
+
           \item The rate-determining step of the reaction, along with justification for your answer.
+
+        \begin{center}
+          Step I is most likely the determining step, because the orders of \ce{O3} and \ce{Cl} match that of the rate formula
+        \end{center}
 
         \end{enumerate}
 
