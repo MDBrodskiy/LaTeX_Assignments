@@ -1,0 +1,161 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 19 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{The book doesn't seem to explain George's argument very well, how did he plan to institute this tax, and how would it improve life? Furthermore, is Bellamy's work supposed to be referring to a socialist society?}{\begin{itemize} \item Along with the reformers of the late nineteenth century came many authors, who used the power of word to convince others to agree with their point of view. Henry George, a journalist from California, was frightened by the 1877 railroad strike. In response, he published \textit{Progress and Poverty}, which spurred the \textbf{single tax movement}. In his publication, George argues for a one hundred percent tax on fluctuations in land pricing. George hoped such a tax would cause more workers to move to farming, which would leave a smaller work force, ultimately causing a rise in the industrial wages. Many economists argued using George's logic, as they wanted a better life for the blue-collar workers. \item In addition to this, utopian and dystopian novelists, such as Edward Bellamy and Ignatius Donnelly, respectively, came to fruition. Bellamy, ten years after George's publication, published \textit{Looking Backward}, here, he painted the picture of a community in which all people could enjoy their lives, without worry of poverty, or wealth $-$ all citizens prospered. On the contrary, Donnelly, three years later, published \textit{Caesar's Column}, which was quite the opposite of Bellamy's work. Donnelly portrayed a powerful elite, ruling over a large, brutal working class. Here, few were able to live happily. Novels such as these fueled the work of reformers and philosophers, giving energy to their ideas. \item Alongside the writers came the philosophers $-$ whether social, economic, or political. John Dewey, a prominent philosopher from John's Hopkins University, focused on social reform, in tandem with Richard Ely, an economist from the same university, and Albion Small, who worked to truly spur reforms. Together, they wanted to contradict the idea of \textbf{Social Darwinism}, or the idea that, economically and socially, the fittest would survive, and, therefore, the upper classes were more fit. William Graham Sumner and Herbert Spencer, together, supported and created this theory, which was deemed to be an excuse for upper classes to exist by those like Dewey.   \end{itemize}}%
+
+\topic{How did the population view the word ``muckraker''? Did most people look down upon them or look up to them for more information about society? }{\begin{itemize} \item Those who caused reform in society weren't just the authors of novels and philosophical pieces. Many came from the world of journalism. In 1887, Joseph Pulitzer bought the \textit{New York Evening World}, which marked the rise of investigative journalism. Pulitzer mostly wrote about the insurance agencies, and how they were ``gambling with the people's money''. About a decade following Pulitzer's rise, William Randolph Hearst. In reality, such journalism, nicknamed (by Theodore Roosevelt) \textbf{muckraking journalism}, did exist before Pulitzer and Hearst, as the first to really try it was Henry Demarest Lloyd, who wrote for Chicago newspapers. This journalism brought to light the ``muck'' and corruption of society, which further spurred reforms. \item In 1903, Ida M. Tarbell wrote an investigative piece on the Standard Oil Company, which would later become Tarbell's main published work, \textit{The History of the Standard Oil Company}. In 1906, Upton Sinclair published \textit{The Jungle}, which was an investigation into the meatpacking business. Revealing the horrors of this industry, Sinclair caused the formation of the Food and Drug Administration, as well as copious acts regarding food and drug management.   \end{itemize}}%
+
+\topic{What amount of elected officials were corrupt like Tweed? Was Tweed the first to start such a ``business''}{\begin{itemize} \item With the rise in industrial economics came the corrupt politicians and political machines. Most well known is \textbf{Tammany Hall}. Many such machines were influenced by Irish politicians, but Tammany came into existence prior to major Irish migration. One of the most important and early bosses of Tammany Hall was William M. Tweed. Tweed would make sure those close to him got elected, and, in exchange, those who helped people get elected got favors in return. Often, municipal projects would have lots of funding drained, as that money would go into the pockets of those like Tweed; however, the average person who voted for them did benefit too. Tweed, like many successors or predecessors, created many jobs for people, and would often give the people gifts and other free items. Quite often, more jobs than were necessary were created, such as having 20 inspectors for 4 plants. Eventually, though, Tweed was caught and arrested for theft, and he died in jail in 1878. \item Honest John Kelly succeeded Tweed. Unlike Tweed, he wanted to be open about his policies and actions, but he still made sure that Tammany held control over city politics. During the rise of political machines, many Irish came to power. For example, Patrick J. Kennedy in East Boston, and John Honey Fitzgerald in the north. Patrick Kennedy's son Joseph and John Fitzgerald's daughter Rose had a child by the name of John F. Kennedy, who would eventually become the first Irish Catholic president. Many political reformers pivoted to fight the rise of the political machines.  \end{itemize}}%
+
+\topic{Who were the most successful reformers during this period? What made them successful? What was the most progressive state at the time?}{\begin{itemize} \item As Tammany hall and other machines rose to power, many reformers benefited. Across parties, whether Democratic or Republican, reformers existed. Furthermore, reformed politicians gained reputations for honesty. For example, Grover Cleveland, who was elected mayor of Buffalo, New York, in 1881, became known as honest, especially after rejecting a street-cleaning contract that was a scheme for other misdeeds. Eventually, this led Cleveland to the presidency. Furthermore, Hazen Pingree, who was elected mayor of Detroit, Michigan, campaigned against awarding city contracts to schools, ferries, toll roads, and street and sewer services. When a railway company wanted to make a contract, Pingree forced them to cut down fares from five to three cents. As the panic of 1893 struck, Pingree convinced owners of vacant plots to allow jobless citizens to be hired for farm work, where they usually planted potatoes. Pingree was nicknamed ``Potato Patch''. \item Samuel Jones, Toledo mayor from 1897 to 1904, became known as ``Golden Rule''. He spent municipal funds on kindergartens, building parks, and instituting eight hour work days. Additionally, he wanted to reject political parties, as he wanted a non-partisan approach to politics. Such calls made his party reject him, although he was still a popular candidate, and was even reelected as an independent. Succeeded by Brandon Whitlock who continued his policies into the Wilson administration, Toledo became know for its honest politicians. \item New social reform policies came to fruition. For example, calls for \textbf{initiative}, \textbf{referendum}, and \textbf{recall}, became prevalent, as people wanted to limit the influence of elites, as they gave voters the power to change government policy. Additionally, workers' compensation became more widespread, as workers used to be blamed for the accidents and fired. \item Charles Murphy, another Tammany Hall leader, got two Tammany loyalists, Robert F. Wagner and Alfred E. Smith (nicknamed the ``Tammany Twins'') to create the Factory Investigating Commission. This commission worked to prevent events like the Triangle Shirtwaist Factory fire from ever happening again. Building inspections became common. Along with Frances Perkins, the Tammany Twins passed legislation that required sprinklers in high-rise buildings, fire drills in large shops, unlocked exits, and reorganized the state Department of Labor. Later, Perkins was elected as the state's Department of Labor head, and, even later, the US Secretary of Labor. Additionally, Wagner sponsored the Social Security system, and wanted to guarantee unemployment insurance and workers' compensation. He also passed the Wagner Act, which permitted unions to bargain effectively.   \end{itemize}}%
+
+\topic{What and who led to the formation of modern education systems? At what point did education systems begin to look like they do today? Did Collegeboard have any influence over this, as they were founded during this time.}{\begin{itemize} \item In 1899 (around the time Collegeboard came into existence), John Dewey published \textit{The School and Society}, as he advocated for education reform. Instead of the school system revolving around a set of curricula, Dewey believed that systems needed to focus on the actual needs of a child. Many people disagreed with Dewey, as they saw education reform in a different light. Some people wanted teachers to get more influence and better pay, while teaching smaller classes. Others wanted to make education more scientific and based on standardized testing to improve schools. Many people disagreed with what form it should take, but most people agreed that there was a need for education reform. \item Jane Addams, a prominent reformer, believed that all people should add to the good of a community, and, if not all people participated, should there even be good in society? Addams's Hull House became a center for reform, discussion, and, often, sided with the poor during strikes and labor debates. Additionally, when women were threatened to lose their housing, the Hull House became a boarding house. Many of Chicago's leaders despised Addams and her efforts, but Addams held a strong community of lower classes together with her efforts.  \end{itemize}}%
+
+\topic{Did the WCTU accept members of any faith, or did they only want Protestants?}{\begin{itemize} \item Religion effected many movements during the period $-$ none more prominent than the Woman's Temperance movement. Following the Panic of 1873, a group of Midwestern women banded together to ban ``Demon Rum'', which they argued put their and their families lives at stake. This was because, not only did it drain finances, but also husbands would often come home drunk and ready to abuse their families. In this manner, in 1874, 200 women from 17 states met to create the \textbf{Woman's Christian Temperance Union} (WCTU). Although these women held a variety of political beliefs, all of their beliefs were rooted in the temperance movement. Frances E. Willard became the second leader of the WCTU, and she worked hard to make it a force to be reckoned with. \item The end goal of the union was to ban alcohol; however, Willard broadened some of the tangential components of their beliefs. For example, Willard argued that women should be given the right to vote so that they can vote on issues touching alcohol. Often, the argument came back to ``home protection''. By the time Willard passed, the organization had over 200,000 members, and a 12-story national headquarters in Chicago. \item There were many ways to interpret the temperance movement, and Carry Nation probably saw it the most radically different from those like Willard. Nation traveled to various taverns and saloons, and would trash them, smashing tables, bottles, and whatever they could find in the way. Overall, whether the people were like Willard or Nation, these movements spurred the passage of the eighteenth amendment\footnote{The eighteenth amendment banned the manufacture and sale of alcohol} and, ultimately, the nineteenth amendment\footnote{The nineteenth amendment gave women the right to vote}. \item Additionally, many religions were redefined once more. Charles Sheldon published \textit{In His Steps}, which told the fictionalized story of a pastor who constantly asked, ``What Would Jesus Do?''. This prompted talk of the \textbf{Social Gospel}, which was supported by many pastors, such as Walter Rauschenbusch, who published \textit{A Theology for the Social Gospel}. This publication broadened the idea of sin, as it also focused on social institutions that oppressed other. Other, non Christian religions began to participate in social reform. Many Jewish immigrants put their religious beliefs into secular reforms. Overall, religion was one of the most important fuels for social reform.  \end{itemize}}%
+
+\topic{Why did Leon Czolgosz assassinate McKinley? Did he think it would aid the anarchist movement?}{\begin{itemize} \item Upon the assassination of McKinley, Roosevelt was meant to take office. Roosevelt's impressive career made him a strong candidate. After the death of his first wife, Roosevelt dropped out of politics for some time, until he reentered after marrying Edith Kermit Carow. His platform stood on ending corruption, taxing street railways, and providing safe work environments and workmen's compensation. Republican Party boss Tom Platt supported Roosevelt because he saw what the war hero status and anti-corruption image did, and, as such, he wanted to keep a Republican in office. When Roosevelt won, Platt realized he meant what he was saying, and, when Roosevelt planned a presidential run, Platt convinced him to be McKinley's running mate, so that Roosevelt would not become president. Despite this, the assassination of McKinley paved the way to Roosevelt's administration. \item As president, Roosevelt would come to be known as a ``trustbuster''. James Hill, owner of the Great Northern Railroad, E.H. Harriman, owner of the Union Pacific Railroad, and JP Morgan, owner of the Northern Pacific Railroad met to discuss forming a joint ownership of the railroads. This allowed the heads of the railroads to significantly raise prices. Roosevelt saw this happening, and he filed against the Northern Securities Company Limited, as the joint-ownership company had been called, through the use of the \textbf{Sherman Antitrust Act}. Passed in 1890, it was pretty much an empty piece of legislation until Roosevelt used it to sue the company. Roosevelt's move, which would turn out successful in two years, was similar to that of passage of the \textbf{Pendleton Civil Service Reform Act} in 1883, shortly after Garfield's assassination. This act replaced political patronage with merit in the selection of government employees. This act formed the Civil Service Commission, which aided employees, and helped keep them from losing their job. This act only covered federal workers, though, and only about ten percent of them at that. \item Following Roosevelt's move to file against the Northern Companies Corporation, JP Morgan visited the White House. He tried to make a deal to fix the corporation, but Roosevelt did not want to fix it $-$ he wanted to disband it. After the victory against the Northern Companies Co., Roosevelt would not use much of the powers given to him for antitrust cases, however, both Taft and Wilson would use those tools.   \end{itemize}}%
+
+\topic{I'm thankful for Roosevelt's avid support of nature reserves, as I myself have visited all of the national parks mentioned in the text of the book (Muir Woods, Grand Canyon, Bridges, and Pinnacles). In total, I have visited over 30 and camped in over 20 national reserves. Also, fun fact, Roosevelt kept a bear in the White House.}{\begin{itemize} \item Theodore Roosevelt was an avid nature lover and bird watcher, as well as a hunter. On a bear hunt in 1902, a bear was tied to a spot for Roosevelt to shoot, but he refused to shoot a tied animal. This made national news, and created the Teddy Bear in his honor. As Yellowstone and Grand Canyon were already federal reserves when Roosevelt took office, he wanted to expand the influence and power of these reserves. Using the Antiques Act of 1906, Roosevelt declared several national monuments: Muir Woods, Grand Canyon, Pinnacles, and Bridges. Together, these new reserves totaled over 828,795 acres of land. \item Such fanaticism for nature provoked Congress. Charles Fulton of Oregon attached an amendment to a bill concerning the Department of Agriculture that stated that no additional forest reserves were to be created. Roosevelt had ten days to sign, but he was smart. Quickly, he created 21 new forest reserves across six states, and, only then did he sign the bill. Due to his eccentricism and work to better the lives of the average people caused Roosevelt to be an extremely popular candidate for a second term. Additionally, Roosevelt did more for race relations than any president since Lincoln, and many of his successors. By inviting Booker T. Washington to the White House, Roosevelt surprised the nation and made a bold statement. Many called it appalling and a travesty but Roosevelt said that white people should be conscious of lynching. Such reasons led to his easy reelection for a second term. Going up against Alton B. Parker, the race was no where near close. As his second term came to an end, Roosevelt said that two is enough for a president, and began to search for a successor. He found Taft.  \end{itemize}}%
+
+\topic{Why did Roosevelt not make sure Taft would be a conservationist? Did Taft promise, but then ignore his promise?}{\begin{itemize} \item For the most part, Taft was quite similar to his predecessor, aside from one key issue: conservationism. Taft, right away, replaced James Garfield with Richard Ballinger, and, as a result, angered Roosevelt. Furthermore, Taft later removed Gifford Pinchot. Aside from this, Taft increased tariffs, and rejected any bill that offered to lower them, thereby gaining a right wing base and losing the Roosevelt conservationists. Taft did, however, work much harder to fight trusts than Roosevelt had. Taft brought more antitrust lawsuits in his four years than Teddy had in his seven. \item The election of 1912 would be like any other. It was the only election to have a former president, current president, and future president running at one time (in addition to a socialist). It was quite difficult to predict a winner. Taft represented the Republicans, Roosevelt represented the new Populists, Wilson the democrats, and Eugene V. Debs the Socialist Party, which had gained significant traction. With a Ph. D in constitutional law, Wilson stood out as a highly educated candidate, in addition to being president of Princeton university for eight years. The election saw Wilson and Roosevelt snapping back at each other, while Debs criticized all candidates, and Taft watched from the sideline. In the end, Louis Brandeis's \textbf{New Freedom} rhetoric won the election for Wilson (and Wilson would later appoint Brandeis as the first Jewish person on the Supreme Court). Wilson referred to all of his programs as done ``for liberty'', while he said Roosevelt wanted control. Wilson won.  \end{itemize}}%
+
+\topic{What did Wilson do for conservation? The book doesn't mention much about it, aside from him planning to work on it.}{\begin{itemize} \item Wilson came into office with a plan to work on four initiatives: conservation, access to raw materials, banking and finance, and tariffs and taxes. In terms of conservation, Wilson did push for a National Parks System, but that was about it. Breaking a custom since Jefferson, Wilson delivered speeches directly to Congress. Wilson was able to pass the Underwood-Simmons tariff, lowering tariffs at least ten percent. Additionally, Wilson reformed the banking system, creating a federal reserve. Wilson called himself a real trustbuster, as, when he came to office, he criticized several companies, such as the American Telephone and Telegraph Company, alongside his Attorney General. The passage of the Clayton Antitrust Act outlawed interlocking directorates (or having an owner of one company on the board of two competing companies). Gompers called this Act the ``Magna Carta'' of labor union organizers. \item Also, Wilson created the \textbf{Federal Trade Commission}. Although Wilson did much for finance and economy, he did go back on some promises. When a bill banning child labor came to him, he ignored it. Also, he did the same with a bill that would have helped farmers pay their mortgages. Wilson was also barely active in the field of race relations. A year into his term, though very much changed, due to the wrong turn of a carriage for the Archduke of Austria\dots  \end{itemize}}%
+
+\summary{Overall, the early twentieth century marked the beginning of new politics for America. At this point, many industries began to look as they do today. Alongside authors and philosophers came the muckraking journalists $-$ those who would get their hands dirty to investigate issues that could inform the public. This new level of information would be unlike ever before. Not only did it influence the public, it was a means for change. Those such as Upton Sinclair could investigate issues close to heart and let others know of their findings. The election of McKinley and consequent rise to power of Roosevelt would mark the beginning of the progressive presidents, conservationist presidents. Along with busting the trusts and monopolies, the establishment of nature reserves and national parks, namely Yellowstone and the Grand Canyon led to immense support from nearly all parties for Roosevelt. Following his leave, Taft came along, and worked on finances. Although he did work actively to ensure the destruction of monopolies and unfair businesses, he did not keep many of his promises $-$ especially those relating to conservation. In the tight, unusual election of 1912, a former, current, and future president ran, alongside a socialist. Ultimately, Wilson came to the presidency, and he would do much work to help the poor, especially by passing tariffs that were not passed by the previous three presidents. He worked with Congress directly to ensure cooperation, and, as such, worked to end the monopolies once and for all. With the Federal Trade Commission, Wilson hoped to proactively protect against artificial manipulation of markets. Wilson, although quite active in terms of domestic policy in his earlier years, would have to turn his attention to the threat from the East.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
