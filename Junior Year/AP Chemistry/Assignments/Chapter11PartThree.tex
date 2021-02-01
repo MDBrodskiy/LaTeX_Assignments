@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 11 $-$ Problems 78, 80}
+\date{February 2, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{77}
+
+  \item For the following reaction, the experimental rate expression is rate $=k[\ce{NO}]^2[\ce{H2}]$. The following mechanism is proposed. Is this mechanism consistent with the rate expression?
+
+    \begin{center}
+      \ce{2H2(g) + 2NO(g) &-> N2(g) + 2H2O(g)}\\
+    \end{center}
+
+    \begin{equation}
+      \begin{array}{c r}
+        \ce{2NO <=> N2O2} & \text{(fast)} \\
+      \ce{N2O2 + H2 -> H2O + N2O} & \text{(slow)} \\
+        \ce{N2O + H2 -> N2 + H2O} & \text{(fast)}
+      \end{array}
+      \label{1}
+    \end{equation}
+
+    \begin{center}
+      Yes, it is consistent, because \ce{N2O2} may be substituted for \ce{2NO}, which, in turn, can be changed into $[\ce{NO}]^2$.
+    \end{center}
+
+    \setcounter{enumi}{79}
+
+  \item Two mechanisms are proposed for the following reaction. Show that each of these mechanisms is consistent with the observed rate law: rate $=k[\ce{NO}]^2[\ce{O2}]$
+
+    \begin{center}
+      \ce{2NO(g) + O2(g) -> 2NO2(g)}
+    \end{center}
+
+    \begin{equation}
+      \begin{array}{l c r}
+        \text{Mechanism 1:} & \ce{NO + O2 <=> NO3} & \text{(fast)}\\
+        & \ce{NO3 + NO -> 2NO2} & \text{(slow)}\\
+        \text{Mechanism 2:} & \ce{NO + NO <=> N2O2} & \text{(fast)}\\
+        & \ce{N2O2 + O2 -> 2NO2} & \text{(slow)}\\
+      \end{array}
+      \label{2}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \ce{NO3} = \ce{NO + O2}\\
+        \ce{NO3 + NO} = \ce{2NO2}\\
+        \ce{O2 + 2NO} = \ce{2NO2}\\
+        \therefore \text{it is consistent}
+      \end{split}
+      \label{3}
+    \end{equation}
+
+    \begin{equation}
+      \begin{split}
+        \ce{N2O2} = \ce{2NO}\\
+        \ce{N2O2 + O2} = \ce{2NO2}\\
+        \ce{2NO + O2} = \ce{2NO2}\\
+        \therefore \text{it is consistent}
+      \end{split}
+      \label{4}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
