@@ -1,0 +1,220 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 10 \& 11 $-$ Review Set}
+\date{February 4, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item If the mass percent of \ce{KOH} is 22\% and density is $1.52 \left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$, what is the molality?   
+
+    \begin{equation}
+      \begin{split}
+        1000[\si{\milli\liter}]\rightarrow 1520[\si{\gram}_{total}]\\
+        .22\cdot1520=334.4[\si{\gram}_{\ce{KOH}}]\\
+        1520-334.4=1185.6[\si{\gram}_{\ce{H2O}}]\\
+        \frac{334.4}{39+16+1}=5.97[\si{\mole}]\\
+        \frac{5.97}{1.186}=5.03[\si{\Molal}]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item The molality of \ce{C12H22O} in water is $1.62\left[ \frac{\si{\mole}}{\si{\kilo\gram}} \right]$.  What is the mass percent of the solute?  
+
+    \begin{equation}
+      \begin{split}
+        1.62[\si{\mole}_{\ce{C12H22O}}]\rightarrow1[\si{\kilo\gram}]\\
+        1.62\cdot182=294.84[\si{\gram}]\\
+        1000+294.84=294.84[\si{\gram}_{\ce{H2O}}]\\
+        \frac{294.84}{1294.84}=23\%
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item Calculate the mass of \ce{HCl} in $5.0[\si{\milli\liter}]$ of concentrated hydrochloric acid (density = 1.19 $\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$) containing 37.23\% \ce{HCl} by mass.
+
+    \begin{equation}
+      \begin{split}
+        5\cdot1.19=5.95\\
+        5.95\cdot.3723=2.2[\si{\gram}]
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item A dilute sulfuric acid solution that is $3.39[\si{\Molal}]$ \ce{H2SO4} has a density of $1.18\left[ \frac{\si{\gram}}{\si{\milli\liter}} \right]$.  How many moles of \ce{H2SO4} are there in $375[\si{\milli\liter}]$ of this solution?
+
+    \begin{equation}
+      \begin{split}
+        1.18\cdot375=442.5[\si{\gram}]\\
+        .4425\cdot3.39=1.5[\si{\mole}]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item Calculate the mass percent of \ce{H2SO4} in a $6.80[\si{\Molal}]$ solution.
+
+    \begin{equation}
+      \begin{split]
+      6.8[\si{\mole}]\rightarrow 1[\si{\kilo\gram}]\\
+      6.8\cdot98=666.4\\
+      \frac{666.4}{1666.4}=40\%
+    \end{split}
+      \label{5}
+    \end{equation}
+
+  \item The mole fraction of \ce{C2H5OH} in a water solution is $0.0532$.  Calculate the molality of \ce{C2H5OH}.
+
+    \begin{equation}
+      \begin{split}
+        \frac{.0532}{x-.0532}=.0532\\
+        x=.9468\left[ \si{\mole} \right]\\
+        18\cdot.9468=17.0424[\si{\gram}]\\
+        \frac{.0532}{.017}=3.12[\si{\Molal}]
+      \end{split}
+      \label{6}
+    \end{equation}
+
+  \item How long will it take a first order substance with $k$ = $0.45\left[ \frac{1}{\si{\second}} \right]$ to be reduced to 33\% of the original concentration?
+
+    \begin{equation}
+      \begin{split}
+        t=\frac{\ln(3)}{.45}\\
+        =2.44[\si{\second}]
+      \end{split}
+      \label{7}
+    \end{equation}
+
+  \item How long will it take a first order substance with $k$ = $0.88\left[ \frac{1}{\si{\second}} \right]$ to be reduced to 1/8 of original?
+
+    \begin{equation}
+      \begin{split}
+        t=\frac{\ln(8)}{.88}\\
+        =2.36[\si{\second}]
+      \end{split}
+      \label{8}
+    \end{equation}
+
+  \item The decomposition of \ce{CO2} is second order with a rate of $0.008\left[ \frac{\si{\mole}}{\si{\liter\second}} \right]$ when the concentration is $0.12[\si{\Molar}]$.  Calculate the rate when the concentration of \ce{CO2} is $0.25[\si{\Molar}]$.
+
+    \begin{equation}
+      \begin{split}
+        .008=k[.12]^2\\
+        k=.555\left[ \frac{\si{\liter}}{\si{\mole\second}} \right]\\
+        rate=.555\cdot[.25]^2\\
+        =.0347\left[ \frac{\si{\Molar}}{\si{\second}} \right]
+      \end{split}
+      \label{9}
+    \end{equation}
+
+  \item Given the following data for the reaction of \ce{BF} with \ce{H2}, calculate $k$
+
+    \begin{center}
+    \begin{tabular}[H]{c c c}
+      [\ce{BF}] & [\ce{H2}] & Rate \\
+      0.1 & 0.1 & 0.0341 \\
+      0.2 & 0.233 & 0.159 \\
+      0.2 & 0.0750 & 0.0512
+    \end{tabular}
+  \end{center}
+
+  \begin{equation}
+    \begin{split}
+    \frac{.0512}{.159}=\left( \frac{.075}{.233} \right)^m\\
+    m=1\\
+    \frac{.0341}{.0512}=\left( \frac{.1}{.075} \right)\left( \frac{.1}{.2} \right)^n\\
+    n=1\\
+    .0512=k[.075][.2]\\
+    k=3.41\left[ \frac{1}{\si{\Molar\second}} \right]
+  \end{split}
+    \label{10}
+  \end{equation}
+
+\item Which step must be the rate-determining step in the following mechanism if the rate law is $Rate=k[\ce{H2}][\ce{NO}]^2$?
+
+  \begin{center}
+    \ce{2NO -> N2O2}\\
+    \ce{N2O2 + H2 -> N2O + H2O}\\
+    \ce{N2O + H2 -> N2 + H2O}
+  \end{center}
+
+  \begin{center}
+    Step Two
+  \end{center}
+
+\end{enumerate}
+
+\end{document}
+
