@@ -1,0 +1,301 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Biology
+% Professor: J. Polivka
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 16}
+\date{February 5, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Polivka}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item DNA vs Protein
+
+    \begin{enumerate}
+
+      \item DNA consists of pairs of Adenine, Thymine, Cytosine, and Guanine (C$\leftrightarrow$G, A$\leftrightarrow$T), and a phosphate backbone.
+
+      \item Contains four structures: primary, secondary, tertiary, and quaternary.
+
+      \item Primary source of genetic information
+
+        \begin{enumerate}
+
+          \item RNA can be used in some cases
+
+        \end{enumerate}
+
+      \item Eukaryotic Cells $-$ Multiple linear chromosomes, found in nucleus
+
+      \item Prokaryotic Cells $-$ Circular chromosomes, found in cytosol
+
+      \item Plasmids $-$ Separate extra piece of circular DNA
+
+    \end{enumerate}
+
+  \item Chargaff's Rules
+
+    \begin{enumerate}
+
+      \item Varies from species to species
+
+      \item All four bases not in equal quantity
+
+      \item In humans, base pairs are usually about:
+
+        \begin{enumerate}
+
+          \item A$\approx30.9\%$
+
+          \item T$\approx29.4\%$
+
+          \item G$\approx19.9\%$
+
+          \item C$\approx19.8\%$
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item DNA Structure:
+
+    \begin{enumerate}
+
+      \item Monomers: Nucleotides
+
+      \item Nucleotide structure:
+
+        \begin{enumerate}
+
+          \item Phosphate
+
+          \item Sugar (deoxyribose)
+
+          \item Nitrogenous Base
+
+            \begin{enumerate}
+
+              \item Adenine, guanine, thymine, cytosine
+
+            \end{enumerate}
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Nitrogenous Base and Pairing in DNA
+
+    \begin{enumerate}
+
+      \item Purines:
+
+        \begin{enumerate}
+
+          \item Adenine
+
+          \item Guanine
+
+        \end{enumerate}
+
+      \item Pyrimidines
+
+        \begin{enumerate}
+
+          \item Thymine
+
+          \item Cytosine
+
+        \end{enumerate}
+
+      \item Pairing
+
+        \begin{enumerate}
+
+          \item A:T
+
+            \begin{enumerate}
+
+              \item 2 Hydrogen Bonds
+
+            \end{enumerate}
+
+          \item C:G
+
+            \begin{enumerate}
+
+              \item 3 Hydrogen Bonds
+
+            \end{enumerate}
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Structure is a double helix
+
+  \item Anti-parallel strands
+
+    \begin{enumerate}
+
+      \item Nucleotides in DNA backbone are bonded from phosphate to sugar between 3' \& 5' carbons
+
+        \begin{enumerate}
+
+          \item DNA molecule has a 'direction'
+
+          \item Complementary strand runs in opposite direction
+
+          \item Direction is in the 5' direction
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Bonding in DNA
+
+    \begin{enumerate}
+
+      \item Phosphate backbone uses covalent bonds (strong)
+
+      \item Base pairs use hydrogen bonds (weak)
+
+    \end{enumerate}
+
+  \item DNA Packing
+
+    \begin{enumerate}
+
+      \item DNA double helix wraps around histones (``beads on a string'')
+
+      \item This wrapped ``wire'' wraps around again
+
+      \item This creates a chromosome
+
+    \end{enumerate}
+
+  \item DNA Replication
+
+    \begin{enumerate}
+
+      \item Is semi-conservative
+
+      \item Base pairing allows each strand to serve as a template for a new strand
+
+      \item New strand is 1/2 parent template and 1/2 new DNA
+
+      \item Step One: Replication
+
+        \begin{enumerate}
+
+          \item DNA is unwinded through use of the helicase enzyme
+
+          \item Replication fork is made
+
+          \item Helicase breaks the hydrogen bonds between two strand separating them
+
+          \item Free nucleotides are present in the nucleus
+
+          \item There is always a leading and a lagging strand
+
+          \item DNA Polymerase creates complementary base pair
+
+          \item DNA Polymerase moves towards 3' end
+
+          \item Leading Strand:
+
+            \begin{enumerate}
+
+              \item RNA Primer is formed from RNA nucleotides, and bonds to start strand
+
+              \item DNA Polymerase lays down the nucleotides in 5' to 3' direction of new DNA strand
+
+              \item Can only add nucleotides to 3' end of a growing DNA strand
+
+            \end{enumerate}
+
+          \item Lagging Strand:
+
+            \begin{enumerate}
+
+              \item Runs in opposite direction of leading strand
+
+              \item RNA Primer is joined to the parent strand by RNA Primase
+
+              \item DNA Polymerase then works in the 5' to 3' direction, while laying down nucleotides forming Okazaki Fragments
+
+              \item RNA Primer is removed from the fragments and replaced with DNA nucleotides
+
+              \item DNA Ligase attaches the fragment backbones to each other
+
+            \end{enumerate}
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item DNA is edited and proofread
+
+    \begin{enumerate}
+
+      \item Many forms of Polymerase cut and remove abnormal bases, proofread and correct typos, and repairs mismatched bases
+
+      \item Reduces error rate to 1 in 10 billion
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
