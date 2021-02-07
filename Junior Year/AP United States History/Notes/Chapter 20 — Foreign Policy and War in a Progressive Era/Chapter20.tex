@@ -1,0 +1,157 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 20 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{What was Grover Cleveland's reasoning for not annexing Hawaii? Was it because he did not want to deal with the rebels?}{\begin{itemize} \item As time went on, America moved into what many call the age of \textbf{American Imperialism}. Lagging behind other, European countries, America did not want to miss its chance to gain territory. This, in tandem with Thayer Mahan's request for expansion of the Navy, fueled the American expansion sentiment, and would pretty much conclude the Manifest Destiny era. \item First of all, the acquisition of Alaska was one of the most important pieces of territory America could have gotten. Although initially thought of as just a barren wasteland with fisherman, gold and oil would later be discovered in the region, and the Klondike Gold Rush would begin. Initially Russian territory, it was sold because the Russian local governments were constantly harassed by the native tribes. On October 18, 1867, Alaska was purchased for \$7.2 million. In 1884, local American governments would be established, and, in the late 1880s, Alaska became a territory. In 1892, it was added to the Homestead Act legislation. \item In addition to Alaska, America acquired Hawaii, which was also very important. For a while before any word of annexation, many Americans already lived in Hawaii. Hawaii established many trade agreements with the US. For example, King Kalakaua formed an agreement in 1874 that allowed the US to be the only country with trading and naval bases in Hawaii, in exchange for being able to export sugar duty-free. When Kalakaua died, however, his sister came to power. Queen Liliuokalani was extremely anti-American, and she wanted to make Hawaii for Hawaiians. This caused American planters on the island to form the Annexation Club, which later overthrew the Queen. Seeing an opportunity, the US sent their navy to the islands, however, Cleveland proved to be against annexation. McKinley, however, saw it as Manifest Destiny, and, in 1897, the planters agreed to annexation. Using the John Tyler's Texas technique (joint-resolution), McKinley was able to acquire Hawaii.  \end{itemize}}%
+
+\topic{What prompted the 1894 US tariff on sugar to be passed? Was the only reason the Sugar Trust wanted to pass the tariff to make more money? How would a tariff do that for them?}{\begin{itemize} \item Always on the American radar for acquisition, Cuba would soon lead to tensions with Spain towards the end of the nineteenth century. Following an 1894 tariff on sugar in the US, lobbied for by the Sugar Trust, ruined the Cuban economy. At a time when Cuba was weak, in 1895, Jos\'e Mart\'i, who lived in New York for a period, returned to Cuba to promote a revolution. Spanish soldiers were killed, and sugar cane fields were burned. When McKinley came to power, he made it clear that Spain should get away from Cuba. Sensationalized media, by editors like Hearst and Pulitzer, shaped the public opinion on the issue to favor the government. Many American investors worried about their investments in Cuba. \item In February of 1898, the American USS \textit{Maine} blew up in Havana. Although Spanish involvement could not be confirmed, they were still blamed by the US. Congress declared war, and troops flooded in. The battles were painstakingly slow and took large tolls on the ranks of the troops. In 4 months, 345 Americans died in action, while 5000 died from diseases. Six warships under George Dewey's command sank the Spanish fleet at Manila Bay on May 1, 1898, which gave the US absolute control over the area. The United States continues its imperialistic trajectory, and continued on to Puerto Rico. A constant thorn in McKinley's side was the Teller Amendment, included in the declaration of war with Spain, which stated that Cuba could not be acquired as a US territory. After Puerto Rico, America moved for the Philippines. Eventually, the Treaty of Paris\footnote{December 1898} had Spain cede Cuba, Puerto Rico, and the Philippines, in exchange for \$20 million.  \end{itemize}}%
+
+\topic{Why did McKinley think that the Philippines would be unable to govern themselves? Was it a racial predisposition?}{\begin{itemize} \item Although many members of the American government, including McKinley, worked hard to take the territories, many in the public disagreed. After McKinley decided that he was going to bring religion into play, and reeducate the natives, insurrection struck. Many Filipinos did not want to be annexed, and Emilio Aguinaldo led the revolt. Over 220000 Filipinos were killed. Many anti-war and anti-annexation groups formed in the US. The Anti-Imperialist League tried to prevent the violence and forceful taking of the land. Many supported the league: Carnegie, Charles Francis Adams (descendent of two presidents), Jane Addams, Grover Cleveland, and many more. \item The main argument for being against the war in the Philippines was that ``\textbf{the Constitution follows the flag}'', or, in other words, if the Philippines were to become ruled by America, the Filipinos would have to receive the same rights guaranteed by the Constitution. The Supreme Court settled this in a 5-4 decision in the Insular Cases, which declared the Philippines and Puerto Rico territories, not future states.  \end{itemize}}%
+
+\topic{Surprising that the book did not mention Commodore Matthew Perry when discussing relations with Japan and their rapid industrialization \dots why did it not mention him?}{\begin{itemize} \item Especially after the Gold Rush, Roosevelt wanted to build a canal for quicker travel. Although many engineers recommended to build it across Nicaragua, Roosevelt was determined to use Panama. The \textbf{Roosevelt Corollary} aided him in his pursuits to construct the canal. This corollary to the Monroe Doctrine held that America could intervene in any Latin American nation that could not handle its own affairs. Passed as a result of Venezuela defaulting on its payments to European countries, Roosevelt was able to intervene in Colombian affairs. A revolution started by the Panamanian people against the Colombian government facilitated Roosevelt's task, as it made Panama independent. Although workers died at astonishing rates, the canal was finally finished in 1914. \item The Russo-Japanese war, caused by the rapid industrialization of Japan, and the imperial thought of the time, needed intervention, as both sides were tiring each other out, without an end to the violence. Secretly, the Japanese government sent a request to Roosevelt to organize a meeting between Russia and Japan. Roosevelt promptly met the two representatives in New Hampshire, and relative peace was made. Many foreign governments, though, still had deteriorating relations with the US. Russia, for example, was angered when the US sent a formal protest to the pogroms. Japan had poor relations due to the segregation of Japanese, Chinese, and Korean students in California. Calls for war surrounded this anger, but Roosevelt mediated the issue. He made the \textbf{Gentlemen's Agreement}, which stated that United States would not pass anti-Japanese immigration laws, however, Japan had to manage the amount of people who moved to the US. Simultaneously, though, Roosevelt used the calls for war to receive funding from Congress to support the Navy. He then sent the \textbf{Great White Fleet} to a Japanese port, which consisted of sixteen white-painted battleships. \item Additionally, China also had its grievances. Aside from the segregation of Chinese students, the Americans had crushed the anti-foreign Boxer Rebellion. This causes uprising in China, and protest and boycott against the US and its products, respectively.  \end{itemize}}%
+
+\topic{What exactly were William Jennings Bryan's  reservations about the loan? Did he want to block it just so that China wasn't as powerful?}{\begin{itemize} \item Roosevelt supported the Open Door Policy for trade. Taft, on the other hand, said that people should invest anywhere they saw opportunity. This kind of policy became known as \textbf{dollar diplomacy}. Towards the end of Taft's presidency, JP Morgan was about to loan China money to build rail lines. When Wilson came to power, though, this would not occur. Wilson's secretary of state, William Jennings Bryan, did not want the loan to happen. This only made things worse in the long run, though, as these rail lines would be important for China during World War. Additionally, a new law in California stated that no one ineligible for citizenship could buy land. This was quite clearly aimed at the Japanese community, and Jennings Bryan took two trips to try and rectify the situation, but the law was not rescinded. \item Wilson also had to deal with the southern neighbors. Wilson and Bryan both wanted to keep out of the revolutionary events, stating that they didn't want a repeat of the Mexican-American war. At a certain point, Wilson did acknowledge the revolution, though. He helped stop an arms shipment that was intended for Huerta's government, and Mexican forces fired on US Marines, killing 17. When Carranza and Pancho Villa split, another Civil War broke out. Wilson sent John Pershing (the same Great War general) into Mexico. Wilson, however, pivoted in 1917, and he sent Pershing to Europe. \end{itemize}}%
+
+\topic{\begin{center} Although I don't really know your taste in music, given the context of this chapter, I would like to recommend \textsc{Sabaton}. This group holds the central theme of singing about war and armed conflicts. Check out some of their Great War songs:\\\end{center} \begin{center}\includegraphics[width=.9\textwidth]{qr-code.png}\\ Scan or click \href{https://www.youtube.com/watch?v=oXnnbjC7Fok\&list=PLA_zjX3swAf6\_w-MNVZNLG8bGbKBhZP4G\&index=10}{here}\end{center}\\ Also, I was wondering why Fraser did not mention the possibility that the sinking of the \textit{Lusitania} and the Zimmerman Telegraph could have just been ploys to get America to enter the war.}{\begin{itemize} \item Following the assassination of Archduke Franz Ferdinand by Gavrilo Princip, a member of the Serbian Black Hand nationalist group, war broke out. Alliances were made quickly, and Austria-Hungary, Germany, and the Ottoman Empire became the Central Powers, while Russia, France, and Britain became the Allied Powers. And so, the Great War had begun. A young engineer, Herbert Hoover created the American Red Cross to cope with the casualties and aid soldiers. Although Wilson announced neutrality and did not want to get into the war, the would come for the US to enter. For some time, relative neutrality was kept, but when it affected US trade, it was clear that the US sided more with the Allies. JP Morgan tried to negotiate loans to Britain and France, but he was promptly barred by the administration, until Bryan and Wilson allowed ``commercial credit.'' \item Although they did not want to enter the war, America still built up its supplies. A draft was had to get more men, while millions perished in Europe, especially on the Eastern Front. The use of German U-boats (Unterwasserboot) put everyone on edge, as ships could be sunk without seeing the opposition. Wilson believed that nonbelligerent people should be able to travel freely, and, thus, Germans should not use U-boats. All of the allies alike were angered when (supposedly) a German U-boat sank a cruise liner named the \textit{Lusitania}. 1200 people died. America did try to initiate some peace talks, but there was always one side that declined. Bryan wanted to protest the British blockade and bar passenger ships from carrying munition. Wilson declined, and Bryan resigned because he did not want to sign the second note. \item Wilson was having personal problems too. Wilson's first wife, Ellen Wilson, died in August of 1914. Although he was quite broken-hearted, less than a year later, he met another woman and married Edith Bolling Galt. Albeit he did consider not running, Wilson ran once again in the 1916 election and won. He tried to broker peace, but was unsuccessful. In early 1917, Germany sent letters indicating that it would resume using all weapons available, and, at the same time, (supposedly) sent the Zimmerman telegraph, which was intercepted by the British. This telegraph called for Mexico to enter the war against the US. The US used this as a reason to enter the war. On April 2, 1917, America declared war on Germany.  \end{itemize}}%
+
+\topic{I love that Fraser mentioned liberty cabbage. It made me think of how hamburgers became liberty steaks and french fries became freedom fries.}{\begin{itemize} \item With judgement and antiwar sentiment all around, Wilson wanted to garner support for the war. He created the \textbf{Committee on Public Information} (CPI), and placed George Creel as its head. Other journalists, like Ida Tarbell, were hired. Many artists were hired to create propaganda posters and promote the war. Movie studios made films, such as \textit{The Kaiser: Beast of Berlin}. Additionally, the US tried to sell war bonds. Everywhere one could look was filled with war propaganda and support. \item During this time, Herbert Hoover was becoming famous for his valiant humanitarian efforts in Belgium. He became the head of the Food and Drug Administration, and urged people to conserve food. Posters saying \textsc{Food will win the war $-$ Don't waste it} were printed, and people were urged to grow their own gardens. \item Nongovernment entites were also on the rise, such as the American Protective League (APL), which sought out many German immigrants to persecute and attack them, on the basis that they were spies. This made many German-Americans hyperpatriotic, as they renamed sauerkraut to liberty cabbage, and made other unnecessary moves. IWW meetings were attacked, as people believed they were infiltrated with spies. \item The most important evolution during this period was that the government broke its own constitution. The \textbf{Sedition Act} of 1918 illegalized speech against the government or war effort $-$ directly against the first amendment. Many, such as Jane Addams were appalled at such legislation. The \textbf{Espionage Act} of 1917 was used by the government to seek out possible dissidents and incarcerate them. Eugene V. Debs was imprisoned under such charges for ten years.  \end{itemize}}%
+
+\topic{How long did it take for news of America'a entry into the war to reach the Central Powers? What was the initial reaction?}{\begin{itemize} \item With the American entry into the war, it was nearly over. Germans needed to lighten the pressure placed on the troops, but what could they do? Revolution. Vladimir Ilyich Ulyanov (Lenin) was sent back to Russia to instigate a revolution, and the Treaty of Brest-Litovsk was signed; however, Germany was not quickc enough, and 850000 dough boys already landed in Europe. Morale was at an all-time low for the Germans. Cease-fire was called in 1918, on the eleventh day, of the eleventh month, at the eleventh hour. \item Now came time for peace talks. Of course, only the victors were invited, with the exception of Russia, because, well, it's Russia, and they were too busy with their revolution. Wilson was the first president to leave the United States during their term, as he traveled to France for peace talks. Discussions were fierce, and no one wanted to compromise. Britain and France really wanted to pressure Germany, and put large restrictions and payments on them, while Wilson wanted compromise. In the long run, Britain and France would make the wrong choice, as these restrictions, and, especially the war-guilt clause would come back to bite them. \item Wilson walked into the meetings with a planned agenda, something he would make out as the \textbf{Fourteen Points}, the most important of which was the creation of an international organization that would prevent future conflicts. This would become known as the League of Nations. After months of compromise and drafting, the Treaty of Versailles was created. Wilson came back home triumphantly, and he nearly begged Congress to sign the treaty. Months later, Congress would reject the treaty, which was quite ironic in that America, the sponsor of the League of Nations, did not join its creation. It was time to move into a new age $-$ the time between the wars, better known as the Age of Disillusionment.  \end{itemize}}%
+
+\summary{As time flowed into the late nineteenth and early twentieth centuries, drastic change, especially for the United States would occur. This was a period of imperialism and domination for the United States, as the US fought its way onto the world stage. Alaska and Hawaii would be acquired, and Manifest Destiny would be more complete than people had thought possible. War with Spain brought even more new territories, both close (Cuba) and far (Philippines), and the US did not know what to do with them. The United States became involved in international conflicts, such as brokering peace between Russia and Japan during the Russo-Japanese War. As Wilson progressed through his first term, the threat of war in Europe came. Maintaining its usual isolationist policy, Wilson tried to remain neutral, although it was clear that the US supported the Allied Powers. Trying to stay away from war would fail too, though, as America entered in April of 1917, following the sinking of the \textit{Lusitania} and the Zimmerman Note. With the entrance of the US, Germany tried to free its more violent front, and, consequently, they signed the Treaty of Brest-Litovsk, taking Russia out of the equation. Ending in November 1918, peace talks began. The Treaty of Versailles was produced, and it was quite lackluster, with Congress not even approving it. With the treaty signed exactly five years after the first shot of the war had been fired, disillusioned vets returned.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
