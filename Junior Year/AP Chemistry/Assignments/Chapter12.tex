@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 12 $-$ Problems 6, 16, 18, 22}
+\date{February 11, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{5}
+
+  \item Write equilibrium constant ($k$) expressions for the following reactions:
+
+    \begin{enumerate}
+
+      \item \ce{Na2CO3(s) <=> 2NaO(s) + CO2(g)}
+
+        \begin{equation}
+          k=[P_{\ce{CO2}}]
+          \label{1}
+        \end{equation}
+
+      \item \ce{C2H6(g) + 2H2O(l) <=> 2CO(g) + 5H2(g)}
+
+        \begin{equation}
+          k=\left[ \frac{\left( P_{\ce{CO}} \right)^2\left( P_{\ce{H2}} \right)^5}{P_{\ce{C2H6}}} \right]
+          \label{2}
+        \end{equation}
+
+      \item \ce{4NO(g) + 6H2O(g) <=> 4NH3(g) + 5O2(g)}
+
+        \begin{equation}
+          k=\left[ \frac{\left( P_{\ce{O2}} \right)^5\left( P_{\ce{NH3}} \right)^4}{\left(P_{\ce{NO}}\right)^4\left( P_{\ce{H2O}} \right)^6} \right]
+          \label{3}
+        \end{equation}
+
+      \item \ce{NH3(g) + HI(l) <=> NH4I(s)}
+
+        \begin{equation}
+          k=\left[ \frac{1}{\left( P_{\ce{NH3}} \right)} \right]
+          \label{4}
+        \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{15}
+
+  \item At $800[\si{\degree\Celsius}]$, $k=2.2\cdot10^{-4}$ for the following reaction. Calculate $k$ at $800[\si{\degree\Celsius}]$ for:
+
+    \begin{center}
+      \ce{2H2S(g) <=> 2H2(g) + S2(g)}
+    \end{center}
+
+    \begin{enumerate}
+
+      \item the synthesis of one mole of \ce{H2S} from \ce{H2} and \ce{S2} gases.
+
+        \begin{equation}
+          \begin{split}
+            k_i=\frac{1}{k_f}\\
+            k_i=k_f^{\frac{1}{2}}\\
+            k=\frac{1}{k^{\frac{1}{2}}}\\
+            =67.42
+          \end{split}
+          \label{5}
+        \end{equation}
+
+      \item the decomposition of one mole of \ce{H2S} gas
+
+        \begin{equation}
+          \begin{split}
+            k_i=k^{\frac{1}{2}}\\
+            \left(2.2\cdot10^{-4}\right)^{.5}=.015
+          \end{split}
+          \label{6}
+        \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{17}
+
+  \item Given the following data at $25[\si{\degree\Celsius}]$, calculate $k$ for the formation of one mole of \ce{NOBr} from its elements in the gaseous state
+
+    \begin{center}
+      $\begin{array}{l r}
+        \ce{2NO(g) <=> N2(g) + O2(g)} & k=1\cdot10^{-30}\\
+        \ce{2NO(g) + Br2(g) <=> 2NOBr(g)} & k=8\cdot10\\
+      \end{array}$
+    \end{center}
+
+    \begin{equation}
+      \begin{split}
+        k_1=\left(\frac{1}{10^{-30}}\right)^(.5)\\
+        k_1=10^{15}\\
+        k_2=\sqrt{80}\\
+        k_2=8.94\\
+        k_{total}=8.94\cdot10^15
+      \end{split}
+      \label{7}
+    \end{equation}
+
+    \setcounter{enumi}{21}
+
+  \item Calculate $k$ for the formation of methyl alcohol at $100[\si{\degree\Celsius}]$, given that at equilibrium, the partial pressures of the gases are $P_{\ce{CO}}=.814[\si{\atm}]$, $P_{\ce{H2}}=.274[\si{\atm}]$, and $P_{\ce{CH3OH}}=.0512[\si{\atm}]$
+
+    \begin{center}
+      \ce{CO(g) + 2H2(g) <=> CH3OH(g)}
+    \end{center}
+
+    \begin{equation}
+      \begin{split}
+        k=\frac{.0512}{.814\cdot(.274)^2}\\
+        k=.838
+      \end{split}
+      \label{8}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
