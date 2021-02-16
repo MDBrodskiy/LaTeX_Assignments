@@ -1,0 +1,161 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 21 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Was the Red Summer a parallel to the soon-to-come Red Scare, with Palmer being like McCarthy?}{\begin{itemize} \item Although the 20s became known as ``roaring'', the previous decade would end with turmoil in the United States. The influenza disease spread through communities, killing anyone, no matter the age. Strikes and race wars raged across the whole United States. In January 1919, 35,000 workers in Seattle went on strike, with another 60,000 joining them the next month. The whole city came to a standstill. In Lawrence, Massachusetts, workers successfully demanded and received a 48 hour work week. Additionally, in September of that year, the Boston police force revolted, which caused days with looting and robbing by violent mobs. The same month, steel workers struck because Elbert Gary refused to meet with union representatives, and, a month later, coal workers stopped working. \item Strikes were not the only things that caused turmoil. Bombs were mailed to the Postmaster General, Attorney General, several Senate members, Mayor Hanson (Seattle), and immigration authorities. Riots spread on May Day, with one killed and forty injured. The American Legion was born. The Legion consisted of World War veterans, who wanted to promote American patriotism. In Centralia, Washington, some IWW members killed four Legion members, who, in return, lynched some IWW members. Additionally, throughout 1919, half a million Americans were killed by influenza. \item There was a rising worry that the riots had to do with Marxist-Leninist influence from Russia. As McCarthy would about two decades later, Attorney General Palmer, with weak evidence, would raid various houses and arrest many under the suspicion that they were communists. Dubbed \textbf{Palmer Raids}, many people were deported to Russia. In 1920, tens of thousands of people were arrested, which caused a loss of public support for the raids. \item Race riots began to pop up in various cities, namely Chicago. Chicago saw probably the largest riots of the summer, with 23blacks and 15 whites dead in 5 days. In Charleston, South Carolina, riots between white sailors and local blacks occurred. This summer was named the Red Summer. \end{itemize}}%
+
+\topic{Why did Rockefeller support the Anti-Saloon League? Was it because he thought people would work better if alcohol was taken out of the equation?}{\begin{itemize} \item Temperance movements, such as the WCTU and the Anti-Saloon League would be victorious, as the passage of the eighteenth amendment would cause the prohibition era. Harding pleaded for normalcy, which was really just a request to stop asking for reforms, but the 20s would not stop surprising, as the eighteenth amendment (the only to ever be repealed) banned alcohol. Rockefeller's support of the Anti-Saloon League greatly helped the cause, as he hired political experts to lobby and push through legislation to support it. The Volstead Act was also passed, and it banned trade and manufacture of alcohol, this time not only hard liquors but also wines, and anything with more than half a percent of alcohol in it. Many loopholes made the act essentially useless, especially with the criminal activity that made alcohol plentiful. On the day prohibition took effect, stores old out of alcohol, as people horded it while they could. As much as a thousand dollar fine could be given for violating the amendment and the Volstead act.  \end{itemize}}%
+
+\topic{If you find this chapter interesting, you should check out the show \href{https://en.wikipedia.org/wiki/Boardwalk\_Empire}{Boardwalk Empire}, or my favorite movie, \href{https://en.wikipedia.org/wiki/Once\_Upon\_a\_Time\_in\_America}{Once Upon a Time in America}\\\\ I'm surprised there is no mention of other organized crime, such as Enoch ``Nucky'' Johnson, or, in New York, Meyer Lansky, ``Bugsy'' Siegel, and ``Lucky'' Luciano.}{\begin{itemize} \item The 20s were a lawless but joyful age. In Chicago, Torrio and Capone's assassination of ``Big Jim'' Colosimo (for not wanting to go along with prohibition) put the duo into power. This turned Chicago into a city controlled by the organized criminals, and this was not an isolated instance. The same was happening in cities across the United States, most importantly New York. Such criminals bribed city officials, paid off police officers, and made alcohol bountiful, though expensive, all while combating rival gangs. The most famous instance is that of the St. Valentine's Day Massacre, where Capone hired killers to take out ``Bugs'' Moran. \item Lawlessness wasn't just related to gangsters. Charles Ponzi opened an ``investment fund'', where he received money from people, promising them big gains. He would then pay off earlier investors with money from later investors. He barely lasted a year, and, in August 2020, his ``Ponzi Scheme'' collapsed. \item Additionally, corruption occurred on the government level as well. Harding, who rarely said no, let many of his officials take advantage of the system. In 1909, the government obtained three important oil reserves, two in California at Elk Hills and Buena Vista, and one in Wyoming, at Teapot Dome. Harding approved his Secretary of Interior's request to transfer control of the oil fields from the Navy to the Department of the Interior. Harding approved. In 1922, the US was worried about Japanese militarism, and, as such, they wanted oil to be sent to Pearl Harbor. Albert Fall leased the reserves to Harry Sinclair and Edward Doheny for low rates. They then pumped oil from the reserves, while giving oil to the Navy as a ``fee''. When people discovered the level of government corruption, the events became known as the \textbf{Teapot Dome Scandal}. Other officials, such as Charles R. Forbes bought goods from their friends at a high price. Forbes spent 200 million in government money, in just two years. Other officials followed similar, corrupt trajectories.  \end{itemize}}%
+
+\topic{Did the amendment permit voting only in the presidential election, or for any votes that occurred, whether local, state, or federal.}{\begin{itemize} \item Perhaps more important than prohibition and the eighteenth amendment was the passage of the nineteenth amendment for women's suffrage. For the first time ever, voting for women was permitted on a federal level. Sadly, Susan B. Anthony and Elizabeth Cady Stanton died before it was passed, but one women, Carrie Chapman Catt campaigned and presided over the victory. She participated in the Temperance Union, as well as the National American Women Suffrage Association (NAWSA). Catt was NAWSA president from 1900 to 1904, as well as 1915 to 1920. On January 10, 1918, the house permitted the amendment with a 274-136 vote. The Senate was slow, but after Catt campaigned hard, it was passed. Tennessee became the required 36th state to allow the amendment, which permitted women to vote in the 1920 election.  \end{itemize}}%
+
+\topic{It is clear that female social behavior changed greatly during the period, but what about the males? How did men's social behavior change?}{\begin{itemize} \item With the passage of the nineteenth amendment came social change for women. Many began to cut their hair short and dress in clothes that showed more skin $-$ such women were called ``flappers''. Although the eighteenth amendment influenced it more, women began to frequent speakeasies. In 1921, Congress passed the Sheppard-Towner Act, which gave federal funds to prenatal and infant care for women. In 1922, the Cable Act protected the citizenship of women who married non-citizens. By 1923, three women, all of whom were republicans, were in the House of Representatives. \item In 1921, Margaret Sanger, a young nurse, promoted birth control by organizing meetings and creating organizations to help the cause. She started the American Birth Control League, now Planned Parenthood, to help women. \item Technology began to shape the world as well. Automobiles became more popular, as well as washing machines, refrigerators, vacuum cleaners, toasters, and especially movies and radios. Auto industries and the industries that related to it boomed. The 1920s was the first decade in which more Americans lived in cities than on farms. Movie theaters opened, showing things such as Charlie Chaplin, Mickey Mouse, and many other forms of entertainment. Newspapers such as \textit{Time} illuminated many figures, such as Babe Ruth of the Yankees. Boxing events became more popular, with each one bringing in roughly a million dollars in revenue. Gertrude Ederle became the first woman to swim the English Channel in 1926. Charles Lindbergh flew solo across the Atlantic in 1927. \textit{The New Yorker} suggested places to visit in the city, as well as recommended the night life. Many disillusioned writers published classic novels during this period as well, namely Ernest Hemingway.  \end{itemize}}%
+
+\topic{I am a bit confused as to what happened regarding the Black Star Line. Why did whites and blacks begin to criticize it?}{\begin{itemize} \item During the 10s and 20s, many southern blacks participated in the \textbf{Great Migration}. This was a large exodus from the South of blacks who looked for a better life. With them, they brought their experiences, culture, and ideas, including the blues, which came from jazz, ragtime, and gospel. During the First World War, around 50,000 African-Americans moved to Chicago from the South, with 100,000 more in the next decade. As is predictable, the plantation owners tried to do everything they could to prevent the people from moving, such as calling the black-run \textit{Chicago Defender}, which they called subversive. Richard Wright wrote about the experience of the migrating people. \item Many migrants had problems finding jobs, as a small percent of the migrating black population were skilled professionals, and they were teachers and preachers. Black men usually became janitors, porters, servants, or waiters, while women usually became cooks, laundresses, maids, or servants. The new age for the black population that occurred in Harlem was called the \textbf{Harlem Renaissance}. This era, greatly influenced by Marcus Garvey, saw a level of self-determination never before seen from the black population. Garvey's UNIA helped unite and push progress for the black population, as unions did for workers. Garvey established the Black Star Line shipping company, which carried passengers and freight from America to Africa and the Caribbean. Eventually, the line would collapse, although Garvey still had some influence after he was deported to Jamaica.  \end{itemize}}%
+
+\topic{If the Klan was ``revived'' by a man from Texas, how would someone from, say, Maine, join or hear about rallies or events? Were the people who attended events mostly members, or were they there for just the entertainment. Also, was this Klan as violent as the original? The book talks more about their campaigning than anything.}{\begin{itemize} \item Although it had been put down and relatively inactive since the Grant Administration, William Joseph Simmons restarted the KKK, as he was nostalgic for earlier eras. There were barely over five hundred members during Simmons' time, but that increased to as many as five million under Hiram Wesley Evans from Texas. He aimed the hate at African-Americans, immigrants, Catholics, Jewish people, and those who challenged prohibition. Additionally, the Women's KKK, or WKKK was created. The Klan wanted ``pure Americanism'', and they would often attack people they opposed. \item Additionally, the went on a ``Hearts and Minds'' campaign across America, where they provided entertainment, donated bibles to schools, and held rallies with speeches. The (anti-Klan) American Unity League believed that people needed to achieve true Americanism, not pure Americanism as the Klan wanted. Both sides went on campaigns against each other, but, by 1930, the Klan was reduced to as many as 50,000 members.  \end{itemize}}%
+
+\topic{Exactly what kind of ``scientific'' data was provided to prove the point of the eugenicists? Were all of the tests administered linked to the group, which could easily falsify the evidence?}{\begin{itemize} \item Along with the Klan came the idea of \textbf{eugenics} from Francis Galton in England. It quickly became popular in America, and those like Sanger supported it, as they believed that ``unfit'' people should not be permitted to have children. Henry Goddard, another eugenicist, established a testing program on Ellis Island to see the intellectual fitness of the immigrants. IQ tests rose from the eugenics theories, and, soon, these tests would be used in schools, immigration, and the military. \item The eugenics theories were later applied to Hitler's ideas of an \"ubermensch (superman), and to justify that others were the \"untermensch (inferior man). \item Aside from the Klan and eugenicists, the general mood in America post-World War I was isolationist. Many Americans wanted to limit the influx of immigrants, which had not been done before. Due to many reasons, some racist, some to main integrity and infrastructure of the United States, Americans would slow the traffic. The Immigration Restriction League (IRL) focused on slowing, or even halting immigration. The Immigration Restriction Act of 1921 would, for the first time, set immigration quotas. Congressman Johnson would end up significantly limiting immigration, as he despised Japanese people, and suspected immigrants for the creation of the IWW. He agreed with the eugenicist ``scientists'', and, as the chair of the Committee on Immigration, he significantly limited all non-North European and non-North or South American countries. Many countries, especially Japan and China, protested, but America set its limits. The execution of Sacco and Vanzetti showed the immigrant sentiment at the time.  \end{itemize}}%
+
+\topic{Were the farmers in any way helped financially? Would they just abandon the farms and leave if they lost all the profit?}{\begin{itemize} \item During the World War, many farmers began to experience a huge increase in crop prices, as France and England were unable to grow their own. This price increase allowed the farmers to purchase amenities previously thought unaffordable; however, an end to this came quickly. The war ended, and the regular economy resumed, meaning crop prices fell. Because the prices fell, farmers worked harder to produce more than they had to account for the loss in profit, which, ultimately, decreased the price per crop even further, creating a perpetual, downward cycle. Additionally, with the flooding of the Mississippi River in 1927, many farmers seemed to have experienced the Great Depression earlier than others. \item Additionally, education clashed with religion. Many established high schools began teaching Darwin's theories of Natural Selection and Evolution to the children. Appalled at this, many religious families were angered. This argument sparked the establishment of the fundamentalist religious ministers, who were quite pessimistic, and took the bible's words as absolutely true. John Thomas Scopes, a teacher in Dayton, Tennessee, used the state required book, Hunter's \textit{A Civic Biology}, to teach children. An argument led to the trial of Scopes, where his lawyer became Clarence Darrow, and William Jennings Bryan played the prosecution. Scopes would be found guilty, and he would technically have to pay a hundred dollar fine, although the case was thrown out so that it wouldn't go to the Supreme Court. Textbooks began to change their wording to better fit the situation.  \end{itemize}}%
+
+\topic{For the Five Powers Treaty, how would the limitations on France and Italy work? If Britain and the US had five ships, and Japan had three, how would Italy and France have 1.75 of a ship? Was it rounded up or down?}{\begin{itemize} \item As president, winning the election of 1920 with 16 million votes, against James Cox with 9 million, and Eugene Debs with one million, Harding appointed many well-known names to office. He made Taft Chief Justice, and Charles Evans Hughes (the 1916 republican candidate) Secretary of State. Hughes, although he knew America would never join the League of Nations, wanted to negotiate treaties. At the \textbf{Washington Conference}\footnote{1921}, Hughes agreed to the \textbf{Five Powers Treaty}, which set limits on navy sizes through ratios. America and Britain were allowed to keep five ships, for every three Japanese ships, and every 1.75 Italian and French Ships. These limits worked for battleships, battle cruisers, and aircraft carriers. Other ships were unlimited. \item Andrew Mellon became the Secretary of Treasury, and Herbert Hoover was the Secretary of Commerce. In August, 1923, Harding died, leaving Coolidge as president. Coolidge ran for president in the 1924 election, and, because the democratic party was divided, he won with as big a lead as the 1920 election for Harding. Charles Dawes, Coolidge's vice president, negotiated the \textbf{Kellogg-Briand Pact}, which ``outlawed'' war. \item Coolidge did not run for another term in 1928. Instead, Hoover was nominated. Hoover was up against Smith, although the two were very similar politically, except for their views on prohibition (Hoover for, Smith against). Hoover had an edge over Smith, though, because he was a protestant, while Smith was a catholic. In the end, Smith carried 40 percent of the vote, with Hoover carrying 58.  \end{itemize}}%
+
+\summary{Although the 10s ended with turmoil caused by racial violence, protests, and the influenza disease, the 20s, nicknamed ``roaring'' became one of the best eras for the average citizen. Although prohibition had been passed, bootleggers such as ``Nucky'' Johnson in Atlantic City and Al Capone in Chicago made alcohol plentiful, yet expensive. The amount of loopholes present in the eighteenth amendment and the Volstead Act made it so alcohol really wasn't that limited. Possibly more important than prohibition was the nineteenth amendment, which gave the right to vote to women on a federal scale. This amendment shifted the social norms for women, as ``flappers'' cut their hair short and dressed in revealing clothes. Additionally, advances in technology bettered the lives of all, prompting many African Americans in the South to migrate north, to areas like Chicago and New York. In Harlem, self-determination formed the Harlem Renaissance for the many black men who migrated to the area. For farmers, however, the period was difficult and turbulent, as the economic surge in crop prices fell hard with the end of the war. Three presidents led the nation from the 20s into the 30s: Harding, Coolidge, and Hoover.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
