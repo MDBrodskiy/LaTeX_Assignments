@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 12 $-$ Problems 26, 28, 50, 52}
+\date{February 16, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{25}
+
+  \item
+
+    \begin{center}
+      \begin{tabular}[H]{c c | c | c}
+         & \ce{SO3} & \ce{SO2} & \ce{O2}\\
+        \hline
+        I & $.541[\si{\atm}]$ & $0[\si{\atm}]$ & $0[\si{\atm}]$\\
+        \hline
+        C & $-.432[\si{\atm}]$  & $.432[\si{\atm}]$ & $.216[\si{\atm}]$ \\
+        \hline
+        E & $.109[\si{\atm}]$  & $.432[\si{\atm}$  & $.216[\si{\atm}]$
+      \end{tabular}
+    \end{center}
+
+    \begin{equation}
+      \begin{split}
+        k&=\frac{[.216]\cdot[.432]^2}{[.109]^2}\\
+        &=3.39\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \setcounter{enumi}{27}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            Q&=\frac{.33\cdot.65}{.026}\\
+            &= 8.25\\
+            Q\neq k\\
+            \therefore \text{It is not at equilibrium}
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item Because $Q<k$, more products need to be formed
+
+    \end{enumerate}
+
+    \setcounter{enumi}{49}
+
+  \item
+
+    \begin{enumerate}
+        
+      \item 
+
+        \begin{enumerate}
+
+      \item If \ce{O2(g)} is removed, then there will be more reactants, and, therefore, more ammonia
+
+      \item If \ce{N2(g)} is added, then there will be more reactants, and, therefore, more ammonia
+
+      \item If water is added, there is no effect on ammonia
+
+      \item Because there are more gas molecules on the left, and the volume is increased, then ammonia will increase
+
+      \item Because the reaction is exothermic, and the temperature is increased, there will be more ammonia
+
+        \end{enumerate}
+
+      \item $k$ is decreased in 5, but left the same in all others
+
+    \end{enumerate}
+
+    \setcounter{enumi}{51}
+
+  \item
+
+    \begin{enumerate}
+
+      \item The equilibrium will shift to the right because it has more gas molecules
+
+      \item The equilibrium will shift to the right because there are more gas molecules
+
+      \item The equilibrium will shift to the right because there are more gas molecules
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
