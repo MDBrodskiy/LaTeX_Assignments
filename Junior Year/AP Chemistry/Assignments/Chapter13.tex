@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 13 $-$ Problems 2, 6, 10, 16, 30}
+\date{February 18, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{1}
+
+      \item 
+
+        \begin{enumerate}
+
+          \item \ce{CN-(aq)} is the base, and the \ce{HCN(aq)} is the conjugate acid pair. \ce{H2O} is the acid, and \ce{OH-(aq)} is the conjugate base pair.
+
+          \item \ce{HCO3-(aq)} is the base, and the \ce{H2CO3(aq)} is the conjugate acid pair. \ce{H3O+(aq)} is the acid, and \ce{H2O} is the conjugate base pair
+
+          \item \ce{HC2H3O2(aq)} is the acid, and \ce{C2H3O2-(aq)} is the conjugate base pair. \ce{HS-(aq)} is the base, and \ce{H2S(aq)} is the conjugate acid pair.
+
+        \end{enumerate}
+
+    \setcounter{enumi}{5}
+
+      \item 
+
+        \begin{enumerate}
+
+          \item \ce{HAsO4^2-} 
+
+          \item \ce{Fe(H2O)4(OH)2}
+
+          \item \ce{ClO3-}
+
+          \item \ce{NH3}
+
+          \item \ce{C2H3O2-}
+
+        \end{enumerate}
+
+    \setcounter{enumi}{9}
+
+      \item 
+
+        \begin{enumerate}
+
+          \item \ce{Zn(H2O)3OH+ + H2O <=> Zn(H2O)2(OH)2 + H3O+}
+
+          \item \ce{HSO4- + H2O <=> SO4^2- + H3O+}
+
+          \item \ce{HNO2 + H2O <=> NO2- + H3O+}
+
+          \item \ce{Fe(H2O)6^2+ + H2O <=> Fe(H2O)5(OH)^+ + H3O+}
+
+          \item \ce{HC2H3O2 + H2O <=> C2H3O2- + H3O+}
+
+          \item \ce{H2PO4- + H2O <=> HPO4^2- + H3O+}
+
+        \end{enumerate}
+
+    \setcounter{enumi}{15}
+
+      \item 
+
+        \begin{enumerate}
+
+          \item 
+
+            \begin{equation*}
+              \begin{split}
+                -0.76&=-\log_{10}\left( [\ce{H+}] \right)\\
+                [\ce{H+}]&=10^{.76}\\
+                &= 5.754[\si{\Molar}_{\ce{H+}}]\\
+                14+0.76&=-\log_{10}\left( [\ce{OH-}] \right)\\
+                [\ce{OH-}]&=10^{-14.76}\\
+                &= 1.74\cdot10^{-15}[\si{\Molar}_{\ce{OH-}}]
+              \end{split}
+              \label{1}
+            \end{equation}
+
+          \item
+
+            \begin{equation*}
+              \begin{split}
+                9.11&=-\log_{10}\left( [\ce{H+}] \right)\\
+                [\ce{H+}]&=10^{-9.11}\\
+                &= 7.8\cdot10^{-10}[\si{\Molar}_{\ce{H+}}]\\
+                14-9.11&=-\log_{10}\left( [\ce{OH-}] \right)\\
+                [\ce{OH-}]&=10^{-4.89}\\
+                &= 1.3\cdot10^{-5}[\si{\Molar}_{\ce{OH-}}]
+              \end{split}
+              \label{2}
+            \end{equation}
+
+          \item
+
+            \begin{equation*}
+              \begin{split}
+                3.81&=-\log_{10}\left( [\ce{H+}] \right)\\
+                [\ce{H+}]&=10^{-3.81}\\
+                &= 1.55\cdot10^{-4}[\si{\Molar}_{\ce{H+}}]\\
+                14-3.81&=-\log_{10}\left( [\ce{OH-}] \right)\\
+                [\ce{OH-}]&=10^{-10.19}\\
+                &= 6.46\cdot10^{-11}[\si{\Molar}_{\ce{OH-}}]
+              \end{split}
+              \label{3}
+            \end{equation}
+
+          \item
+
+            \begin{equation*}
+              \begin{split}
+                12.08&=-\log_{10}\left( [\ce{H+}] \right)\\
+                [\ce{H+}]&=10^{-12.08}\\
+                &= 8.3\cdot10^{-13}[\si{\Molar}_{\ce{H+}}]\\
+                14-12.08&=-\log_{10}\left( [\ce{OH-}] \right)\\
+                [\ce{OH-}]&=10^{-1.92}\\
+                &= 1.2\cdot10^{-2}[\si{\Molar}_{\ce{OH-}}]
+              \end{split}
+              \label{4}
+            \end{equation}
+
+        \end{enumerate}
+
+    \setcounter{enumi}{29}
+
+      \item 
+
+        \begin{equation*}
+          \begin{split}
+            [\ce{H+}]_{\ce{HNO3}}&=10^{-1.39}\\
+            &= 4.1\cdot10^{-2}\left[ \si{\Molar}_{\ce{H+}} \right]\\
+            .145\cdot.575&=8.34\cdot10^{-2}\left[ \si{\mole} \right]\\
+            .493\cdot.041&=2\cdot10^{-2}\left[ \si{\mole} \right]\\
+            \frac{10.34\cdot10^{-2}}{.638}&=.162[\si{\Molar}]\\
+            -\log_{10}\left( .162 \right)&=.79
+          \end{split}
+          \label{5}
+        \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
