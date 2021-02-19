@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Biology
+% Professor: J. Polivka
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 18}
+\date{February 17, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mrs. Polivka}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Regulation of Prokaryotic (Bacterial) Genes
+
+    \begin{enumerate}
+
+      \item Bacteria need to respond quickly to changes in their environment
+
+        \begin{enumerate}
+
+          \item If they have enough of a product, production needs to be stopped because it wastes energy to produce more of what is not needed. Production of enzymes is halted, which slows synthesis.
+
+          \item If a new food or energy source needs to be utilized quickly, an enzyme to promote metabolism, growth, and reproduction is produced.
+
+        \end{enumerate}
+
+      \item Feedback Inhibition
+
+        \begin{enumerate}
+
+          \item Product acts as an allosteric inhibitor (binds and affects protein at a different site) of first enzyme in tryptophan pathway (wasteful production of enzymes)
+
+        \end{enumerate}
+
+      \item Gene Regulation
+
+        \begin{enumerate}
+
+          \item Instead of blocking enzyme function, block transcription of genes for all enzymes in tryptophan pathway (efficient because stops all enzymes from being produced)
+
+        \end{enumerate}
+
+      \item Cells vary amount of specific enzymes by regulating gene transcription
+
+        \begin{enumerate}
+
+          \item Genes may be turned off, for example, if bacterium has enough tryptophan, then it doesn't need to make enzymes used to build tryptophan
+
+          \item Genes may be turned on, for example, if bacterium encounters a new sugar (energy source) like lactose, and then needs to start making enzymes to digest it
+
+        \end{enumerate}
+
+      \item Operon $-$ Genes grouped together with related functions (ex. all enzymes in a metabolic pathway)
+
+        \begin{enumerate}
+
+          \item Promoter $-$ RNA polymerase binding site. Single promoter controls transcription of all genes in operon. Transcribed as one unit and a single mRNA is made
+
+          \item Operator $-$ Switch to turn gene on or off
+
+        \end{enumerate}
+
+      \item Repressor Protein $-$ Binds to DNA at operator site, which blocks RNA polymerase, and stops transcription
+
+      \item Repressible Operon $-$ ex. When an excess is present, it binds to the \textit{tryp} repressor protein, which halts transcription. Repressible operons are regularly on until blocked. Usually functions in anabolic pathways.
+
+      \item Inducible Operon $-$ ex. When lactose is present, it binds to \textit{lac} repressor protein and triggers repressor to release DNA. Inducible operons are regularly off until activated. Usually functions in catabolic pathways.
+
+      \item Positive Gene Control $-$ Occurs when an activator molecule interacts directly with the genome to switch transcription on.
+
+        \begin{enumerate}
+
+          \item Even if the \textit{lac} operon is turned on by the presence of allolactose, the degree of transcription depends on the concentrations of other substrates
+
+          \item The cellular metabolism is biased toward the utilization of glucose
+
+        \end{enumerate}
+
+      \item CAP Protein $-$ An activator of transcription
+
+      \item When glucose (a preferred food source of \textit{E. coli}) is scarce, CAP is activated by binding to cyclic AMP
+
+      \item Activated CAP attaches to the promoter of the \textit{lac} operon and increases the affinity of RNA polymerase, thus accelerating transcription
+
+      \item With low levels of glucose, cyclic AMP (cAMP) binds to CAP, which activates transcription
+
+      \item With high levels of glucose, cAMP levels are low (lots of ATP), then the CAP protein has an inactive shape and cannot bind upstream of the \textit{lac} promoter. Less transcription because lower affinity for RNA polymerase
+
+    \end{enumerate}
+
+  \item Control of Eukaryotic Genes
+
+    \begin{enumerate}
+
+      \item Eukaryotes $-$ Multicellular organisms, evolved to maintain constant internal conditions while facing changing external conditions (homeostasis) by regulating body as a whole, through growth and development (long term) and specialization (turning on and off large numbers of genes), while coordinating the whole body together
+
+      \item Human cells express about 20\% of its genes at any given time
+
+      \item Points of Control
+
+        \begin{enumerate}
+
+          \item DNA Packing as Gene Control (Histone Acetylation and DNA Methylation)
+
+            \begin{enumerate}
+
+              \item Acetylation of histones unwinds DNA (loosely wrapped around histones enables transcription, turning genes on). Acetyl groups are attached to histones, which cause conformational change in histone proteins, which gives transcription factors easier access to genes.
+
+              \item Methylation of DNA is the opposite process, where transcription factors are blocked, causing genes to turn off. Attachment of methyl groups to cytosine on DNA causes nearly permanent inactivation of genes (these genes account for some of the unexpressed 80\%)
+
+            \end{enumerate}
+
+          \item Transcription Initiation
+
+            \begin{enumerate}
+
+              \item Controls regions on DNA. Promoter is a nearby control sequence on DNA, which binds to RNA polymerase. The enhancer is a distant control sequence on DNA, which binds to activator proteins and causes a higher rate of transcription. Silencer proteins are the opposite of enhancers.
+
+            \end{enumerate}
+
+          \item Post-Transcriptional Control
+
+            \begin{enumerate}
+
+              \item Alternative RNA splicing is variable processing of exons, which creates a family of proteins
+
+            \end{enumerate}
+
+          \item Regulation of mRNA Degradation
+
+            \begin{enumerate}
+
+              \item Life span of mRNA determines amount of protein synthesis. The poly-A tail determines life span. mRNA can least from hours to weeks.
+
+            \end{enumerate}
+
+          \item Control of Translation
+
+            \begin{enumerate}
+
+              \item Regulatory Proteins attach to 5' end of mRNA to prevent attachment of ribosome and initiator tRNA, which causes no translation
+
+            \end{enumerate}
+
+          \item Protein Processing and Degradation
+
+            \begin{enumerate}
+
+              \item Processing folds, cleaves, adds sugar groups, and targets for transport
+
+              \item Degradation determines length of time protein functions in a cell (ubiquitin tagging and proteasome degradation)
+
+            \end{enumerate}
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Gene Regulation
+
+    \begin{enumerate}
+
+      \item Levels 1 and 2 are transcription, where DNA is packing transcription factors
+
+      \item Levels 3 and 4 are post-transcription, where mRNA processing, splicing, and attachment of poly-A tails occur
+
+      \item Level 5 is translation, where the block start of translation occurs
+
+      \item Level 6 and 7 are post-translation, where proteins are processed and/or degraded
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
