@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 13 $-$ Problems 34, 48, 54, 72}
+\date{February 22, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{33}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+        
+        \begin{equation}
+          \begin{split}
+            \ce{HSO3-(aq) <=> SO3^2-(aq) + H+(aq)}\\
+            k_a=\frac{[\ce{H+}][\ce{SO3^2-}]}{[\ce{HSO3-}]}
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            \ce{HPO4^2-(aq) <=> PO4^3-(aq) + H+(aq)}\\
+            k_a=\frac{[\ce{H+}][\ce{PO4^3-}]}{[\ce{HPO4^2-}]}
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            \ce{HNO2(aq) <=> NO2-(aq) + H+(aq)}\\
+            k_a=\frac{[\ce{H+}][\ce{NO2-}]}{[\ce{HNO2}]}
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{47}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \ce{HC4H3N2O3(aq) <=> C4H3N2O3-(aq) + H+(aq)}\\
+        k_a=\frac{[\ce{C4H3N2O3-}][\ce{H+}]}{[\ce{HC4H3N2O3}]}\\
+        2.34=-\log_{10}\left( [\ce{H+}] \right)\\
+        [\ce{H+}]=.0046\left[ \si{\Molar} \right]\\
+        \frac{9}{128}=.07[\si{\mole}_{\ce{HC4H3N2O3}}]\\
+        \frac{.07}{.325}=.216[\si{\Molar}]\\
+      \begin{array}{c | c c c} & [\ce{HC4H3N2O3}] & [\ce{C4H3N2O3-}] & [\ce{H+}]\\ \hline  \text{I} & .216 & 0 & 0\\ \text{C} & -.0046 & .0046 & .0046\\ \text{E} & .2114 & .0046 & .0046  \end{array}\\
+      \frac{.0046^2}{.2114}=1\cdot10^{-4}
+      \end{split}
+      \label{4}
+    \end{equation}
+
+    \setcounter{enumi}{53}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+    \begin{equation}
+      \begin{split}
+        \frac{x^2}{.279}=3.38\cdot10^{-5}\\
+        x=.00307\left[ \si{\Molar} \right]\\
+      \end{split}
+      \label{5}
+    \end{equation}
+
+      \item
+
+    \begin{equation}
+      \begin{split}
+        \frac{10^{-14}}{.00307}=3.26\cdot10^{-12}\\
+      \end{split}
+      \label{6}
+    \end{equation}
+
+      \item
+
+    \begin{equation}
+      \begin{split}
+        -\log_{10}\left( .00307 \right)=2.52\\
+      \end{split}
+      \label{7}
+    \end{equation}
+
+      \item
+
+    \begin{equation}
+      \begin{split}
+        \frac{.00307}{.279}\cdot100=1.1\%
+      \end{split}
+      \label{8}
+    \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{71}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \begin{array}{c | c c c} & [\ce{NaHCO3}] & [\ce{NaCO3-}] & [\ce{H+}]\\ \hline  \text{I} & .72 & 0 & 0\\ \text{C} & -x & x & x\\ \text{E} & .72-x & x & x  \end{array}\\
+        k_a=8.369\cdot10^{-21}\\
+        \frac{x^2}{.72-x}=8.369\cdot10^{-21}\\
+        x=7.7625\cdot10^{-11}\\
+        \text{p\ce{H}}=-\log_{10}\left( x \right)=10.11\\
+        [\ce{OH-}]=10^{-(14-10.11)}=1.3\cdot10^{-4}
+      \end{split}
+      \label{9}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
