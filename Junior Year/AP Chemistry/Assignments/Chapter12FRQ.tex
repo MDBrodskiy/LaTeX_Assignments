@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 12 $-$ Practice FRQ}
+\date{February 23, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item
+        
+        \begin{equation}
+          \begin{split}
+            k_p=\frac{\left[ \ce{CO} \right]^2}{\left[ \ce{CO2} \right]}
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            PV=nRT\rightarrow n=\frac{PV}{RT}\\
+            n=\frac{5\cdot2}{.0821\cdot1160}\\
+            n=.105\left[ \si{\mole} \right]
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item
+
+        \begin{enumerate}
+
+          \item 
+
+        \begin{equation}
+          \begin{split}
+            \begin{array}{c | c c} & [\ce{CO2}] & [\ce{CO}]\\ \hline  \text{I} & 5 & 0\\ \text{C} & -3.37 & 2x\\ \text{E} & 1.63 & 2x \end{array}\\
+            x=3.37\\
+            (5+3.37)-1.63=6.74\left[ \si{\atm} \right]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            k_p=\frac{(6.74)^2}{1.63}\\
+            k_p=27.87
+          \end{split}
+          \label{4}
+        \end{equation}
+
+
+
+        \end{enumerate}
+
+      \item The catalyst would make no difference. Because the volume is said to be negligible, there would be no difference, as a catalyst only makes a reaction occur more rapidly, rather than generate more or less product. In this manner, the amount of moles, and, therefore, the volume of the gases generated does not change with a catalyst, meaning that the pressure remains the same as well.
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            Q=\frac{2^2}{2}=4\\
+            4<27.87\\
+            \therefore \ce{CO2}\text{ pressure will decrease, as more \ce{CO} needs to be generated}
+          \end{split}
+          \label{5}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
