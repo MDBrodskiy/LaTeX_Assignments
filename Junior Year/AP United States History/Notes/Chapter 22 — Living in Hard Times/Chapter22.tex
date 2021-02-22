@@ -1,0 +1,159 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 22 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{What was the real \textit{spark} that actually caused stocks to tank? Was it someone purposefully selling below market value?}{\begin{itemize} \item The stock market crash hit hard. Throughout the 20s, the stock market as a whole, not just a single stock, was rising sharply. Companies hit ten, sometimes even twenty times their initial offering price in only a few years. Radio, which was relatively new, quintupled in price in less than a year. It seemed that the market was on a ``bull run'' and nothing could stop it; however, on October 29, 1929, stocks began to show poor signs, as they began to decrease rapidly, with families losing their life savings. Companies fell below ten percent of their previous values, which meant that people who had taken out loans to buy stocks were now in serious debt. Few economists predicted this, however, Hoover and Babson are two examples of people who warned of this. The crash itself was not as hard of a hit on the average citizen as the events that precipitated were. People lost jobs and industries tanked. \item Farmers, many of whom began to experience a depression since the early 20s, were still in poor shape, especially as Hoover passed the \textbf{Smoot-Hawly Tariff}, which prompted other countries to place tariffs on America, which just put the already suffering farmers into even worse shape. Banks lost moneys too, as people were unable to pay off their stock loans, named ``calls''. Hoover wanted to help, but it seemed the best he could do was to ask people to work together and pass acts to invest in the economy. Many people, now in poverty, simply ignored the requests, as they were in no shape to help others. Hoover reluctantly agreed to create the \textbf{Reconstruction Finance Corporation} that provided funds to failing businesses and stimulate economy. Also, the \textbf{Emergency Relief and Construction Act} gave money to states for relief and public projects. \item Homeless citizens began to construct village-like congregations of huts, which were nicknamed \textbf{Hoovervilles}. Additionally, out-of-work veterans wanted pensions, so they marched on the capitol in what is known as the \textbf{Bonus Army}. Hoover called in the army to disperse them, and, for this, he was called heartless. Hoover wanted to work with the following administration, but Roosevelt ignored his requests.  \end{itemize}}%
+
+\topic{The book states that F. Roosevelt's policies were \textit{guided} by the ``Brain Trust''. For most of the economic acts and reforms, was it more of Roosevelt's legislation, or the work of the Brain Trust?}{\begin{itemize} \item Roosevelt was a radically different president from anyone who had preceded him. Upon entering office, Roosevelt needed to immediately begin reformation, especially if he sought to deliver on his ``\textbf{New Deal}''. Roosevelt addressed common concerns and appealed to the common man through the use of \textbf{fireside chats} and press conferences. The radio was especially useful because, although it carried Roosevelt's voice, it did not carry his disability. \item As banks closed rapidly due to large withdrawals, Roosevelt acted quickly, passing the Emergency Banking Act five days into his term, which liquidated weak banks, but reopened the large ones, now with federal backing. Three months after this, Congress passed the Glass-Steagall Act, which split banks into commercial and investment, with commercial banks being backed by the newly created Federal Deposit Insurance Corporation (FDIC), which is often seen to this day on bank statements (``FDIC insured up to \$250,000''). \item When Roosevelt was still a candidate, in 1932, he created the ``Brain Trust'', a group of fiscally responsible and well-versed individuals, who were initially all from Columbia University. This group guided Roosevelt's policies. During the \textbf{first 100 days}, when Congress passed much legislation, the economy did begin to improve. Congress passed various acts, including the Economy Act, which gave the president more power to cut government spending, and amended the Volstead Act, which legalized beer, thereby improving the economy, as millions of dollars were spent on the beverage. Congress also established the Civilian Conservation Corps, which essentially gave many unemployed citizens jobs working in rural camps planting forests, pruning trees, building parks, and much more. Additionally, Roosevelt took the nation off of the gold standard, which allowed the government to print more money, which was beneficial in the short term. \item In May, Roosevelt passed the Federal Emergency Relief Act, which gave grants (not loans) to those who needed it. Also, the Agricultural Adjustment Act plowed around 10.5 million acres of land and slaughtered 6 million piglets, and, although it was unpopular, it reduced the strain placed on the economy by the oversupply of products. In June, Congress passed a plethora of acts, including the: National Employment System Act, Home Owners Refinance Act, Farm Credit Act, Railroad Coordination Act, and the important National Industry Recovery Act. This act established the Public Works Administration (PWA)  and the National Recovery Administration (NRA). The NRA set minimum wages, as well as forbid child labor and allowed labor the right to organize. The NRA was later deemed unconstitutional.  \end{itemize}}%
+
+\topic{How did the Great Depression hit the American Indian population, other than the passage of the Indian New Deal?}{\begin{itemize} \item Under the Roosevelt administration, many minority groups were able to gain a voice and a fresh start. For the Native Americans, the John Collier was appointed to commissioner of Indian Affairs. He convinced Congress to pass the Wheeler-Howard Act in 1934, and the act would be extended to Native Alaskans two years later. This act demarcated the start of the \textbf{Indian New Deal}. This act essentially let the Native American colonies to rule autonomously, as they had prior to the arrival of settlers. Tribes could now decide on membership to the tribe themselves, without the federal government. Tribes also formed constitutions and governments. \item African-Americans were hit harder than most groups during the depression. African-American sharecroppers formed the Southern Tenant Farmers Union to demand payments. In 1928, Oscar DePriest was the first black man to be elected to office since Reconstruction. The black vote was able to stop opposition to anti-lynching bills. Roosevelt also created the \textbf{Black Cabinet}, which was an informal group of black advisors. Additionally, with the urging of Eleanor, Mary Bethune, who was president of the National Association for Colored Women (NACW), was appointed as director of the Negro Division of the National Youth Administration, where she worked hard to better the lives of all black citizens.  \end{itemize}}%
+
+\topic{Why did most of the ``Okies'' move to California? What made it so appealing as compared to other locations?\\\\ This makes me think of the joke: ``\textit{When the Okies moved to California, it raised the average IQ of both states}''}{\begin{itemize} \item Although the effects were felt later, farmers in Oklahoma, Kansas, and the northern region of Texas, were not spared from economic ruin and plight. 1931 turned out to be one of the most bountiful years for wheat yields, albeit prices for wheat were extremely low. In the following years, however, heavy dust storms would destroy crops and livelihoods, while killing livestock, and many people as well. People who inhaled too much dust got what was deemed ``dust pneumonia'', which was quite severe for children or the elderly. Over 300,000 tons of soil was uplifted and carried hundreds of miles from its previous location. Visibility was often so poor, one couldn't even see their hands in front of them. To somewhat alleviate the stress, agricultural agents offered \$16 for each cattle, and \$498 if people promised not to plant crops for the next year. In 1934, mass migration out of the affected region took place. \item Many people from this region, later (derogatorily) name Okies, moved to California. Novels, such as \textit{The Grapes of Wrath} captured the migration experience. Many minority workers, such as Mexicans and Filipinos were worried that they would lose their jobs, which was often the case when white men applied. Many strikes were organized, such as the (somewhat) successful El Monte berry strike in June 1933, and the larger cotton strike that took place that fall.   \end{itemize}}%
+
+\topic{All of these new projects, administrations, and departments that were established make me wonder how much money, in modern equivalents, was spent on the New Deal}{\begin{itemize} \item The Works Progress Administration was created in April of 1935 by Congress. The WPA was intended to institutionalize and expand the New Deal, with Harry Hopkins at the head. This administration organized over 8.5 million jobs in 7 years, by creating jobs to build roads, theaters, and public buildings in all states. Additionally, with the urging of Eleanor, the WPA included artists, like musicians, performers, and painters. Theater productions were staged, and many writers recorded oral histories from formal slaves. Photography was also on the rise, and those like Dorothea Lange became famous. \item Union reform was also taking place. Roosevelt, in the National Industry Recovery Act, included a phrase that guaranteed the right for collective bargaining for unions. Then, the Wagner Act of 1935 expanded rights of union members, outlawed unfair labor practices, and gave workers the right to join a union without being fired. Although at this point, only about ten percent of American workers were in unions, the competition between the American Federation of Labor (A.F. of L.) and the Congress of Industrial Organizations (CIO) caused many to join. The new ``sit-down'' strikes became a popular alternative to picketing, and many such strikes occurred in the 30s. The first example is the Firestone Tire strike in January 1936, in Akron, Ohio. For three days, workers sat at their posts, not doing anything, eventually winning the strike. The Flint Sit-Down Strikes, in two General Motors plants are probably the most famous and successful examples, as GM fought hard against the workers. They turned of heating in 16 degree weather, and called in Flint police, who launched tear gas (though, due to wind, the gas just went back towards them). Eventually, GM caved in and permitted its workers to join and bargain through Unions, specifically the United Auto Workers union (UAW).  \end{itemize}}%
+
+\topic{The mention of the DuPont brothers makes me think of the incident that would take place towards the end of the twentieth century (and is ongoing), where, like with Roosevelt, their company tried to undermine the government.}{\begin{itemize} \item Roosevelt's New Deal was not without criticism, especially from the rich classes. The DuPont brothers are examples of people who despised the Deal. Together, they united under the \textbf{American Liberty League}. They said that Roosevelt's policies were textbook socialism, and that they should not be permitted in this country. Then, there was also the issue of the communists, who thought Roosevelt's ideas were not socialist enough, calling them ``bourgeois''. Dr. Francis Townsend proposed a system in which, at age 60, people would be paid \$200 a month to retire and make space for new workers.  This system would eventually become Social Security. In 1934, Upton Sinclair ran for governor of California under the EPIC campaign (End Poverty in California). Roosevelt, however, criticized this policy, saying that it was just an excuse to confiscate private property. \item Charles Coughlin, a ``radio priest'' was also of worry for Roosevelt. In 1932, Coughlin supported Roosevelt's campaign, however, Coughlin later began to criticize the New Deal, saying that FDR ``out-hoovered Hoover''. His talks became more and more dictator-like and antisemitic and people began to compare Coughlin to Hitler, who was also \href{https://www.youtube.com/watch?v=JTUSkI-v2LU}{rising at the time}. Even more of a problem was Louisiana Senator Huey P. Long. Long, a supporter of Eugene V. Debs, referred to FDR as ``Frank'', and wanted to create a ``Share Our Wealth Society'', where money was taken from the rich and given to the poor, with a one-time grant of \$5,000 per family and a \$2,500 income (double the national average at the time). Quickly, economists pointed out that his numbers did not add up, but he dismissed these as criticisms. With all of this judgement, Roosevelt worried of a dictator takeover, as had occurred because of the depression in Italy and Germany.  \end{itemize}}%
+
+\topic{What caused the ``pivot'' to the slight change that created the Second New Deal?}{\begin{itemize} \item After his first two years, Roosevelt began to pivot with his New Deal policy. Now, it seemed he was targeting long-term economic stability, rather than the short-term stimulus he initially sought. He permitted Frances Perkins to work on a project to help older citizens retire to make jobs for the younger workers, and, eventually, the \textbf{Social Security Act} was passed. During his reelection campaign, Roosevelt targeted greedy bankers and businessmen in his speech, while not really taking any actions against them. Although people thought it would be close, Roosevelt won by a landslide, carrying 46/48 states. \item Although Roosevelt's second term was not as successful as his first, mostly due to opposition, he still remained popular. The Supreme Court kept deeming his legislation, such as the NRA, unconstitutional, and, as such, Roosevelt wanted to fight back. He tried to pass legislation to add one judge for every existing judge over 70 to the Supreme Court. This decision was extremely unpopular among his enemies, as well as his supporters. Eventually, the Supreme Court stopped antagonizing his legislation anyway, and his administration continued. A Fair Labor Standards Act prohibited child labor and set a minimum wage, as well as limited the work day to 40 hours. This act, although initially opposed by the Supreme Court ended up passing. As time passed, the Great Depression would be ended not by legislation, but by jobs created by the war.  \end{itemize}}%
+
+\topic{Why does the book have no mention of Soviet intervention in Manchuria, especially with Marshall Zhukov leading the forces?}{\begin{itemize} \item As World War I had ended monarchies, the years leading up to the second World War saw the rise of major dictatorships. In 1922, Mussolini, nicknamed \textit{Il Duce} (the leader) took control of the Italian government with a goal to recreate the glory of Rome. For Germany, however, the 20s were a horrible period of hyperinflation and economic collapse. The Weimar government, a major disaster, soon dissolved when Hitler took power. Hitler had previously tried to gain control of the government, in the events known as the Beer Hall Putsch, but failed to do so. Nicknaming himself der F\"uhrer (the leader [repetitive, right?]), he established his secret police, the \textit{\underline{Ge}heime \undelrine{Sta}ats\underline{po}lizei} (Gestapo) to maintain control and do his bidding. At the \textit{Kristallnacht} (night of broken glass) in November 1938, German Jews were killed or arrested, and their stores robbed, burned, and looted. \item Hitler kept renouncing more and more clauses of the Treaty of Versailles, most importantly those concerning the Rhineland and disarmament, as he created an army and marched into the Rhineland and took control. Two years after this, Hitler declared the German \textit{Anschluss} with \textit{der \"Osterreich}, or Eastern Empire, which meant Austria. He did not stop there, and he continued taking the Sudetenland, with permission from the British. The Rome-Berlin Axis solidified the alliance between Mussolini's Italy and Hitler's Germany, and the Spanish Civil War served as a perfect situation to test run their militaries. Eventually, Fascist Francisco Franco took over Spain, creating another fascist power. \item Also, Japan seemed a likely ally, as, even though they themselves were not exactly fascist, Japan kept a close proximity to the US, which was great for a coordinated attack (as would occur on December 7, 1941 at Pearl Harbor). The most important Japanese expansion was in China, where they attacked Manchuria (and were met with force from Soviet troops under command of Marshall Georgy Zhukov). Then, the Japanese troops moved into Nanking, where they committed what is now known as the ``Rape of Nanking'', killing 300,000 Chinese in the process. In the meantime, Mao Zedong and Chiang Kai-Shek made an unlikely alliance to postpone their civil war and fight off the invaders.  \end{itemize}}%
+
+\topic{Why does the book state that Germany and the Soviet Union have ``radically different economic systems and ideologies'' when the only major difference between the two was foreign policy? Is Fraser trying to say radically different with respect to the United States?}{\begin{itemize} \item Most major countries continued to follow the policy of appeasement. In France, the Maginot Line (which failed anyway) was constructed, with little other effort. In 1938, Chamberlain visited Germany to have peace talks, and, upon arrival back in Britain, he said that ``Now we will have peace in our time!'' He was wrong. Meanwhile, America continued to follow the policy of \textbf{isolationism}. Those who remembered the first World War knew they did not want America involved in a second one. Authors such as Hemingway wrote about rejecting Europe. The Senate prevented any of Roosevelt's attempts to enter the world stage. Many laws against entering the war were passed. A law from 1935 required an embargo of arms to all belligerents in any war, although Americans were allowed to travel on foreign ships, though not without warning. In 1936, loans to belligerents were prohibited, and, in 1937, Congress extended the ban of sale of arms to Spain. In 1937, some Americans volunteered to fight in the Spanish Civil War under the Abraham Lincoln Brigade. Still, Congress passed more acts, such as the 1937 Neutrality Act, which toughened trade embargoes and forbid travel of Americans on belligerents ships. \item Many Jewish people tried to leave Europe due to the newfound trouble, but the 1924 travel quotas were being maintained. Some additional space was allowed in 1936 and 1937, but that was about it. Even after Kristallnacht, the quotas stood still. Additionally, Americans sympathized for China, which led to the Stimson Doctrine, which declared that America stood against Japan's actions in China, but little more was done. Most citizens, however, did not want change, and, especially did not want war. In 1939, the Molotov-Ribbentrop Pact (AKA Soviet-German Nonaggression Pact) was signed. \item On September 1, 1939, \href{https://www.youtube.com/watch?v=XnFSb8xcmN4}{Germany invaded Poland}, which marked the beginning of the chaos in Europe.  \end{itemize}}%
+
+\summary{Overall, it is clear that the Great Depression had huge non-economic impacts as well, as Hitler was able to seize power with the near-collapse of the Weimar Republic. Aside from shedding bad light on the Republican party, which was in control at the time, an unintended consequence of the Depression was the fact that it put communism in a good light, as the only country prospering was the Soviet Union. Additionally, the Dust Bowl wiped out American farming in the mid-west, causing hundreds of thousands to flee, mostly to California. Roosevelt, upon entering office, began working immediately. He wanted to truly employ his ``New Deal'' to fix the broken nation. His first term was quite successful, as he, and Congress, passed legislation to create jobs and invest more money into the economy. Upon reelection, Roosevelt's Deal dwindled, as the Supreme Court defied his pleas, until he tried to appoint more judges. Of most importance was the rise of empires to the east, with Germany preparing for war and breaking the Treaty of Versailles, and Mussolini and Franco gaining power. Wilson's League of Nations turned out to be quite useless, as little was done to intervene in the rapid Japanese imperialism in the Pacific and China. It seemed that the nation, although it wanted to maintain an isolationist policy, was headed for war.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
