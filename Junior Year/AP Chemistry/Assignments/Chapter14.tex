@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 14 $-$ Problems 2, 12, 30}
+\date{February 25, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{1}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{H+(aq) + C2H3O2-(aq) -> HC2H3O2(aq)}
+
+      \item \ce{OH-(aq) + H+(aq) -> H2O}
+
+      \item \ce{HOCl(aq) + CN-(aq) -> HCN(aq) + OCl-(aq)}
+
+      \item \ce{HNO2(aq) + OH-(aq) -> NO2-(aq) + H2O}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{11}
+
+  \item \ce{H+(aq) + F-(aq) -> HF(aq)}
+
+    \begin{equation}
+      \begin{split}
+        \left[ \ce{H+} \right]=k_a\cdot\frac{n_{\ce{HF}}}{n_{\ce{F-}}}\\
+        6.9\cdot10^{-4}\cdot\frac{.127\cdot .0399}{.062}=5.64\cdot10^{-5}\\
+        -\log_{10}\left( 5.64\cdot10^{-5} \right)=4.25
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \setcounter{enumi}{29}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            .137\cdot.288=.039456[\si{\mole}]\\
+            .239\cdot.187=.044693[\si{\mole}]\\
+            [\ce{H+}]=\frac{.044693}{.039456}\cdot4.55\cdot10^{-5}\\
+            =5.154\cdot10^{-5}\\
+            -\log_{10}\left( 5.154\cdot10^{-5} \right)=4.288
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \ce{H+(aq) + C4H4O6^2-(aq) -> HC4H4O6-(aq)}
+
+        \begin{equation}
+          \begin{split}
+            \frac{.025}{.376}=.0665[\si{\Molar}]\\
+          .187+.0665=.2535[\si{\Molar}]\\
+          .288-.0665=.2215[\si{\Molar}]\\
+          \ce{pH}=4.34+\log_{10}\left( \frac{.3545}{.1205} \right)
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
