@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 14 $-$ Problem Set 1}
+\date{March 1, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            [\ce{H+}]&=4\left( 4.7\cdot10^{-11} \right)\\
+            &=1.88\cdot10^{-10}\\
+            -\log_{10}\left( 1.88\cdot10^{-10} \right)&=9.725
+        \end{split}
+          \label{1}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            \frac{[\ce{HCO3-}]}{[\ce{H+}][\ce{CO3^2-}]}&=\frac{1}{4.7\cdot10^{-11}}\\
+            \frac{[\ce{HCO3-}]}{[\ce{CO3^2-}]}&=\frac{10^{-10.83}}{4.7\cdot10^{-11}}\\
+            &=.315
+        \end{split}
+          \label{2}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item \ce{H+(aq) + OH-(aq) -> H2O}
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            .02\cdot.5=.01[\si{\mole_{\ce{HCl}}}]\\
+          .00745\cdot.5=.003725[\si{\mole}_{\ce{OH-}}]\\
+            .01-.003725=.006275[\si{\mole}_{\ce{HCl}}]\\
+            -\log_{10}\left( \frac{.006275}{.02745} \right)=.641
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            .02\cdot.5=.01[\si{\mole_{\ce{HCl}}}]\\
+            .0185\cdot.5=.00925[\si{\mole}_{\ce{OH-}}]\\
+            .01-.00925=.00075[\si{\mole}_{\ce{HCl}}]\\
+            -\log_{10}\left( \frac{.00075}{.0385} \right)=1.71
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            .02\cdot.5=.01[\si{\mole_{\ce{HCl}}}]\\
+            .02035-.02=.00035[\si{\milli\liter}_{\ce{OH-}}]\\
+            .00035\cdot.5=.000175[\si{\mole}_{\ce{OH-}}]\\
+            14+\log_{10}\left( \frac{.000175}{.04035} \right)=11.64
+          \end{split}
+          \label{5}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            -\log_{10}\left( \frac{4}{5}\cdot1.8\cdot10^{-5} \right)=4.84
+          \end{split}
+          \label{6}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            4.84-\log_{10}\left( \frac{.04-.01}{.05+.01}  \right)=5.14
+          \end{split}
+          \label{7}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            4.84-\log_{10}\left( \frac{.04+.01}{.05-.01}  \right)=4.74
+          \end{split}
+          \label{8}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            -\log_{10}\left( \frac{.025(.1)-.0113(.2)}{.025+.0113} \right)=2.18
+          \end{split}
+          \label{9}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            -\log_{10}\left( \frac{.025(.1)-.0125(.2)}{.025+.0125} \right)\text{ is undefined}\\
+            \text{This means p\ce{H} } = 7\\
+          \end{split}
+          \label{10}
+        \end{equation}
+
+      \item
+
+        \begin{equation}
+          \begin{split}
+            .0138(.2)-.025(.1)=.00026\left[ \si{\mole}_{\ce{OH-}} \right]\\
+            14+\log_{10}\left( \frac{.00026}{.025+.0138} \right)= 11.82
+          \end{split}
+          \label{11}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        .132\cdot500\cdot.943=62.238[\si{\gram}_{\ce{NH3}}]\\
+        \frac{62.238}{17}=3.66[\si{\mole}_{\ce{NH3}}]\\
+        \frac{x}{3.66}\cdot5.6\cdot10^{-10}=10^{-9.45}\\
+        \frac{x}{3.66}=.634\\
+        x=3.66\cdot.634\\
+        =2.32[\si{\mole}_{\ce{NH4Cl}}]\\
+        2.32\cdot53=123[\si{\gram}]\\
+      \end{split}
+      \label{12}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
