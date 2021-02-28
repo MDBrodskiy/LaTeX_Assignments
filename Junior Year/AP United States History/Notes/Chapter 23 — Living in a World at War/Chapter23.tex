@@ -1,0 +1,161 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 23 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Why does the book not mention how the British intervention in Norway and the bombing of Hamburg led to the Blitz? It makes it seem as though the Germans just arbitrarily decided to bomb Britain.}{\begin{itemize} \item With the attack of Poland and spread of fascism to other European countries, the war began. Demonstrating the effectiveness of Blitzkrieg in various European plains and cities, Hitler demonstrated his militaristic prowess. By circumventing the Maginot Line in the Manstein Plan (A.K.A Case Yellow, or \textit{Fall Gelb}) by basically repeating the Schlieffen Plan from the first World War, Germany was able to take France in roughly a month. Following the Phony War, as well as British offensives in Norway and the bombing of Hamburg, Germany pivoted from its original plan, and began the Blitz to bomb Britain. \item Through the first year or so of the war, public opinion was generally neutral towards the war. Students at Yale, with the aid of Midwestern business leaders, would create the \textbf{America First Committee}, the members of which, for varying reasons, did not want American entry into the war. Even before his reelection, FDR knew that he needed to gear the country towards war. As Britain pleaded for any assistance, Roosevelt agreed to the \textbf{destroyers-for-bases} deal, where America provided old ships to Britain, in exchange for a 99 year ``lease'' of British bases. \item In the 1940 election, FDR won again; he was the first president to have more than two terms since Washington. He appointed war-supporting officials to office, and he gave patriotic fireside chats to gain support. Roosevelt stated that America needed to become the \textbf{arsenal of democracy}, and he described reasons for American support of the war by discussing the \textbf{four freedoms}. These speeches, coupled with British need for support, helped Roosevelt pass the \textbf{Lend-Lease Act}, through which they aided Britain, and, eventually, the Soviet Union, by lending military equipment. Lend-Lease prompted German attacks on American ships, as supply ships were sunk by u-boats. In August of 1941, Roosevelt met with Churchill in Newfoundland to discuss ways to cooperate, which ended with the \textbt{Atlantic Charter} — a precursor to the United Nations.  \end{itemize}}%
+
+\topic{Again, why does the book not mention how Germany planned the attack on Pearl Harbor with the Japanese, in order to prevent American assistance to the Soviet Union?}{\begin{itemize} \item As Germany wanted to avoid a two-front war, America now wanted to avoid a two-ocean war (with which it would be semi-successful). Although Americans vocally supported China, little aid, though some, would be provided to China. As a parallel to the rise of Hitler, Mussolini, and Franco, Japan had a shift in government too, as Hideki Tojo and Emperor Hirohito came to power. As the Japanese gained power, with support from Germany and Italy, America saw war on the horizon. Japan was cut off from American metal and aviation fuel shipments in July of 1940, to which they would respond with the attack on Pearl Harbor, which was orchestrated by Germany, as they were being forced back from Moscow.  \end{itemize}}%
+
+\topic{Was ABC-1 a telephone conversation, or how was it conducted?}{\begin{itemize} \item As Spring of 1941 came to be, American-British Conversation Number 1 (ABC-1) was conducted to determine war goals. The two nations agreed that, upon a two-front war, America would join to help defeat Germany. \item Meanwhile, Japan was rapidly expanding its power to nearby islands. Japan was able to capture oil fields in the Dutch East Indies, and, in May of 1942, they captured many US troops in Bataan. These troops were then forced to march 66 miles to a railroad junction, with hot weather and poor conditions. Those who fell would be beaten and killed. One of the first main American victories would take place at the Battle of the Coral Sea, and, subsequently, the Midway atoll. American intelligence was able to discover that the attack on Midway was coming, and they struck hard but quick. \item The capture of a Japanese Zero plane allowed the Americans to construct the Hellcat, which was meant to counter the Zero. Pressure was kept on the Americans, however, as German submarines sought out American supply ships not far off the Atlantic coast and sank them. Citizens were urged to turn off lights to prevent the Germans from seeing the ships, but citizens refused. Ships continued to wash up on American shores. \item In July 1942, German submarines sunk 23 out of 34 ships bound for the Soviet ports of Murmansk and Archangel. In August of 1942, American troops attacked Guadalcanal, and, in February 1943, as though synchronized with the German troops in Stalingrad, the Japanese retreated.  \end{itemize}}%
+
+\topic{What was the age threshold for drafting to the war. Was it different depending on where someone was to be drafted to?}{\begin{itemize} \item As war went on, a greater military was needed. The \textbf{Selective Service System} chose who was sent off and who was safe to stay. Most of those selected, especially in the South, were white males, as the Southern branches of the SSS did not want to give guns to black men. Further into the war, the draft would be expanded to fathers and married men. Many did not go with the draft, mostly for religious or ethical reasons. When the problem was religion, those people were usually put into jobs such as medics or workers that were needed in other areas. If it came to protest out of ethical reasons, people would usually be arrested. \item Additionally, this war saw the first major action of women. The United States, unlike the Soviet Union which forced female employment in the military, offered women a choice to fight. Several organizations were created: Women's Auxiliary Army Corps (WAACs) for the army, Women Accepted for Voluntary Emergency Service (WAVES) in the Navy, Women's Auxiliary Service Pilots (WASPs) in the airforce, Women's Reserve of the Coast Guard (nicknamed SPARs) in the coast guard, and they remained unnamed in the Marines. Roughly 350,000 women served throughout the war. \item Also, many jobs that were previously male-dominated became available to women, as men were called to war. Many of these jobs were in industrial plants, where much of the war equipment was produced. To work in such plants, women needed to cut their hair, as it was dangerous near the machines, and wear pants. From here came the image of ``Rosie the Riveter'', even though most women worked routine production jobs.  \end{itemize}}%
+
+\topic{Did the average citizen support or disapprove of the internment camps?}{\begin{itemize} \item Even during the war, racial tensions did not stop. Many African-Americans were excluded from industrial jobs, until A. Phillip Randolph organized a march on the capitol. Randolph had over 100,000 backers, and he promised to march on July 1, 1941, unless the government were to pass legislation. On June 25, 1941, Roosevelt signed Executive Order 8802, which forbid discrimination based on various categories, and created the \textbf{Fair Employment Practices Committee}. Many white workers went on strike because they did not want to work alongside African-Americans, and violence ensued. \item On top of this, tensions with the latino communities also existed. Many latinos often wore ``zoot suits'', or exaggerated and bright colored suits. For this reason, the chaos that occurred between whites and latinos was called the \textbf{Zoot Suit Riots}. FDR intervened to stop the violence. \item In the mainland of the US, after Pearl Harbor, there lived roughly 120,000 Japanese, with 200,000 in Hawaii (roughly half of the Hawaiian population). A few hundred Japanese were arrested under the pretense of being spies in Hawaii, but little more was done, as the economy would have collapsed without the Japanese. In the mainland, however, things were different. Executive Order 9066 was signed by Roosevelt as a result of civilian pressures. This marked the beginning of \textbf{Japanese Internment}. Many would protest this, such as Fred Korematsu (who would, in 1998, be awarded), but it was to no avail.  \end{itemize}}%
+
+\topic{Did the new employment opportunities for women and minorities stay after the war, or were they taken away immediately?}{\begin{itemize} \item Throughout the war, America was an absolute industrial powerhouse, producing enough equipment for itself and all other allies. For the most part, this occurred for two reasons: first, many who were unemployed as a result of the Depression wanted work, so they took whatever was offered, and, second, private institutions became engaged in the war effort as well. Such institutions included, but are not limited to, Ford, Boeing, and Lockheed Martin. Such a boom in the economy also meant that regulations were necessary. The Office of Price Administration created a General Maximum Price Regulation, which made prices of some goods permanent. This regulation was nicknamed ``General Max''. Additionally, the US signed agreements with steel firms and other companies to agree on labor. \item During wartime, people needed to use ration cards to purchase their monthly allotments of food. Because of America's isolation from the actual war, many people didn't understand the true horrors. Two concentration camp escapees told of their stories, but no one believed them, including the Supreme Court. In addition to this, a need for government money led to increased taxes, which brought over 13 million new taxpayers into the system. Additionally, the government began to sell and advertise bonds to gain more funds.  \end{itemize}}%
+
+\topic{Why did the book skip out on mentioning the Battle of Kursk? It would have been interesting to see Fraser's take on the events.}{\begin{itemize} \item As the war progressed into 1943, the tide began to turn. With the defeat of the German Sixth Army and other sub-units of \textit{Kampfgruppen S\"ud}, the German army was now on the defensive, as there would be no more German offensives on the Eastern Front for the rest of the war. Meetings in various places, most importantly Teheran, allowed the allies to consolidate their power and decide on courses of action. Of course, Stalin kept requesting the opening of a second front, which wouldn't happen until the beginning of \textbf{Operation Overlord}, marked by the invasion of Normandy, more often called \textbf{D-Day}, on June 6, 1944. Additionally, American troops were now also moving north up the ``boot'' of Italy, and Mussolini would soon be deposed. \item While the Soviet Red Army pushed into Germany, British and American troops continued ``terror'' bombing of industrial German cities. Quite importantly, FDR tried to convince Churchill to give up imperial British territories, as the US promised with the Philippines; however, Churchill rejected. On top of this, Stalin claimed that he was not planning on giving up the territories acquired from Germany anytime soon. \item Although there was ample evidence of it, complacency forced many to reject the notion of death camps for those deemed unfit by the Germans. It wasn't until the reports of the first camps freed by the Soviet forces that people began to understand the atrocities that were committed. As the allies moved into Germany (with Russia in the lead), it seemed Hitler's defeat was imminent. On April 30, 1945, Hitler shot himself in a bunker.  \end{itemize}}%
+
+\topic{Did the civilians on Saipan also follow the ``no surrender'' war code? If not, then why did they jump off the cliff?}{\begin{itemize} \item Although Roosevelt was president for the longest period of any president ever, he died early in his fourth term in office. Roosevelt wanted to have Wallace as his running mate, but the Democratic Party knew of his health, and they thought Wallace was too liberal to become president. As such, the party was able to convince Roosevelt to choose Truman as his running mate, and it would be Truman who would be sworn into office on April 12, 1945. This meant that Truman would lead America to the end of the war. \item As the destruction of 93\% of German troops on the Eastern front marked the end of Nazi Germany, Japan seemed to still be alive, although Americans were closing in. ``Island hopping'' techniques allowed for amphibious landings and quicker movement towards Tokyo. American factories churned out equipment much faster than the Japanese could destroy it. The closer the Americans got, the more bases they could set up. Marines took Kwajalein, Eniwetok, Truk, and Saipan. Because of the Japanese honor code, the civilians jumped off of cliffs to suicide, rather than surrender to American troops. \textit{Kamikaze} planes destroyed ships when they ran out of ammo. \item One of the most interesting developments of the war was American use of the Navajo people. Very few, if any people outside of the US understood the Navajo language, and, in this manner, it was useful for sending messages and such. US flamethrower troops quite literally burnt the Japanese troops, and it seemed surrender was on the horizon. Still, the Japanese fought. Okinawa was one of the last major battles, as the Japanese took 70,000 military and 100,000 civilian losses, with only 8,000 American losses.  \end{itemize}}%
+
+\newpage
+
+\topic{Why did the book net mention the possibility that Truman used the atomic bomb to also send a message to the Soviets, as it is a well known fact that Truman and Stalin were immediately enemies? Also, the book should have mentioned the interesting fact that Emperor Hirohito gave his surrender speech in old Japanese, which was understood by few at the time.}{\begin{itemize} \item As the war was coming to an end, so was the American development of the atomic bomb, code-named the \textbf{Manhattan Project}. With years of development, over \$2 billion spent, and aid of countless physicists, the final product was ready. With oversight by Oppenheimer and General Leslie Groves, Americans decided to deploy the nuclear bomb on the Japanese. Paul Tibbets took off in the \textit{Enola Gay} B-29 bomber, and dropped the bomb on Hiroshima, killing 40,000 instantly, and 100,000 more from burns and radiation. Three days later, a second nuclear bomb was dropped on Nagasaki. Although it was an unpopular decision, Hirohito issued a surrender speech, and, on September 2, treaties were signed on the \textit{USS Missouri}.  \end{itemize}}%
+
+\summary{With the invasion of Poland on September 1, 1939, the chaos in Europe began. Although conflict had been happening as early as the middle of the 1930s in Asia (Manchuria and other various islands), Europe saw the action a little later. Roosevelt knew that, although public opinion did not support it, the US needed to prepare for war. With the passage of Lend-Lease, Roosevelt hoped to aid the allies (although he didn't actually aid with a second front until 1944). Lend-Lease was quite important for supplies, especially for the Soviet Union. Although the bloodiest battles would be fought in Europe, America focused on defeating the Japanese after ``the day that would live in infamy'', while keeping an eye on Europe. Even tough it is inarguable that war is an atrocity, it did have positive impacts, as the American economy, as well as the economy of the world, was given a jump-start thanks to the abundance of industrial positions now available. As the war progressed, Roosevelt became more and more determined to see it through. Just like it began in Europe, the Allies seemed to start off with many defeats; however, this would change as the world moved into 1943. With the eradication of German land forces in Stalingrad, it seemed that the Germans would no longer be able to amount to successful offensive. In the meantime, American troops ``hopped'' from island to island, in pursuit of their enemy. The Japanese ``no surrender'' policy would mean that every American move was met with stiff resistance, as the Japanese, and, really, all sides, were fed propaganda about destroying their enemy and glorifying war. With the surrender of Germany on V-E Day, it seemed the Japanese would surrender soon, but it would really take much more effort. The atomic bomb, which had been in development for years, was now ready (or as ready as the scientists would be). Hiroshima and Nagasaki would suffer hundreds of thousands of deaths, and, given this, the Japanese emperor had no choice but to surrender. This meant that the world could now move into a ``much better'' era — an era of high tensions and high stakes, and most importantly, a high speed race to arms.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
