@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 13 $-$ Problem Set 1}
+\date{March 2, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \frac{(.0014)^2}{.1}=1.96\cdot10^{-5}
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        x^2=1.5\cdot.00014\\
+        x=\sqrt{1.5(.00014)}\\
+        -\log_{10}(x)=1.84
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \frac{75}{46}=1.63[\si{\Molar}]\\
+        x=\sqrt{1.63(.00018)}\\
+        -\log_{10}(x)=1.77
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        10^{-14+9.8}=6.31\cdot10^{-5}[\si{\Molar}]\\
+        \frac{1}{299}=3.34\cdot10^{-3}[\si{\mole}]\\
+        \frac{3.34\cdot10^{-3}}{.12}=.0279[\si{\Molar}]\\
+        \frac{\left(6.31\cdot10^{-5}\right)^2}{.0279}=1.43\cdot10^{-7}
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        14-11.65=2.35\\
+        10^{-2.35}=4.47\cdot10^{-3}[\si{\Molar}]\\
+        .25\cdot4.47\cdot10^{-3}=1.12\cdot10^{-3}[\si{\mole}]\\
+        .075\cdot.366=.02745\\
+        -\log_{10}\left( \frac{1.12\cdot10^{-3}+.02745}{.325} \right)=1.056\\
+        14-1.056=12.94
+      \end{split}
+      \label{5}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \frac{2}{74}=.027[\si{\Molar}]\\
+        \frac{14.6}{40}=.365[\si{\Molar}]\\
+        -\log_{10}\left( \frac{.365+.027}{1.2}  \right)=.486\\
+        14-.486=13.514
+      \end{split}
+      \label{6}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
