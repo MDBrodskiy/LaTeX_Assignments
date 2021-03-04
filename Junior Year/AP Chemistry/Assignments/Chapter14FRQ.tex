@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{color, colortbl}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 14 $-$ Practice FRQ}
+\date{March 5, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          k_b=\frac{[\ce{C6H5NH3+}][\ce{OH-}]}{[\ce{C6H5NH2}]}
+          \label{1}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            [\ce{OH-}]&=10^{8.82-14}=6.61\cdot10^{-6}\\
+            k_b&=\frac{\left(6.61\cdot10^{-6}\right)^2}{.1}\\
+            &=4.37\cdot10^{-10}
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \ce{C6H5NH2(aq) + H+(aq) -> C6H5NH3+(aq)}
+
+        \begin{equation}
+          \begin{split}
+            \begin{tabular}{l | c c c}
+              & \ce{C6H5NH2} & \ce{H+} & \ce{C6H5NH3+}\\
+              \hline
+              \text{I} & .0025 & .0005 & 0\\
+              \text{C} & -.0005 & -.0005 & .0005\\
+              \text{E} & .002 & 0 & .0005\\
+            \end{tabular}\\
+            [\ce{C6H5NH2}]=\frac{.002}{.03}=.066\bar{6}\\
+            [\ce{C6H5NH3+}]=\frac{.0005}{.03}=.016\bar{6}\\
+            p\ce{OH}=-\log_{10}\left( 4.37\cdot10^{-10}  \right)+\log_{10}\left( \frac{.016\bar{6}}{.066\bar{6}} \right)\\
+            p\ce{H}=14-8.757=5.24
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            \begin{tabular}{l | c c c}
+              & \ce{C6H5NH2} & \ce{H+} & \ce{C6H5NH3+}\\
+              \hline
+              \text{I} & .0025 & .0025 & 0\\
+              \text{C} & -.0025 & -.0025 & .0025\\
+              \text{E} & 0 & 0 & .0025\\
+            \end{tabular}\\
+            [\ce{C6H5NH2}]=\frac{.0025}{.05}=.05\\
+            k_a=\frac{k_w}{k_b}=2.29\cdot10^{-5}\\
+            \frac{x^2}{.05}=2.29\cdot10^{-5}\\
+            x=.00107\\
+            -\log_{10}\left( .00107  \right)=2.97
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item Erythrosine is the best option because its p$k_a$ is closest to the p\ce{H} (3 is close to 2.97)
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
