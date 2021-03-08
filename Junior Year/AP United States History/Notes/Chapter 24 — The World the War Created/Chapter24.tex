@@ -1,0 +1,159 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 24 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Who came up with the idea that hiding under a desk would protect from a nuclear explosion? Was this just a technique to keep the public calm?}{\begin{itemize} \item Moving into the 50s, technological advancements improved quality of life for everyone. Television was beginning to spread, with over 90 percent of the population owning a (black and white) set by the 1960s. Vaccines and various other medical advancements increased the average American lifespan from 62.9 years to 69.7 years. Automobiles were on the rise too, as none were produced for civilian use from 1942 to 1945. By 1955, General Motors became the first corporation to earn over a billion dollars in one year. \item With such technological advancements, however, came advancements in other sectors, like weapons. The atom bomb was something no one could have imagined before. Although some scientists proposed to share atomic secrets to prevent an arms race, Truman did not agree. Still, in 1949, the Soviets had the first test drop of their own atom bomb, with more nations testing their own in the coming years. With the Soviet testing of the new weapon, Truman wanted an even more powerful bomb powered by fusion, instead of fission. Many of the people who worked on the first bomb opposed this, however, Truman questioned if the soviets could do it, and, of course the answer was yes, so the world was plunged into an arms race. In 1952, the Americans tested their Hydrogen Bomb, and, in 1953, the Soviets did the same. In schools, many children were taught to hide under desks in case of nuclear emergency.   \end{itemize}}%
+
+\topic{Was it generally easy or difficult for returning veterans to find a new job? What jobs were usually filled by the veterans?}{\begin{itemize} \item As the war ended, the 12 million troops overseas wanted to return. Congress was sent letters saying ``no boats, no votes''. In around a year, 9 million troops came back, and in another year, Congress voted to return another 2 million, leaving 1 million troops deployed. For returning veterans, it was difficult to adjust to former lives, and divorce rates skyrocketed. The government did give some benefits, in the form of the \textbf{GI Bill of Rights}, which provided \$20 a week for up to a year, and paid college tuition. The increase in children being born led to the generation of \textbf{Baby Boomers}. \item As the industrial revolution had caused the process of urbanization, the return from war caused suburbanization, as many veteran families moved to newly-constructed suburban communities. These communities, constructed on the outskirts of many major cities, had uniform houses, and, usually, uniform demographics. One example of such a town is Levittown, New York. Many races, though, were prevented from receiving housing in such areas, as it was thought that a black man moving to such a town would cause the white population to move out. \item Additionally, the migration of many African-Americans did not help housing segregation. The invention of the cotton picking machine essentially meant the end of sharecropping, which caused lots of black migration from the South to the North. This highlighted the racial discrimination present in the North as well, as many cities refused to take on black residents, many banks refused giving mortgages and loans, and many housing communities forbid black ownership of houses. \item During this period, the latino community increased greatly as well. Many Puerto Ricans moved to areas in New York, quickly making East Harlem, an area which had an Italian majority, an area with Puerto Rican majority. On top of this, during the war, many Mexican workers were allowed in as \textit{Braceros} (or helping hands) in fields that were abandoned by those who were drafted.   \end{itemize}}%
+
+\topic{In what ways did the resolutions passed following the second world war differ from those included in the Treaty of Versailles? The book doesn't mention specific ways.}{\begin{itemize} \item To prevent another Treaty of Versailles, economic peace, rather than reparations were necessary. At Bretton Woods, the agreement had two main effects: first, an International Monetary Fund (IMF) was created, and second, an International Bank for Reconstruction Development (World Bank) was created. The bank was backed by the US dollar until 1971. \item Additionally, the United States, Britain, the USSR, and China came together to create the \textbf{United Nations}. This was essentially to be an international police force to prevent wars and conflict, with the aforementioned countries plus France forming the security counsel, essentially a more powerful oligarchy on top of the other UN members. Although Roosevelt wanted this to succeed greatly, he died two weeks before the first meeting was to take place, but the meeting took place anyway.  \end{itemize}}%
+
+\topic{If Roosevelt were still alive, would the US have avoided the Cold War? It seems he had much better relations with the Soviets than Truman.}{\begin{itemize} \item Due to high political tensions, conflict between the US and the USSR would lead to the \textbf{Cold War}. Although this had somewhat existed since the Russian Revolution, it was mostly rooted in different goals since the beginning of the war. It wouldn't be until Truman's strict outburst at Molotov that tensions truly rose, though, and it seemed that the USSR was a possible enemy. For this reason, the US adopted a policy of \textbf{containment}. Essentially, this left all the territories that were already Soviet alone, but was intended to prevent further spread of Soviet influence to combat the \textbf{iron curtain}. \item In early of 1947, Greece was still locked in a war between its government and communist forces — exactly what containment was meant to prevent. The \textbf{Truman Doctrine} defined American Cold War politics, as it stated that the United States would fight to stop the spread of communism. One way this would be attempted was through the \textbf{Marshall Plan}, which essentially gave money to countries that were destroyed or needed it to recover following the war. \item The Marshall Plan, however, would be interpreted as a direct attack against the Soviets, which accelerated the conflict and tensions. In 1948, Soviets quickly took control of Hungary and Czechoslovakia, and cut off access to Berlin for the western powers. This led to the \textbf{Berlin Airlift}, which sent hundreds of planes to Berlin to bring supplies to the citizens. Because of this, Berlin was somewhat able to withstand the ``siege'', however, the tensions between the two superpowers were clear.  \end{itemize}}%
+
+\topic{What does the book mean when it says ``the first time in history that the United States had agreed to such a peacetime partnership''? Does it mean a multinational partnership?}{\begin{itemize} \item In 1949, America joined the North Atlantic Treaty Organization (NATO), which bound together some western countries as allies — that is, if one were to be attacked by any other country (namely the Soviet Union), the other countries involved would assist it. In 1955, in response to the US, the Soviet Union created the Warsaw Treaty Organization (WTO). \item On top of the forming bitter hatred, Chiang Kai-Shek was defeated by Mao Zedong and other Chinese communists. This meant that the US now had to deal with two communist superpowers.  \end{itemize}}%
+
+\topic{Did anyone step out and question what grounds McCarthy was using for the arrests? If so, did said person get arrested for being a communist?}{\begin{itemize} \item The rising tensions led to an increase in hatred of communism for the Americans. At home, arrests of alleged Soviet spies caused people to worry that they, too, could be arrested. People suspected others and often called others out for being a communist (whether this was true or not). This moment in history became known as the Red Scare. Many, such as Alger Hiss would be arrested, though a good portion were innocent. \item Senator Joseph McCarthy used the Red Scare to come to power. He claimed he had lists of spies and that the government was full of communists. This made many people confide in him and believe he was right. Many people, though, saw through McCarthy, and, in 1954, he was condemned, serving until he died in 1957. J. Edgar Hoover was also a leader of the Red Scare. He collected information on hundreds of suspected Americans. Other politicians created the \textbf{House Committee on Un-American Activities (HUAC)}. This organization censored education and entertainment (like Hollywood) to prevent communist conspiracies. Many celebrities spoke out against HUAC, though many of them were critiqued and ridiculed. \item Labor Unions suspected of communist ties were also reestablished. For example, the United Electrical Workers union was replaced by a different, new union.  \end{itemize}}%
+
+\topic{Was the Korean war essentially pointless for Korea because the borders stayed relatively static?}{\begin{itemize} \item On June 25, 1950, North Korea moved into South Korean territory. The Americans backed the southern Syngman Rhee, while the Soviets backed the northern Kim Il-Sung. The Koreans thought that the US would not be ready when they attacked in June, but they were wrong. The UN voted in favor of stopping the North Koreans. Douglas MacArthur was sent into Korea to aid the war effort, and he would be successful — until he tried to cross the \nth{38} parallel and take North Korean land. In the end, the war was pretty much useless, as the borders returned to what was pretty much their initial state, but after a long and bloody war, with Chinese intervention. MacArthur would be removed, with Matthew Ridgway replacing him, which led to an armistice that would be signed only two years later.  \end{itemize}}%
+
+\topic{Was Truman's own party more of an opponent to him than the alternative party? If so, how was Truman able to win reelection?}{\begin{itemize} \item Throughout his first term, filled with war and foreign policy, Truman was riding a tiger. He had fierce opponents in both parties, who interfered with his actions. Truman wanted to pass FDR's economic Bill of Rights, but it was essentially rejected. Southern segregationists filibustered fair employment practices so that they were pretty much useless. Other bills, such as the Hill-Burton Act, which was meant to create national insurance, was turned into a bill that gave more money to doctors and hospitals. Robert Taft, the former president's son, was Truman's harshest opponent. He persuaded Congress to pass the Taft-Hartley Act over Truman's veto. Following the second world war, the Republican party was strong, which meant great opposition to Truman. \item Essentially, Truman wanted to expand the power of the government. He created a civil rights committee, whose report he used to pass anti-lynching laws. Additionally, he fought the ``do-nothing'' Congress, and aided in the creation of a state of Israel, though many in his administration disagreed with his actions. Although winning reelection looked like it would happen, Truman still faced many opponents. Henry Wallace formed the Progressive Party just to fight Truman, and, later, J. Strum Thurmond ran against Truman as well. The Republicans nominated Thomas E. Dewey, as they sensed it was their year. In the end, Truman won with an electoral vote of 303, to Dewey's 129 and Thurmond's 39. Wallace won no votes. \item With his victory, Truman sought to create the \textbf{Fair Deal}, which was essentially a wide range of acts that were supposed to make life easier for the lower and middle classes. Southern Democrats, though, made sure this would not get passed. The only thing that actually got passed was Truman's ``point four'', or foreign aid.   \end{itemize}}%
+
+\topic{How was the \nth{22} Amendment a slap at FDR, if FDR was dead at the time it was passed? Was it passed because of FDR?}{\begin{itemize} \item Although Truman initially wanted to run for a third term, he decided not to. This paved the way for Eisenhower, as he was, by far, the most popular candidate at the time. Eisenhower rose the ranks quickly to become General, and his leadership of troops made him beloved by many. In 1952, Eisenhower was nominated as Republican candidate, with Richard M. Nixon as his running mate (although the two weren't very close). Nixon made himself big as a member of the HUAC. \item Adlai Stevenson was nominated by the Democrats to go up against Eisenhower. The campaigns Stevenson and Eisenhower held during this election were the first influenced by television, and, eventually, Eisenhower won with a 442:89 electoral vote. As he had promised in his campaign, Eisenhower went to Korea, and, unlike Truman, was able to get a treaty signed. Eisenhower was more economically conservative, and, for this reason, he did not pass any new major legislation (although he did not remove New Deal legislation).  \end{itemize}}%
+
+\summary{With the end of World War II, the different goals of the western powers and the USSR caused tensions to rise immediately. On top of this, the arms race, caused by Truman's unwillingness to share nuclear secrets, it created goals for the two factions to create a more destructive weapon than the other. The splitting into NATO and WTO factions defined and highlighted the split between the capitalist west and the communist east. The Berlin Airlift, the first ``face off'' between the east and west, resulted in the opening of Berlin to the western powers. The UN, which initially helped, only worsened conditions in the long run, as the Soviet Union openly objected to intervention in Korea, though this was basically ignored. With each event, it became more and more apparent that the Soviet Union and the west could not coexist, especially as the United States ``lost China'', which meant there was another communist country to deal with. Truman, who was reelected in 1948, had to deal with the Korean War, as he had MacArthur cut off Korean supply lines, and then progress northward, until the roles were reversed and his supply lines were cut. No actual treaty would be signed in Korea until Eisenhower visited in 1953, after he was elected by a big lead in 1952. }
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
