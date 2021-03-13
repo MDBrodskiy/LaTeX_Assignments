@@ -1,0 +1,175 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 25 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\vspace{-15pt}
+
+\topic{How big was the Soviet arsenal, relative to the thousands of atomic bombs that the US had?}{\begin{itemize} \item With Eisenhower, little changed internally, as the citizens were complacent with a war hero as president. With respect to foreign policy, however, great strides were made to prevent spread of the red enemy to the east. Eisenhower wanted to minimize military spending, all the while keeping the citizens of the US safe. His plan was comprised of two key parts: first was \textbf{massive retaliation} (announced by John Foster Dulles\footnote{Brother of Allen Dulles}), and second was to expand the \textbf{Central Intelligence Agency (CIA)}, created by Truman and formerly known as the Office of Strategic Services (OSS). \item The CIA was in charge of covert operations in countries under threat of communism, as well as gathering intelligence to provide to those in high government positions. Several coups were organized by the CIA, including Iran in summer of 1953 (for nationalizing oil interests), Guatemala in June of 1954 (due to Jacobo Arbenz Guzman's treatment of the United Fruit Company), unsuccessfully in Indonesia in 1958, and Laos in 1959. \item Other issues, though, had to be handled in different ways. Following the war, France wanted to reclaim its colonies in French Indochina. Many countries, most importantly Vietnam, resisted. Initially, Vietnam held US support, but the US would quickly switch to backing France. The events in Vietnam prompted the creation of the unsuccessful South East Asian Treaty Organization (SEATO). \item Khruschev's speech about de-Stalinization somewhat shocked the world, as many hoped for peace with the Soviet Union. The Suez Canal Crisis (1956) would see a unique event in which the United States and Soviet Union teamed up against Britain, France, and Israel. When Gamal Abdel Nasser requested loans from the Soviet Union and the United States, both sides realized what he was doing and refused. Because of this, he cut off the Suez Canal to earn money through the route. Frightened by this, France and Britain pushed Israel to invade Egypt. Both the US and USSR publicly denounced France, Britain, and Israel's actions, eventually arranging a cease fire, and giving control of the Canal to Egypt. \item Additionally, Hungary was not happy under Soviet control. When more and more people were protesting and asking for freedom, the Soviet Union sent in 200,000 troops and 4,000 tanks, resulting in roughly 40,000 Hungarian deaths. The United States did little more than call the Soviet Union tyrannical for its actions.  \end{itemize}}%
+
+\topic{At the time of the NDEA and rising graduation rates, were AP tests a thing, or were they not yet implemented?\\\\Also, it's surprising how the book didn't mention the numerous failed flights with dogs launched into space forever, never to return.}{\begin{itemize} \item As it seemed the Cold War was becoming cooler, the Soviet Union launched \textit{\textbf{Sputnik}}, a space satellite, and, a month later, \textit{Sputnik II}, which actually had a dog inside. The US responded by creating the \textbf{National Aeronautics and Space Agency (NASA)}. Additionally, to stimulate advancement, Eisenhower passed the \textbf{National Defense Education Act (NDEA)}. Graduation rates rose from 57.4\% in the 50s to 75.6\% in 1970. \item Still, some attempts at peace were made. In July 1955, a conference at Geneva was held, though it was pretty much useless. It did, however, promote the \textbf{``Spirit of Geneva''}, for those who wanted peace, such as Eisenhower. In 1959, the US and USSR were able to calmly resolve an issue in Berlin, and Eisenhower and Khruschev decided to invite each other to their respective countries to promote peace. On May 1, 1960, however, things would change, as an American U-2 spy plane was shot down over the Soviet Union. The USSR was outraged, and they stated that they captured the pilot, Francis Gary Powers. Khruschev withdrew his invitation to Eisenhower, and little peace talks occurred for roughly 2 years.   \end{itemize}}%
+
+\topic{Was Eisenhower given bad press over the U-2 incident? If not, who was blamed by the journalists?}{\begin{itemize} \item Although Eisenhower had the popularity to win again, he did not run because of the two-term limit which had been imposed in response to the Roosevelt administration. Instead, Richard Nixon, Eisenhower's vice president, ran, against the Catholic John F. Kennedy. Remembering back to Al Smith, many wondered whether JFK had a chance to be successful. \item One major reason for JFK's victory (with a popular vote of 49.7\% to 49.6\%) was his essentially unlimited funds provided by his father. For the first time, television played a major role, as debates were now widely televised. Those who listened on radio tended to agree with Nixon's arguments, while those who watched on television saw JFK looking younger and more charismatic, which made them side with JFK. Overall, this would be an election with one of the smallest margins, though it did replace the (at the time) oldest president with the youngest.  \end{itemize}}%
+
+\topic{Were the initially developed highways only one lane, or did they start with multiple?}{\begin{itemize} \item Not only was television important in the election, as it was becoming part of daily life. Families would now sit down to watch full movies or programs such as comedies, soap operas, and dramas, as well as a lot of westerns. Television stations began to understand that more sponsors meant more money, so advertisements began to become popular as well, though they would pander to white families. Game shows, namely \textit{The \$64,000 Question} was found out to be rigged. In any case, the popularity of the television meant that it was here to stay, as it is obvious to this day. \item Another invention, the automobile became widely popular during the 50s and 60s. Although many had owned cars in the 1920s, they would only become widely popular around the 60s, as over eighty percent of families owned one. Cars meant a need for roads, and so Eisenhower proposed the \textbf{Interstate Highway System}, widely used to this day. Additionally, many gas stations began to pop up. In this manner, the automobile brought about more interconnectedness and independence for the citizens of the United States.  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\topic{}{\begin{itemize} \item  \end{itemize}}%
+
+\summary{}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
