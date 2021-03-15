@@ -1,0 +1,167 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}
+\Huge\sffamily\centering Synthesis Prompt Notes
+\end{tcolorbox}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{grey}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{ m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=top,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+\urlstyle{same}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP Language and Composition]{AP Language and Composition}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+
+\begin{document} 
+\maketitle
+
+\topic{Stable Language}{Read the six sources, including introductory information for each source. }
+  {Then, write an essay that synthesizes at least three of the sources and develops your position on the topic you are asked to address.}%
+    
+\topic{Timing}{There are fifteen minutes to read the prompt and sources, and forty minutes total for the essay.} 
+{It is recommended to look at those sources during those first fifteen minutes.}%
+    
+\topic{Goals of the Synthesis Prompt}{Critical Reading}
+{Focused Argument}
+{Organization}
+{Use of Source Material}
+{Citation of Source Material}%
+    
+\topic{Who is supposed to be in control?}{Show you are in control of the sources. Use them to guide your argument, not define it.}
+{Try to pair sources to make writing easier.}%
+    
+\topic{Public Libraries}{You are invited to ``develop a position on the role, if any, that public libraries should serve in the future.''}
+{Sources given vary from blogs and more traditional articles to activity calendars, bar graphs depicting e-book use, and librarian assistance to patrons.}%
+    
+\topic{Monuments}{This one uses language that doesn't comport with the new promised language, so adjustments were made.}
+{Here, you're invited to take a position on ``the factors a group or agency should consider in memorializing an event or person and in creating a monument''}%
+    
+\topic{Wind Farms}{When it comes to energy, wind farms may not be the first thing that comes to mind.}
+{This 2019 prompt asks, ``develop your position on the most important factors that an individual or agency should consider when deciding whether to establish a wind farm''}
+{It is suggested to always try to use charts or graphs, when given.}%
+    
+\topic{The USPS}{The 2012 prompt states, ``take a position on whether the USPS should restructured to meet the needs of a changing world, and if so, how''}
+{Unlike other prompts, this one also asks for solutions for the future.}
+{Example Thesis: \textit{The United States Postal Service should continue to adapt to the ongoing needs and demands of changing communication and commerce, embracing emerging delivery methods}}%
+    
+\topic{Skills}{All of the skills learned in the class will continue to build on each other, including the ability to synthesize documents.}%
+    
+\topic{Citations}{Be very careful of citing anything, including someone in a class discussion.}%
+    
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+%{\lipsum[4]}%
+%{\lipsum[5]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
