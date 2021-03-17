@@ -171,11 +171,13 @@ citecolor=blue,
       \label{7}
     \end{equation}
 
-  \item
+  \item \ce{H2PO4- + OH- -> HPO4^2- + H2O}
 
     \begin{equation}
       \begin{split}
-        \frac{.3\cdot.5+.42\cdot.137}{.72}=.28825[\si{\Molar}]\\
+        \ce{pKa}=-\log_{10}\left( 6.2\cdot10^{-8} \right)=7.208\\
+        \ce{pH}&=7.208+\log_{10}\left( \frac{.137+\frac{.05}{.72}}{.5-\frac{.05}{.72}} \right)\\
+        &= 6.89
       \end{split}
       \label{8}
     \end{equation}
@@ -188,6 +190,11 @@ citecolor=blue,
 
     \begin{equation}
       \begin{split}
+        .006\cdot.532=.003192[\si{\mole}]\\
+        .032\cdot.201=.006432-.003192=.00324[\si{\mole}]\\
+        [\ce{H+}]&=\frac{(1.5\cdot10^{-5})(.00324)}{.003192}\\
+        &= 1.52\cdot10^{-5}\\
+        \ce{pH}=4.817
       \end{split}
       \label{9}
     \end{equation}
@@ -196,6 +203,13 @@ citecolor=blue,
 
     \begin{equation}
       \begin{split}
+        V_b&= \frac{.032\cdot.201}{.532}\\
+        &= .0121[\si{\liter}]\\
+        .0121\cdot.532=.006432[\si{\mole}]\\
+        \frac{.006432}{.0121+.032}=.14585[\si{\Molar}]\\
+        \ce{Kb}=\frac{10^{-14}}{1.5\cdot10^{-5}}=6.67\cdot10^{-10}\\
+        x=\sqrt{.14585\cdot6.67\cdot10^{-10}}=9.86\cdot10^{-6}[\si{\Molar}]\\
+        \ce{pH}=14+\log_{10}\left( 9.86\cdot10^{-6} \right)=9
       \end{split}
       \label{10}
     \end{equation}
@@ -210,6 +224,11 @@ citecolor=blue,
 
     \begin{equation}
       \begin{split}
+        .094\cdot.1035=.009729[\si{\mole}]\\
+        .044\cdot.332=.014608-.009729=.004879[\si{\mole}]\\
+        [\ce{OH-}]&=\frac{(5.6\cdot10^{-10})(.004879)}{.009729}\\
+        &= 2.808\cdot10^{-10}\\
+        \ce{pH}=4.45
       \end{split}
       \label{11}
     \end{equation}
@@ -218,6 +237,13 @@ citecolor=blue,
 
     \begin{equation}
       \begin{split}
+        V_b&= \frac{.044\cdot.332}{.1035}\\
+        &= .141[\si{\liter}]\\
+        .141\cdot.1035=.0146[\si{\mole}]\\
+        \frac{.0146}{.0141+.044}=.2513[\si{\Molar}]\\
+        \ce{Ka}=\frac{10^{-14}}{5.6\cdot10^{-10}}=1.786\cdot10^{-5}\\
+        x=\sqrt{.2513\cdot1.786\cdot10^{-5}}=.002119[\si{\Molar}]\\
+        \ce{pH}=-\log_{10}\left( .002119 \right)=2.674
       \end{split}
       \label{12}
     \end{equation}
@@ -226,19 +252,80 @@ citecolor=blue,
 
   \item
 
+    \begin{enumerate}
+
+      \item 
+
     \begin{equation}
       \begin{split}
+        x&=\sqrt{.178\cdot1.9\cdot10^{-4}}\\
+        &= .00582[\si{\Molar}]\\
+        -\log_{10}\left( .00582 \right)=2.24\\
       \end{split}
       \label{13}
     \end{equation}
 
-  \item
+      \item 
 
     \begin{equation}
       \begin{split}
+        .0048\cdot.523=.00251[\si{\mole}]\\
+        .03\cdot.178=.00534-.00251=.00283[\si{\mole}]\\
+        [\ce{H+}]=\frac{\left(1.9\cdot10^{-4}\right)\left( .00283 \right)}{.00251}\\
+        \ce{pH}=3.67
       \end{split}
       \label{14}
     \end{equation}
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+    \begin{equation}
+      \begin{split}
+        x=\sqrt{.244\cdot7.14\cdot10^{-11}}\\
+        =4.174\cdot10^{-6}\\
+        14+\log_{10}\left( 4.174\cdot10^{-6}  \right)=8.621
+      \end{split}
+      \label{15}
+    \end{equation}
+
+      \item 
+
+    \begin{equation}
+      \begin{split}
+        .078\cdot.1033=.00806[\si{\mole}]\\
+        .05\cdot.244=.0122-.00806=.00414[\si{\mole}]\\
+        [\ce{H+}]=\frac{\left( 7.14\cdot10^{-11} \right)\left( .00414 \right)}{.00806}\\
+        \ce{pH}=3.56
+      \end{split}
+      \label{16}
+    \end{equation}
+
+      \item 
+
+    \begin{equation}
+      \begin{split}
+        V_b=\frac{.05\cdot.244}{.1033}\\
+        =.1181[\si{\liter}]\\
+        .1181\cdot.1033=.0122[\si{\mole}]\\
+        \frac{.0122}{.1181+.05}=.0726[\si{\Molar}]\\
+        \ce{Ka}=\frac{10^{-14}}{7.14\cdot10^{-11}}\\
+        =1.4\cdot10^{-4}\\
+        x=\sqrt{.0726\cdot1.4\cdot10^{-4}}\\
+        =.003189\\
+        -\log_{10}\left( .003189 \right)=2.5
+      \end{split}
+      \label{17}
+    \end{equation}
+
+    \end{enumerate}
+
+    \end{enumerate}
 
 \end{enumerate}
 
