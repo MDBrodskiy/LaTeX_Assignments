@@ -175,9 +175,11 @@ citecolor=blue,
 
     \begin{equation}
       \begin{split}
-        \ce{pKa}=-\log_{10}\left( 6.2\cdot10^{-8} \right)=7.208\\
-        \ce{pH}&=7.208+\log_{10}\left( \frac{.137+\frac{.05}{.72}}{.5-\frac{.05}{.72}} \right)\\
-        &= 6.89
+        \text{Lost: } .5\cdot.3-.137\cdot.42=.09246[\si{\mole}]\\
+        \text{Gain: } .137\cdot.42+.05=.1075[\si{\mole}]\\
+        [\ce{H+}]=\frac{\left(6.2\cdot10^{-8}\right)\left( \frac{.09246}{.3+.42} \right)}{\frac{.1075}{.3+42}}\\
+          =5.33\cdot10^{-8}\\
+          -\log_{10}\left( 5.33\cdot10^{-8} \right)=7.27
       \end{split}
       \label{8}
     \end{equation}
@@ -240,10 +242,10 @@ citecolor=blue,
         V_b&= \frac{.044\cdot.332}{.1035}\\
         &= .141[\si{\liter}]\\
         .141\cdot.1035=.0146[\si{\mole}]\\
-        \frac{.0146}{.0141+.044}=.2513[\si{\Molar}]\\
+        \frac{.0146}{.141+.044}=.0789[\si{\Molar}]\\
         \ce{Ka}=\frac{10^{-14}}{5.6\cdot10^{-10}}=1.786\cdot10^{-5}\\
-        x=\sqrt{.2513\cdot1.786\cdot10^{-5}}=.002119[\si{\Molar}]\\
-        \ce{pH}=-\log_{10}\left( .002119 \right)=2.674
+        x=\sqrt{.0789\cdot1.786\cdot10^{-5}}=.00119[\si{\Molar}]\\
+        \ce{pH}=-\log_{10}\left( .00119 \right)=2.924
       \end{split}
       \label{12}
     \end{equation}
