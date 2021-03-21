@@ -1,0 +1,157 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 26 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Who organized the Students for a Democratic Society? What caused this group to be formed?}{\begin{itemize} \item Unlike the 50s, the 60s would be a time of protest and activism. In 1960, the \textbf{Students for a Democratic Society (SDS)} was formed. This group was essentially like a white counterpart to the SNCC. Many authors, film-makers, and musicians were involved in challenging established norms. Examples include Jane Jacobs (\textit{The Death and Life of Great American Cities}, 1961), Rachel Carson (\textit{Silent Spring}, 1962), \textit{Bonnie and Clyde} (1967), and Jimi Hendrix. \item Activism Breakdown: \begin{itemize} \item Jane Jacobs — City Planning/Organization \item Rachel Carson — Environmental Activism \item Michael Harrington — Fought Poverty \item Betty Friedan — Feminism  \end{itemize}\end{itemize}}%
+
+\topic{Were student activists generally present in all universities, or was it limited to only a few?}{\begin{itemize} \item A big part of protesters consisted of students, more specifically college students. For example, the SDS, created by students, had goals to better society. At the University of California, Berkeley, students were forbidden from raising funds for off-campus causes while being on campus. This caused massive outrage, and students often did it anyway as a sign of protest. After one student was arrested for this, students non-violently gathered near the police car, and for many hours resisted their peer's arrest. In this manner, many students worked to make the world a better place.  \end{itemize}}%
+
+\topic{Did anyone that Kennedy appointed do much for Civil Rights (such as Thurgood Marshall), or was the whole administration quite on the subject?}{\begin{itemize} \item Although Kennedy was more active than most previous presidents on the subject, he did not keep many of his promises regarding civil rights. Kennedy's administration created the Committee on Equal Employment Opportunities, which was headed by Lyndon B. Johnson. Additionally, Kennedy passed an ``equal pay for equal work'' act, which meant that people doing the same work should be paid the same, regardless of who the people were. Most importantly, JFK appointed Thurgood Marshall as a federal judge. \item On the other hand, JFK promised to ``end racial discrimination in federal housing at `the stroke of a pen' ''. When Kennedy was silent on the topic, many civil rights activists began sending him pens. Much of the reason for Kennedy's slowness regarding civil rights was that many of his voters were uninterested in civil rights. Kennedy's domestic policy became known as the \textbf{New Frontier}. \item Outside of civil rights, Kennedy added more funding to NASA, as well as created a tax cut. Additionally, J. Edgar Hoover was flaunting power over Kennedy. Hoover believed MLK was a communist and sexual degenerate. Although he had no proof of him being a communist, Hoover said that he had proof of his sexual degeneracy. Kennedy did not quell these attacks because Hoover said he had evidence of JFK's extramarital affairs as well.  \end{itemize}}%
+
+\topic{Was this the first actual case of separation of church and state since the case with Massachusetts early in the life of the country?}{\begin{itemize} \item In 1962, the case of \textit{\textbf{Engel v. Vitale}} ended in a 6-1 decision that prohibited schools from starting the school day with prayer. In 1963, the case of \textit{Abington School Board v. Schempp} decided that it was unconstitutional to start the day with religious readings and scriptures. The two cases were backed by reasoning that it was not the governments job to instill religious beliefs (separation of church and state). \item Kennedy's time was also a difficult time for foreign policy. On several occasions, the Cold War would get heated, starting with the \textbf{Bay of Pigs}. The Bay of Pigs invasion occurred following the overthrow of Fulgencio Batista, a corrupt Cuban politician. Fidel Castro replaced Batista, and, initially, relations between the US and Cuba were decent. It wouldn't be until it was evident that Cuba was like a USSR satellite that tensions would rise. With assistance from the CIA and the DCI Allen Dulles, the invasion of Cuba was orchestrated and later approved by Secretary of Defense McNamara and the Joint Chiefs of Staff. The invasion was a disaster, and it led to Kennedy's speech about shattering the CIA.  \end{itemize}}%
+
+\topic{What exactly sparked Khrushchev to construct the Berlin Wall?}{\begin{itemize} \item Another threat was the \textbf{Berlin Wall}. This wall divided East and West Berlin, and was expanded several times throughout its history. It became heavily fortified, with soldiers poised at sniper towers and ready to shoot anyone who attempted to run from East to West. Tanks rolled to the border between East and West, but Kennedy and Khrushchev came to an agreement, which eased tensions. \item A ``boiling point'' in the Cold War, though, would be the \textbf{Cuban Missile Crisis}. Here, Soviet ships sailed into Cuba with missiles. Essentially a response to the American missiles in Turkey, US officials were close to starting a war. Instead, the US released a statement that it forbid the importation and sailing of more Soviet ships into Cuban ports until further notice. Eventually, Kennedy and Khrushchev came to a secret agreement — the Soviets would remove their missiles from Cuba, and the Americans remove theirs from Turkey, and allow Soviet ships in Cuba. The decision of removing American missiles from Turkey was not announced to the public. \item Additionally, Kennedy formed the \textbf{Peace Corps}. These corps were meant to send young Americans to spend 2 years abroad, while volunteering for special causes. On his visit to gain popularity in Texas, on November 22, 1963, Kennedy would be assassinated. Lyndon B. Johnson took his position, and he would be quite a different president than Kennedy.  \end{itemize}}%
+
+\topic{This is quite a common question, filled with many theories and speculations, but how would have Vietnam been different under Kennedy, rather than Johnson?}{\begin{itemize} \item In his first speech, LBJ promised to continue the ``Kennedy Dream''. He used this to ask Congress to pass the Civil Rights Act Kennedy had proposed, without any modifications. Johnson proposed his domestic policies to be called \textbf{Greater Society}, as he wanted to make life better for the people in poverty. \item Johnson forced through lots of legislation for his ``war on poverty''. The first legislation was the creation of the Volunteers in Service to America, modeled after the CCC of the New Deal Era. On top of this, Johnson was able to pass federal aid to education, Medicare and Medicaid, immigration reform, and the much awaited Voting Rights Act. The Civil Rights Act was greatly requested by the African-American population, especially those in the South. This act guaranteed federal oversight and possibly intervention in literacy test places, especially in those places where less than 50\% of the population was registered to vote, which described much of the South. \item Also, Johnson was able to get the Immigration Act of 1965 through. This act essentially abolished ``from country'' quotas, and, instead, replaced them with a general cap to how many people could immigrate. A loophole, though, was that more people could immigrate if they married a citizen or had family or some kind of connection. Although it wasn't given much thought, this would turn out to be a big immigration loophole. For his reelection, which was barely contested except for the trouble with the Mississippi Freedom Democratic Party (MFDP), Johnson chose Hubert Humphrey as his running mate instead of Bobby Kennedy, as most thought he would. Johnson said that this was because he wanted to see if he, himself could win the election, rather than have Kennedy win it for him.  \end{itemize}}%
+
+\topic{Which group was most against war? Were the demonstrations generally just picket protests, or what form did they take?}{\begin{itemize} \item Kennedy did not focus on Vietnam when he came to office, as he was looking at Cuba and Berlin. When he started his term, there were roughly 1000 troops in Vietnam. Slowly, he increased the amount of people stationed there. Initially, Americans backed Ngo Dinh Diem, but, because of his despotic behavior, coupled with the general dislike of him in South Vietnam, led Kennedy to agree with inciting a coup. With CIA aid, Diem was taken out. Three weeks later, Kennedy was dead. When he died, there were roughly 17000 American troops in Vietnam. \item The war worried LBJ very much, as he was much better at passing legislation and controlling the US domestically. He tried to postpone it as much as possible, especially because he did not want to interfere with his Greater Society policies. Because of this, LBJ passed much legislation and took many actions quietly, and without Congress support, which would lead to distrust and dislike of him. When it was heard that the \textit{USS Maddox} was shot upon in Tonkin, Johnson pleaded for Congress to allow him to declare war. The resolution to declare war was passed with very little opposition (only 2 against in the Senate), and became known as the \textbf{Gulf of Tonkin Resolution}. \item In July of 1965, Johnson secretly increased the American troops from 75000 to 200000. Combat was continuously expanded for the next few years, and more and more students would disagree. Lots of people, many of whom were religious leaders, fought the draft and urged people not to follow it. College students were outraged and many campaigned against the draft. Some civil rights movements were reluctant to join opposition at the beginning because they wanted continued support from Johnson, but more joined the fight later, with the SNCC being the first. Many were arrested, which made the resistance even greater. Chemical military companies were stormed and destroyed to prevent manufacturing of war equipment. The solution for many was to move to Canada. Meanwhile, Johnson tried desperately to raise morale; for example, he brought General Westmoreland to talk about American success in Vietnam.  \end{itemize}}%
+
+\topic{If the casualty rate is so polarized against the North Vietnamese during the Tet Offensive, why did the citizens of the US think that the war was being lost? Was it because of the element of surprise?}{\begin{itemize} \item On Tet, the Vietnamese Lunar New Year, North Vietnamese attacked all over South Vietnam in a planned attack. This would become known as the \textbf{Tet Offensive}. Although the casualty rate was 40,000 North Vietnamese to around 2,300 South Vietnamese and 1,100 Americans, most importantly, the offensive sent a message, which resonated with many Americans because it became clear that the war was not close to over. Because of the turmoil and lack in popularity, Johnson declared that he was not going to run again. \item Vietnam was far from the only problem for Americans at the time. With MLK's assassination, widespread riots broke out. Tens of thousands of people would be arrested in the week after his assassination, and around forty African-Americans were killed. On top of this, the upcoming election seemed quite confusing, as no influential candidates were coming forth, until Robert Kennedy. Kennedy, however, would be assassinated by an Arab nationalist. Nixon would barely clutch a victory. \item Groups, such as the Yippies, were rising and becoming more influential, as they protested and made fun of the police and other pro-Vietnam figures. This led to riots and many deaths, which were televised. By being televised, it spread the message to others within the United States, but it also showed the state of disarray in America to enemies.  \end{itemize}}%
+
+\summary{The 1960s would turn out be nothing like the 1950s. Throughout the 60s, people began to participate in activism. More and more people began to question established laws and guidelines. Kennedy would pass much legislation to assist in civil rights matters, though Johnson would have to step in to actually pass a Civil Rights Act, and, later Voting Rights Act. In addition to this, Medicaid and Medicare laws were passed, as well as Equal Employment laws. For Kennedy, events such as the Bay of Pigs invasion, the building of the Berlin Wall, and the Cuban Missile Crisis brought the Cold War to a very hot level. For Johnson, everything would be going quite well until he had to deal with foreign policy — that is, the Vietnam War. The first televised war, people were appalled to see the death and destruction the war left in its path. Additionally, the draft, which took many people against their will, caused additional outrage. With his promises to do ``something different'' in Vietnam, Nixon was elected, during a turbulent time, with race riots, anti-war riots, and the Vietnam War raging.}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
