@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 15 $-$ Problems 6, 28, 34}
+\date{March 25, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{5}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{AgCl}
+
+        \begin{enumerate}
+
+          \item \ce{AgCl <=> Ag+ + Cl-}
+
+          \item $K_{sp}=\left[ \ce{Ag+} \right]\left[ \ce{Cl-} \right]$
+
+        \end{enumerate}
+
+      \item \ce{Al2(CO3)3}
+
+        \begin{enumerate}
+
+          \item \ce{Al2(CO3)3 <=> 2Al^3+ + CO3^2-}
+
+          \item $K_{sp}=\left[ \ce{Al^3+} \right]^2\left[ \ce{3CO3^2-} \right]^3$
+
+        \end{enumerate}
+
+      \item \ce{MnS2}
+
+        \begin{enumerate}
+
+          \item \ce{MnS2 <=> Mn^2+ + 2S-}
+
+          \item $K_{sp}=\left[ \ce{Mn^4+} \right]\left[ \ce{2S^2-} \right]^2$
+
+        \end{enumerate}
+
+      \item \ce{Mg(OH)2}
+
+        \begin{enumerate}
+
+          \item \ce{Mg(OH)2 <=> Mg^2+ + 2OH-}
+
+          \item $K_{sp}=\left[ \ce{Mg^2+} \right]\left[ \ce{OH-} \right]^2$
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{27}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            [\ce{OH-}]=10^{9.62-14}\\
+            =4.17\cdot10^{-5}[\si{\Molar}]\\
+            \left[ \ce{Cd^2+} \right]\left[ \ce{OH-} \right]^2=2.5\cdot10^{-14}\\
+            [\ce{Cd^2+}]=\frac{2.5\cdot10^{-14}}{\left( 4.17\cdot10^{-5} \right)^2}\\
+            =1.4\cdot10^{-5}[\si{\Molar}]
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            .0013\cdot x^2=2.5\cdot10^{-14}\\
+            x=4.4\cdot10^{-6}[\si{\Molar}]\\
+            14+\log_{10}\left( 4.4\cdot10^{-6} \right)\\
+            \ce{pH}=8.64
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            \frac{4.4\cdot10^{-6}}{4.17\cdot10^{-5}}=.105\\
+            .105\cdot100\%=10.5\%
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{33}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            K_{sp} \ce{PbSO4} = 1.8\cdot10^{-8}\\
+            [\ce{Pb^2+}]=9\cdot10^{-7}[\si{\Molar}]\\
+            K_{sp} \ce{Pb(OH)2} = 2.8\cdot10^{-16}\\
+            [\ce{Pb^2+}]=7\cdot10^{-13}[\si{\Molar}]\\
+            7\cdot10^{-13} < 9\cdot10^{-7}\\
+            \text{So \ce{Pb(OH)2} precipitates first}
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            [\ce{OH-}]^2\left( 9\cdot10^{-7} \right)=2.8\cdot10^{-16}\\
+            [\ce{OH-}]=1.76\cdot10^{-5}[\si{\Molar}]\\
+            14+\log_{10}\left( 1.76\cdot10^{-5} \right)\\
+            \ce{pH}=9.25
+          \end{split}
+          \label{5}
+        \end{equation}
+
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
