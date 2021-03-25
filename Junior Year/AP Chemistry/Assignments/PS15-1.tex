@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 15 $-$ Problem Set 1}
+\date{March 26, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item \ce{PbI2 <=> Pb^2+ + 2I-}
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            [\ce{Pb^2+}]\left[ \ce{I-}  \right]^2=10^{-8}\\
+            (x)(2x)^2=10^{-8}\\
+            x=\sqrt[3]{\frac{10^{-8}}{4}}\\
+            =.00136[\si{\Molar}]\\
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            (x)(.01)^2=10^{-8}\\
+            x=\frac{10^{-8}}{(.01)^2}\\
+            =1\cdot10^{-4}[\si{\Molar}]\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            (.02)(2x)^2=10^{-8}\\
+            x=\sqrt{\frac{10^{-8}}{.08}}\\
+            =3.54\cdot10^{-4}[\si{\Molar}]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+    \newpage
+
+  \item \ce{Mg(OH)2 <=> Mg^2+ + 2OH-}
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            \left[ \ce{Mg^2+} \right]\left[ \ce{OH-} \right]^2=1.8\cdot10^{-11}\\
+            (x)(2x)^2=1.8\cdot10^{-11}\\
+            x=\sqrt[3]{\frac{1.8\cdot10^{-11}}{4}}\\
+            =1.65\cdot10^{-4}[\si{\Molar}]\\
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            (.1)(2x)^2=1.8\cdot10^{-11}\\
+            x=\sqrt{\frac{1.8\cdot10^{-11}}{.4}}\\
+            =6.7\cdot10^{-6}[\si{\Molar}]\\
+          \end{split}
+          \label{5}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            (x)(.25)^2=1.8\cdot10^{-11}\\
+            x=\frac{1.8\cdot10^{-11}}{.125}\\
+            =2.88\cdot10^{-10}[\si{\Molar}]
+          \end{split}
+          \label{6}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            .1\cdot.00045=.000045[\si{\mole}_{\ce{Ag+}}]\\
+            \frac{.000045}{.35}=1.286\cdot10^{-4}[\si{\Molar}]\\
+          \end{split}
+          \label{7}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            .25\cdot.00075=.0001875[\si{\mole}_{\ce{CrO4^2-}}]\\
+            \frac{.0001875}{.35}=5.36\cdot10^{-4}[\si{\Molar}]
+          \end{split}
+          \label{8}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            \left( 1.286\cdot10^{-4} \right)^2\left( 5.36\cdot10^{-4} \right)=8.86\cdot10^{-12}\\
+            8.86>2\\
+            \text{So solid \textit{is} formed}
+          \end{split}
+          \label{9}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item
+
+        \begin{equation}
+          \begin{split}
+            \left( .00105 \right)^2(x)=6\cdot10^{-4}\\
+            x=544[\si{\Molar}]
+          \end{split}
+          \label{10}
+        \end{equation}
+
+      \item \ce{PbCl2 <=> Pb^2+ + 2Cl-}
+
+        \begin{equation}
+          \begin{split}
+            (x)(2x)^2=3.3\cdot10^{-3}\\
+            x=.0938[\si{\Molar}]\\
+          .0938\cdot.756\cdot278=19.71[\si{\gram}]\text{ at }80[\si{\degree\Celsius}]\\
+            \hline
+          (x)(2x)^2=1.6\cdot10^{-5}\\
+            x=.0159[\si{\Molar}]\\
+            .0159\cdot.756\cdot278=3.336[\si{\gram}]\text{ at }25[\si{\degree\Celsius}]\\
+            \hline
+            19.71-3.336=16.38[\si{\gram}]
+          \end{split}
+          \label{11}
+        \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
