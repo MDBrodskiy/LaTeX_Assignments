@@ -1,0 +1,156 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 27 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{An interesting film that subtly underlines the angst toward organized government as a backdrop to the main plot points is Quentin Tarantino's latest (\emph{at the time of writing}) film, \href{https://www.imdb.com/title/tt7131622}{\emph{Once Upon A Time In Hollywood}}.}{\begin{itemize}\item Civil rights campaigns of Latinos, Asians, American Indians, gay men, and lesbians made their lasting impact by shifting the general tone of public discourse.\item Richard Nixon's running mate, Spiro T. Agnew characterized the voice of public angst as ``\emph{nattering nabobs of negativism}'' \end{itemize}}
+\topic{I have heard it mentioned in numerous political discussions that the modern conservative movement is rooted indirectly in Nixon's presidency}{\begin{itemize}\item George H.W. Bush, \nth{41} president of the United States, began his illustrious career as an Ambassador of Nixon's White House.\item Richard Cheney began his career as a member of Donald Rumsfeld's staff and emerged post-Watergate as one of the only mid-to-high ranking Republican officers unscathed. \item Barry Goldwater, Nixon's opposition during the Republican primary campaigns, further preached modern conservative ideals.\item The failures of Nixon's appointed successor to secure incumbency and the Jimmy Carter's single term paved the way for a strong, patriotic, charismatic Republican candidate such as Ronald Reagan to define the diplomatic domain of the 1980s.\end{itemize}}
+\topic{The post-Vietnam attitude between the Intelligence Community and Military Industry Complex and overall public distaste of American involvement, covert and otherwise, in foreign conflicts accompanied with the finger-pointing and blame sharing is somewhat repeating itself in the current climate between the \href{https://intelnews.org/2020/12/11/01-2919/}{Pentagon and the Intelligence Community}.}{\begin{itemize}\item ``\emph{While antiwar protesters were furious at } [Lyndon] \emph{Johnson and the Democrats for continuing the war, many other Americans were angry that the war was not being won}.'' \end{itemize}}
+\topic{The modern formula of the United States as a national-security state (i.e. \emph{Department of Homeland Security}, \emph{mass surveillance — Fusion Centers}, \emph{militarization of non-federal law enforcement}) was first developed in south Vietnam during Nixon's first term under the operational pseudonym ``Phoenix'' (ICE-X SIDE) program. It is interesting to see how this program secured previously unparalleled intelligence victories but was unable to provide the military with tangible successes the public so desperately desired.}{\begin{itemize}\item In the first months of the Nixon-Kissinger regime, the LBJ initiated Paris-Peace talks were gridlocked. Nixon's secret promises of bringing an end to the war was superseded by his frequent bypassing the State Department as well as his own staff. \item From early 1969 to December 1972 more United States bombs were dropped on Cambodia than were dropped by the United States during World War II\@. The expanded bombing campaigns did not break the will of the NVA leadership and in fact attributed to an increase in hostiles in addition to the already existent VCI hostiles. After Lon Nol's, Cambodia's prime minister, coup against Prince Sihanouk, Cambodia's leader, many Cambodians joined the anti-American movement supported by the communist Khmer Rouge. Under Sihanouk command from exile in China, Cambodia was to be turned into a pre-industrial state; teachers, affluent civilians, and anyone else demonstrating western influence were neutralized. Throughout this period, it is estimated that a quarter of Cambodia's population perished. In order to discontinue sending American men to fight a war they didn't understand and in addition to amending draft regulations, Nixon's new \textbf{Vietnamization} policy would provide ammunition and training to South Vietnam and limit the amount of American and allied combatants in the country to covert forces. \end{itemize}}
+\topic{Can the nationwide outrage in the form of protests be attributed to the college educated youth's fear of being drafted?}{\begin{itemize}\item After 1986, antiwar protests began with upwards of 600,000 people gathering at the Washington Mall.\item The murder of four student protesters at Kent State University in Ohio demarcated a division between the younger generation and the policing apparatus — a still existing division that has been exploited by foreign actors to destabilize the United States from within.\end{itemize}}
+\topic{Why is Nixon considered an anticommunist politician when he supported communist China's relation with the United States in favor of the Soviet Union.}{\begin{itemize}\item Nixon ended years of hostility between the United States and communist China during a visit in February of 1972.\item Nixon met with Leonid Ilyich Brezhnev in Moscow on May of 1972 to propose the Strategic Arms Limitation Treaty to reduce the supply of ICBMs of both nations. \item Nixon's support of friendly Arab governments, predominantly Saudi Arabia and Iran, led to an economically enthusiastic oil and arms business between the United States and the aforementioned nations.\end{itemize}}
+\topic{There are streets named after C\'esar Ch\'avez in metropolitan American cities such as San Francisco; likewise is the Caesar salad named in his honor?}{\begin{itemize}\item C\'esar Ch\'avez began organizing in the grape-growing town of Delano, California in 1961 and would eventually amalgamate efforts with the Farm Workers Association which would later become known as the United Farm Workers union. \item In 1965 C\'esar Ch\'avez planned and executed a coordinated effort involving Filipino and Latino workers. The first chants were ``Viva la Causa!'' however, once success was imminent Ch\'avez declared ``From now on, all grapes will be sweet''. \end{itemize}}
+\topic{I have toured Alcatraz and always found the history of the ``\emph{Rock}'' very interesting.}{\begin{itemize}\item In November of 1969, American Indians began a year-and-a-half siege of the abandoned federal prison on Alcatraz Island. Their actions gained national publicity. As a result of this and other demonstrations, the Nixon administration negotiations in favor of the cause of the American Indian movement. \end{itemize}}
+\topic{An interesting piece of cinematographic work that does a very good job of underlining the newfound freedoms of the 1960s/1970s is Aaron Sorkin's \href{https://www.imdb.com/title/tt1070874/}{Trial Of The Chicago Seven}}{\begin{itemize}\item ``\emph{Hundreds of young men went on a rampage in Greenwich Village shortly after 3 a.m.\ yesterday after a force of plainclothes men raided a bar that police said was well known for its homosexual clientele}'' — New York Times, June 29, 1969. This article spread across the Manhattan Island and the country. \item Interestingly enough, the American Psychological Association had traditionally defined homosexuality as ``a form of mental illness,'' however pressure from society and within the ranks of the APA led to the 1973 change in ideology: ``We will be removing one of the justifications for the denial civil rights to individuals whose only crime is that their sexual orientation is to members of the same sex''. \item Upwards of 400,000 young Americans gathered on a farm in Bethel, New York on the weekend of August 15 the summer after Nixon's inauguration. This was known as \textbf{Woodstock} and featured performances from prominent artists such as Jimi Hendrix and Jefferson Airplane. The premise underlining the entirety of the event was to enjoy a weekend free from conventional societal norms which led many to indulge in marijuana and likewise based substances, psychedelics such as LSD, and engage in public acts of fornication with one or more partners. As a result this concert is remembered as a symbol of the counterculture of the late 1960s earlier 1970s. \item Similarly to the extraordinary changes experienced by society, rock `n' roll also experienced a shift in convention. The British Beatles and Rolling Stones became international heartthrobs, and influenced movement of counterculture not just in the United States but also east of the Iron Curtain with their hit ``Back In The USS''. \end{itemize}}
+\topic{With the rise of the religious right and support for Barry Goldwater's ideological platform, why was his presidential campaign such a long-shot.}{\begin{itemize}\item Literature from Midwest essayist and political activist Phyllis Schlafly such as \emph{A Choice Not An Echo} shaped the political situation eloquently. Although unprepared and oriented to debate National Security policy under false pretense, Schlafly debated against equal rights for women. Schlafly wrote ``\emph{What's Wrong with `Equal Rights' for Women?}`` in addition to launching the STOP ERA initiative resulting in the defeat of the Equal Rights Amendment legislation by just three State votes. \end{itemize}}
+\topic{Rhetoric associated with the presidency of Donald Trump often involved the congregation of blue collar supporters under the label \textbf{Silent Majority}, was the entity responsible for coining the aforementioned phrase inspired by the \textbf{Moral Majority} founded by Reverend Falwell?}{\begin{itemize}\item Charles Colson, a 1972 Nixon campaign adviser, claimed that unlike Nixon's oval office predecessors, Nixon's presidency was characterized for the first time with social issues taking a dominant position in public discourse. \item By 1978, discourse concerning social issues of the nation left no stone unturned and Pat Robertson, founder of the Christian Broadcasting Network, asserted that if traditional Catholics and evangelical Protestants learn to trust one another ``[the religious right would] \emph{have enough votes to run the country}''. \item Unlike the Christian Broadcasting Network the most resounding permeation of religious activism in society belonged to the \textbf{Moral Majority} foundation. Under founder Jerry Falwell, the aforementioned foundation defined its mission as a ``\emph{pro-life}, \emph{pro-family}, \emph{pro-morality}, and \emph{pro-American}'' one. \item The politicization of religious fanatics, especially Jerry Falwell, produced an intensely anticommunist following intent on calling on incumbent politicians to do more with respect to increasing diplomatic tensions with the Soviet Union. Interestingly enough Falwell's opinion was that ``\emph{Goldwater was too liberal}''. Despite Falwell's radical positions and stern beliefs that the United States could disperse its armaments, nuclear and otherwise, wherever necessary with impunity, he helped register nearly 2 million new voters in anticipation of the 1980 election. \end{itemize}}
+\topic{A timeless cinematographic classic set to the backdrop of the OPEC oil crisis from the point of view of truckers stateside is \href{https://www.imdb.com/title/tt0077369/}{Convoy}.}{\begin{itemize}\item The country began to talk about a ``misery index'' — the harm done by ``stagflation''. In addition to investment loses, instability in the energy sector attributed to the Arab members of OPEC retaliating the United States backing of Israel during the Yom Kippur war caused an decrease in the reputation of domestic automobile manufacturers. \item The undermined economy affected the average American's time just as it did their wallets. Wait times at gas stations increased more than two-fold and interstate speed limits decreased to limit the overall consumption of gas by long-haul truckers. Unemployment rose in tandem to the fall of disposable incomes as more money had to to be spent to keep automobiles running and households warm. \item Mass relocation from major metropolitan areas such as New York and Cleveland led to increased debt in those areas, as the latter was forced to default the former saw the layoffs of 3,400 police officers, 1000 firefighters, and 4,000 hospital workers. Drug markets and an increase in citizenry below the poverty line fueled the already spiraling out of control crime rates. This is the beginning of the period demarcating the decay of inner city America. \end{itemize}}
+\topic{Did the \textbf{Watergate} fiasco stimulate or decline tourist visits to the DC Watergate hotel?}{\begin{itemize}\item The constitutional crisis known as \textbf{Watergate} began with a simple burglary in June 1972 by the special operations group ``the plumbers''. The mission of the burglary was to install wiretap surveillance aimed at Democratic Committee chairman Lawrence O'Brien's telephone. Active members of ``the plumbers'' SOG were arrested, with the police in possession of an address book former ``plumbers'' and current members of the Committee to Re-elect the President became co-conspirators. \end{itemize}}
+\topic{Liam Neeson's portrayal of FBI's Deep Throat in \href{https://www.imdb.com/title/tt5175450/}{Mark Felt: The Man Who Brought Down the White House} is worth a watch to compare to John O'Connor's literature.}{\begin{itemize} \item In Nixon's signature ``play it tough'' style he asked CIA to put an end to a Federal Bureau Investigation into any wrongdoing. \item Years after the 1972 burglary it was Nixon's ego (i.e. \emph{secret tapes of conversations for his memoirs}, \emph{firing the AG for insubordination after ineffectively claiming executive privilege}) in tandem with the human factor of self-preservation (\emph{the decision of the convicted ``plumbers'' to speak to prosecutors}) that led to Nixon's demise. \item Inability to focus on foreign policy and handle the volatility of oil barrel costs as retaliation to the United States reducing the dollar's value in international exchange rates prevented Nixon from having any worthy material to deflect the general public. Even subsequent visits to the Soviet Union weren't sufficient to yield a last impression as Nixon's reputation was already stained. \end{itemize}}
+\topic{It seems unnatural that at such a crucial time in American history (i.e. \emph{Vietnam War}, \emph{Sino} ``\emph{cultural}'' \emph{jump}, \emph{domestic civil tribulations}) president Richard Nixon was the most popularly reelected presidential candidate. In this manner, how is it that with the unification of the conservative voice and support from his national security apparatus, Nixon still decided to resign in anticipation of impeachment?}{\begin{itemize}\item In October 1973, Vice President Spiro Agnew was convicted of soliciting kickbacks and forced to resign. Nixon appointed House Republican leader Gerald Ford as vice president. Ford, a popular leader with no particular ties to the White House was quickly confirmed. \item Federal courts ordered the White House turn over the Nixon tapes after a grand jury indicted the former AG\@. Consequently the House committee began drafting the charges which would lead to Nixon's impeachment. An impeachment he chose not to face, and instead resigned. \end{itemize}}
+\topic{}{\begin{itemize}\item\end{itemize}}
+
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
