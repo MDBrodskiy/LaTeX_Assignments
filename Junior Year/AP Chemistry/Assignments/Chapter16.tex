@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 16 $-$ Problems 60, 70, 72}
+\date{April 15, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{59}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            \Delta G^{\circ} = \Delta H^{\circ} - T\Delta S^{\circ}\\
+            \Delta G_{\ce{Ag+}}=77.1\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \Delta G_{\ce{Cl-}}=-131.2\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            \Delta G_{\ce{AgCl}}=-109.8\left[ \frac{\si{\kilo\joule}}{\si{\mole}} \right]\\
+            77.1+(-131.2)-(-109.8)=55.7\left[ \si{\kilo\joule} \right]
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            55.7=-RT\ln(x^2)\\
+            \ln(x^2)=-22.5\\
+            x^2=e^{-22.5}\\
+            x=1.3\cdot10^{-5}\\
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item It does make sense because $K_{sp}=[\ce{Ag+}][\ce{Cl-}]$, which, with the above concentration equals $1.69\cdot10^{-10}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{69}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        [\ce{H+}]=10^{-10.6}=2.51\cdot10^{-11}[\si{\Molar}]\\
+        [\ce{OH-}]=10^{-14+10.6}=4\cdot10^{-4}[\si{\Molar}]\\
+        .25-4\cdot10^{-4}=.2496[\si{\Molar}]\\
+        K_b=\frac{\left( 4\cdot10^{-4} \right)^2}{.2496}\\
+        =6.36\cdot10^{-7}\\
+        -(.00831)(298)\ln\left( 6.46\cdot10^{-7} \right)=35.3[\si{\kilo\joule}]
+      \end{split}
+      \label{3}
+    \end{equation}
+
+    \setcounter{enumi}{71}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \ce{N2O5(g) -> 2NO(g) + 3/2O2(g)} \\
+        +\,\,\,2\left( \ce{NO(g) + 1/2O2(g) -> NO2(g)} \right)\\
+        \hline
+        \ce{N2O5(g) -> 1/2O2(g) + 2NO2(g)}\\
+        -\left( -59.2-2(35.6) \right)=130.4[\si{\kilo\joule}]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
