@@ -1,0 +1,228 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 17 $-$ Problem Set 1}
+\date{April 16, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{W} $=+4$
+
+      \item \ce{Na} $=+4$; \ce{O} $=-2$
+
+      \item \ce{H} $=+1$; \ce{I} $=+5$; \ce{O} $=-2$
+
+      \item \ce{C} $=+4$; \ce{O} $=-2$
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{NO2-} loses electrons, so it is oxidized, and \ce{CrO4^2-} is reduced
+
+      \item \ce{ClO3-} gains electrons, so it is reduced, and \ce{S^2-} is oxidizes
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{ClO2 + H2O -> ClO3- + 2H+ + e-}
+
+      \item \ce{MnO4- + 4H+ + 3e- -> MnO2 + 2H2O}
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            5(\ce{2Cl- -> Cl2 + 2e-})\\
+            +\,\,\,2(\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O})\\
+            \hline
+            \ce{2MnO4- + 16H+ + 10Cl- -> 2Mn^2+ + 8H2O + 5Cl2}
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            2(\ce{Sn -> Sn^2+ + 2e-})\\
+            +\,\,\,\ce{O2 + 4H+ + 4e- -> H2O}\\
+            \hline
+            \ce{2Sn + O2 + 4H+ -> 2Sn^2+ + H2O}
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            3\ce{Se + 2H2O -> SeO2 + 4H+ + 4e-}\\
+            +\,\,\,4\ce{NO3- + 4H+ + 3e- -> NO + 2H2O}\\
+            \hline
+            \ce{3Se + 4NO3- + 4H+ -> 3SeO2 + 4NO + 2H2O}
+          \end{split}
+          \label{3}
+        \end{equation}
+
+    \end{enumerate}
+
+    \newpage
+
+  \item
+
+    \begin{enumerate}
+
+      \item \textbf{ }\\
+
+        \begin{center}
+          \begin{figure}[h!]
+            \centering
+            \include{Figures/ZnAg}
+            \caption{Galvanic Cell for \ce{Zn}/\ce{Zn^2+}//\ce{Ag+}/\ce{Ag}}
+            \label{fig:1}
+          \end{figure}
+        \end{center}
+
+      \item \textbf{ }\\
+
+        \begin{center}
+          \begin{figure}[h!]
+            \centering
+            \include{Figures/FeO2}
+            \caption{Galvanic Cell for \ce{Fe^2+}/\ce{Fe^3+}//\ce{O2}/\ce{H2O}}
+            \label{fig:2}
+          \end{figure}
+        \end{center}
+
+      \item \textbf{ }\\
+
+        \begin{center}
+          \begin{figure}[h!]
+            \centering
+            \include{Figures/FeH}
+            \caption{Galvanic Cell for \ce{Fe}/\ce{Fe(OH)2}//\ce{2H2O}/\ce{H2}}
+            \label{fig:3}
+          \end{figure}
+        \end{center}
+
+        \newpage
+
+      \item \textbf{ }\\
+
+        \begin{center}
+          \begin{figure}[h!]
+            \centering
+            \include{Figures/BrI}
+            \caption{Galvanic Cell for \ce{Br2}/\ce{2Br-}//\ce{2I-}/\ce{I2}}
+            \label{fig:4}
+          \end{figure}
+        \end{center}
+
+        \newpage
+
+      \item \textbf{ }\\
+
+        \begin{center}
+          \begin{figure}[h!]
+            \centering
+            \include{Figures/FeCu}
+            \caption{Galvanic Cell for \ce{Fe}/\ce{Fe(OH)2}//\ce{Cu(OH)2}/\ce{Cu}}
+            \label{fig:5}
+          \end{figure}
+        \end{center}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
