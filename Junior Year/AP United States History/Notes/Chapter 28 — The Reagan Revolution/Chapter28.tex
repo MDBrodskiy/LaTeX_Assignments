@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article} 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}[colback=maroon,colframe=gold]
+  \Huge\centering \textcolor{white}{AP US History Chapter 28 Notes}
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{maroon}
+\SetBgContents{\rule[0em]{2pt}{730pt}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+%\usepackage{manyfoot}
+%\DeclareNewFootnote{A}[arabic]
+\urlstyle{same}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+
+\parindent=0pt
+
+\usepackage{xparse}
+\DeclareDocumentCommand\topic{m m g g g g g}
+{
+\begin{tcolorbox}[sidebyside,sidebyside align=center,opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,lefthand width=.3\textwidth]
+\begin{tcolorbox}[colback=gold,colframe=maroon,sidebyside align=center,width=\textwidth,before skip=0pt]
+#1\end{tcolorbox}%
+\tcblower
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth,before skip=0pt]
+#2
+\end{tcolorbox}
+\IfNoValueF {#3}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#3
+\end{tcolorbox}
+}
+\IfNoValueF {#4}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#4
+\end{tcolorbox}
+}
+\IfNoValueF {#5}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#5
+\end{tcolorbox}
+}
+\IfNoValueF {#6}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#6
+\end{tcolorbox}
+}
+\IfNoValueF {#7}{
+\begin{tcolorbox}[colback=gold,colframe=maroon,width=\textwidth]
+#7
+\end{tcolorbox}
+}
+\end{tcolorbox}
+}
+
+\def\summary#1{
+\begin{tikzpicture}[overlay,remember picture,inner sep=0pt, outer sep=0pt]
+\node[anchor=south,yshift=-1ex] at (current page text area.south) {% 
+\begin{minipage}{\textwidth}%%%%
+\begin{tcolorbox}[colframe=white,opacityback=0]
+\begin{tcolorbox}[enhanced,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=black,sidebyside align=top, lefthand width=.95\textwidth,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=Summary
+]
+#1
+\end{tcolorbox}
+\end{tcolorbox}
+\end{minipage}
+};
+\end{tikzpicture}
+}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{.5}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\rfoot[\vspace{-15pt} \hline]{\vspace{-15pt} \hline}
+\cfoot[\thepage]{\thepage}
+\lhead[\copyright 2021 $-$ \textit{All Rights Reserved} ]{\copyright 2021 $-$ \textit{All Rights Reserved}}
+\chead[AP United States History]{AP United States History}
+\rhead[Michael Brodskiy]{Michael Brodskiy}
+
+\begin{document} 
+\maketitle
+
+\topic{Upon reading this chapter it becomes apparent that the triumphant support enjoyed by Reagan came from a diverse, marginalized section of society. Is it possible to attribute the wide margin of Reagan's victory to racial tensions, similar to what the United State is experiencing today?}{\begin{itemize}\item The ``\emph{Reagan Democrats}'' were northern and southern working-class whites who felt alienated by the civil rights and accompanying protest movement of the 1960s and 1970s. \item The propagandized idea of ``emph{law and order}'' was utilized by pro-Reagan arguments from middle-class and upper-middle-class suburbanites who viewed crime as predominantly a ``\emph{black issue}''. \item Social conservatives were also major Reagan supporters. As mentioned in the previous chapter, Catholics and Protestants alike associated politically with the religious right. As is today, the key issues was their opposition to abortion, sexual and reproductive freedoms, gay rights, and the teaching of evolution as well as a desire for the inclusion of prayer in public schools. However the most unifying aspect of Reagan's constituency was his staunch hostility to communist internationalism. It was commonly believed among Reagan's constituents that presidents from Franklin Roosevelt to Richard Nixon were too soft on the Soviet Union. \end{itemize}}
+\topic{Upon reading this chapter, one couldn't help but draw parallels between Ronald Reagan's popularity and Donald Trump's popularity.}{\begin{itemize} \item Reagan supporters were united in their anger at those they considered elitist — celebrities in Hollywood, the media, universities, and the federal government. In Ronald Reagan, the former actor and two-term governor of California, they found a hero who, they believed would not disappoint them as had Richard Nixon.\end{itemize}}
+\topic{Since Fraser composed this textbook there have been multiple septuagenarians as president.}{\begin{itemize} \item When Ronald Reagan became president, he was only 1 month short of his \nth{70} birthday, the oldest man ever elected to office and the first divorced president and former union leader ever elected. \item In fact, demonstrating his quick witted, sunny disposition, Reagan rebutted with ``\emph{I will not make age an issue in this campaign, I am not going to exploit, for political purposes, my opponent's youth and inexperience},'' when questioned about his old age during his reelection campaign. \end{itemize}}
+\topic{Although it is difficult to lament Barry Goldwater's political victories, or lack thereof, Ronald Reagan is perhaps the single most famous product of Goldwater's philosophical legacy.}{\begin{itemize} \item Reagan's famous ``\emph{speech}'' in support of Barry Goldwater, ``[\emph{the choice facing Americans is}] whether we believe in our capacity for self-government or whether we abandon the American Revolution and confess that a little intellectual elite in a far-distant capital can plan our lives better than we can plan them ourselves''. \item Reagan's ``\emph{speech}'' in support of Goldwater was successful in achieving Reagan the governorship of California with the backing of wealthy Republican conservatives.  \end{itemize}}
+\topic{If Reagan was such a popular president who seldom disappointed his followers, why were his policies the catalyst of many protests?}{\begin{itemize} \item The anti-tax wave which Reagan rode into the White House cited the ``\emph{Laffer Curve}''. Developed by in 1970 Jude Wanniski, a correspondent for the \emph{Wall Street Journal}, along with economist Arthur Laffer, the curve meant to show that higher taxes actually reduced governmental income through the reduction of incentive to work. \item The Reagan cuts, in the name of \textbf{supply}-\textbf{side economics}, included lowering expenditures of domestic programs such as health insurance benefits for the elderly through Medicare, were not done without protest. \item When Reagan first called for a 30 percent tax cut and used Laffer and the supply-side arguments to justify his position, George H. W. Bush called it ``\emph{voodoo economics}''. \end{itemize}}
+\topic{I have often heard Reagan's name mentioned in reference to the contemporary value of the federal deficit, the tone of the arguments of this chapter illuminate the premise behind such reference.}{\begin{itemize} \item In the short term, the Reagan initiatives did not improve the nation's economy. \item Reagan, like Carter, supported Carter's Federal Reserve Chairman appointee, Paul Volcker. Both presidents expressed their desire to curb inflation to Volcker by endowing him with the ability to combat inflation no matter the cost. Volcker's efforts sent unemployment above 10 percent in 1982, the highest since the Great Depression of the 1930s. Many people lost jobs, and new jobs were often in low-paying service sectors of the economy. \item Reagan's initiatives to curb inflation doubled homelessness, from 200,000 to 400,000. \item Although initially detrimental to his popularity, Reagan asked of the nation to ``\emph{stay the course}'' with his usual confidence and optimism after Republicans lost seats in Congress in 1982.\end{itemize}}
+\topic{Walter Mondale's opposition to the democratic primary and future democratic candidate who was replaced in favor of Bill Clinton after George H.W. Bush's only term, Gary Hart, is portrayed by High Jackman in \href{https://www.imdb.com/title/tt7074886/}{Front Runner}, an interesting film that shows the scandalous nature of media in public life.}{\begin{itemize} \item  Reagan faced the prospect of reelection in 1984 with the challenge of overcoming Walter Mondale's historic move of asking female Geraldine Ferraro to be his running mate. \item Prior to selecting Geraldine Ferraro as his vice president, Mondale had an intense primary battle with Colorado senator Gary Hart. \end{itemize}}
+\topic{Reagan's attitude to policy both foreign and domestic considered in tandem with his behavior toward Washington's careerists such as the economists, advisers, and industry lobbyists surrounding his cabinet characterizes Reagan as a non-career politician; which, reflecting on his humble beginnings, is an accurate statement. In this manner, how is it possible that Reagan was able to foster such diverse, patriotic support all the while winning in one of the grandest landslide general election victories?}{\begin{itemize} \item When Reagan began his first term in 1981 he had virtually no foreign policy experience. He had not spent much time outside the United States and did not know much about foreign policy. \item As a result of Reagan firing PATCO strikers, labor unions almost unanimously supported Mondale. Most African-Americans supported Mondale, continuing a move by African-Americans supporting the Democratic Party that was speeded by Reagan's inattention to their needs. \item By far the biggest issue obstacling Reagan's reelection was the widespread rise of the AIDS epidemic. Even social and religious conservatives who had flocked to Reagan in 1980 were disappointed. \item During his first term, Reagan never gave a speech to an antiabortion audience and had done nothing toward allowing school prayer. \end{itemize}}
+\topic{One of my favorite vice presidential debates is that of Ferraro and Bush Sr. Most talking points are directly applicable today with the exception of the Nicaraguan question. Both candidates are confident in the admirable traits, eloquently well-spoken, and overall respectful of each other's position.}{\begin{itemize} \item By 1983 the economy began to turn around as more Americans had jobs and were able to buy more goods, often on credit, including personal computers, video cassette recorders, telephonic answering machines, and stereo systems that had not been available in the 1970s. \item Tip O'Neill, then Speaker of the House, said of Reagan the ``\emph{Great Communicator}'' , ``[\emph{h}]\emph{e may not be much of a debater, but with a prepared text he's the best public speaker I've ever seen\dots.I'm beginning to think that in this regard he dwarfs both Roosevelt and Kennedy}'' . \item The year following Reagan's reelection, a group of Democrats, including Arkansas Governor Bill Clinton, organized the Democratic Leadership Council. These ``\emph{New Democrats}'' argued that there was more to the election than Reagan's personal popularity and that the Democratic Party was not going to win elections without moving closer to the conservative mainstream.  \item Reagan's landslide victory secured every state in the union with the exception of Mondale's home state Minnesota. With this defeat, Geraldine Ferraro would not become the first female vice president. \end{itemize}}
+\topic{Although there are (\emph{were}?) no texts supporting Reagan's assertions of the following, Reagan claimed that Lenin referred to Central America as the United State's backyard and must be a targeted with active measures to sponsor communist subversion.}{\begin{itemize} \item In a 1983 speech to Christian evangelicals, Reagan referred to the Soviet Union as the ``\emph{\textbf{Evil Empire}}''. \item In 1984, under the pretense that the microphone was not functional, Reagan said, ``[\emph{m}]\emph{y fellow Americans, I am pleased to tell you today that I've signed legislation that will outlaw Russia forever. We begin bombing in five minutes}''. \item Following the death of Brezhnev and subsequently Andropov and Chernenko, the Soviet Union did not have a tough enough counterpart comparable to Reagan. Gorbachev, would be the first and last Soviet born leader of the Soviet Union. \item Reagan's determination to render the Soviet Union's missiles ``\emph{impotent and obsolete}'' led him to, against almost unanimous foreign policy advice, develop the \textbf{Strategic Defense Initiative}. \end{itemize}}
+\topic{The covert involvement of American intelligence in the Soviet counter coup and subsequent occupation of the Democratic Republic of Afghanistan has been widely criticized as an action that created the Taliban however historically, the answer is much more complicated. \\\vspace{48pt}\\ There is a famous photograph in which Reagan sits down with Afghan mujahideen leaders and exclaims in their favor that ``\emph{these men are the moral equivalent of the} [\emph{American}] \emph{founding fathers}''. \\ \includegraphics[width=\textwidth]{Images/Reagan_sitdown_with_mujahid_from_Afghanistan_(1983).png} \\}{\begin{itemize} \item CIA in tandem with the ISI, Pakistan's intelligence service, created pro-Islamist training camps in northern Pakistan preempting the Soviet invasion. The training camps housed piously religious Balochs, Tajiks, and Uzbeks to organize their efforts to against the incumbent pro-Soviet socialist institutions of Afghanistan. After the murder and subsequent coup of Brezhnev's ally and personal friend Daoud, who previously overthrew the Afghan monarchy, Muhammad Taraki's power struggle with Hafizullah Amin, the general secretary of the People's Democratic Party of Afghanistan, destabilized the country and inadvertently caused much of the radical anti-Soviet sentiment. Instability led to protesting in Kabul and the infamous Herat riot. Brezhnev felt personally responsible for failing to protect his ally and after much deliberation ordered the Soviet military coup of the Taj Bek presidential palace on December \nth{25} 1979, otherwise known as Operation Storm 333. By 1980 the \nth{40} Soviet army mobilized into Afghanistan along the paved routes constructed by Soviet engineers during times of peace. The Salang pass built by Soviet engineers were important in securing lines of communication between Kabul and the provinces. Over the course of the next decade the Pakistani training camps assumed a more important role in fostering the Muslim world in unison against the Soviet aggressor. The Dari word for Soviet is most similar to the English word council, likewise Soviet military advisers, diplomats, and uniformed service members were referred to as shuravi (\textbf{шурави}), the expression ``\emph{marg bar shouravi}'', translated as ``death to the Soviets'', was popular among mujahideens. However after the Soviets withdrew their armed forces, the void in Kabul and throughout the country led to infighting between mujahideen factions such as those led by Massoud, Doustum, and Hekmaytar all the while native Afghani Pashtun Mullah Omar conquered Kandahar and unified the native Pashto tribes by founding a council (\emph{shura}) of students (\emph{talibs}) of Islam. This group overthrew Soviet backed Mohammad Najibullah and formed their own government under Sharia Law. This council of students became the Taliban and has been an extension of the ISI to further destabilize the situation in Afghanistan. During the 1990s, CIA maintained a program to buy back \emph{stingers}, a mobile surface to air handheld rocket complex, from mujahid tribes to curb the sparks of pro-Islamist violence in regions of Muslim influence outside of Afghanistan. The transformation of the Taliban into an internationally recognizable manifestion of Pashtun independence would not be possible without Pakistani inteference, not the aftermath of Operation Cyclone. \end{itemize}}
+\topic{Reagan is the subject of many Soviet anecdotes of the 1980s that expressed dissatisfaction with Gorbachev's domestic policies by projecting the humor onto the American presidency. Reagan's ambitious attitude to undermine communist internationalism made him the perfect candidate to be joked about at his expense.}{\begin{itemize} \item Reagan had deeply held beliefs that were offended by communist atheism and expressed discontent with the with the longstanding policy of containment at the core of American foreign policy from Truman to Carter. \item Reagan's goal of undermining communism where it already existed led him to imposing sanctions on Poland and the Soviet Union when the Polish government instituted martial law to combat the solidarity protest movements of 1981. The sanctions included an end to landing rights in the United States for the Russian airline Aeroflot (\textbf{Аэрофлот}), a ban on the sale of equipment for a Soviet natural gas pipeline, and — out of pettiness, termination of special parking privileges of Soviet Ambassador Anatoly Dobrynin in the State Department garage. \end{itemize}}
+\topic{For a politician with virtually no foreign policy experience, Reagan's team was very much capable of handling and otherwise steering important negotiations in favor of the United States.}{\begin{itemize} \item Reagan came to office with a pro-Israel point of view, a perspective that was supported by many Christian evangelicals in his political base. His administration believed that Carter's Camp David accords had tilted the United States too closely toward Egypt and a change was in order to correct the balance. \item Reagan's cabinet saw Israel, Egypt, Jordan, and Saudi Arabia as United States allies and were prepared to supply military aircraft to the Saudis and jet bombers and military hardware o the Israelis to support a strong buffer in the Middle East against Soviet geopolitical satellites Syria and Iraq. \end{itemize}}
+\topic{This chapter expresses direct concern of Reagan's behavior in Africa but does little to comment on success with southern African regimes like Reagan's relationship with the South African government and the corresponding apartheid movement.}{\begin{itemize} \item Muammar Gaddafi retaliated to a United States Navy exercise off the coast of Libya by sponsoring a West German discotheque bombing killing one American soldier. Reagan responded by bombing Gaddafi's headquarters in Tripoli leaving 30 civilians and Gaddafi's daughter dead. \end{itemize}}
+\topic{It seems to me that allegations of Oliver North's participation in the Iran-Contra affair carry a much heavier burden on Reagan's presidency as a result of his relationship with Reagan than any wrongdoing associated with Nixon's knowledge of the breaking and entering at Watergate.}{\begin{itemize} \item When war broke out between Irag and Iran in 1980, the United States wished both belligerents ill. However ill the sentiment towards Iran may have been, members of Reagan's National Security apparatus became convinced that it might be possible to support moderates within the Iranian government and build a new relationship with Iran by supplying them with weapons. At the time of this proposition there was reason to be believe that Iran had influence with Lebanese forces holding Americans hostage. \item National Security Advisor and Lieutenant Colonel Oliver North secretly visiting Tehran with forged Irish passports demarcated the greatest foreign policy misadventure of the Reagan administration. \item Reagan's administration was further pulled into the Middle East when Israel targeted the PLO during the 1982 invasion of Lebanon. Later that year the United States sent a detachment of Marines to join an international peace effort, however successes were thwarted when a truck loaded with TNT drove into the American barracks killing 241 soldiers. The general public and president alike were shocked by the loss of life. The remaining Marines were ``\emph{redeployed}'' to ships off the coast in 1984. \end{itemize}}
+\topic{Is it true that Reagan was safe from impeachment as a result of Ollie North's testify and certain other individuals of Reagan's inner circle falling on their sword for him unlike Nixon's ``\emph{plumbers}''}{\begin{itemize} \item In his Congressional hearing and subsequent testimony regarding the investigation into the Iran-Contra affair, Oliver North looked and sounded like a hero in spite of the fact that he had broken the law. \item North managed to testify brilliantly, portraying himself as a well-meaning patriot, he insisted that the decision rested with him alone — not everyone was convinced, but no ``\emph{smoking gun}'' was found and talk of impeachment ended. \item Special prosecutor Lawrence Walsh continued his investigation after Reagan left office and eventually secured the indictment of several officials, however George H.W. Bush pardoned them. \item In 1994 Walsh concluded that Reagan probably should have been impeached but by then he was retired and ill. \end{itemize}}
+\topic{As a result of Congress failing to appropriate funding for the Nicaraguan contras American intelligence was forced to engage in covert action against Sandinista forces to prevent communist subversion from spreading to bordering Central American countries.}{\begin{itemize} \item At the urging of DCI William Casey (veteran of the Phoenix Program), Reagan authorized \$20 million for covert operations to support the Nicaraguan counterrevolutionary followers of Somoza (whom Reagan referred to as ``\emph{our brother}'') against the incumbent government composed of the followers of Sandino. \item As early as 1982, Congress passe the \textbf{Boland Amendment}, prohibiting the United States from seeking to overthrow the Sandinista government. \item Seeking to expand aid from both the Nicaragua contras and Iranian moderates, Ollie North's curator, Will Casey, had the neat idea of profit off of the clandestine arms shipments to Iran, and funneling payment to support the Contras. This idea was a ingenious as it did not require Congress to appropriate funding and no one needed to know. \item The \textbf{Iran}-\textbf{Contra} arrangement did not remain secret for long as sources from Iranian were published through Lebanese media indicating United States violations of the aforementioned \textbf{Boland Amendment}. Some in Congress talked of impeachment as with Nixon at Watergate, the question was ``\emph{what did the president know and when did he know it}''. \item Eventually Reagan admitted, ``\emph{I told the America people I did not trade arms for hostages. My heart and best intentions still tell me that it is true, but the facts and evidence tell me it is not}'', much to the chagrin of the supporters of an administration that talked so much about law and order. \end{itemize}}
+\topic{If it wasn't for the subsequent talks in Reykjavik, would the United States have become bankrupted by Reagan policies like the Soviet Union was becoming?}{\begin{itemize} \item After Reykjavik, Soviet physicist Andrei Sakharov convinced Gorbachev that SDI would not work, was not realistically operable, and could be ignored without any safety repercussions. \item Newly reformed treaties dramatically reducing INF stockpiles as well as required on-site inspections so scrutinous that even CIA was troubled by their potential intrusiveness. \item Perhaps Reagan's most famous triumph was his speech at the Brandenbug Gate in Berlin where he exclaimed, ``\emph{Mr. Gorbachev, tear down this wall!}''. \end{itemize}}
+\topic{According to the aforementioned film, \href{https://www.imdb.com/title/tt7074886/}{Front Runner}, the Democratic Party was unable to secure victories in the 1988 general election as a result of intra-party conflicts and scandals brought about by the potential ``\emph{new face} — a void that would later be filled by Clinton.'' of the party.}{\begin{itemize} \item George H.W. Bush, a child of Prescott Bush, whose track to attend Yale University was deferred by American involvement in World War II\@. Bush flew a respectable amount of combat missions and was shot down twice (\emph{perhaps the reason for his feeling unwell at a Japanese banquet}). He married Barbara Pierce and moved to Texas where he made a fortune in the oil business. After serving two terms in the House of Representatives out of Houston, he was defeated in a Senatorial campaign yet was appointed head of the Republican Party and the United States Ambassador to China after Nixon's visit. Bush was also told, famously, of his tenure as DCI during the Ford years, ``\emph{anybody dumb enough to accept the job, is too dumb to do it}''. \item The conservative wing of the Republican Party never trusted Bush, especially after this ``\emph{voodoo ecnonomics}'' remarks which had been used significantly by Reagan's opposition. \item Gary Hart, an initial front runner, was forced out of the race after he was photographed on the yacht \emph{Monkey Business} with the model Donna Rice — not his wife — sitting on his lap. \item The nomination battle came down to a contest between the Reverend Jesse Jackson, longtime civil rights leader, and Massachusetts governor Michael Dukakis. Jackson was extremely popular in some circles and reviled in others — in the end Dukakis won the Democratic nomination. \item During a campaign speech, Bush made a statement he would later regret, telling the Republican convention, ``[\emph{r}]\emph{ead my lips. No New taxes}''. \end{itemize}}
+
+\summary{The 1980s oversaw mass immigration from former Soviet states, Mexico, and Central America with amnesty offered to those immigrants who came to the United States without official approval. American Indian reservations operated casinos legally under gambling licenses and were becoming more and more ubiquitous until industrial regulations. AIDS was a major political issue and presidential candidates, economists, and families alike, gathered around the dinner table or living room TV trays to discuss \textbf{Reaganomics}. The proposed \textbf{Economic Bill of Rights}: \begin{quote}First is the freedom to work — pursue one's livelihood in one's own way \dots free from excessive government regulation and subsidized government competition;\dots freedom to enjoy the fruits of one's labor\dots free from excessive government taxing, spending and borrowing by the government\dots the freedom to own and control one's property\dots freedom to participate in a free market\dots and to achieve one's full potential without government limits on opportunity. \end{quote} truly established a \textbf{Morning Again in America} vibe. Soviet openness — \textbf{glasnost} (\textbf{гласность}) and restructuring — \textbf{perestroika} (\textbf{перестройка}) of a crippled, unsalvageable system would change history as the Soviet Union collapsed. No individual permeated the 1980s more than Ronald Reagan and the \textbf{Reagan Revolution} set the stage for America to position itself as an unmatched global superpower in the coming decades with Operation Desert Storm and subsequent Gulf Wars, Panamanian coup d'etat, Yugoslavian Wars of the 1990s, and post 9/11 invasion of Afghanistan.}
+%\topic{Here's another question to begin the new page.}{\lipsum[3]}%
+
+%\summary{And another summary that will float to the bottom of the next page.}
+
+\end{document}
