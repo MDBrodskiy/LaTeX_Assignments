@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 17 $-$ Problem Set 2}
+\date{April 22, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{K} is the better reducing agent
+
+      \item \ce{Al} is the better reducing agent
+
+      \item \ce{Co} is the better reducing agent
+
+      \item \ce{Cr} is the better reducing agent
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{Cl2} is the better oxidizing agent
+
+      \item \ce{Au^3+} is the better oxidizing agent
+
+      \item \ce{F2} is the better oxidizing agent
+
+      \item \ce{Ag+} is the better oxidizing agent
+
+    \end{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item \ce{MnO2(s) + 4H+(aq) + 2I-(aq) -> Mn^2+(aq) + 2H2O + I2(s)}
+
+        \begin{equation}
+          \begin{split}
+            \,\,&1.229\\
+            \,\,-&0.534\\
+            \hline
+            \,\,&0.695[\si{\volt}]
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item \ce{I2(s) + 2Cl-(aq) -> 2I-(aq) + Cl2(g)}
+
+        \begin{equation}
+          \begin{split}
+            \,\,&.534\\
+            \,\,-&1.36\\
+            \hline
+            \,\,-&.826[\si{\volt}]
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \ce{Pt + NO(g) + 2H+(aq) + H2O2(aq) -> NO3-(aq) + 4H+(aq) + Pt}
+
+        \begin{equation}
+          \begin{split}
+            \,\,&1.763\\
+            \,\,&-.964\\
+            \hline
+            \,\,&0.799[\si{\volt}]
+          \end{split}
+          \label{3}
+        \end{equation}
+
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{2Cl-(aq) + Br2(g) -> Cl2(g) + 2Br-(aq)} is not spontaneous:
+
+        \begin{equation}
+          \begin{split}
+            \,\,&1.077\\
+            \,\,-&1.36\\
+            \hline
+            \,\,-&.283[\si{\volt}]
+          \end{split}
+          \label{4}
+        \end{equation}
+
+      \item \ce{Sn^4+(aq) + Cu^2+(s) -> Sn^2+(aq) + Cu(s)} is not spontaneous:
+
+        \begin{equation}
+          \begin{split}
+            \,\,&.154\\
+            \,\,-&.339\\
+            \hline
+            \,\,-&.185[\si{\volt}]
+          \end{split}
+          \label{5}
+        \end{equation}
+
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $E^0=.799-(-.141)=.94[\si{\volt}]\Rightarrow -(2)\left( 9.648\cdot10^{4} \right)(.94)=-181.4[\si{\kilo\joule}]$
+
+      \item $E^0=1.229-(.534)=.695[\si{\volt}]\Rightarrow -(2)\left( 9.648\cdot10^{4} \right)\left( .695 \right)=-134.1[\si{\kilo\joule}]$
+
+    \end{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item $E^0=-.547-(.004)=-.551[\si{\volt}]\Rightarrow \frac{-.551(2)}{.0257}=-42.88\Rightarrow e^{-42.88}=2.39\cdot10^{-19}$
+
+      \item $E^0=1.001-.799=.202\Rightarrow\frac{.202\cdot3}{.0257}=23.58\Rightarrow e^{23.58}=1.74\cdot10^{10}$
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
