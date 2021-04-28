@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{\textsc{C}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Lab Questions}
+\date{\today}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item When the dish is heated and cooled repeatedly, it is done to burn off water
+
+  \item Safety: When diluting acids, always add acid to water
+
+    \begin{enumerate}
+
+      \item Spills: Acid/weak base, Base/weak acid
+
+    \end{enumerate}
+
+  \item Accuracy: When titrating, rinse the buret with the solution being used
+
+  \item Allow hot objects to return to room temperature because hot objects weight less
+
+  \item Accuracy vs Precision — How close to value vs how consistent the results are
+
+  \item Weight and Reweigh
+
+  \item Know separation techniques
+
+  \item Spectrophotometer — Measures concentrations of solution by measuring slight variations in color. The concentration of an ion will be directly proportional to the absorbance
+
+  \item Different colors require a different wavelength setting
+
+  \item Beer's Law — This relationship between absorbance and concentration is given by $A=abc$, where $A$ is absorbance, $a$ is a constant, $b$ is path length of the light, and $c$ is the concentration
+
+  \item Solutions have to be colored (using the cuvet — make sure to clean off fingerprints)
+
+  \item Flame test: \ce{Li} = red, \ce{Na} = yellow, \ce{K} = purple, \ce{Ba} = green, \ce{Sr} = red, \ce{Ca} = red, and \ce{Cu} = green
+
+  \item Colored Solutions: \ce{Cu} = blue, \ce{CrO4} = yellow, \ce{Ni} = green, \ce{Cr2O7} = orange, \ce{I} = brown, \ce{PbI2} = yellow, and \ce{MnO4} = purple
+
+  \item Percent Recovery — Found value divided by actual value, times one hunder
+
+  \item Percent Error — $100-$ Percent Recovery
+
+  \item Photoelectron Spectroscopy (PES) — Use X-Ray to remove “core” baby electron from an atom. Measure the kinetic energy of the electron coming off (binding energy). Understand the structure of atoms and electron structure.
+
+  \item PES Spectrum shows Intensity — Number of Electrons vs. Binding Energy. Smaller shells require more energy to remove (1s requires the most)
+
+  \item Mixture of Elements — The peak height is not related to the number of electrons in a PES spectrum
+
+  \item Atoms will not lose electrons in the 2p orbital and beyond
+
+  \item Mass Spectrometer — Finds relative masses of individual atoms
+
+  \item Happy Graphs — Energy vs. Distance
+
+  \item Calculate Energy of a Wavelength of light:
+
+    \begin{enumerate}
+
+      \item $c=f\lambda$
+
+      \item $E=hf$
+
+      \item $E=\frac{hc}{\lambda}$
+        
+    \end{enumerate}
+
+  \item Photons with lower wavelengths have a higher energy. Higher frequency means higher energy.
+
+\end{itemize}
+
+\end{document}
+
