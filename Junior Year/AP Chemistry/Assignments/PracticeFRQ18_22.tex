@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Chapter 18 \& 22 $-$ Practice FRQ}
+\date{May 4, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{1}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{I2} will have the greatest bond length because a single Iodine atom has the greatest atomic radius out of any of the other choices
+
+      \item \ce{2Br- + Cl2 -> 2Cl- + Br2}, where $E^0=-1.07+1.36=.29[\si{\volt}]$
+
+      \item $\ce{BrCl}$ is held together by London-Dispersion forces, as well as Dipole-Dipole forces, while \ce{Br2} is held together only by London-Dispersion forces. Even though this is the case, \ce{Br2} has a much more polarized electron cloud, which makes the bonds stronger than \ce{BrCl}. In this manner, \ce{Br2} has a higher boiling point.
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            P=\frac{nRT}{V}\\
+            \frac{.1\cdot.0821\cdot 298}{2}=1.22[\si{\atm}]
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            K_{eq}=\frac{[\ce{Br2}][\ce{Cl2}]}{[\ce{BrCl}]^2}
+          \end{split}
+          \label{2}
+        \end{equation}
+
+      \item \begin{tabular}{|c|c|c|c|} \hline I & .1 & 0 & 0\\\hline C & $-2x$ & $x$ & $x$ \\ \hline E & .058 & .021 & .021\\\hline\end{tabular}
+
+        \begin{equation}
+          \begin{split}
+            \frac{(.0145)^2}{(.058)^2}=.13
+          \end{split}
+          \label{3}
+        \end{equation}
+
+      \item total $=$ broken $-$ made $\Rightarrow 1.6=2x-193-243\Rightarrow x=219[\si{\kilo\joule}]$
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
