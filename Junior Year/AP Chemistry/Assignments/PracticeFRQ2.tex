@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Practice FRQ}
+\date{May 5, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{2}
+
+  \item
+    
+    \begin{enumerate}
+
+      \item \ce{CO3^2-(aq) + Ca^2+ -> CaCO3(s)}
+
+      \item A single \ce{Ca^2+} ion should be included (difficult to draw quickly here)
+
+      \item 
+
+        \begin{equation}
+          \begin{split}
+            \frac{.93}{101.1}=.0092[\si{\mole}_{\ce{CaCO3}}]\\
+            \text{Coefficients are the same, so: }.0092[\si{\mole}_{\ce{Na2CO3}}]
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item The student is wrong. If the precipitate still had some moisture, it would be heavier, which means that more grams would be weighed. This means that there would be greater moles calculated, and, therefore, a greater molarity, as there would be more moles per liter calculated.
+
+      \item The liquid would be able to conduct electricity, as the spectator \ce{NO3-} and \ce{Na+} ions, as well as the excess \ce{Ca^2+} ions will be able to induce electron flow, and, therefore, a current.
+
+      \item 
+
+        \begin{enumerate}
+
+          \item The student could employ the use of \ce{pH} testing paper. Using that result, the student could calculate the $\ce{OH-}$ by using the formula $10^{a-14}$, where $a$ is the \ce{pH} found.
+
+          \item After determining the $\ce{OH-}$ concentration, the student could simply use the $k_b$ formula, or $k_b=\frac{[\ce{HCO3-}][\ce{OH-}]}{[\ce{CO3^2-}]}$, and rearrange it into: $[\ce{CO3^2-}]=\frac{[\ce{HCO3-}][\ce{OH-}]}{2.1\cdot10^{-4}}$. Because \ce{CO3^2-} is the limiting factor, the same concentration of \ce{HCO3-} and \ce{OH-} will be generated. Most importantly, an ICE table should be formed: \begin{tabular}{|c|c|c|c|} \hline I & a & 0 & 0\\\hline C & -x & x & x\\ \hline E & a-x & x & x\\\hline\end{tabular}. The initial concentration is given by the expression: $a=\frac{x^2}{k_b}+x$
+
+        \end{enumerate}
+
+      \item The concentration is less than, as suggested by the low $k_b$ value. This value indicates that the reactants are favored over the products.
+
+      \item \ce{Na2CO3} is unsuitable for being such a buffer. Using the $k_b$ value, a $k_a$ value may be found: $\frac{10^{-14}}{k_b}=k_a=4.76\cdot10^{-11}$, this means that the $pk_a$ value is: $-\log_{10}\left( 4.76\cdot10^{-11} \right)=10.32$. Because this value is nowhere near 6, this will be a poor buffer.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
