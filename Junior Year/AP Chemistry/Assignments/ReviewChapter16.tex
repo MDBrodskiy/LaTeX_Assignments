@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Review Chapter 16}
+\date{May 14, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \Delta G=\Delta H-T\Delta S\\
+        \sum \Delta H= 3(-285.8)+824.2=-33.2[\si{\kilo\joule}]\\
+        T\sum \Delta S= 308(3(.0699)+2(.0273)-.0874-3(.1306))=-66.19[\si{\kilo\joule}]\\
+        \Delta H-T\Delta S=33[\si{\kilo\joule}]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        T=\frac{\Delta H}{\Delta S}\\
+        \Delta H= -635.1-393.5+1206.9=178.3[\si{\kilo\joule}]\\
+        \Delta S= .0398+.2136-.0929=.1605\left[ \frac{\si{\kilo\joule}}{\si{\kelvin}} \right]\\
+        \frac{178.3}{.1605}=1110[\si{\kelvin}]
+      \end{split}
+      \label{2}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        10^{-3.12}=.00076[\si{\Molar}]\\
+        K=\frac{[\ce{Fe^3+}]^4}{[\ce{H+}]^4[\ce{Fe^2+}]^4[\ce{O2}]}\\
+        \frac{(.25)^4}{(.00076)^4(.25)^4(.755)}=4\cdot10^{12}\\
+        -8.314\cdot298\cdot\ln(4\cdot10^{12})=-71.9[\si{\kilo\joule}]
+      \end{split}
+      \label{3}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        1000=-8.314\cdot298\cdot\ln\left( \frac{(.4)^2}{(.4)^2\cdot x} \right)
+        x=e^{\frac{1000}{8.314\cdot298}}=1.5[\si{\atm}]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \Delta G=-RT\ln(K)\\
+        -8.314\cdot298\cdot\ln(1\cdot10^{-37})=91.7[\si{\kilo\joule}]
+      \end{split}
+      \label{5}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \Delta G =-RT\ln(K)\\
+        -8.314\cdot296\cdot\ln(3.5\cdot10^{-6})=30.9[\si{\kilo\joule}]\\
+      \end{split}
+      \label{6}
+    \end{equation}
+
+  \item
+
+    \begin{equation}
+      \begin{split}
+        \Delta G=-RT\ln(K)\\
+        K=\frac{[\ce{H+}][\ce{F-}]}{[\ce{HF}]}\\
+        \frac{[10^{-1.89}]^2}{.12}=.001383\\
+        -8.314\cdot300\cdot\ln\left(  .001383\right)=16.4[\si{\kilo\joule}]
+      \end{split}
+      \label{7}
+    \end{equation}
+
+  \item
+
+    \begin{enumerate}
+
+      \item Entropy is negative in such a case because the entropy of the system is decreasing. The less moles of gas present, the less the disorder.
+
+      \item Entropy is taken separate from temperature because it is so small, that it is treated independently
+
+      \item A solid has lower entropy because they are extremely stable. The order of the molecules is much greater in a solid than a liquid.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
