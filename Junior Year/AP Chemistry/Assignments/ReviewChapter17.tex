@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Chemistry
+% Professor: J. Morgan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\newcommand{\orbital}[2]{{%
+    \def\+{\big|\hspace{-2pt}\overline{\underline{\hspace{2pt}\upharpoonleft}}}%
+    \def\-{\overline{\underline{\downharpoonright\hspace{2pt}}}\hspace{-2pt}\big|}%
+    \def\0{\big|\hspace{-2pt}\overline{\underline{\phantom{\hspace{2pt}\downharpoonright}}}}%
+    \def\1{\overline{\underline{\phantom{\downharpoonright\hspace{2pt}}}}\hspace{-2pt}\big|}%
+  \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+  \begin{tabular}{c}$#2$\\[2pt]#1\end{tabular}%
+}}
+\DeclareSIUnit\Molar{\textsc{M}}
+\DeclareSIUnit\Molal{\textsc{m}}
+\DeclareSIUnit\atm{\textsc{atm}}
+\DeclareSIUnit\torr{\textsc{torr}}
+\DeclareSIUnit\psi{\textsc{psi}}
+\DeclareSIUnit\bar{\textsc{bar}}
+\DeclareSIUnit\Celsius{C}
+\DeclareSIUnit\degree{$^{\circ}$}
+\DeclareSIUnit\calorie{cal}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Review Chapter 17}
+\date{May 21, 2020}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Morgan}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{Mg} is oxidized because the oxidation number goes from 0 to 2, and \ce{O} is reduced because the oxidation number goes from 0 to -2
+
+      \item \ce{Al} is oxidized because the oxidation number goes from 0 to 3, and \ce{I} is reduced because the oxidation number goes from 0 to -1
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item \ce{Cu^2+ + 2e- -> Cu}
+
+      \item \ce{Cl2 + 2e- -> 2Cl-}
+
+      \item \ce{Zn -> Zn^2+ + 2e-}
+
+      \item \ce{Br2 + 2e- -> 2Br-}
+
+      \item \ce{Cd -> Cd^2+ + 2e-}
+
+      \item \ce{I3^- + 2e- -> 3I-}
+
+    \end{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item 2(\ce{Fe^2+ -> Fe^3+ + e-}) $+$ \ce{Sn^4+ + 2e- -> Sn^2+} $=$\\ \ce{2Fe^2+ + Sn^4+ -> 2Fe^3+ + Sn^2+}
+
+      \item \ce{Zn -> Zn^2+ + 2e-} $+$ \ce{Cu^2+ + 2e- -> Cu} $=$ \ce{Zn + Cu^2+ -> Zn^2+ + Cu}
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $-1.077+1.33=.253[\si{\volt}]$
+
+      \item $1.077-1.36=-.283[\si{\volt}]$
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $E^o=.799+.127=.926[\si{\volt}]\Rightarrow -(2)(96485)(.926)=-178.7[\si{\kilo\joule}]$
+
+      \item $E^o=-.614[\si{\volt}]\Rightarrow -(6)(96485)(-.614)=355.45[\si{\kilo\joule}]$
+
+    \end{enumerate}
+
+  \item $\ln(K)=\frac{n\mathcal{F}E^o}{RT}\Rightarrow E^o=1.229-1.36=-.131[\si{\volt}]\Rightarrow \frac{(2)(96485)(-.131)}{(8.314)(298)}=-10.2\Rightarrow K=3.71\cdot10^{-5}$
+
+  \item $E=E^o-\frac{RT}{n\mathcal{F}}\ln(Q)\Rightarrow Q=\frac{1.33}{(.0015)^2}=591111\Rightarrow E^o=.409+.799=1.208[\si{\volt}]\Rightarrow 1.208-\frac{(8.314)(298)}{(2)(96485)}\ln(591111)=1.037[\si{\volt}]$
+
+\end{enumerate}
+
+\end{document}
+
