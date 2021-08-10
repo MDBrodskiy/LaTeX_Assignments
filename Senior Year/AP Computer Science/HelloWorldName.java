@@ -1,8 +1,8 @@
 /*
  *
  * Written by: Michael Brodskiy
- * Class: Programming with Java (COMSC-255)
- * Instructor: Prof. Chern
+ * Class: AP Computer Science A
+ * Instructor: Mr. Davis
  *
  */
 
