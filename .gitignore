@@ -247,3 +247,6 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+# basic support for Java files
+*.class
