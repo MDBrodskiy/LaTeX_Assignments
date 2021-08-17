@@ -7,12 +7,12 @@
  */
 
 /**
- * This program calculates the volume of a sphere from a user-inputted radius
- * */
+ * This program calculates the diameter, circumference, and area of a circle
+ **/
 
 import java.util.*;
 
-public class VolumeOfASphere
+public class Circle
 
 {
 
@@ -24,14 +24,10 @@ public class VolumeOfASphere
         Scanner keyboard = new Scanner(System.in);
 
         //Explain the program to the user and request input
-        System.out.println("Welcome to the sphere volume calculator");
-        System.out.print("What is the radius of the sphere? ");
-
-        //Create double variable to store input
+        System.out.println("Welcome to the Great Circle Calculator!");
+        System.out.print("Radius: ");
         double rad = keyboard.nextDouble();
-
-        //Print out the volume
-        System.out.println("The volume is: " + ((4 * Math.PI * rad * rad * rad) / 3));
+        System.out.printf("The diameter is %.2f\nThe circumference is %.2f\nThe area is %.2f", (2 * rad), (2 * Math.PI * rad), (Math.PI * rad * rad));
 
     }
 
