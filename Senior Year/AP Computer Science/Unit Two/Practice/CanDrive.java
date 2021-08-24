@@ -32,7 +32,7 @@ public class CanDrive
 
         }
 
-        System.out.println("You can not drive.");
+        System.out.println("You can not drive. You will be able to drive in " + (16 - age) + " years");
 
     }
 
