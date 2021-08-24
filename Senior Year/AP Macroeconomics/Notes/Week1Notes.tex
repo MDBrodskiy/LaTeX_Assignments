@@ -26,6 +26,7 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{soul}
+\usepackage{pgfplots}
 \usetikzlibrary{fadings}
 \usetikzlibrary{patterns}
 \usetikzlibrary{shadows.blur}
@@ -106,11 +107,58 @@ citecolor=blue,
 
     \begin{itemize}
 
-      \item Land (gifts of nature)
+      \item Land (gifts of nature — \textit{i.e.\ navigable rivers, ocean access, etc.})
 
-      \item Labor
+      \item Labor (\textit{i.e.\ human capital})
 
-      \item Capital
+      \item Capital (tools — \textit{i.e.\ computers, bulldozers, etc.})
+
+      \item \textit{Optional: Entrepreneurship}
+
+    \end{itemize}
+
+  \item Guide to Economic Reasoning
+
+    \begin{itemize}
+
+      \item People Choose — People choose the alternative that seems best to them because it involves the least cost and the greatest benefit (people economize)
+
+      \item People's Choices Involve Costs — Opportunity cost is the second best alternative people give up in making a choice
+
+        \begin{itemize}
+
+          \item One way to view these costs is with a production possibilities curve
+
+            \begin{center}
+
+                \begin{tikzpicture}
+                  \begin{axis}[xmin=0, xlabel={Good $x$}, ylabel={Good $y$}, ymin=0, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+                      \addplot[color=blue]{(25 - x^2)^.5};
+                      \node[label={180:{Efficient}},circle,fill,inner sep=2pt, color=blue] at (axis cs:3,4) {};
+                      \node[label={180:{Feasible}},circle,fill,inner sep=2pt, color=green] at (axis cs:2,1) {};
+                      \node[label={180:{Infeasible}},circle,fill,inner sep=2pt, color=red] at (axis cs:5,5) {};
+                    \end{axis}
+                \end{tikzpicture}
+              
+            \end{center}
+
+        \end{itemize}
+
+      \item People respond to incentives in predictable ways — Incentives are benefits or rewards that encourage people to act. When incentives change, people's choices change
+
+      \item People create economic systems, and these systems influence incentives and people's choices — How people cooperate is governed by written and unwritten rules. As rules change, incentives change and choices change
+
+      \item People gain when they trade voluntarily — People can produce more in less time by concentrating on what they do best. The surplus goods or services they produce can be traded for other valuable goods or services
+
+    \end{itemize}
+
+  \item Terminology
+
+    \begin{itemize}
+
+      \item When someone is better at something than someone else, they have an \underline{absolute advantage} (\textit{i.e.\ a plumber has an absolute advantage in plumbing})
+
+      \item Comparative advantage is used to compare which choice is better through comparison of opportunity costs. Essentially, the best choice is wherever the opportunity cost is the lowest
 
     \end{itemize}
 
