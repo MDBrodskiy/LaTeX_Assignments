@@ -36,7 +36,7 @@ public class ThreeOfAKind
 
         }
 
-        else if (firstNumber == secondNumber || secondNumber == thirdNumber) {
+        else if (firstNumber == secondNumber || secondNumber == thirdNumber || firstNumber == thirdNumber) {
 
             System.out.println("There are two of a kind!");
 
