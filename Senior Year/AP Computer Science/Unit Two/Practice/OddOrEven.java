@@ -26,21 +26,26 @@ public class OddOrEven
         System.out.print("Please enter a number: ");
         int number = keyboard.nextInt();
 
-        if (number == 0) {
-
-            System.out.println(number + " is zero");
-            System.exit(0);
-
-        }
-
-        else if (number % 2 == 0) {
+        if (isEven(number)) {
 
             System.out.println(number + " is even");
             System.exit(0);
 
         }
 
-        System.out.println(number + " is odd");
+        System.out.println(number + "is odd");
+
+    }
+
+    public static boolean isEven(int num) {
+
+        if (num % 2 == 0) {
+
+            return true;
+
+        }
+
+        return false;
 
     }
 
