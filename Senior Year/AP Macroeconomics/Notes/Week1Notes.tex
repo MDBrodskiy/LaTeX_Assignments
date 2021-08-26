@@ -27,6 +27,7 @@
 \usepackage{booktabs}
 \usepackage{soul}
 \usepackage{pgfplots}
+\pgfplotsset{compat=newest}
 \usetikzlibrary{fadings}
 \usetikzlibrary{patterns}
 \usetikzlibrary{shadows.blur}
@@ -177,6 +178,90 @@ citecolor=blue,
         \end{itemize}
 
     \end{itemize}
+
+  \item Demand — Desire plus the ability and willingness to pay
+
+  \item Demand Schedule — A table that shows the quantity demanded for a particular item at various prices
+
+    \begin{center}
+
+      \begin{tabular}{| c | c |}
+
+        \hline
+        Price ($P$) & Quantity ($Q$)\\
+        \hline
+        \$1.00 & 1,500\\
+        \hline
+        \$3.50 & 1,000\\
+        \hline
+        \$5.00 & 700\\
+        \hline
+
+      \end{tabular}
+
+    \end{center}
+
+  \item Demand Curve — A plotted demand schedule:
+
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[title={Demand}, xlabel={Units}, ylabel={Price ($P$, \$ )}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot[color=red] coordinates {(1500,1) (1000,3.5) (700, 5)};
+          \node[label={180:{$Q_d$}},circle,fill,inner sep=2pt, color=red] at (axis cs:1000,3.5) {};
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
+
+  \item Income effect — Change in quantity demanded because of change in consumer purchasing power when the price of a commodity changes. This has the effect of raising/lowering their relative income
+
+  \item Substitution effect — Change in quantity demanded because of a change in the relative price of a product
+
+  \item Movement along a demand curve is known as change in quantity demanded
+
+  \item Rightward movement of a line is an increase in demand (and vice versa)
+
+  \item A point shows quantity demanded, a curve shows demand
+
+    \begin{itemize}
+
+      \item If only price changes, you will have a change in quantity demanded
+
+      \item If market conditions change (necessitating a new demand schedule and a new curve), you will have a change in demand
+
+    \end{itemize}
+
+    \newpage
+
+  \item Demand changes are based on several determinants of demand:
+
+    \begin{enumerate}
+
+      \item Change in consumer income
+
+      \item Change in consumer tastes
+
+      \item Change in the price of a substitute good
+
+      \item Change in the price of a complementary good
+
+      \item Change in consumers' price expectations
+
+      \item Change in the number of consumers in the market
+
+    \end{enumerate}
+    
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[xmin=0, title={Supply vs. Demand}, xlabel={Units}, ylabel={Price ($P$, \$)}, ymin=0, xmax=150, ymax=150, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot [domain=10:140,red] {x};
+          \addplot [domain=10:140,blue,fill=blue] {-x+150};
+          \node[label={180:{$Q_s$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:20,130) {};
+          \node[label={180:{$Q_d$}},circle,fill,inner sep=2pt, color=red] at (axis cs:20,20) {};
+          \node[label={180:{Equilibrium}},circle,fill,inner sep=2pt, color=green!50!black] at (axis cs:75,75) {};
+          \legend{Demand, Supply}
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
 
 \end{enumerate}
 
