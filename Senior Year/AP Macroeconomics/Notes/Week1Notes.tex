@@ -250,19 +250,6 @@ citecolor=blue,
 
     \end{enumerate}
     
-    \begin{center}
-      \begin{tikzpicture}
-        \begin{axis}[xmin=0, title={Supply vs. Demand}, xlabel={Units}, ylabel={Price ($P$, \$)}, ymin=0, xmax=150, ymax=150, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
-          \addplot [domain=10:140,red] {x};
-          \addplot [domain=10:140,blue,fill=blue] {-x+150};
-          \node[label={180:{$Q_s$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:20,130) {};
-          \node[label={180:{$Q_d$}},circle,fill,inner sep=2pt, color=red] at (axis cs:20,20) {};
-          \node[label={180:{Equilibrium}},circle,fill,inner sep=2pt, color=green!50!black] at (axis cs:75,75) {};
-          \legend{Demand, Supply}
-        \end{axis}
-      \end{tikzpicture}
-    \end{center}
-
 \end{enumerate}
 
 \end{document}
