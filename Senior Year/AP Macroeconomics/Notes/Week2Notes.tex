@@ -139,20 +139,54 @@ citecolor=blue,
 
       \item Change in producers' price expectations
 
+      \item Change in the amount of producers
+
     \end{enumerate}
+
+  \item Supply vs. Demand
+
+    \begin{itemize}
+
+      \item Demand is downward-sloping
+
+      \item Supply is upward-sloping
+
+      \item On one graph, the two lines intersect. The intersection point is equilibrium (sometimes called market-clearing point)
+
+      \item If the price is too high, or demand is too low, there is a surplus
+
+      \item If the price is too low, or demand is too high, there is a shortage
+
+    \end{itemize}
 
     \begin{center}
       \begin{tikzpicture}
         \begin{axis}[xmin=0, title={Supply vs. Demand}, xlabel={Units}, ylabel={Price ($P$, $\text{\$}$)}, ymin=0, xmax=150, ymax=150, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
           \addplot [domain=10:140,red] {x};
           \addplot [domain=10:140,blue,fill=blue] {-x+150};
-          \node[label={180:{$Q_s$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:20,130) {};
-          \node[label={180:{$Q_d$}},circle,fill,inner sep=2pt, color=red] at (axis cs:20,20) {};
-          \node[label={180:{Equilibrium}},circle,fill,inner sep=2pt, color=green!50!black] at (axis cs:75,75) {};
+          \addplot [domain=0:75,dashed,green!50!black] {75};
+          \addplot [dashed,green!50!black] coordinates {(75,0) (75,75)};
+          \node[label={270:{$Q_s$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:20,130) {};
+          \node[label={90:{$Q_d$}},circle,fill,inner sep=2pt, color=red] at (axis cs:20,20) {};
+          \node[label={0:{Equilibrium}},circle,fill,inner sep=2pt, color=green!50!black] at (axis cs:75,75) {};
           \legend{Demand, Supply}
         \end{axis}
       \end{tikzpicture}
     \end{center}
+
+  \item Using the Supply and Demand model to predict market outcomes
+
+    \begin{itemize}
+
+      \item Does an event effect supply/demand?
+
+      \item Is supply/demand increasing or decreasing
+
+      \item Draw a new curve
+
+      \item Use the new curve to determine impact on price and quantity
+
+    \end{itemize}
 
 \end{enumerate}
 
