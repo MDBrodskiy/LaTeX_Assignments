@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Statistics
+% Professor: M. Thompson
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{statistics}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{68-95-99.7 Rule Worksheet}
+\date{September 3, 2021}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Thompson}
+
+\begin{document}
+
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item \textbf{}
+
+    \begin{center}
+
+        \begin{tikzpicture}
+
+            \begin{axis}[no markers, domain=0:10, samples=100, axis lines*=left, height=6cm, width=10cm, xticklabels={0,4.65, 5.1, 5.55, 6, 6.45, 6.9, 7.35}, ytick=\empty, enlargelimits=false, clip=false, axis on top, grid = major]
+              \addplot [fill=blue!20, draw=none, domain=-3:3] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=-3:-2] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=2:3] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=-2:-1] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=1:2] {gauss(0,1)} \closedcycle;
+            \end{axis}
+        \end{tikzpicture}
+      
+    \end{center}
+
+    \begin{enumerate}
+
+      \item About 50\%
+
+      \item About 97.5\%
+
+      \item About 95\%
+
+      \item About 16\%
+
+      \item Nearly 0\%
+
+    \end{enumerate}
+
+  \item \textbf{}
+
+    \begin{center}
+
+        \begin{tikzpicture}
+
+          \begin{axis}[no markers, domain=0:10, samples=100, axis lines*=left, height=6cm, width=10cm, xticklabels={0, 105, 130, 155, 180, 205, 230, 255}, ytick=\empty, enlargelimits=false, clip=false, axis on top, grid = major]
+              \addplot [fill=blue!20, draw=none, domain=-3:3] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=-3:-2] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=2:3] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=-2:-1] {gauss(0,1)} \closedcycle;
+              \addplot [fill=blue!20, draw=none, domain=1:2] {gauss(0,1)} \closedcycle;
+            \end{axis}
+        \end{tikzpicture}
+      
+    \end{center}
+
+  \item About 2.35\%
+
+  \item About 81.5\%
+
+  \item About 97.5\%
+
+\end{enumerate}
+
+\end{document}
+
