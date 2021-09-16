@@ -26,6 +26,7 @@ public class PracticeMethods
         countDown();
         countUp(9);
         countUp(0,9);
+        System.out.println(sumMultiplesToN(100));
 
     }
 
@@ -78,6 +79,49 @@ public class PracticeMethods
             lowerLimit++;
 
         }
+
+    }
+
+    public static int sumToN(int n) {
+
+        int counter = 0;
+        int sum = 0;
+
+        while (counter <= n) {
+
+            sum += counter;
+            counter++;
+
+        }
+
+        return sum;
+
+    }
+
+    public static double averageToN(int n) {
+
+        return (sumToN(n) /(double) n);
+
+    }
+
+    public static int sumMultiplesToN(int n) {
+
+        int counter = 0;
+        int sum = 0;
+
+        while (counter <= n) {
+
+            if (counter % 3 == 0 || counter % 5 ==0) {
+
+                sum += counter;
+
+            }
+
+            counter++;
+
+        }
+
+        return sum;
 
     }
 
