@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class coinFlip
+public class CoinFlip
 
 {
 
