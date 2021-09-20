@@ -20,7 +20,12 @@ public class Algorithms
     
     {
 
-        System.out.println(sumDigits(1505050));
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int input = keyboard.nextInt();
+        System.out.println("This number has " + countDigits(input) + " digits");
+        System.out.println("The sum of these digits is " + sumDigits(input));
 
     }
 
@@ -38,6 +43,12 @@ public class Algorithms
         }
 
         return sum;
+
+    }
+
+    public static int countDigits(int n) {
+
+        return Integer.toString(n).length();
 
     }
 
