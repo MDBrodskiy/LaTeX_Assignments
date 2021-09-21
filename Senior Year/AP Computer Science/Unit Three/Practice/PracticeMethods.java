@@ -22,7 +22,7 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(factor(72));
+        theFinalCountdown(9);
 
     }
 
@@ -139,6 +139,22 @@ public class PracticeMethods
         }
 
         return factors;
+
+    }
+
+    public static void theFinalCountdown(int num) {
+
+        for (int i = num; i >= 1; i--) {
+
+            System.out.println(i);
+
+            if (i == 1) {
+
+                System.out.println("It's the FINAL COUNTDOWN!");
+
+            }
+
+        }
 
     }
 
