@@ -22,11 +22,7 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        countUp();
-        countDown();
-        countUp(9);
-        countUp(0,9);
-        System.out.println(sumMultiplesToN(100));
+        System.out.println(factor(72));
 
     }
 
@@ -122,6 +118,27 @@ public class PracticeMethods
         }
 
         return sum;
+
+    }
+
+    public static String factor(int num) {
+
+        int counter = 1;
+        String factors = "";
+
+        while (counter <= num) {
+
+            if (num % counter == 0) {
+
+                factors = factors + Integer.toString(counter) + " ";
+
+            }
+            
+            counter++;
+
+        }
+
+        return factors;
 
     }
 
