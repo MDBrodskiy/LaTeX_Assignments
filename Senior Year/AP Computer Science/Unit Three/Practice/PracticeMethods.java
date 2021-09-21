@@ -22,7 +22,7 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        theFinalCountdown(9);
+        System.out.println(factorial(5));
 
     }
 
@@ -155,6 +155,32 @@ public class PracticeMethods
             }
 
         }
+
+    }
+
+    public static int sumMultiplesToN(int a, int b, int n) {
+
+         int sum = 0;
+
+         for (int i = 0; i <= n; i++) {
+
+             sum += (i % a == 0 || i % b == 0) ? (i) : (0);
+
+         }
+
+         return sum;
+
+    }
+
+    public static double factorial(int num) {
+
+        for (int i = num; i > 1; i--) {
+
+            num *= i - 1;
+
+        }
+
+        return (double)num;
 
     }
 
