@@ -22,7 +22,7 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(factorial(5));
+        System.out.println(charCount("gucci", "c"));
 
     }
 
@@ -172,15 +172,79 @@ public class PracticeMethods
 
     }
 
-    public static double factorial(int num) {
+    public static int sumEvenDigits(int num) {
 
-        for (int i = num; i > 1; i--) {
+        String number = Integer.toString(num);
 
-            num *= i - 1;
+        int sum = 0;
+
+        for (int i = 0; i < number.length(); i++) {
+
+            sum += (Integer.parseInt(number.substring(i,i + 1)) % 2 == 0) ? Integer.parseInt(number.substring(i, i + 1)) : 0;
 
         }
 
-        return (double)num;
+        return sum;
+
+    }
+
+    public static double factorial(double num) {
+
+        if (num <= 1) {
+
+            return num;
+
+        }
+
+        return factorial(num - 1) * num;
+
+    }
+
+    public static boolean isVowel(String str) {
+
+        if (str.equalsIgnoreCase("a") || str.equalsIgnoreCase("e") || str.equalsIgnoreCase("i") || str.equalsIgnoreCase("o") || str.equalsIgnoreCase("u")) {
+
+            return true;
+
+        }
+        
+        return false;
+
+    }
+
+    public static int vowelCount(String str) {
+
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if (isVowel(str.substring(i, i + 1))) {
+
+                count++;
+
+            }
+
+        }
+
+        return count;
+
+    }
+
+    public static int charCount(String s, String c) {
+
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if (s.substring(i, i + 1).equalsIgnoreCase(c)) {
+
+                count++;
+
+            }
+
+        }
+
+        return count;
 
     }
 
