@@ -22,9 +22,9 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(sumOddDigits(15));
-        System.out.println(sumOddDigits(2286));
-        System.out.println(sumOddDigits(732258));
+        System.out.println(isPrime(11));
+        System.out.println(isPrime(187));
+        System.out.println(isPrime(7879));
 
     }
 
@@ -287,6 +287,32 @@ public class PracticeMethods
         }
 
         return sum;
+
+    }
+
+    public static boolean isPrime(int num) {
+
+        int i = 2;
+
+        do {
+
+            if (num == 1) {
+
+                return false;
+
+            }
+
+            if (num % i == 0) {
+
+                return false;
+
+            }
+
+            i++;
+
+        } while (i < num);
+
+        return true;
 
     }
 
