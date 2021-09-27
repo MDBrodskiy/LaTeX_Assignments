@@ -22,7 +22,9 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(charCount("gucci", "c"));
+        System.out.println(sumOddDigits(15));
+        System.out.println(sumOddDigits(2286));
+        System.out.println(sumOddDigits(732258));
 
     }
 
@@ -245,6 +247,46 @@ public class PracticeMethods
         }
 
         return count;
+
+    }
+
+    public static String response(String attendance, String choice) {
+
+        if (attendance.equals("yes")) {
+
+            if(choice.equals("veg")) {
+
+                return "Thanks for attending. Your meal choice is vegetarian.";
+
+            }
+
+            else {
+
+                return "Thanks for attending. Your meal choice is " + choice + ".";
+
+            }
+
+        }
+
+        return "Sorry that you cannot attend the wedding.";
+
+    }
+
+    public static int sumOddDigits(int num) {
+
+        int sum = 0;
+
+        for (int i = num; i > 0; i /= 10) {
+
+            if ((i % 10) % 2 != 0) {
+
+                sum += (i % 10);
+
+            }
+
+        }
+
+        return sum;
 
     }
 
