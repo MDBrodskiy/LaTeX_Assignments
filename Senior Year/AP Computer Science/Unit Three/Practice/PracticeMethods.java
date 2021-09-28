@@ -22,9 +22,7 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(isPrime(11));
-        System.out.println(isPrime(187));
-        System.out.println(isPrime(7879));
+        System.out.println(reverseString("TESTING THIS"));
 
     }
 
@@ -310,9 +308,47 @@ public class PracticeMethods
 
             i++;
 
-        } while (i < num);
+        } while (i < ((num / 2) + 1));
 
         return true;
+
+    }
+
+    public static String primesToLimit(int num) {
+
+        String primes = "";
+
+        if (num <= 0) {
+
+            return "INVALID";
+
+        }
+
+        for (int i = 1; i <= num; i++) {
+
+            if (isPrime(i)) {
+
+                primes += i + " ";
+
+            }
+
+        }
+
+        return primes;
+
+    }
+
+    public static String reverseString(String s) {
+
+        String reversed = "";
+
+        for (int i = s.length(); i > 0; i--) {
+
+            reversed += s.substring(i - 1, i);
+
+        }
+
+        return reversed;
 
     }
 
