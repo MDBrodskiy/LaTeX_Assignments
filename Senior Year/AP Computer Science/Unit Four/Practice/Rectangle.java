@@ -105,7 +105,9 @@ public class Rectangle
 
     public boolean equals(Rectangle other) {
 
-        if (this.width == other.getWidth() && this.height == other.getHeight()) {
+        Rectangle r = (Rectangle) other;
+
+        if (this.width == r.width && this.height == r.height) {
 
             return true;
 
