@@ -22,7 +22,8 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(facString(5));
+        System.out.println(charCounter("hello world", "o"));
+        System.out.println(charCounter("hello world", "z"));
 
     }
 
@@ -53,6 +54,20 @@ public class PracticeMethods
         }
 
         return facts;
+
+    }
+
+    public static int charCounter(String phrase, String character) {
+
+        int counter = 0;
+
+        for (int i = 0; i < phrase.length(); i++) {
+
+            if (phrase.substring(i, i + 1).equals(character)) counter += 1;
+
+        }
+
+        return counter;
 
     }
 
