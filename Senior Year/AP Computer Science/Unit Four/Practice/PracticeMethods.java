@@ -22,8 +22,9 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(charCounter("hello world", "o"));
-        System.out.println(charCounter("hello world", "z"));
+        System.out.println(isPrime(1));
+        System.out.println(isPrime(10));
+        System.out.println(isPrime(11));
 
     }
 
@@ -68,6 +69,52 @@ public class PracticeMethods
         }
 
         return counter;
+
+    }
+
+    public static String replace(String str, String from, String to) {
+
+        String tmp = "";
+
+        while (str.indexOf(from) != -1) {
+
+            for (int i = 0; i < str.length(); i++) {
+                
+                if (str.substring(i, i + from.length()).equals(from)) {
+
+                    tmp += to;
+
+                }
+
+                else {
+
+                    tmp += str.substring(i, i + 1);
+
+                }
+
+            }
+
+            return tmp;
+
+        }
+
+        return str;
+
+    }
+
+    public static boolean isPrime(int num) {
+         
+        for (int i = 2; i <= ((num / 2) + 1); i++) {
+
+            if ((num % i == 0) && num != 1) {
+
+                return true;
+
+            }
+
+        }
+
+        return false;
 
     }
 
