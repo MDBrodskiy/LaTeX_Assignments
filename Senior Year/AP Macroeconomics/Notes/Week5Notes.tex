@@ -19,6 +19,7 @@
 \usepackage{yhmath}
 \usepackage{cancel}
 \usepackage{color}
+\definecolor{yellow}{rgb}{.95, .95, 0.0}
 \usepackage{siunitx}
 \usepackage{array}
 \usepackage{multirow}
@@ -88,6 +89,76 @@ citecolor=blue,
           \item Intermediate items
 
         \end{itemize}
+
+      \item The Aggregate-Demand Model (AD)
+
+    \begin{center}
+        \begin{tikzpicture}
+          \begin{axis}[xmin=0, ymin=0, title={Aggregate Demand}, xlabel={Real GDP}, ylabel={Price Level (GDP Deflator)}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot [domain=10:140,blue] {150-x};
+          \node[label={180:{$AD$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:140,10);
+        \end{axis}
+        \end{tikzpicture}
+    \end{center}
+
+  \item Why does the Aggregate Demand Curve Slope Down?
+
+    \begin{itemize}
+
+      \item Wealth Effect — Decrease in prices increases the real value of money, hence we experience the effect of having more money (remember this one)
+
+    \end{itemize}
+
+  \item Determinants of Aggregate Demand
+
+    \begin{itemize}
+
+      \item Changes in consumer spending ($C$)
+
+      \item Changes in investment spending ($I$)
+
+      \item Changes in government spending ($G$)
+
+      \item Changes in net export spending ($NX$)
+
+    \end{itemize}
+
+  \item The Aggregate Supply Model (AS)
+
+    \begin{itemize}
+
+      \item Short-Run Aggregate Supply (SRAS) slopes up
+        
+      \item Long-Run Aggregate Supply (LRAS) is vertical
+
+      \item Definition of Long-Run: When prices have had enough time to adjust to current conditions
+        
+    \end{itemize}
+
+    \begin{center}
+        \begin{tikzpicture}
+          \begin{axis}[xmin=0, ymin=0, title={Short-Run \& Long-Run Aggregate Supply}, xlabel={Real GDP}, ylabel={Price Level (GDP Deflator)}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot [domain=10:140,red] {x};
+          \node[label={180:{$SRAS$}},circle,fill,inner sep=2pt, color=red] at (axis cs:140,140);
+          \addplot [yellow] coordinates {(75,0) (75,150)};
+          \node[label={180:{$LRAS$}},circle,fill,inner sep=2pt, color=yellow] at (axis cs:75,100);
+        \end{axis}
+        \end{tikzpicture}
+    \end{center}
+
+  \item Determinants of Aggregate Supply
+
+    \begin{itemize}
+
+      \item Changes in the prices of inputs (land, labor, capital)
+
+      \item Changes in productivity
+
+      \item Changes in technology
+
+      \item Changes in government taxes, subsidies, and regulations
+
+    \end{itemize}
 
 \end{enumerate}
 
