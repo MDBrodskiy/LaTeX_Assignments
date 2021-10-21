@@ -22,12 +22,7 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.print("Enter Box Length: ");
-        int len = keyboard.nextInt();
-        System.out.print("Enter Box Length: ");
-        int wid = keyboard.nextInt();
-        System.out.print("\n");
-        box(len,wid);
+        System.out.println(randomCount(100,2));
 
     }
 
@@ -87,6 +82,22 @@ public class PracticeMethods
             }
 
         }
+
+    }
+
+    public static int randomCount(int max, int key) {
+
+        int keyInstance = 0;
+        int counter = 0;
+        while (counter != max) {
+
+            int rand = (int)(10 * Math.random());
+            keyInstance += (rand == key) ? 1 : 0;
+            counter++;
+
+        }
+
+        return keyInstance;
 
     }
 
