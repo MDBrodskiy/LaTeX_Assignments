@@ -22,7 +22,9 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println(randomCount(100,2));
+        int[] a = {12,12,12,12,12};
+
+        System.out.println(sum(a));
 
     }
 
@@ -98,6 +100,20 @@ public class PracticeMethods
         }
 
         return keyInstance;
+
+    }
+
+    public static int sum(int[] arr) {
+
+        int sum = 0;
+
+        for (int i : arr) {
+
+            sum += i;
+
+        }
+
+        return sum;
 
     }
 
