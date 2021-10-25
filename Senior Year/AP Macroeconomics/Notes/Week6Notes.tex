@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Macroeconomics
+% Instructor: Mr. Bremer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\definecolor{yellow}{rgb}{.95, .95, 0.0}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Notes — Week 6}
+\date{Period 3}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Bremer}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item Real GDP is abbreviated $Y$
+
+  \item LRAS is purely a function of land, labor, and capital, and how efficiently it could be utilized
+    
+  \item Producing on the LRAS line is the same as producing on the PPC curve, while producing to the left of LRAS is the same as producing in the PPC curve, and producing to the right of LRAS is the same as producing outside of the PPC curve
+
+  \item An economy at which the Aggregate Demand and both Aggregate Supply curves intersect is at equilibrium (“home base”) and at full employment
+
+  \item When SRAS and Aggregate Demand intersect below the LRAS:
+
+    \begin{itemize}
+
+      \item Economy is in recession
+
+      \item Distance between intersection point of SRAS and AD curve and LRAS curve is known as the recessionary outgap
+
+      \item Equivalent to producing below the PPC
+
+      \item Unemployment rate is above the natural rate
+
+      \item Output is less than full employment output
+
+    \end{itemize}
+
+  \item When SRAS and Aggregate Demand intersect above the LRAS:
+
+    \begin{itemize}
+
+      \item Economy is in expansion
+
+      \item Distance between intersection point of SRAS and AD curve and LRAS curve is known as the inflationary outgap
+
+      \item Equivalent to producing outside the PPC
+
+      \item Unemployment rate is below the natural rate
+
+      \item Output is greater than full employment output
+
+    \end{itemize}
+
+    \begin{center}
+        \begin{tikzpicture}
+          \begin{axis}[xmin=0, ymin=0, title={ADAS Model}, xlabel={Real GDP ($Y$)}, ylabel={Price Level (GDP Deflator)}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot [domain=10:140,blue] {150-x};
+          \node[label={180:{$AD$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:140,10);
+          \addplot [domain=10:140,red] {x};
+          \node[label={180:{$SRAS$}},circle,fill,inner sep=2pt, color=red] at (axis cs:140,140);
+          \addplot [yellow] coordinates {(75,0) (75,150)};
+          \node[label={180:{$LRAS$}},circle,fill,inner sep=2pt, color=yellow] at (axis cs:75,140);
+          \node[label={45:{$Y_f$}},circle,fill,inner sep=2pt, color=black] at (axis cs:75,0);
+        \end{axis}
+        \end{tikzpicture}
+    \end{center}
+
+\end{enumerate}
+
+\end{document}
+
