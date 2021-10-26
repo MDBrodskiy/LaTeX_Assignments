@@ -22,9 +22,9 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        int[] a = {12,12,12,12,12};
+        int[] a = {50,45,40,45,51};
 
-        System.out.println(sum(a));
+        System.out.println(max(a) + " " + min(a));
 
     }
 
@@ -114,6 +114,34 @@ public class PracticeMethods
         }
 
         return sum;
+
+    }
+
+    public static int max(int[] a) {
+
+        int max = a[0];
+
+        for (int i : a) {
+
+            max = (i > max) ? i : max;
+
+        }
+
+        return max;
+
+    }
+
+    public static int min(int[] a) {
+
+        int min = a[0];
+
+        for (int i : a) {
+
+            min = (i < min) ? i : min;
+
+        }
+
+        return min;
 
     }
 
