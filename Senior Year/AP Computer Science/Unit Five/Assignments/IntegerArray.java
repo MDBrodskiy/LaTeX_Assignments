@@ -16,6 +16,12 @@ public class IntegerArray
 
     private int[] a;
 
+    public IntegerArray() {
+
+        a = new int[0];
+
+    }
+
     public IntegerArray(int size) {
 
         a = new int[size];
