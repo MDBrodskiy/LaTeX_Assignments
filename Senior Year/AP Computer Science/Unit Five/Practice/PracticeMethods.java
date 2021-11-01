@@ -22,10 +22,6 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
-        int[] a = {50,45,40,45,51};
-
-        System.out.println(max(a) + " " + min(a));
-
     }
 
     public static void box(int l, int w) {
@@ -142,6 +138,40 @@ public class PracticeMethods
         }
 
         return min;
+
+    }
+
+    public static int[] reverse(int[] a) {
+
+        int[] tmp = new int[a.length];
+
+        for (int i = a.length - 1; i >= 0; i--) {
+
+            tmp[i] = a[a.length - i - 1];
+
+        }
+
+        return tmp;
+
+    }
+
+    public static int[] combine(int[] a, int[] b) {
+
+        int[] tmp = new int[a.length + b.length];
+
+        for (int i = 0; i < a.length; i++) {
+
+            tmp[i] = a[i];
+
+        }
+
+        for (int i = 0; i < b.length; i++) {
+
+            tmp[i + a.length] = b[i];
+
+        }
+
+        return tmp;
 
     }
 
