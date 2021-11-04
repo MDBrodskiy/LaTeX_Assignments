@@ -22,6 +22,12 @@ public class PracticeMethods
         //Create Scanner for keyboard input
         Scanner keyboard = new Scanner(System.in);
 
+        int[] a = {1,2,3,5,5,5,5,6,4,4,4,4};
+
+        rotateLeft(a);
+
+        for (int x : a) System.out.print(x + " ");
+
     }
 
     public static void box(int l, int w) {
@@ -172,6 +178,54 @@ public class PracticeMethods
         }
 
         return tmp;
+
+    }
+
+    public static int count(int[] arr, int key) {
+
+        int count = 0;
+
+        for (int x : arr) {
+
+            if (x == key) count++;
+
+        }
+
+        return count;
+
+    }
+
+    public static int mode(int[] arr) {
+
+        int num = arr[0];
+
+        for (int x : arr) {
+
+            if (count(arr, x) > count(arr, num)) num = x;
+
+        }
+
+        return num;
+
+    }
+
+    public static void rotateLeft(int[] arr) {
+
+        int leftValue = arr[0];
+        int[] otherValues = new int[arr.length - 1];
+
+        for (int i = 1; i < arr.length; i++) {
+
+            otherValues[i - 1] = arr[i];
+
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (i < arr.length - 1) arr[i] = otherValues[i];
+            else arr[i] = leftValue;
+
+        }
 
     }
 
