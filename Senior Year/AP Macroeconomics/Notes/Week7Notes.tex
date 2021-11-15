@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Macroeconomics
+% Instructor: Mr. Bremer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\definecolor{yellow}{rgb}{.95, .95, 0.0}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Notes — Week 7}
+\date{Period 3}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Bremer}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+        \begin{tikzpicture}
+          \begin{axis}[xmin=0, ymin=0, title={ADAS Model}, xlabel={Real GDP ($Y$)}, ylabel={Price Level (GDP Deflator)}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot [domain=10:120,blue] {130-x};
+          \node[label={180:{$AD$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:120,10);
+          \addplot [domain=10:120,red] {x};
+          \node[label={180:{$SRAS$}},circle,fill,inner sep=2pt, color=red] at (axis cs:120,120);
+          \addplot [yellow] coordinates {(75,0) (75,150)};
+          \node[label={180:{$LRAS$}},circle,fill,inner sep=2pt, color=yellow] at (axis cs:75,150);
+          \addplot [black, dashed] coordinates {(65,0) (65,65)};
+          \addplot [domain=0:65,black,dashed] {65};
+          \node[label={90:{$E$}},circle,fill,inner sep=2pt, color=black] at (axis cs:65,65);
+        \end{axis}
+        \end{tikzpicture}
+    \end{center}
+
+  \item The Multiplier Effect means that when a certain amount of money is spent, a certain amount proportional to the amount spent is contributed to the economy
+
+    \begin{itemize}
+
+      \item How much will a given change in spending cause real GDP to change?
+
+    \end{itemize}
+
+  \item Two things could be done with a dollar:
+
+    \begin{enumerate}
+
+      \item Save it
+
+      \item Spend it (consumption)
+
+    \end{enumerate}
+
+    \begin{itemize}
+
+      \item Consumption + Savings = Income OR Savings = Income - Consumption
+
+    \end{itemize}
+
+  \item $MPC = \frac{\text{Change in } C}{\text{Change in Disposable Income}}$
+
+  \item $MPS = \frac{\text{Change in } S}{\text{Change in Disposable Income}}$
+
+  \item $MPC + MPS = 1$
+
+  \item The spending multiplier is: $\frac{1}{1-MPC}$ OR $\frac{1}{MPS}$
+
+  \item The Tax Multiplier is: $\frac{-MPC}{1-MPC}$
+
+    \begin{itemize}
+
+      \item The Tax Multiplier is always one less than the spending multiplier, and negative
+
+    \end{itemize}
+
+\end{enumerate}
+
+\end{document}
+
