@@ -92,6 +92,21 @@ citecolor=blue,
 
       \item The Money Market Model
 
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[xmin=0, ymin=0, xmax=10, title={Market for Loanable Funds}, xlabel={Quantity of Loanable Funds}, ylabel={Real Interest Rate}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot[domain=1:9,blue] {10 - x};
+          \addplot[domain=1:9,green] {x};
+          \addplot[domain=0:5,yellow,dashed] {5};
+          \node[label={180:{$D_{lf}$}},circle,fill,inner sep=2pt, color=blue] at (axis cs:9,1) {};
+          \node[label={180:{$S_{lf}$}},circle,fill,inner sep=2pt, color=green] at (axis cs:9,9) {};
+          \node[label={45:{$Q_{lf}$}},circle,fill,inner sep=2pt, color=yellow] at (axis cs:5,0) {};
+          \node[label={45:{$i_{f}$}},circle,fill,inner sep=2pt, color=yellow] at (axis cs:0,5) {};
+          \addplot[yellow,dashed] coordinates {(5,0) (5,5)};
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
+
       \item Nominal Interest Rate vs. Quantity of Money — The graph is downward-sloping
 
       \item The nominal interest rate $i$ is the Federal Funds rate
@@ -109,6 +124,58 @@ citecolor=blue,
           \item Changes in technology
 
         \end{itemize}
+
+    \end{itemize}
+
+  \item Loanable Funds — All money available for lending and borrowing
+
+  \item Uses for loanable funds (demand):
+
+    \begin{itemize}
+
+      \item Business investment
+
+      \item Government budget deficit
+
+      \item International investment or lending
+
+    \end{itemize}
+
+  \item What can shift the demand curve?
+
+    \begin{itemize}
+
+      \item Changes in expected profit from new capital
+
+        \begin{itemize}
+
+          \item Business cycle expansions
+
+          \item Swings of optimism and pessimism
+
+        \end{itemize}
+
+      \item Investment incentives
+
+      \item Government budget deficits
+
+    \end{itemize}
+
+  \item What can shift the supply curve?
+
+    \begin{itemize}
+
+      \item Savings incentives
+
+        \begin{itemize}
+
+          \item Taxes on interest
+
+        \end{itemize}
+
+      \item Expansionary monetary policy\footnote{May shift supply, but not always}
+
+      \item Capital inflows
 
     \end{itemize}
 
