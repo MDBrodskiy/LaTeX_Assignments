@@ -136,6 +136,73 @@ citecolor=blue,
 
     \end{itemize}
 
+  \item The Phillips Curve:
+
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[xmin=0, ymin=0, xmax=10, title={Short-run Phillips Curve}, xlabel={Unemployment (\%)}, ylabel={Annual Inflation Rate (\%)}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot[domain=.5:9.5,blue] {(.1 * x) ^ -1};
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
+
+    \begin{itemize}
+
+      \item As output increases, unemployment decreases because more workers are needed
+
+      \item An AD shift results in movement along the SRPC
+
+      \item Stagflation or an aggregate supply shock will shift the SRPC to the right/up 
+
+      \item Decreases in inflation and unemployment (an increase in AS) will shift the SRPC to the left/down
+
+      \item SRAS and SRPC shift in opposite directions
+
+      \item Expected inflation will shift the SRPC to the right/up
+
+      \item Economists believe the relationship between expected inflation and changes in actual inflation is one-to-one
+
+      \item In the long run Phillips curve, there is no trade-off. The long run Phillips curve is vertical at the unemployment rate consistent with full output
+
+        \begin{itemize}
+
+          \item Factors that influence unemployment in the long run are NOT affected by money supply
+            
+            \begin{itemize}
+
+              \item Market power of unions
+
+              \item Process of job search
+
+              \item Unemployment benefits
+
+              \item Minimum wage laws
+
+            \end{itemize}
+
+        \end{itemize}
+
+      \item The only sustainable combination of inflation and unemployment on the SRPC is where it intersects the LRPC because that is the only unemployment rate consistent with potential GDP (“Home Base”)
+
+      \item This is analogous to “long run equilibrium” in our ADAS model
+
+      \item The LRPC and the SRPC intersect at the expected rate of inflation
+
+    \begin{center}
+      \begin{tikzpicture}
+        \begin{axis}[xmin=0, ymin=0, xmax=10, title={Short-run Phillips Curve}, xlabel={Unemployment (\%)}, ylabel={Annual Inflation Rate (\%)}, ymajorgrids=true, xmajorgrids=true, grid style=dashed]
+          \addplot[domain=.5:9.5,green] {(.1 * x) ^ -1};
+          \addplot[domain=0:5,red,dashed] {2};
+          \addplot[blue] coordinates {(5,0) (5,20)};
+          \node[label={180:{LRPC}},circle,fill,inner sep=2pt, color=blue] at (axis cs:5,19) {};
+          \node[label={0:{SRPC}},circle,fill,inner sep=2pt, color=green] at (axis cs:2,5) {};
+          \node[label={45:{$PL$}},circle,fill,inner sep=2pt, color=red] at (axis cs:5,2) {};
+        \end{axis}
+      \end{tikzpicture}
+    \end{center}
+
+    \end{itemize}
+
 \end{enumerate}
 
 \end{document}
