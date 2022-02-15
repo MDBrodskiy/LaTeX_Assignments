@@ -1,0 +1,329 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP US Government
+% Instructor: Mr. Bradshaw
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{diagbox}
+\usepackage{pifont}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color, colortbl}
+\definecolor{BurntOrange}{rgb}{0.85, 0.6, 0.3}
+\definecolor{Gray}{gray}{.5}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{soul}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\newcommand{\xmark}{\ding{55}}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Notes — Week 13}
+\date{Period 3}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Bradshaw}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item \textit{Hernandez v. Texas} (1954) — People of color could now be on juries
+
+    \begin{itemize}
+
+      \item Easiest way to keep a race off of a jury was to forbid voting registration
+
+    \end{itemize}
+
+  \item The Constitution set up a bicameral legislature. Two influences on that decision were:
+
+    \begin{itemize}
+
+      \item Historical: British Parliament
+
+      \item Practical: The “Great Compromise”
+
+    \end{itemize}
+
+  \item The two Houses of Congress are:
+
+    \begin{itemize}
+
+      \item House of Representatives (Lower House, based on population)
+
+      \item Senate (Upper House, two from each state creating equality)
+
+    \end{itemize}
+
+  \item Congressional Terms
+
+    \begin{itemize}
+
+      \item Lasts 2 years, starts each odd numbered year
+
+      \item 1st Congress was in 3/4/1789, today's Congress is the \nth{117}
+
+      \item Sessions, which are one year of a term, begin on January \nth{3} (used to begin in March, but changed by the \nth{20} amendment)
+
+      \item Reps/Senators are in session until the Congress decides to adjourn
+
+      \item Special sessions
+
+        \begin{itemize}
+
+          \item The President can call a special session (has not been done since 1948)
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item House of Representatives
+
+    \begin{enumerate}
+
+      \item Size
+
+        \begin{itemize}
+
+          \item Determined by Congress (435 since 1911)
+
+          \item Elected by districts
+
+          \item Population of state determines the \# of Reps (increase in Sun Belts, decrease in Frost Belt)
+
+        \end{itemize}
+
+      \item Fixed Terms
+
+        \begin{itemize}
+
+          \item Two years/entire body up for re-election
+
+          \item Term limits ruled unconstitutional in \textit{US Term Limits v. Thornton} (added a qualification)
+
+        \end{itemize}
+
+      \item Qualifications
+
+        \begin{itemize}
+
+          \item 25 years old
+
+          \item Citizen for 7 years
+
+          \item Residency in state
+
+        \end{itemize}
+
+    \end{enumerate}
+
+  \item Senate
+
+    \begin{enumerate}
+
+      \item Size
+
+        \begin{itemize}
+
+          \item 100 members (2 per state)
+
+        \end{itemize}
+
+      \item Term
+
+        \begin{itemize}
+
+          \item 6 years — one-third of the senate is up for reelection every two years
+
+        \end{itemize}
+
+      \item Qualifications
+
+        \begin{itemize}
+
+          \item 30 years old
+
+          \item Citizen for 9 years
+
+          \item Resident of state
+
+        \end{itemize}
+
+    \end{enumerate}
+
+  \item Congressional Elections
+
+    \begin{itemize}
+
+      \item Every member of the House of Representatives seat is up for reelection, while a third of the Senate seats are also up every two years (33 or 34)
+
+      \item About 90\% of incumbents in the House and 85\% in the Senate are usually reelected
+
+    \end{itemize}
+
+  \item Congressional Statistics
+
+    \begin{itemize}
+
+      \item The average age is 56 years
+
+      \item The average member is white, male, protestant, and a lawyer
+
+      \item The average term length is 9.3 years
+
+    \end{itemize}
+
+  \item Incumbent Advantages
+
+    \begin{itemize}
+
+      \item Name Recognition
+
+      \item Franking Privilege (Free Mail)
+
+      \item Full staffs 22 Senate/17 House
+
+      \item Committees in each house for each party that raise money for their members
+
+      \item 90\% of all Political Action Committee money is given to incumbents
+
+      \item Constituent Services
+
+      \item Federal campaign finance laws favorite incumbents over challengers
+
+    \end{itemize}
+
+  \item Political Action Committee (PAC) — A popular term for a political committee organized for the purpose of raising and spending money to elect and defeat candidates
+
+    \begin{itemize}
+
+      \item Anyone, including members of Congress, can start a political action committee
+
+      \item PACs started by politicians are often referred to as Leadership PACs
+
+      \item SuperPACs do not contribute to candidates or parties; they may make independent expenditures in federal races, such as running ads, sending mail, or communicating in other ways (independent expenditure groups)
+
+      \item Roughly 2900 SuperPACs and 8000 PACs exist
+
+    \end{itemize}
+
+  \item The Federal Election Campaign Act of 1971
+
+    \begin{itemize}
+
+      \item The original campaign financing act
+
+      \item Created the Federal Election Commission (FEC)
+
+      \item Created dollar limits that individuals could donate to candidates
+
+      \item Any money given directly to a single candidate is known as a hard dollar
+
+    \end{itemize}
+
+  \item Carey Committees
+
+    \begin{itemize}
+
+      \item Known as Hybrid PACs
+
+      \item One account acts as a political committee, another acts as an account for independent expenditures
+
+    \end{itemize}
+
+  \item 527 Organization
+
+    \begin{itemize}
+
+      \item Nonprofit groups
+
+      \item Have to disclose donors
+
+        \begin{itemize}
+
+          \item Shield identities through loopholes
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item Redistribution
+
+    \begin{itemize}
+
+      \item Congress has to redistribute the seats after each decennial census
+
+      \item States win or lose seats based on their population gains or losses (CA has 52)
+
+      \item California Population 2000 = 33,871,648
+
+      \item California Population 2019 = 39,539,223
+
+      \item One seat represents roughly 730,000 people per the 2020 US Census
+
+      \item California lost a seat after the last census (used to be 53)
+
+    \end{itemize}
+
+  \item Constituent — A person who makes up a congressional district
+
+  \item Gerrymandering — The redrawing of district boundaries to favor the party in power (mostly legal)
+
+\end{itemize}
+
+\end{document}
+
