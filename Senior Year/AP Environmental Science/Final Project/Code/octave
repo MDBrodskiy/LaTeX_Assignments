@@ -1,0 +1,18 @@
+clear
+r=growthRate;
+K=k
+pop(1)=initialValue;
+pop2(1)=initialValue2;
+pop3(1)=initialValue3;
+numberofyears=years;
+
+for time=1:numberofyears,
+pop(time+1)=pop(time)+r*(1-pop(time)/K)*pop(time);
+pop2(time+1)=pop2(time)+r*(1-pop2(time)/K)*pop2(time);
+pop3(time+1)=pop3(time)+r*(1-pop3(time)/K)*pop3(time);
+end
+
+plot(0:numberofyears,pop,"*", 0:numberofyears,pop2,"-", 0:numberofyears,pop3,"o");
+title ("Elephant");
+xlabel ("Time (Years)");
+ylabel ("Population"); legend("P_0 < K", "P_0 = K", "P_0 > K")
