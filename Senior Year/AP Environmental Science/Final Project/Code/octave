@@ -1,18 +1,32 @@
 clear
-r=growthRate;
-K=k
-pop(1)=initialValue;
-pop2(1)=initialValue2;
-pop3(1)=initialValue3;
-numberofyears=years;
+r=growthrate;
+K=k;
+pop(1)=initialPop1;
+pop2(1)=initialPop2;
+pop3(1)=initialPop3;
+years=xaxis;
 
-for time=1:numberofyears,
+for time=1:years,
+ccfrac(time)=pop(time)/K;
 pop(time+1)=pop(time)+r*(1-pop(time)/K)*pop(time);
+ccfrac2(time)=pop2(time)/K;
 pop2(time+1)=pop2(time)+r*(1-pop2(time)/K)*pop2(time);
+ccfrac3(time)=pop3(time)/K;
 pop3(time+1)=pop3(time)+r*(1-pop3(time)/K)*pop3(time);
 end
 
-plot(0:numberofyears,pop,"*", 0:numberofyears,pop2,"-", 0:numberofyears,pop3,"o");
-title ("Elephant");
+ccfrac(time+1)=pop(time+1)/K;
+ccfrac2(time+1)=pop2(time+1)/K;
+ccfrac3(time+1)=pop3(time+1)/K;
+
+figure
+plot(0:years,ccfrac,"*", 0:years,ccfrac2,"-", 0:years,ccfrac3,"o");
+title (ANIMAL NAME);
+xlabel ("Time (Years)");
+ylabel ("Ratio of Population to Carrying Capacity"); legend("P_0 < K", "P_0 = K", "P_0 > K");
+
+figure
+plot(0:years,pop,"*", 0:years,pop2,"-", 0:years,pop3,"o");
+title (ANIMAL NAME);
 xlabel ("Time (Years)");
 ylabel ("Population"); legend("P_0 < K", "P_0 = K", "P_0 > K")
