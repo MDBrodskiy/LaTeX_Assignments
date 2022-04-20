@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: AP Statistics
+% Professor: M. Thompson
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{statistics}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\DeclareSIUnit\Molar{\textsc{m}}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Practice FRQs}
+\date{April 26, 2022}
+\author{Michael Brodskiy\\ \small Instructor: Mr. Thompson}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item On Campus = $\frac{17 + 7}{33} = .7273$; Off Campus = $\frac{25 + 12}{67} = .5522$
+
+      \item The graph shows that a higher proportion of off campus students do not participate in an activity (a little over 40\%) than on campus students (a little over 20\%). The groups are roughly likely to participate in two or more activities (a little over 20\% versus a little under 20\%). A much larger portion of on campus students participate in one activity (about 70\%) than do off campus students (a little under 40\%). Thus, there is some evidence to indicate that off campus students are less likely to be in an activity, though on campus students generally do one activity.
+
+      \item Assuming a significance level of $\alpha = .05$, we do not have convincing evidence to suggest association between residential status and activity participation. Thus, because $.23 > .05$, we fail to reject $H_0$, and the administrator should conclude that there is no association.
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\frac{3}{9} \cdot \frac{2}{8} \cdot \frac{1}{7} = .0119$
+
+      \item Because the probability is quite small (.0119), it would make sense to doubt management's claim, as an event like this is quite unlikely to happen.
+
+      \item This appropriately models the given scenario. Because there are 6 men and 3 women, the ratio of man to woman must be kept $2:1$. Because the situation with the dice is $4:2$, the ratio is kept the same, and, thus, models the situation appropriately.
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item To use cluster sampling, the landlord should select each floor as a cluster. Because each floor has four apartments and eight are needed, two floors should be selected at random. This can be done by assigning numbers to each floor, say 0-8. Then, using a random number generator, two different values from 0 to 8 should be selected. The corresponding floors are selected.
+
+      \item As the strata are children and no children, and there are 8 apartments with children and 24 without, the landlord should use simple random samples by numbering apartments with children 0-7 and apartments without children 0-23. After this, the landlord should generate two different, random integers from 0 to 7 and six different, random integers from 0 to 23. Each integer corresponds to a given apartment, with or without children.
+
+    \end{enumerate}
+
+  \item
+
+    \begin{tabular}{|c|}
+    \hline
+    \textbf{State:}\\
+    \hline
+    \end{tabular}
+
+    $H_0:$ There is no association between age group and eating five or more servings of fruits and vegetables a day; $H_a:$ There is an association between age group and eating five or more servings of fruits or vegetables a day\\
+    $\alpha = .05$
+
+    \begin{tabular}{|c|}
+    \hline
+    \textbf{Plan}\\
+    \hline
+    \end{tabular}
+
+    Procedure: Chi-square test for independence\\
+    Conditions: \begin{tabular}{l}Random: Stated in problem\\ 10\%: 8,866 adults $\leq\frac{1}{10}$ (all adults)\\ Large Counts: 240.2 \geq 5 \end{tabular}
+
+    \begin{tabular}{|c|}
+    \hline
+    \textbf{Do:}\\
+    \hline
+    \end{tabular}
+
+    $\chi^2 = \sum \frac{(O-E)^2}{E}$\\
+    $\chi^2 = \frac{(231 - 240.2)^2}{240.2} + \frac{(741-731.8)^2}{731.8} + \dots + \frac{(3692-3751.6)^2}{3751.6}=8.98$\\
+    $p(\chi^2 > 8.98,\text{ df}=2)=.0112$\\
+
+    \begin{tabular}{|c|}
+    \hline
+    \textbf{Conclude:}\\
+    \hline
+    \end{tabular}
+
+
+  \item 
+
+  \item 
+
+    \begin{enumerate}
+
+      \item 
+
+      \item
+
+        \begin{enumerate}
+
+          \item 
+
+          \item 
+
+        \end{enumerate}
+
+      \item
+
+      \item 
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
